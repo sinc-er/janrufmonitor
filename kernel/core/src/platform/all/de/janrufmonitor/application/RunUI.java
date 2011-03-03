@@ -105,13 +105,13 @@ public class RunUI {
 				thread.start();
 
 				try {
-					Thread.sleep(30000);
+					Thread.sleep(30000); 
 				} catch (InterruptedException e) {
 					RunUI.m_logger.log(Level.SEVERE, e.getMessage(), e);
 				}
 		
 				RunUI.m_logger.severe("Emergency exit: jAnrufmonitor already running! Failed to initialize JamCacheMasterClassLoader. Aborting startup. Make sure that only one instance of jAnrufmonitor is running and clear all files from folder: %jam-installpath%/lib/cache.");
-				System.exit(0);
+				System.exit(0); 
 			}
 
 		} catch (Exception ex) {
