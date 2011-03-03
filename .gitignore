@@ -1,0 +1,15 @@
+.DS_Store
+**/*/.DS_Store
+**/*/.classpath
+**/*/.project
+**/*/.externalToolBuilders
+.metadata
+.metadata/
+.metadata/**/*
+build/**/*
+extlib/**/*
+dist/**/*
+internal/**/*
+docs/**/*
+published/**/*
+docs/**/*
