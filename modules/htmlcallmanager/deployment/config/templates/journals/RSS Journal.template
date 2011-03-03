@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<rdf:RDF 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:co="http://purl.org/rss/1.0/modules/company/"
+  xmlns:ti="http://purl.org/rss/1.0/modules/textinput/"
+  xmlns="http://purl.org/rss/1.0/"
+> 
+
+<channel>
+	<title>jAnrufmonitor RSS Journal</title>
+	<link>http://localhost/journal</link>
+	<description>-</description>
+	<language>de</language>
+	<copyright>Copyright: (C) Thilo Brandt, http://www.janrufmonitor.de</copyright>
+	<docs>http://www.janrufmonitor.de</docs>
+	
+</channel>
+
+<!-- start_call: <item><title>Anruf von\: %callername%</title><description>Neuer Anruf eingegangen um %calltime% von %callername%, %callernumber% auf MSN %msn% (%msnalias%) mit Dienstmerkmal\: %cip%</description><pubDate>%calltime%</pubDate><guid>%calltime%%callernumber%</guid></item> :end_call--> 
+
+</rdf:RDF>

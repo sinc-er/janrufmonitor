@@ -1,0 +1,6 @@
+ui.jface.configuration.pages.XTapi\:title\:label\:en=TAPI settings
+ui.jface.configuration.pages.XTapi\:description\:label\:en=TAPI monitor uses the Microsoft(tm) TAPI to identify calls from a connected device.
+ui.jface.configuration.pages.XTapi\:activemonitor\:label\:en=Monitor enabled (requires restart)
+ui.jface.configuration.pages.XTapi\:festnetzalias\:label\:en=MSN for TAPI calls:
+ui.jface.configuration.pages.XTapi\:fbinfo\:label\:en=TAPI details:
+ui.jface.configuration.pages.XTapi\:outgoing\:label\:en=Monitor outgoing calls

@@ -1,0 +1,32 @@
+ui.jface.dialogs.DialogPropagator\:title\:label\:de=Meldungs-Dialog
+ui.jface.dialogs.DialogPropagator\:error\:label\:de=jAnrufmonitor - Fehler
+ui.jface.dialogs.DialogPropagator\:warning\:label\:de=jAnrufmonitor - Warnung
+ui.jface.dialogs.DialogPropagator\:info\:label\:de=jAnrufmonitor - Information
+ui.jface.dialogs.DialogPropagator\:togglemessage\:label\:de=Diese Meldung nicht mehr anzeigen.
+ui.jface.dialogs.DialogPropagator\:readmore\:label\:de=Mehr Informationen zu diesem Fehler finden Sie im Internet...
+
+ui.jface.dialogs.InfoDialog\:label\:label\:de=Info...
+ui.jface.dialogs.InfoDialog\:dialogtitle\:label\:de=jAnrufmonitor - 
+ui.jface.dialogs.InfoDialog\:dialogtitle\:description\:de=\       Wissen, wer anruft !
+ui.jface.dialogs.InfoDialog\:license\:label\:de=Lizenz: 
+ui.jface.dialogs.InfoDialog\:freeware\:label\:de=Freeware
+ui.jface.dialogs.InfoDialog\:version\:label\:de=Version: 
+ui.jface.dialogs.InfoDialog\:build\:label\:de=Build: 
+ui.jface.dialogs.InfoDialog\:homepage\:label\:de=Web-Site: 
+ui.jface.dialogs.InfoDialog\:mail\:label\:de=Mail-Kontakt: 
+ui.jface.dialogs.InfoDialog\:donation\:label\:de=PayPal-Spende: 
+ui.jface.dialogs.InfoDialog\:rkey\:label\:de=Registrierung: 
+
+ui.jface.dialogs.InstallPropagator\:title\:label\:de=Meldungs-Dialog
+ui.jface.dialogs.InstallPropagator\:error\:label\:de=jAnrufmonitor - Fehler
+ui.jface.dialogs.InstallPropagator\:warning\:label\:de=jAnrufmonitor - Warnung
+ui.jface.dialogs.InstallPropagator\:info\:label\:de=jAnrufmonitor - Information
+ui.jface.dialogs.InstallPropagator\:unknown\:label\:de=Es ist ein unbekannter Fehler aufgetreten. Eine detaillierte Fehlerbeschreibung sollte in der Logdatei janrufmonitor-0.log protokolliert sein. Beachten Sie mögliche FAQs und Forumsbeiträge zu diesem Fehler. Setzen Sie sich ggf. mit dem Programmautor in Verbindung.
+
+
+ui.jface.dialogs.DonationDialog\:label\:label\:de=Ihre Unterstützung
+ui.jface.dialogs.DonationDialog\:dialogtitle\:label\:de=Zufrieden mit jAnrufmonitor?
+ui.jface.dialogs.DonationDialog\:dialogtitle\:description\:de=\       Unterstützen Sie die Weiterentwicklung mit einer Spende!
+ui.jface.dialogs.DonationDialog\:disclaimer\:label\:de=Sie nutzen jAnrufmonitor schon einige Zeit. Sind Sie mit dem Programm zufrieden?\nUnterstützen Sie die Weiterentwicklung mit einer kleinen Spende. Bei Fragen zum Programm\noder Probleme bei der Benutzung wenden Sie sich doch einfach an die jAnrufmonitor Community\n(www.janrufmonitor.de/community).
+ui.jface.dialogs.DonationDialog\:donate\:label\:de=Spenden
+ui.jface.dialogs.DonationDialog\:nondonate\:label\:de=Nicht spenden

@@ -1,0 +1,10 @@
+repository.HtmlCallManager\:database\:type=file
+repository.CallManagerFactory\:manager_htmlfile\:access=system
+repository.CallManagerFactory\:manager_htmlfile\:value=de.janrufmonitor.repository.HtmlCallManager
+repository.HtmlCallManager\:enabled\:type=boolean
+repository.HtmlCallManager\:priority\:value=200
+repository.HtmlCallManager\:enabled\:value=true
+repository.HtmlCallManager\:priority\:type=integer
+?repository.HtmlCallManager\:database\:value=%datapath%journal.html
+?repository.HtmlCallManager\:template\:value=Standard HTML Journal
+?repository.HtmlFileCallExporter\:template\:value=Standard HTML Journal

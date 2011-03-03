@@ -1,0 +1,4 @@
+ui.jface.wizards.pages.sound.SelectMsnPage\:title\:label\:de=MSN festlegen
+ui.jface.wizards.pages.sound.SelectMsnPage\:description\:label\:de=Wählen Sie eine MSN (Mehrfachrufnummer) für die eine Sound-Datei zugewiesen werden soll.\nEs können nur MSNs gewählt werden, die in der MSN Verwaltung eingetragen sind.
+ui.jface.wizards.pages.sound.SelectMsnPage\:name\:label\:de=Sound-Datei auf folgende MSN zuweisen: 
+

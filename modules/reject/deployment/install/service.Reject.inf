@@ -1,0 +1,9 @@
+service.Reject\:enabled\:type=boolean
+service.Reject\:priority\:value=2
+service.Reject\:allclir\:type=boolean
+service.ServiceFactory\:service_reject\:access=system
+service.Reject\:allclir\:value=false
+service.ServiceFactory\:service_reject\:value=de.janrufmonitor.service.reject.Reject
+service.Reject\:enabled\:value=true
+service.Reject\:priority\:type=integer
+service.Reject\:rejectareacodes\:value=190,900,901,902,903,904,905

@@ -1,0 +1,2 @@
+repository.HttpCallManager\:title\:label\:en=Server based Journal
+repository.HttpCallManager\:empty\:label\:en=The requested journal has either invalid characters, a wrong format or is incompleted. Check your network settings and make sure the data can be transfered properly. Details are logged in jam-0.log.

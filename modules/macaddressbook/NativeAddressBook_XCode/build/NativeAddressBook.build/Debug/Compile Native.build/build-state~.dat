@@ -1,0 +1,279 @@
+TCompile Native
+v7
+r0
+t307016567.459540
+cCheck dependencies
+cProcessPCH /var/folders/0S/0S7X4CwhG9Oc3T2p4ftsx++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-hagibwrjcactxqebwpvfakvjcwdx/AppKit.h.gch /System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/0S/0S7X4CwhG9Oc3T2p4ftsx++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gxpliyucqtdgbfcfwckdgmrexgov/AppKit.h.gch /System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal i386 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/0S/0S7X4CwhG9Oc3T2p4ftsx++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-eolprzqcyttpcpbtfuxpgunqrcdr/AppKit.h.gch /System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/x86_64/NativeAddressBook.o" /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/src/NativeAddressBook.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/i386/NativeAddressBook.o" /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/src/NativeAddressBook.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/ppc/NativeAddressBook.o" /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/src/NativeAddressBook.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/x86_64/libAddressBook.jnilib" normal x86_64
+cLd "/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/i386/libAddressBook.jnilib" normal i386
+cLd "/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/ppc/libAddressBook.jnilib" normal ppc
+cCreateUniversalBinary /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug/libAddressBook.jnilib normal "x86_64 i386 ppc"
+cPBXCp /Library/Java/Extensions/libAddressBook.jnilib build/Debug/libAddressBook.jnilib
+
+N/Library/Java/Extensions/libAddressBook.jnilib
+t1285323767
+s156084
+
+N/System/Library/Frameworks/AddressBook.framework/AddressBook
+c000000004BC3DA2E0000000000950440
+t1271126574
+s9765952
+
+N/System/Library/Frameworks/AddressBook.framework/Headers/AddressBook.h
+c000000004BE2928F00000000000002C0
+t1273139855
+s704
+
+N/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h
+c000000004BE2C6D100000000000017ED
+t1273153233
+s6125
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h
+c000000004B90C8A60000000000000AF4
+t1267779750
+s2804
+
+N/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h
+c000000004B90FA5D0000000000000401
+t1267792477
+s1025
+
+N/System/Library/Frameworks/Foundation.framework/Headers/NSDate.h
+c000000004B90FBB80000000000000739
+t1267792824
+s1849
+
+N/System/Library/Frameworks/JavaVM.framework/JavaVM
+c000000004BE3A33400000000000333E0
+t1273209652
+s209888
+
+N/System/Library/Frameworks/JavaVM.framework/Versions/A/Frameworks/JavaNativeFoundation.framework/Headers/JavaNativeFoundation.h
+c000000004A8CF75E00000000000002E0
+t1250752350
+s736
+
+N/System/Library/Frameworks/JavaVM.framework/Versions/A/Frameworks/JavaNativeFoundation.framework/JavaNativeFoundation
+c000000004BB25B780000000000037A40
+t1269980024
+s227904
+
+N/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug/libAddressBook.jnilib
+t1285323767
+s156084
+
+N/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/i386/AddressBook.LinkFileList
+c000000004C9C7BF200000000000000A7
+t1285323762
+s167
+
+N/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/i386/NativeAddressBook.o
+t1285323765
+s90764
+
+N/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/i386/libAddressBook.jnilib
+t1285323767
+s45564
+
+N/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/ppc/AddressBook.LinkFileList
+c000000004C9C7BF200000000000000A6
+t1285323762
+s166
+
+N/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/ppc/NativeAddressBook.o
+t1285323765
+s103356
+
+N/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/ppc/libAddressBook.jnilib
+t1285323767
+s53684
+
+N/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/x86_64/AddressBook.LinkFileList
+c000000004C9C7BF200000000000000A9
+t1285323762
+s169
+
+N/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/x86_64/NativeAddressBook.o
+t1285323765
+s105308
+
+N/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/x86_64/libAddressBook.jnilib
+t1285323767
+s48632
+
+N/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/src/NativeAddressBook.m
+c000000004C7BCB660000000000007353
+t1283181414
+s29523
+i<AddressBook/AddressBook.h>
+i<JavaNativeFoundation/JavaNativeFoundation.h>
+i<time.h>
+i<Foundation/NSDate.h>
+i<CoreServices/CoreServices.h>
+i<CoreFoundation/CoreFoundation.h>
+
+N/usr/include/time.h
+c000000004AC59C82000000000000178E
+t1254464642
+s6030
+
+N/var/folders/0S/0S7X4CwhG9Oc3T2p4ftsx++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-eolprzqcyttpcpbtfuxpgunqrcdr/AppKit.h.gch
+t1285323765
+s52474768
+
+N/var/folders/0S/0S7X4CwhG9Oc3T2p4ftsx++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gxpliyucqtdgbfcfwckdgmrexgov/AppKit.h.gch
+t1285323765
+s56181872
+
+N/var/folders/0S/0S7X4CwhG9Oc3T2p4ftsx++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-hagibwrjcactxqebwpvfakvjcwdx/AppKit.h.gch
+t1285323764
+s53539920
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies307016562#307016562#0(0"0(0#1#0"29836824280170608#0"0#
+
+CCompileC "build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/i386/NativeAddressBook.o" /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/src/NativeAddressBook.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307016565.412220
+e307016565.779249
+r1
+xCompileC
+xbuild/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/i386/NativeAddressBook.o
+x/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/src/NativeAddressBook.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@101"Compile /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/src/NativeAddressBook.m307016565#307016565#0(0"0(0#0#93"/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/src/NativeAddressBook.m8603320192#1475"    cd /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -gdwarf-2 "-I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/AddressBook.hmap" -F/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug -F/System/Library/Frameworks/JavaVM.framework/Versions/A/Frameworks -I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug/include -I/System/Library/Frameworks/JavaVM.framework/Headers "-I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/DerivedSources/i386" "-I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/DerivedSources" -include /var/folders/0S/0S7X4CwhG9Oc3T2p4ftsx++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gxpliyucqtdgbfcfwckdgmrexgov/AppKit.h -c /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/src/NativeAddressBook.m -o "/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/i386/NativeAddressBook.o"0#
+
+CCompileC "build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/ppc/NativeAddressBook.o" /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/src/NativeAddressBook.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s307016565.412894
+e307016565.780359
+r1
+xCompileC
+xbuild/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/ppc/NativeAddressBook.o
+x/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/src/NativeAddressBook.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@101"Compile /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/src/NativeAddressBook.m307016565#307016565#0(0"0(0#0#93"/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/src/NativeAddressBook.m8602774400#1482"    cd /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -mtune=G5 -gdwarf-2 "-I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/AddressBook.hmap" -F/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug -F/System/Library/Frameworks/JavaVM.framework/Versions/A/Frameworks -I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug/include -I/System/Library/Frameworks/JavaVM.framework/Headers "-I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/DerivedSources/ppc" "-I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/DerivedSources" -include /var/folders/0S/0S7X4CwhG9Oc3T2p4ftsx++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-eolprzqcyttpcpbtfuxpgunqrcdr/AppKit.h -c /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/src/NativeAddressBook.m -o "/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/ppc/NativeAddressBook.o"0#
+
+CCompileC "build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/x86_64/NativeAddressBook.o" /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/src/NativeAddressBook.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s307016565.411366
+e307016565.746251
+r1
+xCompileC
+xbuild/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/x86_64/NativeAddressBook.o
+x/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/src/NativeAddressBook.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@101"Compile /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/src/NativeAddressBook.m307016565#307016565#0(0"0(0#0#93"/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/src/NativeAddressBook.m8601075104#1481"    cd /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -gdwarf-2 "-I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/AddressBook.hmap" -F/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug -F/System/Library/Frameworks/JavaVM.framework/Versions/A/Frameworks -I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug/include -I/System/Library/Frameworks/JavaVM.framework/Headers "-I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/DerivedSources/x86_64" "-I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/DerivedSources" -include /var/folders/0S/0S7X4CwhG9Oc3T2p4ftsx++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-hagibwrjcactxqebwpvfakvjcwdx/AppKit.h -c /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/src/NativeAddressBook.m -o "/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/x86_64/NativeAddressBook.o"0#
+
+CCreateUniversalBinary /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug/libAddressBook.jnilib normal "x86_64 i386 ppc"
+s307016567.390169
+e307016567.432896
+r1
+xCreateUniversalBinary
+x/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug/libAddressBook.jnilib
+xnormal
+xx86_64 i386 ppc
+lSLF07#2@80"CreateUniversalBinary build/Debug/libAddressBook.jnilib normal "x86_64 i386 ppc"307016567#307016567#0(0"0(0#0#85"/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/x86_64 i386 ppc8602738496#729"    cd /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode    /usr/bin/lipo -create "/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/x86_64/libAddressBook.jnilib" "/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/i386/libAddressBook.jnilib" "/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/ppc/libAddressBook.jnilib" -output /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug/libAddressBook.jnilib0#
+
+CLd "/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/i386/libAddressBook.jnilib" normal i386
+s307016565.779327
+e307016567.389619
+r1
+xLd
+x/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/i386/libAddressBook.jnilib
+xnormal
+xi386
+old: warning: directory '/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug' following -L not found
+old: warning: directory '/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug' following -F not found
+lSLF07#2@173"Link /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/i386/libAddressBook.jnilib307016565#307016567#0(260"ld: warning: directory '/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug' following -L not foundld: warning: directory '/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug' following -F not found2(22@116"Directory '/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug' following -L not found307016567#0#130#0(6@0"307016567#0#0#0#0#0"0(22@116"Directory '/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug' following -F not found307016567#130#130#0(6@0"307016567#0#0#0#0#0"0(0#0#0"8595687712#965"    cd /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode    /Developer/usr/bin/gcc-4.2 -arch i386 -dynamiclib -L/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug -F/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug -F/System/Library/Frameworks/JavaVM.framework/Versions/A/Frameworks -filelist "/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/i386/AddressBook.LinkFileList" -install_name /usr/local/lib/libAddressBook.jnilib -framework Foundation -framework AppKit -framework Cocoa -framework JavaNativeFoundation -framework AddressBook -framework JavaVM -single_module -compatibility_version 1 -current_version 1 -o "/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/i386/libAddressBook.jnilib"0#
+
+CLd "/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/ppc/libAddressBook.jnilib" normal ppc
+s307016565.780418
+e307016567.390108
+r1
+xLd
+x/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/ppc/libAddressBook.jnilib
+xnormal
+xppc
+old: warning: directory '/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug' following -L not found
+old: warning: directory '/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug' following -F not found
+lSLF07#2@172"Link /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/ppc/libAddressBook.jnilib307016565#307016567#0(260"ld: warning: directory '/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug' following -L not foundld: warning: directory '/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug' following -F not found2(22@116"Directory '/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug' following -L not found307016567#0#130#0(6@0"307016567#0#0#0#0#0"0(22@116"Directory '/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug' following -F not found307016567#130#130#0(6@0"307016567#0#0#0#0#0"0(0#0#0"8600204128#962"    cd /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode    /Developer/usr/bin/gcc-4.2 -arch ppc -dynamiclib -L/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug -F/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug -F/System/Library/Frameworks/JavaVM.framework/Versions/A/Frameworks -filelist "/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/ppc/AddressBook.LinkFileList" -install_name /usr/local/lib/libAddressBook.jnilib -framework Foundation -framework AppKit -framework Cocoa -framework JavaNativeFoundation -framework AddressBook -framework JavaVM -single_module -compatibility_version 1 -current_version 1 -o "/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/ppc/libAddressBook.jnilib"0#
+
+CLd "/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/x86_64/libAddressBook.jnilib" normal x86_64
+s307016565.746364
+e307016567.389229
+r1
+xLd
+x/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/x86_64/libAddressBook.jnilib
+xnormal
+xx86_64
+old: warning: directory '/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug' following -L not found
+old: warning: directory '/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug' following -F not found
+lSLF07#2@175"Link /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/x86_64/libAddressBook.jnilib307016565#307016567#0(260"ld: warning: directory '/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug' following -L not foundld: warning: directory '/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug' following -F not found2(22@116"Directory '/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug' following -L not found307016567#0#130#0(6@0"307016567#0#0#0#0#0"0(22@116"Directory '/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug' following -F not found307016567#130#130#0(6@0"307016567#0#0#0#0#0"0(0#0#0"8599700928#971"    cd /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode    /Developer/usr/bin/gcc-4.2 -arch x86_64 -dynamiclib -L/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug -F/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug -F/System/Library/Frameworks/JavaVM.framework/Versions/A/Frameworks -filelist "/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/x86_64/AddressBook.LinkFileList" -install_name /usr/local/lib/libAddressBook.jnilib -framework Foundation -framework AppKit -framework Cocoa -framework JavaNativeFoundation -framework AddressBook -framework JavaVM -single_module -compatibility_version 1 -current_version 1 -o "/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/Objects-normal/x86_64/libAddressBook.jnilib"0#
+
+CPBXCp /Library/Java/Extensions/libAddressBook.jnilib build/Debug/libAddressBook.jnilib
+s307016567.432952
+e307016567.459510
+r1
+xPBXCp
+x/Library/Java/Extensions/libAddressBook.jnilib
+xbuild/Debug/libAddressBook.jnilib
+lSLF07#2@38"Copy build/Debug/libAddressBook.jnilib307016567#307016567#0(0"0(0#0#103"/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug/libAddressBook.jnilib18577842391679076#354"    cd /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug/libAddressBook.jnilib /Library/Java/Extensions0#
+
+CProcessPCH /var/folders/0S/0S7X4CwhG9Oc3T2p4ftsx++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-eolprzqcyttpcpbtfuxpgunqrcdr/AppKit.h.gch /System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal ppc objective-c com.apple.compilers.gcc.4_2
+s307016562.430907
+e307016565.411281
+r1
+xProcessPCH
+x/var/folders/0S/0S7X4CwhG9Oc3T2p4ftsx++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-eolprzqcyttpcpbtfuxpgunqrcdr/AppKit.h.gch
+x/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Precompile /System/Library/Frameworks/AppKit.framework/Headers/AppKit.h307016562#307016565#0(0"0(0#0#60"/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h8601291200#1283"    cd /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -mtune=G5 -gdwarf-2 "-I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/AddressBook.hmap" -F/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug -F/System/Library/Frameworks/JavaVM.framework/Versions/A/Frameworks -I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug/include -I/System/Library/Frameworks/JavaVM.framework/Headers "-I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/DerivedSources/ppc" "-I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/DerivedSources" -c /System/Library/Frameworks/AppKit.framework/Headers/AppKit.h -o /var/folders/0S/0S7X4CwhG9Oc3T2p4ftsx++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-eolprzqcyttpcpbtfuxpgunqrcdr/AppKit.h.gch0#
+
+CProcessPCH /var/folders/0S/0S7X4CwhG9Oc3T2p4ftsx++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gxpliyucqtdgbfcfwckdgmrexgov/AppKit.h.gch /System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal i386 objective-c com.apple.compilers.gcc.4_2
+s307016562.430300
+e307016565.312821
+r1
+xProcessPCH
+x/var/folders/0S/0S7X4CwhG9Oc3T2p4ftsx++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gxpliyucqtdgbfcfwckdgmrexgov/AppKit.h.gch
+x/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Precompile /System/Library/Frameworks/AppKit.framework/Headers/AppKit.h307016562#307016565#0(0"0(0#0#60"/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h8603049664#1275"    cd /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -gdwarf-2 "-I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/AddressBook.hmap" -F/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug -F/System/Library/Frameworks/JavaVM.framework/Versions/A/Frameworks -I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug/include -I/System/Library/Frameworks/JavaVM.framework/Headers "-I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/DerivedSources/i386" "-I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/DerivedSources" -c /System/Library/Frameworks/AppKit.framework/Headers/AppKit.h -o /var/folders/0S/0S7X4CwhG9Oc3T2p4ftsx++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gxpliyucqtdgbfcfwckdgmrexgov/AppKit.h.gch0#
+
+CProcessPCH /var/folders/0S/0S7X4CwhG9Oc3T2p4ftsx++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-hagibwrjcactxqebwpvfakvjcwdx/AppKit.h.gch /System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s307016562.403235
+e307016564.750973
+r1
+xProcessPCH
+x/var/folders/0S/0S7X4CwhG9Oc3T2p4ftsx++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-hagibwrjcactxqebwpvfakvjcwdx/AppKit.h.gch
+x/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Precompile /System/Library/Frameworks/AppKit.framework/Headers/AppKit.h307016562#307016564#0(0"0(0#0#60"/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h8031999980899297280#1279"    cd /Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -gdwarf-2 "-I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/AddressBook.hmap" -F/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug -F/System/Library/Frameworks/JavaVM.framework/Versions/A/Frameworks -I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/Debug/include -I/System/Library/Frameworks/JavaVM.framework/Headers "-I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/DerivedSources/x86_64" "-I/Users/brandtt/Downloads/jabaddressbook/trunk/NativeAddressBook_XCode/build/NativeAddressBook.build/Debug/Compile Native.build/DerivedSources" -c /System/Library/Frameworks/AppKit.framework/Headers/AppKit.h -o /var/folders/0S/0S7X4CwhG9Oc3T2p4ftsx++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-hagibwrjcactxqebwpvfakvjcwdx/AppKit.h.gch0#
+

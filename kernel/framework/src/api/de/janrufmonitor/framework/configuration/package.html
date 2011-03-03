@@ -1,0 +1,46 @@
+<html>
+<body>
+<h3>Handling of configuration data in the framework.</h3>
+This package offers the posibility to handle configuration data for several components 
+(e.g. services, repository manager or UI components). A component can implement 
+the <code>IConfigurable</code> interface to get automatically informed, when chnages or settings are applied 
+to an configuration property or a complete set of namespaces.<br>
+The configuration is handled by a <code>IConfigManager</code> object which is controlled itself by an <code>IConfigManagerFactory</code>. 
+The configuration data is structured in certain way:<br><br>
+<ol>
+<li>the configuration object is called property
+<li>a property consists of a namespace, a name, a metadata and a value
+<li>the namespace allows to distinguish the same property name for different components
+<li>the name specifies a unique idetnifier within a namespace of the property
+<li>the metadata specifies at least one or more identifiers for a property
+<li>the value contains the data of the property.
+</ol>
+Find an Example of a property definition:
+<pre>
+     Property for storing a filename:
+	 <br>
+	 define {
+	 	namespace = {com.myapps.MyComponent}
+	 	name      = {filename}
+	 	metadata  = {value}
+	 	value     = /etc/var/pim.log
+		
+		namespace = {com.myapps.MyComponent}
+	 	name      = {filename}
+	 	metadata  = {type}
+	 	value     = Text
+		
+		namespace = {com.myapps.MyComponent}
+	 	name      = {filename}
+	 	metadata  = {system}
+	 	value     = linux
+     }
+</pre>
+The definition with an module / plugin file:
+<pre>
+com.myapps.MyComponent\:filename\:value=/etc/var/pim.log
+com.myapps.MyComponent\:filename\:type=Text
+com.myapps.MyComponent\:filename\:system=linux
+</pre>
+</body>
+</html>

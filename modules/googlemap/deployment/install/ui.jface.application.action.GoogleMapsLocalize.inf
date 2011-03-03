@@ -1,0 +1,9 @@
+ui.jface.application.ActionRegistry\:action_googlemapslocalize\:value=de.janrufmonitor.ui.jface.application.action.GoogleMapsLocalize
+ui.jface.application.ActionRegistry\:action_googlemapslocalize\:access=system
+
++ui.jface.application.editor.Editor\:popup_actions\:value=googlemapslocalize,
++ui.jface.application.journal.Journal\:popup_actions\:value=googlemapslocalize,
+
+
++ui.jface.application.dialog.Dialog\:pluginlist\:value=googlemapsplugin,
+ui.jface.application.dialog.Dialog\:googlemapsplugin\:value=de.janrufmonitor.ui.jface.application.dialog.GoogleMapsDialogPlugin

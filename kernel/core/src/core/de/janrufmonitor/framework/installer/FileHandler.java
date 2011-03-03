@@ -1,0 +1,68 @@
+package de.janrufmonitor.framework.installer;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.logging.Level;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
+
+import de.janrufmonitor.framework.IJAMConst;
+import de.janrufmonitor.runtime.PIMRuntime;
+import de.janrufmonitor.util.io.PathResolver;
+
+public class FileHandler {
+
+	private Logger m_logger;
+	private int BUFFER = Short.MAX_VALUE;  //32767
+
+	public FileHandler() {
+		this.m_logger = LogManager.getLogManager().getLogger(IJAMConst.DEFAULT_LOGGER);
+	}
+
+	public void addFile(InputStream in, String path) {
+		if (path.startsWith("%")) {
+			path = PathResolver.getInstance(PIMRuntime.getInstance()).resolve(path);
+		} else {
+			path = PathResolver.getInstance(PIMRuntime.getInstance()).getInstallDirectory() + path;
+		}
+		
+		File file = new File(path);
+		file.getParentFile().mkdirs();
+		try {
+			FileOutputStream fo = new FileOutputStream(file);
+			this.streamCopy(in,fo);
+			in.close();
+			fo.close();
+		} catch (FileNotFoundException e) {
+			this.m_logger.log(Level.SEVERE, e.getMessage(), e);
+		} catch (IOException e) {
+			this.m_logger.log(Level.SEVERE, e.getMessage(), e);
+		}
+	}
+
+	public void removeFile(String path) {
+		if (path.startsWith("%")) {
+			path = PathResolver.getInstance(PIMRuntime.getInstance()).resolve(path);
+		} else {
+			path = PathResolver.getInstance(PIMRuntime.getInstance()).getInstallDirectory() + path;
+		}
+		File file = new File(path);
+		if (file.exists()) 
+			if (!file.delete()) {
+				file.deleteOnExit();
+			}
+	}
+	
+	private void streamCopy(InputStream in, OutputStream out) throws IOException {
+		byte[] buffer = new byte[BUFFER];
+		int bytesRead;
+		while ((bytesRead = in.read(buffer)) != -1) {
+			out.write(buffer, 0, bytesRead);
+		}  
+		out.flush();
+	}
+}

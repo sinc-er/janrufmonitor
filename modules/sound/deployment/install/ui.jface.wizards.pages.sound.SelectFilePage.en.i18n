@@ -1,0 +1,4 @@
+ui.jface.wizards.pages.sound.SelectFilePage\:title\:label\:en=Select sound file
+ui.jface.wizards.pages.sound.SelectFilePage\:description\:label\:en=Select a sound file which should be assigned.\nBest quality is reached with WAV format Mono, 8-bit, 22kHz sSample rate.
+ui.jface.wizards.pages.sound.SelectFilePage\:sound\:label\:en=Sound file (WAV/MP3-Format): 
+

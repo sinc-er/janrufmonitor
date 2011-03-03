@@ -1,0 +1,4 @@
+ui.jface.wizards.pages.extapp.SelectFilePage\:title\:label\:de=Anwendung wählen
+ui.jface.wizards.pages.extapp.SelectFilePage\:description\:label\:de=Wählen Sie eine Anwendung (*.exe, *.com, *.cmd) die der MSN zugewiesen werden soll.
+ui.jface.wizards.pages.extapp.SelectFilePage\:sound\:label\:de=Anwendungsdatei: 
+

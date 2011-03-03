@@ -1,0 +1,10 @@
+service.ServiceFactory\:service_extapp\:access=system
+service.ServiceFactory\:service_extapp\:value=de.janrufmonitor.service.extapp.ExternalApplicationLauncher
+service.ExternalApplicationLauncher\:priority\:value=2
+service.ExternalApplicationLauncher\:enabled\:value=false
+service.ExternalApplicationLauncher\:enabled\:type=boolean
+service.ExternalApplicationLauncher\:default_extapp\:value=%installpath%demo.bat "%callername%" "%callernumber%"
+service.ExternalApplicationLauncher\:priority\:type=integer
+rules.RuleEngine\:extapp_rule\:value=ExternalApplicationLauncher%*%*%true%*%*
+rules.RuleEngine\:usestandard\:value=false
+rules.RuleEngine\:usestandard\:type=boolean

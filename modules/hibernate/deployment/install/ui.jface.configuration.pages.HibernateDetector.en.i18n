@@ -1,0 +1,4 @@
+
+ui.jface.configuration.pages.HibernateDetector\:title\:label\:en=Hibernate detection
+ui.jface.configuration.pages.HibernateDetector\:description\:label\:en=This service detects the hibernate mode of the underlaying operating system and keep the program running.
+ui.jface.configuration.pages.HibernateDetector\:enabled\:label\:en=Service enabled

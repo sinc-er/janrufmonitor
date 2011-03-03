@@ -1,0 +1,4 @@
+monitor.CapiMonitor\:title\:label\:de=CAPI Komponente
+monitor.CapiMonitor\:capierror\:label\:de=Beim Registrieren an der CAPI ist ein Fehler aufgetreten. Entweder ist keine CAPI installiert oder die CAPI ist vom Betriebsystem nicht korrekt geladen. Wenden Sie sich an der ISDN-Kartenhersteller um weitere Informationen zu diesem Problem zu erhalten. Eine detailierte Fehlerbeschreibung ist im janrufmonitor-0.log zu finden. Es werden derzeit keine Anrufe erkannt. 
+
+ui.jface.dialogs.InfoDialog\:edition\:label\:en=(CAPI/ISDN edition)

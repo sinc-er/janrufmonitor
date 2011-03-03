@@ -1,0 +1,4 @@
+
+ui.jface.configuration.pages.HibernateDetector\:title\:label\:de=Ruhezustand Erkennung
+ui.jface.configuration.pages.HibernateDetector\:description\:label\:de=Dienst zum Erkennen des Ruhezustandes (Hibernate) eines Betriebsystems. Startet die Überwachungskomponente nach dem Beenden des Ruhezustandes neu.
+ui.jface.configuration.pages.HibernateDetector\:enabled\:label\:de=Dienst aktiviert 

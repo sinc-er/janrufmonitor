@@ -1,0 +1,17 @@
+
+ui.jface.configuration.ConfigurationCommand\:page_reject\:value=de.janrufmonitor.ui.jface.configuration.pages.Reject
+ui.jface.configuration.ConfigurationCommand\:page_reject\:access=system
+
+# added 4.5.0
+ui.jface.configuration.ConfigurationCommand\:page_reject\:mode=expert
+
+ui.jface.application.ActionRegistry\:action_editor_quickreject\:value=de.janrufmonitor.ui.jface.application.editor.action.QuickRejectAction
+ui.jface.application.ActionRegistry\:action_editor_quickreject\:access=system
+
++ui.jface.application.editor.Editor\:popup_actions\:value=editor_quickreject,
+
+# added 5.0.28
+ui.jface.application.ActionRegistry\:action_journal_reject\:value=de.janrufmonitor.ui.jface.application.journal.action.RejectAction
+ui.jface.application.ActionRegistry\:action_journal_reject\:access=system
+
++ui.jface.application.journal.Journal\:popup_actions\:value=journal_reject,

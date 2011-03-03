@@ -1,0 +1,16 @@
+ui.jface.configuration.pages.CapiInfo\:title\:label\:de=CAPI-Info
+ui.jface.configuration.pages.CapiInfo\:description\:label\:de=Informationen zur installierten CAPI. Je nach Hersteller der CAPI können unterschiedliche Informationen gelistet sein.
+ui.jface.configuration.pages.CapiInfo\:capiinfo\:label\:de=Hersteller-Informationen: 
+
+ui.jface.configuration.pages.CapiSettings\:title\:label\:de=CAPI Einstellungen
+ui.jface.configuration.pages.CapiSettings\:description\:label\:de=Die hier aufgeführten Optionen sind generelle CAPI Einstellungen, die nicht zwangsläufig von allen CAPI-Treibern unterstützt werden. Die vorgegebenen Standard-Werte sind für die meisten ISDN-Karten gültig. Änderungen sollten nur mit technischen Fachwissen vorgenommen werden.
+ui.jface.configuration.pages.CapiSettings\:busyonbusy\:label\:de=Busy-On-Busy Funktion aktiv
+ui.jface.configuration.pages.CapiSettings\:spoofing\:label\:de=Erkennung von Rufnummernmanipulationen aktiv
+ui.jface.configuration.pages.CapiSettings\:maxcon\:label\:de=Anzahl der zu überwachenden ISDN-Leitungen: 
+ui.jface.configuration.pages.CapiSettings\:maxblock\:label\:de=Max. Anzahl an Informationsblöcke für CAPI:
+ui.jface.configuration.pages.CapiSettings\:blocksize\:label\:de=Max. Größe [Bytes] eines Informationsblocks:
+ui.jface.configuration.pages.CapiSettings\:trace\:label\:de=CAPI Trace aktiviert
+ui.jface.configuration.pages.CapiSettings\:available\:label\:de=Überwachung aktiviert (erfordert Programmneustart)
+
+ui.jface.configuration.pages.BasicIsdnSettings\:title\:label\:de=ISDN-Grundeinstellungen
+ui.jface.configuration.pages.BasicIsdnSettings\:description\:label\:de=Mit Hilfe der ISDN-Grundeinstellungen kann jAnrufmonitor auf den ISDN-Anschluss abgestimmt werden. Im wesentlichen können hier Einstellungen zur CAPI getroffen werden.

@@ -1,0 +1,15 @@
+# overwrite configuration
+%ui.jface.application.editor.Editor\:repository\:value=MacAddressBookManager
+%repository.CallerDirectory\:enabled\:value=false
+
+repository.CallerManagerFactory\:manager_macab\:access=system
+repository.CallerManagerFactory\:manager_macab\:value=de.janrufmonitor.repository.MacAddressBookManager
+repository.MacAddressBookManager\:enabled\:value=true
+repository.MacAddressBookManager\:enabled\:type=boolean
+repository.MacAddressBookManager\:priority\:value=5
+repository.MacAddressBookManager\:priority\:type=integer
+
+ui.jface.application.ActionRegistry\:action_editor_maccategoryimport\:value=de.janrufmonitor.ui.jface.application.editor.action.MacCategoryImportAction
+ui.jface.application.ActionRegistry\:action_editor_maccategoryimport\:access=system
+
++ui.jface.application.editor.Editor\:menu_actions\:value=editor_maccategoryimport,

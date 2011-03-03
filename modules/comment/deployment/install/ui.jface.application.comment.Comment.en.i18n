@@ -1,0 +1,53 @@
+ui.jface.application.comment.rendering.CommentDate\:name\:label\:en=Date
+ui.jface.application.comment.rendering.Comment\:name\:label\:en=Comments
+ui.jface.application.comment.rendering.Comment\:yes\:label\:en=Yes
+ui.jface.application.comment.rendering.CommentStatus\:name\:label\:en=Status
+ui.jface.application.comment.rendering.CommentSubject\:name\:label\:en=Subject
+
+ui.jface.application.comment.action.OldImportAction\:title\:label\:en=Import commnets from older version 3.3
+ui.jface.application.comment.action.OldImportAction\:import\:label\:en=Import from version 3.3x
+ui.jface.application.comment.action.OldImportAction\:dirtitle\:label\:en=Directory for comments from version 3.3x
+ui.jface.application.comment.action.OldImportAction\:nomigration\:label\:en=No comments for importing found.
+ui.jface.application.comment.action.OldImportAction\:migration\:label\:en=\ comments imported successfully.
+ui.jface.application.comment.action.OldImportAction\:dirtitle\:description\:en=Select the directory where the comments from version 3.3 are stored in.
+ui.jface.application.comment.action.ChangeAction\:title\:label\:en=Edit comment
+ui.jface.application.comment.action.ManageAction\:title\:label\:en=Manage comments...
+ui.jface.application.comment.action.ManageAction\:servicedisabled\:label\:en=Comment management not active.
+ui.jface.application.comment.action.ManageAction\:servicedisabled\:description\:en=Comments cannot be created due to fact, that the comment service is currently disabled. Goto Administration -> settings and enable the corresponding service.
+ui.jface.application.comment.action.DeleteAction\:title\:label\:en=Remove comment
+ui.jface.application.comment.action.DeleteAction\:delete\:label\:en=Remove comment for selected caller
+ui.jface.application.comment.action.DeleteAction\:delete\:description\:en=Do you really want to delete this comment for the selected caller?
+ui.jface.application.comment.action.ExportAction\:title\:label\:en=Export comment as text file
+ui.jface.application.comment.action.ExportAction\:export\:label\:en=Export comment as text file
+ui.jface.application.comment.action.ExportAction\:exportfilter\:label\:en=Text file (*.txt)
+ui.jface.application.comment.action.NewAction\:title\:label\:en=Create comment
+
+ui.jface.application.comment.action.PDFHistoryAction\:title\:label\:en=Save comments as PDF...
+ui.jface.application.comment.action.PDFHistoryAction\:pdf\:label\:en=Save comments as PDF
+ui.jface.application.comment.action.PDFHistoryAction\:pdffilter\:label\:en=Portable Document Format File (*.pdf)
+ui.jface.application.comment.action.PDFHistoryAction\:pdftitle\:label\:en=Comment history for
+ui.jface.application.comment.action.PDFHistoryAction\:pdfdate\:label\:en=Created on 
+ui.jface.application.comment.action.PDFHistoryAction\:pdfstatus\:label\:en=Status: 
+ui.jface.application.comment.action.PDFHistoryAction\:pdfsubject\:label\:en=
+ui.jface.application.comment.action.PDFHistoryAction\:pdffollowup\:label\:en=Marked for follow-up
+
+ui.jface.application.dialog.CommentDialogPlugin\:label\:label\:en=Comments...
+
+ui.jface.application.comment.Comment\:title\:label\:en=Comment management 
+ui.jface.application.comment.Comment\:view\:label\:en=View
+ui.jface.application.comment.Comment\:q\:label\:en=?
+ui.jface.application.comment.Comment\:label\:label\:en=Comments for last caller
+ui.jface.application.comment.Comment\:nocaller\:label\:en=No caller registered...
+ui.jface.application.comment.Comment\:nocaller\:description\:en=No callers where registered yet. You cann creat comments.
+ui.jface.application.comment.Comment\:clircaller\:label\:en=CLIR caller
+ui.jface.application.comment.Comment\:clircaller\:description\:en=You cannot create comments on CLIR callers. The last caller did not transfer his number.
+ui.jface.application.comment.Comment\:servicedisabled\:label\:en=Comment management not active.
+ui.jface.application.comment.Comment\:servicedisabled\:description\:en=Comments cannot be created due to fact, that the comment service is currently disabled. Goto Administration -> settings and enable the corresponding service.
+ui.jface.application.comment.Comment\:refreshprogress\:label\:en=Refreshing...
+
+ui.jface.dialogs.CommentDialog\:dialogtitle\:label\:en=Add/Edit comments
+ui.jface.dialogs.CommentDialog\:dialogtitle\:description\:en=Edit the text for this comment.
+ui.jface.dialogs.CommentDialog\:comments\:label\:en=This comment contains the following text: 
+ui.jface.dialogs.CommentDialog\:status\:label\:en=Current status: 
+ui.jface.dialogs.CommentDialog\:followup\:label\:en=Mark for follow-up
+ui.jface.dialogs.CommentDialog\:subject\:label\:en=Subject:

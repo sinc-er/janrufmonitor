@@ -1,0 +1,19 @@
+
+ui.jface.configuration.ConfigurationCommand\:page_cinfo\:value=de.janrufmonitor.ui.jface.configuration.pages.CapiInfo
+ui.jface.configuration.ConfigurationCommand\:page_cinfo\:access=system
+
+# added 4.5.0
+ui.jface.configuration.ConfigurationCommand\:page_cinfo\:mode=expert
+
+ui.jface.configuration.ConfigurationCommand\:page_ci\:value=de.janrufmonitor.ui.jface.configuration.pages.CapiSettings
+ui.jface.configuration.ConfigurationCommand\:page_ci\:access=system
+
+# added 4.5.0
+ui.jface.configuration.ConfigurationCommand\:page_ci\:mode=expert
+
+
+ui.jface.configuration.ConfigurationCommand\:page_basic\:value=de.janrufmonitor.ui.jface.configuration.pages.BasicIsdnSettings
+ui.jface.configuration.ConfigurationCommand\:page_basic\:access=system
+
+# added 4.5.0
+ui.jface.configuration.ConfigurationCommand\:page_basic\:mode=expert

@@ -1,0 +1,3 @@
+service.HibernateDetector\:hibernate\:label\:de=Der Ruhezustand des Betriebsystems (Hibernate Modus) hat die Anrufüberwachung unterbrochen. Die Überwachung wird jetzt neu gestartet...
+service.HibernateDetector\:label\:label\:de=Ruhezustand Erkennung
+service.HibernateDetector\:title\:label\:de=Ruhezustand Erkennung

@@ -1,0 +1,3 @@
+command.CommandFactory\:command_serverstatus\:value=de.janrufmonitor.application.console.command.ConsoleServerStatus
+command.CommandFactory\:command_serverstatus\:access=system
++application.Run\:commands\:value=serverstatus,

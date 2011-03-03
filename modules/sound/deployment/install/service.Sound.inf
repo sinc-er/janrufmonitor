@@ -1,0 +1,12 @@
+service.ServiceFactory\:service_sound\:access=system
+service.Sound\:list\:value=
+service.Sound\:default_soundfile\:value=%installpath%/sound.wav
+service.Sound\:default_soundfile\:type=file
+service.ServiceFactory\:service_sound\:value=de.janrufmonitor.service.sound.Sound
+service.Sound\:priority\:value=2
+service.Sound\:enabled\:value=false
+service.Sound\:priority\:type=integer
+service.Sound\:enabled\:type=boolean
+rules.RuleEngine\:Sound_rule\:value=Sound%*%*%true%*%*
+rules.RuleEngine\:usestandard\:value=false
+rules.RuleEngine\:usestandard\:type=boolean

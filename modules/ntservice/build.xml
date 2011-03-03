@@ -1,0 +1,59 @@
+<project name="jAnrufmonitor Module" default="bundle_module" basedir="../../">
+    <property name="jam.mod.short" value="ntservice" />
+    <property name="jam.mod.name" value="${jam.mod.short}" />
+
+    <property file="build.properties"/>
+    <property name="jam.mod.root" value="${jam.modules.root}/${jam.mod.short}"/>
+ 
+    <import file="../../${jam.modules.root}/build-modules.xml" /> 
+    
+    <target name="check_extlib" depends="build_kernel">
+       <condition property="do.sync.extlib" value="false">
+        <and>
+            <available file="${jam.modules.extlib}/wrapper.jar"/>
+        </and>
+      </condition>
+    </target>
+    
+    <target name="sync_extlib" depends="check_extlib" unless="do.sync.extlib">
+     <mkdir dir="${jam.modules.extlib}"/>
+     
+     <get dest="${jam.modules.extlib}">
+        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/modules/wrapper.jar"/> 
+     </get>
+  </target>
+
+    <target name="bundle_module" depends="module_compile" description="bundle the module source to jam.zip archives" >
+      <echo message="jAnrufmonitor module compile..."/>
+      
+      <property name="jam.dist.dir" value="${jam.dist.root}/${DSTAMP}"/>
+      <property name="jam.modules.dist.dir" value="${jam.dist.dir}/modules"/>
+      <property name="jam.dist.updates.dir" value="${jam.dist.dir}/descriptors"/>
+  
+      <mkdir dir="${jam.dist.updates.dir}"/>
+      <mkdir dir="${jam.modules.lib.dir}/${jam.mod.name}/lib"/>
+      
+      <copy todir="${jam.modules.lib.dir}/${jam.mod.name}" >
+          <fileset dir="${jam.mod.root}/deployment" includes="*.*, config/**"/>
+      </copy>
+      
+      <copy todir="${jam.modules.lib.dir}/${jam.mod.name}">
+        <fileset file="${jam.modules.extlib}/wrapper.jar"/>
+      </copy>
+      
+      <zip destfile="${jam.modules.lib.dir}/${jam.mod.name}/install/ntservice.init.jam.zip" excludes="*.*, config/**">
+        <fileset dir="${jam.mod.root}/deployment" excludes="*.*, config/**" />
+      </zip>
+
+      <jar jarfile="${jam.modules.lib.dir}/${jam.mod.name}/${jam.mod.name}.jar" basedir="${jam.modules.classes.dir}/${jam.mod.name}"/>
+
+      <mkdir dir="${jam.modules.dist.dir}/${jam.mod.name}"/>
+      <copy todir="${jam.modules.dist.dir}/${jam.mod.name}" >
+          <fileset dir="${jam.modules.lib.dir}/${jam.mod.name}"/>
+      </copy>
+      <move file="${jam.modules.dist.dir}/${jam.mod.name}/${jam.mod.name}.jar" tofile="${jam.modules.dist.dir}/${jam.mod.name}/jamservice.jar"/>
+      
+    </target>
+
+</project>
+

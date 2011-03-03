@@ -1,0 +1,4 @@
+ui.jface.wizards.pages.extapp.SelectMsnPage\:title\:label\:en=assign MSN
+ui.jface.wizards.pages.extapp.SelectMsnPage\:description\:label\:en=Choose a MSN (Multiple Subscriber Number) for which an application should be assigned\nOnly MSN maintained in the MSN Manager can be choosen.
+ui.jface.wizards.pages.extapp.SelectMsnPage\:name\:label\:en=Assign application to this MSN: 
+

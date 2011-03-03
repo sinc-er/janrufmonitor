@@ -1,0 +1,11 @@
+ui.jface.application.tracer.CallSimulator\:title\:label\:en=Call simulator
+ui.jface.application.tracer.CallSimulator\:label\:label\:en=Call simulator
+service.TrayIcon\:sub_component_admin_simulator\:label\:en=Call simulator
+ui.jface.application.tracer.CallSimulator\:simulategroup\:label\:en=Call simulation
+ui.jface.application.tracer.CallSimulator\:simulategroup\:description\:en=Simulates an incoming call with the data specified.
+ui.jface.application.tracer.CallSimulator\:number\:label\:en=Number
+ui.jface.application.tracer.CallSimulator\:msn\:label\:en=MSN
+ui.jface.application.tracer.CallSimulator\:cip\:label\:en=CIP
+ui.jface.application.tracer.CallSimulator\:sendbutton\:label\:en=Simulate ...
+ui.jface.application.tracer.CallSimulator\:clirbutton\:label\:en=clearing
+ui.jface.application.tracer.CallSimulator\:acceptbutton\:label\:en=accept

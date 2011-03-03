@@ -1,0 +1,27 @@
+ui.jface.application.gos.GosCommand\:label\:label\:de=Telefonauskunft Modul Assistent
+ui.jface.application.gos.GosCommand\:title\:label\:de=Telefonauskunft Modul Assistent
+ui.jface.application.gos.wizard.GosWizard\:title\:label\:de=Telefonauskunft Modul Assistent
+ui.jface.application.gos.wizard.pages.GosPage\:title\:label\:de=Neues Telefonauskunft Modul erstellen
+ui.jface.application.gos.wizard.pages.GosPage\:description\:label\:de=Erzeugt ein neues Telefonauskunft Modul, welches Anrufe im Internet mit einem Onlinedienst identifiziert.
+ui.jface.application.gos.wizard.pages.GosPage\:url\:label\:de=Abfrage-URL: 
+ui.jface.application.gos.wizard.pages.GosPage\:name\:label\:de=Name des Telefonauskunftsdienstes: 
+ui.jface.application.gos.wizard.pages.GosPage\:version\:label\:de=Modul-Version: 
+
+ui.jface.application.gos.wizard.pages.GosPage\:offset\:label\:de=Zeichen-Offset:
+ui.jface.application.gos.wizard.pages.GosPage\:lastname\:label\:de=Muster für Nachname:
+ui.jface.application.gos.wizard.pages.GosPage\:firstname\:label\:de=Muster für Vorname:
+ui.jface.application.gos.wizard.pages.GosPage\:street\:label\:de=Muster für Strasse:
+ui.jface.application.gos.wizard.pages.GosPage\:streetno\:label\:de=Muster für Hausnummer:
+ui.jface.application.gos.wizard.pages.GosPage\:postal\:label\:de=Muster für PLZ:
+ui.jface.application.gos.wizard.pages.GosPage\:city\:label\:de=Muster für Stadt:
+ui.jface.application.gos.wizard.pages.GosPage\:area\:label\:de=Muster für Vorwahl:
+ui.jface.application.gos.wizard.pages.GosPage\:number\:label\:de=Muster für Rufnummer:
+ui.jface.application.gos.wizard.pages.GosPage\:intarea\:label\:de=Ländercode:
+ui.jface.application.gos.wizard.pages.GosPage\:locale\:label\:de=Landessprache:
+ui.jface.application.gos.wizard.pages.GosPage\:testnumber\:label\:de=Rufnummer zum Testen eingeben: 
+ui.jface.application.gos.wizard.pages.GosPage\:test\:label\:de=Test durchführen
+ui.jface.application.gos.wizard.pages.GosPage\:notidentified\:label\:de=Die Rufnummer {%1} wurde nicht identifiziert. Entweder ist die Nummer nicht in dem Telefonauskunftsdienst eingetragen oder die angegebenen Erkennungsmuster sind falsch.
+
+ui.jface.application.gos.wizard.pages.GosPage\:dname\:label\:de=Ablage-Verzeichnis für neues Telefonauskunft Modul
+ui.jface.application.gos.wizard.pages.GosPage\:dlabel\:label\:de=Verzeichnis für neues Telefonauskunft Modul
+ui.jface.application.gos.wizard.pages.GosPage\:dmessage\:label\:de=Wählen Sie ein Ablage-Verzeichnis für das neues Telefonauskunft Modul

@@ -1,0 +1,3 @@
+repository.HtmlFileCallExporter\:filtername\:label\:en=HTML file (*.html)
+repository.XmlFileCallExporter\:filtername\:label\:en=XML journal file (*.xml)
+repository.XmlFileCallImporter\:filtername\:label\:en=XML journal file (*.xml)

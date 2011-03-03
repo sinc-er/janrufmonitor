@@ -1,0 +1,6 @@
+repository.ImExportFactory\:export_htmlfile\:value=de.janrufmonitor.repository.imexporter.HtmlFileCallExporter
+repository.ImExportFactory\:export_htmlfile\:access=system
+repository.ImExportFactory\:export_xmlfile\:value=de.janrufmonitor.repository.imexporter.XmlFileCallExporter
+repository.ImExportFactory\:export_xmlfile\:access=system
+repository.ImExportFactory\:import_xmlimpfile\:value=de.janrufmonitor.repository.imexporter.XmlFileCallImporter
+repository.ImExportFactory\:import_xmlimpfile\:access=system

@@ -1,0 +1,2 @@
+service.MySQLCallEventLogger\:title\:label\:en=MySQL call event monitor
+service.MySQLCallEventLogger\:connecterror\:label\:en=Connection to MySQL server could not be established. Please check the connection settings.

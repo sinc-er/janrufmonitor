@@ -1,0 +1,10 @@
+ui.jface.configuration.pages.LdapRepository\:title\:label\:en=LDAP based address book
+ui.jface.configuration.pages.LdapRepository\:description\:label\:en=LDAP based address book identifies calls with contacts from an LDAP directory.
+ui.jface.configuration.pages.LdapRepository\:enabled\:label\:en=Repository enabled
+ui.jface.configuration.pages.LdapRepository\:user\:label\:en=LDAP user:
+ui.jface.configuration.pages.LdapRepository\:password\:label\:en=LDAP password: 
+ui.jface.configuration.pages.LdapRepository\:keepextension\:label\:en=Keep extension number if present
+ui.jface.configuration.pages.LdapRepository\:server\:label\:en=LDAP server:
+ui.jface.configuration.pages.LdapRepository\:port\:label\:en=LDAP port:
+ui.jface.configuration.pages.LdapRepository\:basedn\:label\:en=base DN:
+ui.jface.configuration.pages.LdapRepository\:maxresults\:label\:en=max. number of LDAP entries:

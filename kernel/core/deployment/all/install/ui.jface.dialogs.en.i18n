@@ -1,0 +1,31 @@
+ui.jface.dialogs.DialogPropagator\:title\:label\:en=Report-Dialogue
+ui.jface.dialogs.DialogPropagator\:error\:label\:en=jAnrufmonitor - Error
+ui.jface.dialogs.DialogPropagator\:warning\:label\:en=jAnrufmonitor - Warning
+ui.jface.dialogs.DialogPropagator\:info\:label\:en=jAnrufmonitor - Information
+ui.jface.dialogs.DialogPropagator\:togglemessage\:label\:en=Don't show the message in the future.
+ui.jface.dialogs.DialogPropagator\:readmore\:label\:en=More infromation on this error can be found on the Internet...
+
+ui.jface.dialogs.InfoDialog\:label\:label\:en=Info...
+ui.jface.dialogs.InfoDialog\:dialogtitle\:label\:en=jAnrufmonitor - 
+ui.jface.dialogs.InfoDialog\:dialogtitle\:description\:en=\       knowing, who is calling ...
+ui.jface.dialogs.InfoDialog\:license\:label\:en=Lisence: 
+ui.jface.dialogs.InfoDialog\:freeware\:label\:en=Freeware
+ui.jface.dialogs.InfoDialog\:version\:label\:en=Version: 
+ui.jface.dialogs.InfoDialog\:build\:label\:en=Build: 
+ui.jface.dialogs.InfoDialog\:homepage\:label\:en=Web-Site: 
+ui.jface.dialogs.InfoDialog\:mail\:label\:en=Mail contact:
+ui.jface.dialogs.InfoDialog\:donation\:label\:en=Donate via PayPal: 
+ui.jface.dialogs.InfoDialog\:rkey\:label\:en=Registered: 
+
+ui.jface.dialogs.InstallPropagator\:title\:label\:en=Report dialogue
+ui.jface.dialogs.InstallPropagator\:error\:label\:en=jAnrufmonitor - Error
+ui.jface.dialogs.InstallPropagator\:warning\:label\:en=jAnrufmonitor - Warning
+ui.jface.dialogs.InstallPropagator\:info\:label\:en=jAnrufmonitor - Information
+ui.jface.dialogs.InstallPropagator\:unknown\:label\:en=An unknown error has occured. More details on this error were logged in the janrufmonitor-0.log.
+
+ui.jface.dialogs.DonationDialog\:label\:label\:en=Your support
+ui.jface.dialogs.DonationDialog\:dialogtitle\:label\:en=Satisfied with jAnrufmonitor?
+ui.jface.dialogs.DonationDialog\:dialogtitle\:description\:en=\       Support our development with a donation!
+ui.jface.dialogs.DonationDialog\:disclaimer\:label\:en=You are using jAnrufmonitor for quite a while. Are you satisfied with this program?\nIf yes, then go and support our development by donating. If you have question regarding this\nprogram or if you have issues while using it, feel free to contact the jAnrufmonitor Community\n(www.janrufmonitor.de/community).
+ui.jface.dialogs.DonationDialog\:donate\:label\:en=Donate!
+ui.jface.dialogs.DonationDialog\:nondonate\:label\:en=Donate later

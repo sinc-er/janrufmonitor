@@ -1,0 +1,98 @@
+command.CommandFactory\:command_jface_config\:value=de.janrufmonitor.ui.jface.configuration.ConfigurationCommand
+command.CommandFactory\:command_jface_config\:access=system
+service.TrayIcon\:sub_component_admin_jface_config\:value=ConfigurationCommand
+service.TrayIcon\:sub_component_admin_jface_config\:position=1
+service.TrayIcon\:sub_component_admin_jface_config\:access=system
+
+ui.jface.configuration.ConfigurationCommand\:page_advanced\:value=de.janrufmonitor.ui.jface.configuration.pages.Advanced
+ui.jface.configuration.ConfigurationCommand\:page_advanced\:access=system
+
+# added 4.5.0
+ui.jface.configuration.ConfigurationCommand\:page_advanced\:mode=expert
+
+ui.jface.configuration.ConfigurationCommand\:page_autoupdate\:value=de.janrufmonitor.ui.jface.configuration.pages.AutoUpdate
+ui.jface.configuration.ConfigurationCommand\:page_autoupdate\:access=system
+ui.jface.configuration.ConfigurationCommand\:page_autoupdate\:mode=expert
+
+ui.jface.configuration.ConfigurationCommand\:page_standard\:value=de.janrufmonitor.ui.jface.configuration.pages.BasicSettings
+ui.jface.configuration.ConfigurationCommand\:page_standard\:access=system
+
+ui.jface.configuration.ConfigurationCommand\:page_callers\:value=de.janrufmonitor.ui.jface.configuration.pages.Caller
+ui.jface.configuration.ConfigurationCommand\:page_callers\:access=system
+
+ui.jface.configuration.ConfigurationCommand\:page_cdir\:value=de.janrufmonitor.ui.jface.configuration.pages.CallerDirectory
+ui.jface.configuration.ConfigurationCommand\:page_cdir\:access=system
+
+
+ui.jface.configuration.ConfigurationCommand\:page_djournal\:value=de.janrufmonitor.ui.jface.configuration.pages.DefaultJournal
+ui.jface.configuration.ConfigurationCommand\:page_djournal\:access=system
+
+ui.jface.configuration.ConfigurationCommand\:page_dialog\:value=de.janrufmonitor.ui.jface.configuration.pages.Dialog
+ui.jface.configuration.ConfigurationCommand\:page_dialog\:access=system
+
+ui.jface.configuration.ConfigurationCommand\:page_info\:value=de.janrufmonitor.ui.jface.configuration.pages.Info
+ui.jface.configuration.ConfigurationCommand\:page_info\:access=system
+
+ui.jface.configuration.ConfigurationCommand\:page_journal\:value=de.janrufmonitor.ui.jface.configuration.pages.Journal
+ui.jface.configuration.ConfigurationCommand\:page_journal\:access=system
+
+
+# added 4.5.0
+-ui.jface.configuration.ConfigurationCommand\:page_journaling\:value=de.janrufmonitor.ui.jface.configuration.pages.Journaling
+-ui.jface.configuration.ConfigurationCommand\:page_journaling\:access=system
+
+ui.jface.configuration.ConfigurationCommand\:page_mm\:value=de.janrufmonitor.ui.jface.configuration.pages.ModuleManager
+ui.jface.configuration.ConfigurationCommand\:page_mm\:access=system
+
+# added 4.5.0
+ui.jface.configuration.ConfigurationCommand\:page_mm\:mode=expert
+
+ui.jface.configuration.ConfigurationCommand\:page_msn\:value=de.janrufmonitor.ui.jface.configuration.pages.MsnManager
+ui.jface.configuration.ConfigurationCommand\:page_msn\:access=system
+
+ui.jface.configuration.ConfigurationCommand\:page_ra\:value=de.janrufmonitor.ui.jface.configuration.pages.RuleAssistent
+ui.jface.configuration.ConfigurationCommand\:page_ra\:access=system
+
+# added 4.5.0
+ui.jface.configuration.ConfigurationCommand\:page_ra\:mode=expert
+
+ui.jface.configuration.ConfigurationCommand\:page_services\:value=de.janrufmonitor.ui.jface.configuration.pages.Services
+ui.jface.configuration.ConfigurationCommand\:page_services\:access=system
+
+# added 4.5.0
+ui.jface.configuration.ConfigurationCommand\:page_ts\:mode=expert
+
+ui.jface.configuration.ConfigurationCommand\:page_em\:value=de.janrufmonitor.ui.jface.configuration.pages.ExpertMode
+ui.jface.configuration.ConfigurationCommand\:page_em\:access=system
+
+ui.jface.configuration.ConfigurationCommand\:page_wc\:value=de.janrufmonitor.ui.jface.configuration.pages.Wildcards
+ui.jface.configuration.ConfigurationCommand\:page_wc\:access=system
+
+# added 4.5.0
+ui.jface.configuration.ConfigurationCommand\:page_wc\:mode=expert
+
+ui.jface.configuration.ConfigurationCommand\:page_language\:value=de.janrufmonitor.ui.jface.configuration.pages.Language
+ui.jface.configuration.ConfigurationCommand\:page_language\:access=system
+
+# added 4.5.0
+ui.jface.configuration.ConfigurationCommand\:page_language\:mode=expert
+
+# added 4.5.8
+ui.jface.configuration.ConfigurationCommand\:page_configexport\:value=de.janrufmonitor.ui.jface.configuration.pages.ConfigExport
+ui.jface.configuration.ConfigurationCommand\:page_configexport\:access=system
+ui.jface.configuration.ConfigurationCommand\:page_configexport\:mode=expert
+
+# added 5.0.13
+ui.jface.configuration.ConfigurationCommand\:page_jarchive\:value=de.janrufmonitor.ui.jface.configuration.pages.ArchiveJournal
+ui.jface.configuration.ConfigurationCommand\:page_jarchive\:access=system
+
+# added 5.0.15
+ui.jface.configuration.ConfigurationCommand\:page_numsettings\:value=de.janrufmonitor.ui.jface.configuration.pages.NumberSettings
+ui.jface.configuration.ConfigurationCommand\:page_numsettings\:access=system
+-ui.jface.configuration.ConfigurationCommand\:page_ts\:value=de.janrufmonitor.ui.jface.configuration.pages.TelephoneSystem
+-ui.jface.configuration.ConfigurationCommand\:page_ts\:access=system
+
+# added 5.0.22
+ui.jface.configuration.ConfigurationCommand\:page_geo\:value=de.janrufmonitor.ui.jface.configuration.pages.GeoCoding
+ui.jface.configuration.ConfigurationCommand\:page_geo\:access=system
+ui.jface.configuration.ConfigurationCommand\:page_geo\:mode=expert

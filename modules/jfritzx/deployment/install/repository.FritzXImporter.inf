@@ -1,0 +1,7 @@
+repository.FritzXCallImporter\:info\:value=Importfilter für Fritz!X Anrufliste
+repository.ImExportFactory\:import_fritzxfile\:value=de.janrufmonitor.repository.imexporter.FritzXCallImporter
+repository.ImExportFactory\:import_fritzxfile\:access=system
+repository.FritzXCallImporter2\:info\:value=Importfilter für Fritz!X Anrufliste (ausgehende Anrufe)
+repository.ImExportFactory\:import_fritzxfile2\:value=de.janrufmonitor.repository.imexporter.FritzXCallImporter2
+repository.ImExportFactory\:import_fritzxfile2\:access=system
+

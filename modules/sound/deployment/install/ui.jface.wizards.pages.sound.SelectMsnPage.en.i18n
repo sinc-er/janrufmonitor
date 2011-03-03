@@ -1,0 +1,4 @@
+ui.jface.wizards.pages.sound.SelectMsnPage\:title\:label\:en=Assign MSN
+ui.jface.wizards.pages.sound.SelectMsnPage\:description\:label\:en=Choos a MSN (Multiple Subscriber Number) for which a sound file should be assigned.
+ui.jface.wizards.pages.sound.SelectMsnPage\:name\:label\:en=Assign sound file for MSN: 
+

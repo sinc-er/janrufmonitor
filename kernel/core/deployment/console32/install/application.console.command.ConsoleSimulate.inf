@@ -1,0 +1,2 @@
+command.CommandFactory\:command_simulate\:value=de.janrufmonitor.application.console.command.ConsoleSimulate
+command.CommandFactory\:command_simulate\:access=system

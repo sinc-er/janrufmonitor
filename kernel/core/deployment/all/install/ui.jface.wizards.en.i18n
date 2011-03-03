@@ -1,0 +1,273 @@
+ui.jface.wizards.CallerWizard\:title\:label\:en=Create/Edit contact
+ui.jface.wizards.CallerWizard\:title2\:label\:en=Show contact
+
+ui.jface.wizards.EditorFilterWizard\:title\:label\:en=Create/Edit filter
+
+ui.jface.wizards.EditorCategoryWizard\:title\:label\:en=Manage categories
+
+ui.jface.wizards.FilterWizard\:title\:label\:en=Create/Edit filter
+
+ui.jface.wizards.JournalCallerWizard\:title\:label\:en=Change contact information
+
+ui.jface.wizards.MsnWizard\:title\:label\:en=Create/Edit MSN
+
+ui.jface.wizards.RuleWizard\:title\:label\:en=Create/Edit rule
+
+ui.jface.wizards.CallerCombineWizard\:title\:label\:en=Combine contacts...
+
+ui.jface.wizards.UpdateWizard\:title\:label\:en=Updates...
+ui.jface.wizards.UpdateWizard\:success\:label\:en=Update successfully finished.
+ui.jface.wizards.UpdateWizard\:success\:description\:en=Update successfully finished. Changes take effect after restart.
+ui.jface.wizards.UpdateWizard\:updates\:label\:en=Downloading and installing selected updates...
+ui.jface.wizards.UpdateWizard\:install\:label\:en=Installed Modules: 
+ui.jface.wizards.UpdateWizard\:moreupdates\:label\:en=Further updates available...
+ui.jface.wizards.UpdateWizard\:moreupdates\:description\:en=Further updates were detected which can only be downloaded and installed after a restart.
+
+#pages
+ui.jface.wizards.pages.CallerCombinePage\:title\:label\:en=Combine contacts...
+ui.jface.wizards.pages.CallerCombinePage\:description\:label\:en=Combine contacts to  minimize duplicates in the contact list.
+ui.jface.wizards.pages.CallerCombinePage\:name\:label\:en=Choose the contact data to keep:
+ui.jface.wizards.pages.CallerPage\:phonegroup\:label\:en=Number details
+ui.jface.wizards.pages.CallerPage\:intarea\:label\:en=Country code: 
+ui.jface.wizards.pages.CallerPage\:area\:label\:en=Area code: 
+ui.jface.wizards.pages.CallerPage\:number\:label\:en=Number:  
+ui.jface.wizards.pages.CallerPage\:numbererror\:label\:en=The number is invalid. Only digits are allowed.  
+ui.jface.wizards.pages.CallerPage\:areaerror\:label\:en=Area code is invalid. Area codes must not start with 0 and should have not more than 8 digits.
+ui.jface.wizards.pages.CallerPage\:intareaerror\:label\:en=Country code is invalid. Country codes must not start with 0 and should have not more than 4 digits. Special characters are not allowed.
+ui.jface.wizards.pages.CallerPage\:internal\:label\:en=Number is internal telephone system number
+ui.jface.wizards.pages.CallerPage\:internalerror\:label\:en=Internal telephone system numbers must at least have 1 digit.
+ui.jface.wizards.pages.CallerPage\:preview\:label\:en=Preview: 
+ui.jface.wizards.pages.CallerPage\:title\:label\:en=Address book entry...
+ui.jface.wizards.pages.CallerPage\:callergroup\:label\:en=Contact details
+ui.jface.wizards.pages.CallerPage\:description\:label\:en=Enter the contact informationn which should be dísplayed after successful identification.
+ui.jface.wizards.pages.CallerPage\:lastnameerror\:label\:en=The field firstname and lastname must not be empty.
+ui.jface.wizards.pages.CallerPage\:firstname\:label\:en=Firstname: 
+ui.jface.wizards.pages.CallerPage\:lastname\:label\:en=Lastname: 
+ui.jface.wizards.pages.CallerPage\:additional\:label\:en=Additional:  
+ui.jface.wizards.pages.CallerPage\:select\:label\:en=Select an image for this contact 
+ui.jface.wizards.pages.CallerPage\:remove\:label\:en=Remove image
+ui.jface.wizards.pages.CallerPage\:cis\:label\:en=Manage image
+ui.jface.wizards.pages.CallerPage\:pixel\:label\:en=Format: max. 90 x 110 Pixel
+ui.jface.wizards.pages.CallerPage\:imageerror\:label\:en=The assigned image file was not found on the filesystem. It will automtically be removed.
+ui.jface.wizards.pages.CallerPage\:tooltipprefix\:label\:en=Placeholder: 
+ui.jface.wizards.pages.CallerPage\:street\:label\:en=Street:
+ui.jface.wizards.pages.CallerPage\:streetno\:label\:en=house number:
+ui.jface.wizards.pages.CallerPage\:postalcode\:label\:en=Postal code:
+ui.jface.wizards.pages.CallerPage\:city2\:label\:en=City:
+ui.jface.wizards.pages.CallerPage\:country\:label\:en=Country:
+ui.jface.wizards.pages.CallerPage\:addressgroup\:label\:en=Address
+ui.jface.wizards.pages.CallerPage\:reject\:label\:en=Reject this caller automatically.
+ui.jface.wizards.pages.CallerPage\:categorygroup\:label\:en=Category
+ui.jface.wizards.pages.CallerPage\:std_phone\:label\:en=Number 
+ui.jface.wizards.pages.CallerPage\:add_phone\:label\:en=Add number
+ui.jface.wizards.pages.CallerPage\:remove_phone\:label\:en=Remove number
+
+ui.jface.wizards.pages.CallerPage\:fn\:label\:en=Firstname
+ui.jface.wizards.pages.CallerPage\:ln\:label\:en=Lastname
+ui.jface.wizards.pages.CallerPage\:add\:label\:en=Additional
+ui.jface.wizards.pages.CallerPage\:str\:label\:en=Street
+ui.jface.wizards.pages.CallerPage\:no\:label\:en=no
+ui.jface.wizards.pages.CallerPage\:pcode\:label\:en=Postal code
+ui.jface.wizards.pages.CallerPage\:city\:label\:en=City
+ui.jface.wizards.pages.CallerPage\:cntry\:label\:en=Country
+
+
+ui.jface.wizards.pages.EditorCategoryPage\:title\:label\:en=Create/Edit categories
+ui.jface.wizards.pages.EditorCategoryPage\:description\:label\:en=Specify the name of your category. The name is limited to 128 characters.
+ui.jface.wizards.pages.EditorCategoryPage\:category\:label\:en=Category: 
+
+ui.jface.wizards.pages.EditorFilterPhonePage\:title\:label\:en=Filter country code and area code
+ui.jface.wizards.pages.EditorFilterPhonePage\:description\:label\:en=Specify a counrtry code and/or area code for filtering.
+ui.jface.wizards.pages.EditorFilterPhonePage\:intarea\:label\:en=Country code: 
+ui.jface.wizards.pages.EditorFilterPhonePage\:area\:label\:en=Area code: 
+ui.jface.wizards.pages.EditorFilterPhonePage\:areaerror\:label\:en=Area code is invalid. Area codes must not start with 0 and should have not more than 8 digits.
+ui.jface.wizards.pages.EditorFilterPhonePage\:intareaerror\:label\:en=Country code is invalid. Country codes must not start with 0 and should have not more than 4 digits. Special characters are not allowed.
+ui.jface.wizards.pages.EditorFilterPhonePage\:internal\:label\:en=Number is internal telephone system number
+ui.jface.wizards.pages.EditorFilterPhonePage\:internalerror\:label\:en=Internal telephone system numbers must at least have 1 digit.
+
+ui.jface.wizards.pages.FilterCipPage\:title\:label\:en=Define CIP
+ui.jface.wizards.pages.FilterCipPage\:description\:label\:en=Select a CIP for filtering.
+ui.jface.wizards.pages.FilterCipPage\:name\:label\:en=Apply filter on following CIPs: 
+ui.jface.wizards.pages.FilterCipPage\:*\:label\:en=All CIPs
+
+ui.jface.wizards.pages.FilterDatePage\:title\:label\:en=Define periode
+ui.jface.wizards.pages.FilterDatePage\:description\:label\:en=Select a periode this filter is applied on.
+ui.jface.wizards.pages.FilterDatePage\:name\:label\:en=User-defined period 
+ui.jface.wizards.pages.FilterDatePage\:*\:label\:en=no period limit
+ui.jface.wizards.pages.FilterDatePage\:from\:label\:en=From: 
+ui.jface.wizards.pages.FilterDatePage\:to\:label\:en=To: 
+ui.jface.wizards.pages.FilterDatePage\:current\:label\:en=until today
+ui.jface.wizards.pages.FilterDatePage\:times\:label\:en=periods:
+ui.jface.wizards.pages.FilterDatePage\:0\:label\:en= 
+ui.jface.wizards.pages.FilterDatePage\:-100\:label\:en=today
+ui.jface.wizards.pages.FilterDatePage\:-101\:label\:en=yesterday
+ui.jface.wizards.pages.FilterDatePage\:-107\:label\:en=this week
+ui.jface.wizards.pages.FilterDatePage\:-108\:label\:en=last week
+ui.jface.wizards.pages.FilterDatePage\:-130\:label\:en=this month
+ui.jface.wizards.pages.FilterDatePage\:-131\:label\:en=last month
+ui.jface.wizards.pages.FilterDatePage\:1\:label\:en=last 24 hours
+ui.jface.wizards.pages.FilterDatePage\:7\:label\:en=last 7 days
+ui.jface.wizards.pages.FilterDatePage\:14\:label\:en=last 14 days
+ui.jface.wizards.pages.FilterDatePage\:30\:label\:en=last 30 days
+ui.jface.wizards.pages.FilterDatePage\:90\:label\:en=last 3 months
+ui.jface.wizards.pages.FilterDatePage\:365\:label\:en=last 12 months
+
+ui.jface.wizards.pages.FilterMsnPage\:title\:label\:en=Define MSN
+ui.jface.wizards.pages.FilterMsnPage\:description\:label\:en=Select a MSN for filtering.
+ui.jface.wizards.pages.FilterMsnPage\:name\:label\:en=Apply filter on following MSNs: 
+ui.jface.wizards.pages.FilterMsnPage\:*\:label\:en=All MSNs
+
+ui.jface.wizards.pages.FilterItemCountPage\:title\:label\:en=Limit number of entries
+ui.jface.wizards.pages.FilterItemCountPage\:description\:label\:en=Choose the maximum number of entries which should be rendered.
+ui.jface.wizards.pages.FilterItemCountPage\:name\:label\:en=Max # of entries: 
+ui.jface.wizards.pages.FilterItemCountPage\:-1\:label\:en=unlimited
+
+ui.jface.wizards.pages.FilterCallTypePage\:title\:label\:en=Call types
+ui.jface.wizards.pages.FilterCallTypePage\:description\:label\:en=Select the call types on which this filter is applied on.
+ui.jface.wizards.pages.FilterCallTypePage\:*\:label\:en=All call types
+ui.jface.wizards.pages.FilterCallTypePage\:rejected\:label\:en=rejected calls
+ui.jface.wizards.pages.FilterCallTypePage\:accepted\:label\:en=accepted calls
+ui.jface.wizards.pages.FilterCallTypePage\:outgoing\:label\:en=outgoing calls
+ui.jface.wizards.pages.FilterCallTypePage\:missed\:label\:en=missed calls
+
+ui.jface.wizards.pages.FilterPhonesPage\:title\:label\:en=Define number
+ui.jface.wizards.pages.FilterPhonesPage\:description\:label\:en=Select the numbers on which this filter is applied on. Numbers must be maintained in the address book.
+ui.jface.wizards.pages.FilterPhonesPage\:selectedphones\:label\:en=Apply filter on these mubers: 
+ui.jface.wizards.pages.FilterPhonesPage\:allphones\:label\:en=Available numbers: 
+ui.jface.wizards.pages.FilterPhonesPage\:*\:label\:en=Apply filter on all numbers
+ui.jface.wizards.pages.FilterPhonesPage\:clir\:label\:en=CLIR caller
+ui.jface.wizards.pages.FilterPhonesPage\:add\:label\:en=\ > 
+ui.jface.wizards.pages.FilterPhonesPage\:remove\:label\:en=\ < 
+
+ui.jface.wizards.pages.MsnPage\:title\:label\:en=Multiple Subscriber Number (MSN)
+ui.jface.wizards.pages.MsnPage\:description\:label\:en=enter your MSN and specify a display label.
+ui.jface.wizards.pages.MsnPage\:msnerror\:label\:en=Multiple Subscriber Number (MSN) field is invalid.
+ui.jface.wizards.pages.MsnPage\:adderror\:label\:en=Label field is invalid.
+ui.jface.wizards.pages.MsnPage\:msn\:label\:en=Multiple Subscriber Number (MSN): 
+ui.jface.wizards.pages.MsnPage\:additional\:label\:en=Label:  
+
+ui.jface.wizards.pages.RuleCipPage\:title\:label\:en=Define CIP
+ui.jface.wizards.pages.RuleCipPage\:description\:label\:en=Select a CIP for filtering.
+ui.jface.wizards.pages.RuleCipPage\:name\:label\:en=Apply rule on following CIPs: 
+ui.jface.wizards.pages.RuleCipPage\:*\:label\:en=All CIPs
+
+ui.jface.wizards.pages.RuleExPhonesPage\:title\:label\:en=Exclude numbers
+ui.jface.wizards.pages.RuleExPhonesPage\:description\:label\:en=Select the numbers which should be excluded. Numbers must be maintained in the address book.
+ui.jface.wizards.pages.RuleExPhonesPage\:selectedphones\:label\:en=Ignore rule on these numbers: 
+ui.jface.wizards.pages.RuleExPhonesPage\:allphones\:label\:en=Available numbers: 
+ui.jface.wizards.pages.RuleExPhonesPage\:*\:label\:en=Don't ignore any number
+ui.jface.wizards.pages.RuleExPhonesPage\:clir\:label\:en=CLIR caller
+ui.jface.wizards.pages.RuleExPhonesPage\:internal\:label\:en=internal caller
+ui.jface.wizards.pages.RuleExPhonesPage\:add\:label\:en=\ > 
+ui.jface.wizards.pages.RuleExPhonesPage\:remove\:label\:en=\ < 
+
+ui.jface.wizards.pages.RuleMsnPage\:title\:label\:en=Define MSN
+ui.jface.wizards.pages.RuleMsnPage\:description\:label\:en=Select a MSN which should be applied for this rule.
+ui.jface.wizards.pages.RuleMsnPage\:name\:label\:en=Apply rule on the following MSNs: 
+ui.jface.wizards.pages.RuleMsnPage\:*\:label\:en=All MSNs
+
+ui.jface.wizards.pages.RuleNamePage\:title\:label\:en=Define rules
+ui.jface.wizards.pages.RuleNamePage\:description\:label\:en=Secify a unique rule name.
+ui.jface.wizards.pages.RuleNamePage\:name\:label\:en=Rule name: 
+ui.jface.wizards.pages.RuleNamePage\:nameerror\:label\:en=A rule name must at east have 1 character.
+
+ui.jface.wizards.pages.RulePhonesPage\:title\:label\:en=Define number
+ui.jface.wizards.pages.RulePhonesPage\:description\:label\:en=Select the number on which this rule is apllied on.
+ui.jface.wizards.pages.RulePhonesPage\:selectedphones\:label\:en=Apply rule on these numbers: 
+ui.jface.wizards.pages.RulePhonesPage\:allphones\:label\:en=Available numbers: 
+ui.jface.wizards.pages.RulePhonesPage\:*\:label\:en=Apply rule on any number
+ui.jface.wizards.pages.RulePhonesPage\:clir\:label\:en=CLIR caller
+ui.jface.wizards.pages.RulePhonesPage\:internal\:label\:en=internal caller
+ui.jface.wizards.pages.RulePhonesPage\:add\:label\:en=\ > 
+ui.jface.wizards.pages.RulePhonesPage\:remove\:label\:en=\ < 
+
+ui.jface.wizards.pages.RuleServicePage\:title\:label\:en=Define service
+ui.jface.wizards.pages.RuleServicePage\:description\:label\:en=Select a service this rule is apllied on.
+ui.jface.wizards.pages.RuleServicePage\:name\:label\:en=Apply rule on following service: 
+ui.jface.wizards.pages.RuleServicePage\:nameerror\:label\:en=Services must at least have 1 character. 
+
+
+ui.jface.wizards.pages.RuleTimeslotPage\:title\:label\:en=Define period
+ui.jface.wizards.pages.RuleTimeslotPage\:description\:label\:en=Select a period for this rule.
+ui.jface.wizards.pages.RuleTimeslotPage\:name\:label\:en=Apply rule on following period: 
+ui.jface.wizards.pages.RuleTimeslotPage\:tserror\:label\:en=Select at least 1 day.
+ui.jface.wizards.pages.RuleTimeslotPage\:timeslotactive\:label\:en=Apply rule on any period
+ui.jface.wizards.pages.RuleTimeslotPage\:sunday\:label\:en=Sunday
+ui.jface.wizards.pages.RuleTimeslotPage\:monday\:label\:en=Monday
+ui.jface.wizards.pages.RuleTimeslotPage\:tuesday\:label\:en=Tuesday
+ui.jface.wizards.pages.RuleTimeslotPage\:wednesday\:label\:en=Wednesday
+ui.jface.wizards.pages.RuleTimeslotPage\:thursday\:label\:en=Thursday
+ui.jface.wizards.pages.RuleTimeslotPage\:friday\:label\:en=Friday
+ui.jface.wizards.pages.RuleTimeslotPage\:saturday\:label\:en=Saturday
+ui.jface.wizards.pages.RuleTimeslotPage\:from\:label\:en=Start-Time
+ui.jface.wizards.pages.RuleTimeslotPage\:to\:label\:en=End-Time
+ui.jface.wizards.pages.RuleTimeslotPage\:toerror\:label\:en=End-Time has not the valid format 01:23
+ui.jface.wizards.pages.RuleTimeslotPage\:fromerror\:label\:en=Start-Time has not the valid format 01:23
+ui.jface.wizards.pages.RuleTimeslotPage\:startenderror\:label\:en=Invalid period. end-Time is before Start-Time.
+
+ui.jface.wizards.pages.UpdatesPage\:title\:label\:en=Current updates...
+ui.jface.wizards.pages.UpdatesPage\:description\:label\:en=Keep jAnrufmonitor always up-to-date and install the latest\nversions and modules.
+ui.jface.wizards.pages.UpdatesPage\:updates\:label\:en=Available updates
+ui.jface.wizards.pages.UpdatesPage\:updates\:description\:en=Select all installable Updates and press finish. All updated get installed automatically.
+ui.jface.wizards.pages.UpdatesPage\:refresh\:label\:en=Updating...
+ui.jface.wizards.pages.UpdatesPage\:noupdates\:label\:en=No updates available.
+ui.jface.wizards.pages.UpdatesPage\:task\:label\:en=Retrieving list with latest updates...
+ui.jface.wizards.pages.UpdatesPage\:modname\:label\:en=Module
+ui.jface.wizards.pages.UpdatesPage\:newversion\:label\:en=new
+ui.jface.wizards.pages.UpdatesPage\:currentversion\:label\:en=current
+
+
+# added 4.5.5
+
+ui.jface.wizards.InitializerWizard\:title\:label\:en=Configuration wizard
+ui.jface.wizards.InitializerWizard\:changeudpath\:label\:en=Changing location for user data...
+ui.jface.wizards.InitializerWizard\:msnsave\:label\:en=Saving MSN settings...
+ui.jface.wizards.InitializerWizard\:numberformat\:label\:en=Saving number format settings...
+ui.jface.wizards.InitializerWizard\:areacode\:label\:en=Saving area code settings...
+ui.jface.wizards.InitializerWizard\:finalize\:label\:en=Finalizing configuration...
+ui.jface.wizards.pages.InitWelcomePage\:title\:label\:en=Welcome...
+ui.jface.wizards.pages.InitWelcomePage\:description\:label\:en=Welcome to jAnrufmonitor!
+ui.jface.wizards.pages.InitWelcomePage\:welcome\:label\:en=Welcome to jAnrufmonitor!\n\nThanks for choosing jAnrufmonitor. A valid configuration is now being\ndetermined for your system. Some configuration data is detected by the operating\nsystem, other settings must be entered via keyboard. Please fill in\nall required data requested by this wizard.
+
+ui.jface.wizards.pages.InitDataPathPage\:title\:label\:en=Location for user data
+ui.jface.wizards.pages.InitDataPathPage\:message\:label\:en=The location for user data can be selected by your choice.
+ui.jface.wizards.pages.InitDataPathPage\:description\:label\:en=Choose a directory for storing user data like address books or journals.
+ui.jface.wizards.pages.InitDataPathPage\:label\:label\:en=Directory for user data
+ui.jface.wizards.pages.InitDataPathPage\:name\:label\:en=Choose diretory for user data
+
+ui.jface.wizards.pages.InitMsnPage\:title\:label\:en=Define MSNs...
+ui.jface.wizards.pages.InitMsnPage\:description\:label\:en=All managed MSNs (Multiple Subscriber Number) can be assigned with a label, which is used for identification purposes.
+ui.jface.wizards.pages.InitMsnPage\:msn\:label\:en=MSN
+ui.jface.wizards.pages.InitMsnPage\:alias\:label\:en=Label
+ui.jface.wizards.pages.InitMsnPage\:addmsn\:label\:en=new
+ui.jface.wizards.pages.InitMsnPage\:editmsn\:label\:en=change
+ui.jface.wizards.pages.InitMsnPage\:removemsn\:label\:en=remove
+ui.jface.wizards.pages.InitMsnPage\:ctitle\:label\:en=remove MSN
+ui.jface.wizards.pages.InitMsnPage\:confirm\:label\:en=Do you really want to remove this MSN?
+
+ui.jface.wizards.pages.InitFinalizePage\:title\:label\:en=Finalizing configuration
+ui.jface.wizards.pages.InitFinalizePage\:description\:label\:en=Configuration successfully determined.
+ui.jface.wizards.pages.InitFinalizePage\:finalize\:label\:en=The configuration is now completed and is ready to get saved.
+ui.jface.wizards.pages.InitFinalizePage\:enabled\:label\:en=Show this wizard again on next startup
+
+ui.jface.wizards.pages.InitNumberFormatPage\:title\:label\:en=Define number format
+ui.jface.wizards.pages.InitNumberFormatPage\:description\:label\:en=All phone numbers used in jAnrufmonitor are rendered in a well-defined format. Please choose a proper format.
+ui.jface.wizards.pages.InitNumberFormatPage\:label\:label\:en=Number format: 
+ui.jface.wizards.pages.InitNumberFormatPage\:format3\:label\:en=Regional format (1): (030) 123456
+ui.jface.wizards.pages.InitNumberFormatPage\:format4\:label\:en=Regional format (2): 030-123456
+ui.jface.wizards.pages.InitNumberFormatPage\:format1\:label\:en=International format (1): +49 (30) 123456
+ui.jface.wizards.pages.InitNumberFormatPage\:format2\:label\:en=International format (2): 0049 (30) 123456
+
+ui.jface.wizards.pages.InitAreaCodePage\:title\:label\:en=Define local and international area code
+ui.jface.wizards.pages.InitAreaCodePage\:description\:label\:en=To identify callers correctly, you must specify your local and international area code
+ui.jface.wizards.pages.InitAreaCodePage\:intarea\:label\:en=International area code: 
+ui.jface.wizards.pages.InitAreaCodePage\:area\:label\:en=Local area code: \n(leading zero required)
+ui.jface.wizards.pages.InitAreaCodePage\:leadingzero\:label\:en=The international area code must not start with zero.
+ui.jface.wizards.pages.InitAreaCodePage\:noleadingzero\:label\:en=The local area code must start with zero
+ui.jface.wizards.pages.InitAreaCodePage\:unknownareacode\:label\:de=unknown area code
+
+ui.jface.wizards.pages.AbstractPhonesPage\:refreshprogress\:label\:en=Reading contacts...
+ui.jface.wizards.pages.AbstractPhonesPage\:tracking\:label\:en={%1} contacts left...
+ui.jface.wizards.pages.AbstractPhonesPage\:notracking\:label\:en=Redinge more contacts...
+ui.jface.wizards.pages.AbstractPhonesPage\:working\:label\:en=Compiling contact list...
+ui.jface.wizards.pages.AbstractPhonesPage\:nocallermanager\:label\:en=unknown address book

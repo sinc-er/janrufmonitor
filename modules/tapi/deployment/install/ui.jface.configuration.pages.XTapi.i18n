@@ -1,0 +1,6 @@
+ui.jface.configuration.pages.XTapi\:title\:label\:de=TAPI-Einstellungen
+ui.jface.configuration.pages.XTapi\:description\:label\:de=Die TAPI Überwachung nutzt die Microsoft(tm) TAPI Schnittstelle um Anrufe zu signalisieren und zu erkennen.
+ui.jface.configuration.pages.XTapi\:activemonitor\:label\:de=Überwachung aktiviert (erfordert Programmneustart)
+ui.jface.configuration.pages.XTapi\:festnetzalias\:label\:de=MSN für TAPI-Anrufe:
+ui.jface.configuration.pages.XTapi\:fbinfo\:label\:de=TAPI-Infos:
+ui.jface.configuration.pages.XTapi\:outgoing\:label\:de=Ausgehende Anrufe überwachen

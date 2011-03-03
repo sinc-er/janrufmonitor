@@ -1,0 +1,2 @@
+ui.jface.configuration.ConfigurationCommand\:page_html_callmanager\:value=de.janrufmonitor.ui.jface.configuration.pages.HtmlCallManager
+ui.jface.configuration.ConfigurationCommand\:page_html_callmanager\:access=system

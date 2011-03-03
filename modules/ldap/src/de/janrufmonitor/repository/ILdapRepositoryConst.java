@@ -1,0 +1,14 @@
+package de.janrufmonitor.repository;
+
+public interface ILdapRepositoryConst {
+
+	public static final String CFG_LDAP_SERVER = "server";
+	public static final String CFG_LDAP_PORT = "port";
+	public static final String CFG_LDAP_USER = "user";
+	public static final String CFG_LDAP_PASSWORD = "password";
+	public static final String CFG_LDAP_BASE_DN = "basedn";
+	public static final String CFG_LDAP_MAXRESULTS = "maxresults";
+	public static final String CFG_LDAP_NUMBERFORMAT = "numformat";
+	public static final String CFG_LDAP_KEEPEXT = "keepextension";
+	
+}

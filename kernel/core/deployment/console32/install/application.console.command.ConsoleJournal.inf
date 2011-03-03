@@ -1,0 +1,2 @@
+command.CommandFactory\:command_journal\:value=de.janrufmonitor.application.console.command.ConsoleJournal
+command.CommandFactory\:command_journal\:access=system

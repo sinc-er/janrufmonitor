@@ -1,0 +1,5 @@
+service.Reject\:title\:label\:en=Reject service
+service.Reject\:reject_config\:description\:en=Caller {%1} was rejected due to configuration settings.
+service.Reject\:reject_msn\:description\:en=Caller {%1} was rejected due to an active rule.
+service.Reject\:reject_clir\:description\:en=Caller was rejected due to CLIR call.
+service.Reject\:reject_caller\:description\:en=Caller {%1} was rejected due to an flag in the address book.

@@ -1,0 +1,19 @@
+ui.jface.configuration.pages.Client\:title\:label\:en=Client extension
+ui.jface.configuration.pages.Client\:description\:label\:en=The client extension provides access to telephone lines on a jAnrufmonitor server installation, even if the local PC has no telephone device installed.
+ui.jface.configuration.pages.Client\:enabled\:label\:en=Service enabled
+ui.jface.configuration.pages.Client\:server\:label\:en=Server (IP oder DNS): 
+ui.jface.configuration.pages.Client\:port\:label\:en=Server port: 
+ui.jface.configuration.pages.Client\:cport\:label\:en=Client callback port: 
+ui.jface.configuration.pages.Client\:autoconnect\:label\:en=automatically connect client on startup
+ui.jface.configuration.pages.Client\:events\:label\:en=Client modes
+ui.jface.configuration.pages.Client\:fat\:label\:en=Server maintained mode: Server instance tkaes over the complete control.
+ui.jface.configuration.pages.Client\:thin\:label\:en=Fast lient mode (recommended): Caller information is managed on client side. 
+ui.jface.configuration.pages.Client\:remote_ab\:label\:en=Serverbased address book:
+ui.jface.configuration.pages.Client\:callerdirectory\:label\:en=jAnrufmonitor address book
+ui.jface.configuration.pages.Client\:mysqladdressbook\:label\:en=MySQL database address book
+ui.jface.configuration.pages.Client\:outlook\:label\:en=Microsoft Outlook Contacts
+ui.jface.configuration.pages.Client\:macab\:label\:en=Apple Mac address book
+
+ui.jface.configuration.pages.Client\:remote_j\:label\:en=Serverbased journal:
+ui.jface.configuration.pages.Client\:defaultjournal\:label\:en=jAnrufmonitor Journal
+ui.jface.configuration.pages.Client\:mysqljournal\:label\:en=MySQL database journal

@@ -1,0 +1,5 @@
+command.CommandFactory\:command_gos\:value=de.janrufmonitor.ui.jface.application.gos.GosCommand
+command.CommandFactory\:command_gos\:access=system
+service.TrayIcon\:sub_component_admin_gos\:value=GosCommand
+service.TrayIcon\:sub_component_admin_gos\:position=51
+service.TrayIcon\:sub_component_admin_gos\:access=system

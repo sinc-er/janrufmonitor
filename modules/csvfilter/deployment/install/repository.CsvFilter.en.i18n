@@ -1,0 +1,3 @@
+repository.CsvFilter\:filtername\:label\:en=CSV (comma-separated) (*.csv)
+repository.CsvFilter\:title\:label\:en=CSV export filter for Journals
+repository.CsvFilter\:confirmmessage\:label\:en=Don't show this message again

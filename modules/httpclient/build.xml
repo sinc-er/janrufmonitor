@@ -1,0 +1,75 @@
+<project name="jAnrufmonitor Module" default="bundle" basedir="../../">
+    <property name="jam.mod.short" value="httpclient" />
+
+    <property file="build.properties"/>
+    <property name="jam.mod.root" value="${jam.modules.root}/${jam.mod.short}"/>
+ 
+    <import file="../../${jam.modules.root}/build-modules.xml" /> 
+    
+    <target name="build_commons" depends="init_module">
+        <subant target="">
+            <fileset dir="${jam.modules.root}/httpcommons" includes="build.xml"/>
+        </subant>
+        <copy todir="${jam.modules.extlib}">
+            <fileset file="${jam.modules.lib.dir}/http-commons/lib/http-commons.jar"/>
+        </copy>
+    </target>
+    
+    <target name="check_extlib" depends="build_kernel,build_commons">
+       <condition property="do.sync.extlib" value="false">
+        <and>
+            <available file="${jam.modules.extlib}/simpleweb.jar"/>
+            <available file="${jam.modules.extlib}/httpclient.jar"/>
+            <available file="${jam.modules.extlib}/log.jar"/>
+            <available file="${jam.modules.extlib}/log-api.jar"/>
+            <available file="${jam.modules.extlib}/codec.jar"/>
+        </and>
+      </condition>
+    </target>
+    
+    <target name="sync_extlib" depends="check_extlib" unless="do.sync.extlib">
+     <mkdir dir="${jam.modules.extlib}"/>
+     
+     <get dest="${jam.modules.extlib}">
+        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/modules/simpleweb.jar"/> 
+        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/modules/httpclient.jar"/> 
+        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/modules/log.jar"/> 
+        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/modules/log-api.jar"/>
+        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/modules/codec.jar"/> 
+     </get>
+  </target>
+
+    <target name="bundle_module" depends="distribute" description="bundle the module source to jam.zip archives" >
+      <echo message="jAnrufmonitor Kernel framework compile..."/>
+      
+      
+      <!-- 
+      
+        Check whether path to set to 
+        
+        ${jam.modules.lib.dir}/${jam.mod.name}/lib/
+        
+        or
+        
+        ${jam.modules.lib.dir}/${jam.mod.name}/
+      
+      -->
+      <jar jarfile="${jam.modules.lib.dir}/${jam.mod.name}/lib/${jam.mod.name}.jar" basedir="${jam.modules.classes.dir}/${jam.mod.name}"/>
+      
+      
+      <!--
+      
+        Remove comment if a 3rd party lib has to be bundled, e.g., java mail etc...
+      
+      -->
+      <copy todir="${jam.modules.lib.dir}/${jam.mod.name}/lib">
+        <fileset file="${jam.modules.extlib}/simpleweb.jar"/>
+        <fileset file="${jam.modules.extlib}/httpclient.jar"/>
+        <fileset file="${jam.modules.extlib}/log.jar"/>
+        <fileset file="${jam.modules.extlib}/log-api.jar"/>
+        <fileset file="${jam.modules.extlib}/codec.jar"/>
+      </copy>
+    </target>
+
+</project>
+

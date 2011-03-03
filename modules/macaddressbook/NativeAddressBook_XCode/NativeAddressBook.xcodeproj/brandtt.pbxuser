@@ -1,0 +1,173 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 89D0F2C50F40E784007831A7 /* NativeAddressBook */;
+		activeTarget = 89D0F1C90F3B704E007831A7 /* NativeAddressBook */;
+		codeSenseManager = 89D0F2CF0F40E7A1007831A7 /* Code sense */;
+		executables = (
+			89D0F2C50F40E784007831A7 /* NativeAddressBook */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					131,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1473,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1433,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 315925699;
+			PBXWorkspaceStateSaveDate = 315925699;
+		};
+		perUserProjectItems = {
+			770F146112D4A4C700E9417B /* PBXTextBookmark */ = 770F146112D4A4C700E9417B /* PBXTextBookmark */;
+			77EAE4D4124D5342001BDA30 /* PBXTextBookmark */ = 77EAE4D4124D5342001BDA30 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 89D0F2CE0F40E7A1007831A7 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	770F146112D4A4C700E9417B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8012D10A121983D1008F2155 /* NativeAddressBook.m */;
+		name = "NativeAddressBook.m: 260";
+		rLen = 0;
+		rLoc = 9376;
+		rType = 0;
+		vrLen = 1440;
+		vrLoc = 8710;
+	};
+	77EAE4D4124D5342001BDA30 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8012D10A121983D1008F2155 /* NativeAddressBook.m */;
+		name = "NativeAddressBook.m: 260";
+		rLen = 0;
+		rLoc = 9376;
+		rType = 0;
+		vrLen = 1280;
+		vrLoc = 8807;
+	};
+	8012D10A121983D1008F2155 /* NativeAddressBook.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1651, 12311}}";
+			sepNavSelRange = "{9376, 0}";
+			sepNavVisRange = "{8710, 1440}";
+			sepNavWindowFrame = "{{15, 103}, {1587, 955}}";
+		};
+	};
+	89D0F04F0F393AD9007831A7 /* Compile Native */ = {
+		activeExec = 0;
+	};
+	89D0F1C90F3B704E007831A7 /* NativeAddressBook */ = {
+		activeExec = 0;
+	};
+	89D0F2C50F40E784007831A7 /* NativeAddressBook */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+			"PBXLSLaunchAction-0" = {
+				PBXLSLaunchAction = 0;
+				PBXLSLaunchStartAction = 1;
+				PBXLSLaunchStdioStyle = 2;
+				PBXLSLaunchStyle = 0;
+				class = PBXLSRunLaunchConfig;
+				commandLineArgs = (
+				);
+				displayName = "Executable Runner";
+				environment = {
+				};
+				identifier = com.apple.Xcode.launch.runConfig;
+				remoteHostInfo = "";
+				startActionInfo = "";
+			};
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = NativeAddressBook;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		startupPath = "<<ProductDirectory>>";
+	};
+	89D0F2CE0F40E7A1007831A7 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	89D0F2CF0F40E7A1007831A7 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}

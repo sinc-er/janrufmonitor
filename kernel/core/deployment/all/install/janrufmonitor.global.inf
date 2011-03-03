@@ -1,0 +1,22 @@
+manager.MsnManager\:list\:value=
+
+# added 4.5.0
+monitor.MonitorListener\:delay\:value=0
+monitor.MonitorListener\:delay\:type=integer
+
+rules.RuleEngine\:Standard1_rule\:value=Standard \#1%QuickIdentify%*%*%true%*%*%*
+rules.RuleEngine\:Standard3_rule\:value=Standard \#3%Journaling%*%*%true%*%*%*
+rules.RuleEngine\:Standard2_rule\:value=Standard \#2%DefaultCallDialogService%*%*%true%*%*%*
+
+janrufmonitor.global\:language\:type=multivalue
+janrufmonitor.global\:language\:values=de,en
+
+janrufmonitor.global\:autodetectnational\:value=false
+janrufmonitor.global\:autodetectnational\:type=boolean
+
+janrufmonitor.global\:autodetectinternational\:value=false
+janrufmonitor.global\:autodetectinternational\:type=boolean
+
+# added 5.0.28
+%janrufmonitor.global\:areacodeaddlength\:default=6
+%janrufmonitor.global\:areacodeaddlength\:type=integer

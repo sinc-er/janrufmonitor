@@ -1,0 +1,2 @@
+ui.jface.configuration.ConfigurationCommand\:page_iconblinker\:value=de.janrufmonitor.ui.jface.configuration.pages.IconBlinker
+ui.jface.configuration.ConfigurationCommand\:page_iconblinker\:access=system

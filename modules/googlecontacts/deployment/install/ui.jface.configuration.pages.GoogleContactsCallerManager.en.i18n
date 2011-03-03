@@ -1,0 +1,16 @@
+ui.jface.configuration.pages.GoogleContactsCallerManager\:title\:label\:en=Google contacts
+ui.jface.configuration.pages.GoogleContactsCallerManager\:description\:label\:en=This module identifies calls with a Google contacts account.
+ui.jface.configuration.pages.GoogleContactsCallerManager\:enabled\:label\:en=Repository enabled
+ui.jface.configuration.pages.GoogleContactsCallerManager\:user\:label\:en=Google user: 
+ui.jface.configuration.pages.GoogleContactsCallerManager\:password\:label\:en=Google passsword: 
+ui.jface.configuration.pages.GoogleContactsCallerManager\:keepextension\:label\:en=Keep extension number if present
+ui.jface.configuration.pages.GoogleContactsCallerManager\:mode\:label\:en=Access permissions:
+ui.jface.configuration.pages.GoogleContactsCallerManager\:mode1\:label\:en=identify, address book (read-only)
+ui.jface.configuration.pages.GoogleContactsCallerManager\:mode2\:label\:en=identify, address book (read/write)
+ui.jface.configuration.pages.GoogleContactsCallerManager\:check\:label\:en=Check login
+ui.jface.configuration.pages.GoogleContactsCallerManager\:syncstart\:label\:en=Synchronize Google contacts on startup
+
+ui.jface.configuration.pages.GoogleContactsCallerManager\:success\:label\:en=Login successfully
+ui.jface.configuration.pages.GoogleContactsCallerManager\:success\:description\:en=Login to your Google Account succefully performed.
+ui.jface.configuration.pages.GoogleContactsCallerManager\:error\:label\:en=Login failed
+ui.jface.configuration.pages.GoogleContactsCallerManager\:error\:description\:en=Login to your Google Account failed. Check Google user and Google password field.

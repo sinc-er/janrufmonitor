@@ -1,0 +1,20 @@
+monitor.XTapiMonitor\:title\:label\:de=TAPI-Monitor
+monitor.XTapiMonitor\:error\:label\:de=jAnrufmonitor konnte sich nicht an der TAPI registrieren. Entweder sind keine TAPI-Treiber installiert oder die TAPI-Schnittstelle ist nicht verfügbar.
+
+ui.jface.dialogs.InfoDialog\:edition\:label\:de=(TAPI-Edition)
+
+#added 5.0.14
+ui.jface.application.dialer.TapiDialerCommand\:label\:label\:de=Rufnummer wählen...
+ui.jface.application.dialer.TapiDialerCommand\:dialogtitle\:label\:de=Rufnummer wählen...
+ui.jface.application.dialer.TapiDialerCommand\:dialogtitle\:description\:de=Wählt die angegebene Rufnummer mit der angeschlossenen TAPI Schnittstelle.
+ui.jface.application.dialer.TapiDialerCommand\:number\:label\:de=Zu wählende Rufnummer:
+ui.jface.application.dialer.TapiDialerCommand\:number\:description\:de=Rufnummer muss ohne Leer- und Sonderzeichen eingegeben werden.
+ui.jface.application.dialer.TapiDialerCommand\:dial\:label\:de=Wählen...
+ui.jface.application.dialer.TapiDialerCommand\:success\:label\:de=Wählen mit {%1}...
+ui.jface.application.dialer.TapiDialerCommand\:success\:description\:de=Verbindung zu {%1} wird hergestellt. Nehmen Sie beim Klingelton den Telefonhörer ab.
+
+ui.jface.application.tapi.action.TapiClickDialAction\:title\:label\:de=Über TAPI wählen...
+ui.jface.application.tapi.action.TapiClickDialAction\:label\:label\:de=Rückruf...
+
+ui.jface.application.tapi.rendering.Duration\:name\:label\:de=Dauer
+ui.jface.application.tapi.rendering.Duration\:label\:label\:de=Gesprächsdauer (TAPI)

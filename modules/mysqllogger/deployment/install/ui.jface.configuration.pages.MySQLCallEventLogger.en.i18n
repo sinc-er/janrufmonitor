@@ -1,0 +1,8 @@
+ui.jface.configuration.pages.MySQLCallEventLogger\:title\:label\:en=MySQL call event monitor
+ui.jface.configuration.pages.MySQLCallEventLogger\:description\:label\:en=The MySQL call event monitor service logs all call events in a MySQL database.
+ui.jface.configuration.pages.MySQLCallEventLogger\:dbserver\:label\:en=Database server: 
+ui.jface.configuration.pages.MySQLCallEventLogger\:dbdb\:label\:en=Database name: 
+ui.jface.configuration.pages.MySQLCallEventLogger\:dbport\:label\:en=Database port: 
+ui.jface.configuration.pages.MySQLCallEventLogger\:dbuser\:label\:en=Database user: 
+ui.jface.configuration.pages.MySQLCallEventLogger\:dbpassword\:label\:en=Database password: 
+ui.jface.configuration.pages.MySQLCallEventLogger\:enabled\:label\:en=Service enabled

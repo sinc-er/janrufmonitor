@@ -1,0 +1,32 @@
+ui.jface.configuration.pages.FritzBoxVoip\:title\:label\:en=AVM Fritz!Box Fon settings
+ui.jface.configuration.pages.FritzBoxVoip\:description\:label\:en=The AVM Fritz!Box Fon allows to monitor telephony activities for ISDN and VoIP calls.
+ui.jface.configuration.pages.FritzBoxVoip\:boxip\:label\:en=IP address of Fritz!Box Fon: 
+ui.jface.configuration.pages.FritzBoxVoip\:boxclickdial\:label\:en=Line for outgoing calls: 
+ui.jface.configuration.pages.FritzBoxVoip\:boxpassword\:label\:en=Fritz!Box Fon password: 
+ui.jface.configuration.pages.FritzBoxVoip\:boxport\:label\:en=Port: 
+ui.jface.configuration.pages.FritzBoxVoip\:boxareacode\:label\:en=Areacode of Fritz!Box Fon location:\n(incl. leading zero) 
+ui.jface.configuration.pages.FritzBoxVoip\:boxdate\:label\:en=Date format: 
+ui.jface.configuration.pages.FritzBoxVoip\:activemonitor\:label\:en=Monitor enabled (restart required)
+ui.jface.configuration.pages.FritzBoxVoip\:outgoing\:label\:en=Monitor outgoing calls
+ui.jface.configuration.pages.FritzBoxVoip\:retrymax\:label\:en=Connection retry #: 
+ui.jface.configuration.pages.FritzBoxVoip\:festnetzalias\:label\:en=MSN for "Festnetz" calls:
+ui.jface.configuration.pages.FritzBoxVoip\:syncdelete\:label\:en=Delete call list on Fritz!Box Fon after synchronisation
+ui.jface.configuration.pages.FritzBoxVoip\:fbinfo\:label\:en=Fritz!Box Fon info:
+ui.jface.configuration.pages.FritzBoxVoip\:all_analog\:label\:en=all telephone lines
+ui.jface.configuration.pages.FritzBoxVoip\:all_isdn\:label\:en=all ISDN lines
+ui.jface.configuration.pages.FritzBoxVoip\:dialprefixes\:label\:en=Define dial prefix:\n(comma-separated, no spaces)
+
+
+ui.jface.configuration.pages.FritzBoxSynchronizer\:title\:label\:en=AVM Fritz!Box Fon Synchronizer
+service.SynchronizerService\:title\:label\:en=AVM Fritz!Box Fon Synchronizer
+ui.jface.configuration.pages.FritzBoxSynchronizer\:description\:label\:en=Service for the automated synchronisation of AVM Fritz!Box Fon call list with the jAnrufmonitor Journal.
+ui.jface.configuration.pages.FritzBoxSynchronizer\:enabled\:label\:en=Service enabled
+ui.jface.configuration.pages.FritzBoxSynchronizer\:syncdialog\:label\:en=Hide dialogue while syncronizing
+ui.jface.configuration.pages.FritzBoxSynchronizer\:syncclean\:label\:en=Remove redundant information
+ui.jface.configuration.pages.FritzBoxSynchronizer\:race\:label\:en=Re-syncronize after call end
+ui.jface.configuration.pages.FritzBoxSynchronizer\:syncnotification\:label\:en=Send mail notification after syncronizing
+ui.jface.configuration.pages.FritzBoxSynchronizer\:synctimer\:label\:en=Timebased syncronizing min]: 
+
+ui.jface.configuration.pages.FritzBoxPhonebookManager\:title\:label\:en=AVM Fritz!Box Fon phonebook
+ui.jface.configuration.pages.FritzBoxPhonebookManager\:description\:label\:en=Identifies callers with the AVM Fritz!Box Fon phonebook. Hint: Newly created contacts on the AVM Fritz!Box Fon phonebook are only applied after program restart.
+ui.jface.configuration.pages.FritzBoxPhonebookManager\:enabled\:label\:en=Repository enabled

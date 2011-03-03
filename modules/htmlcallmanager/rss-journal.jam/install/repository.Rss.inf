@@ -1,0 +1,2 @@
+repository.HtmlCallManager\:database\:value=%datapath%journal.xml
+repository.HtmlCallManager\:htmlpattern\:value=<item><title>Anruf von\: %callername%</title><description>Neuer Anruf eingegangen um %calltime% von %callername%, %callernumber% auf MSN %msn% (%msnalias%) mit Dienstmerkmal\: %cip%</description><pubDate>%calltime%</pubDate><guid>%calltime%%callernumber%</guid></item>

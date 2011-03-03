@@ -1,0 +1,9 @@
+ui.jface.configuration.ConfigurationCommand\:page_fritzbox\:value=de.janrufmonitor.ui.jface.configuration.pages.FritzBoxVoip
+ui.jface.configuration.ConfigurationCommand\:page_fritzbox\:access=system
+
+ui.jface.configuration.ConfigurationCommand\:page_fbsynch\:value=de.janrufmonitor.ui.jface.configuration.pages.FritzBoxSynchronizer
+ui.jface.configuration.ConfigurationCommand\:page_fbsynch\:access=system
+ui.jface.configuration.ConfigurationCommand\:page_fbsynch\:mode=expert
+
+ui.jface.configuration.ConfigurationCommand\:page_fbp_callermanager\:value=de.janrufmonitor.ui.jface.configuration.pages.FritzBoxPhonebookManager
+ui.jface.configuration.ConfigurationCommand\:page_fbp_callermanager\:access=system

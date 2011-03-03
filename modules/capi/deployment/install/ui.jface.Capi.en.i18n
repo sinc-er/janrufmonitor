@@ -1,0 +1,16 @@
+ui.jface.configuration.pages.CapiInfo\:title\:label\:en=CAPI info
+ui.jface.configuration.pages.CapiInfo\:description\:label\:en=Information on the currently used CAPI drivers. 
+ui.jface.configuration.pages.CapiInfo\:capiinfo\:label\:en=Manufacturer: 
+
+ui.jface.configuration.pages.CapiSettings\:title\:label\:en=CAPI settings
+ui.jface.configuration.pages.CapiSettings\:description\:label\:en=The mentioned CAPI settings are generall settings for all CAPI drivers. Some drivvers may not support certain of these options. change the default settings only if you have  the technical knowledge !
+ui.jface.configuration.pages.CapiSettings\:busyonbusy\:label\:en=Busy-On-Busy active
+ui.jface.configuration.pages.CapiSettings\:spoofing\:label\:en=Spoofing number detection active
+ui.jface.configuration.pages.CapiSettings\:maxcon\:label\:en=# of observable ISDN lines: 
+ui.jface.configuration.pages.CapiSettings\:maxblock\:label\:en=# of message blocks for CAPI:
+ui.jface.configuration.pages.CapiSettings\:blocksize\:label\:en=Max. size [bytes] of a message block:
+ui.jface.configuration.pages.CapiSettings\:trace\:label\:en=CAPI trace enabled
+ui.jface.configuration.pages.CapiSettings\:available\:label\:en=Monitor enabled (restart required)
+
+ui.jface.configuration.pages.BasicIsdnSettings\:title\:label\:en=ISDN basic settings
+ui.jface.configuration.pages.BasicIsdnSettings\:description\:label\:en=The ISDN basic settings allow to configure general ISDN related settings for jAnrufmonitor.

@@ -1,0 +1,2 @@
+command.CommandFactory\:command_supdates\:value=de.janrufmonitor.application.console.command.ConsoleSearchUpdates
+command.CommandFactory\:command_supdates\:access=system

@@ -1,0 +1,4 @@
+ui.jface.configuration.pages.TextFileCallManager\:title\:label\:en=Textfile based Journal
+ui.jface.configuration.pages.TextFileCallManager\:description\:label\:en=The textfile based Journal stores all call infromation in a flat text file (DAT format).
+#ui.jface.configuration.pages.TextFileCallManager\:database\:label\:en=Journal file: 
+ui.jface.configuration.pages.TextFileCallManager\:enabled\:label\:en=Repository enabled

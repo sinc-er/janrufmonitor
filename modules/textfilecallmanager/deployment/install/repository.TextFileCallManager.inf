@@ -1,0 +1,9 @@
+repository.TextFileCallManager\:priority\:value=2
+repository.TextFileCallManager\:priority\:type=integer
+repository.TextFileCallManager\:separator\:value=;
+repository.TextFileCallManager\:database\:value=%datapath%journal.dat
+repository.TextFileCallManager\:database\:type=file
+repository.TextFileCallManager\:enabled\:value=true
+repository.TextFileCallManager\:enabled\:type=boolean
+repository.CallManagerFactory\:manager_textfile\:value=de.janrufmonitor.repository.TextFileCallManager
+repository.CallManagerFactory\:manager_textfile\:access=system

@@ -1,0 +1,4 @@
+
+service.HibernateDetector\:hibernate\:label\:en=The hibernate mode of the OS interupted the line monitoring. Monitor observer is beeing restarted...
+service.HibernateDetector\:label\:label\:en=Hibernate detection
+service.HibernateDetector\:title\:label\:en=Hibernate detection

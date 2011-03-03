@@ -1,0 +1,36 @@
+repository.OutlookCallerManager\:title\:label\:de=Microsoft Outlook Kontaktverzeichnis
+repository.OutlookCallerManager\:sync\:label\:de=Daten werden vom Microsoft Outlook Kontakte Ordner gelesen. Dies kann einige Zeit in Anspruch nehmen. Während dieser Zeit sind nicht alle Kontakte im Adressbuch zu sehen.
+repository.OutlookCallerManager\:display\:label\:de=Der ausgewählte Kontakt ist nicht im Microsoft Outlook Kontaktverzeichnis vorhanden.
+repository.OutlookCallerManager\:olstarterror\:label\:de=Es ist ein Fehler beim Starten von Microsoft Outlook aufgetreten. Die installierte Version ist entweder nicht mit jAnrufmonitor kompatibel oder wichtige Komponenten sind nicht vorhanden. Installieren Sie diese über das Microsoft Office Setup.
+repository.OutlookCallerManager\:olstore\:label\:de=Sie zeigen private und geschäftliche Kontakte in einem jAnrufmonitor Kontaktelement an. Hierdurch ist keine eindeutige Zuordnung der Adress- und Rufnummernfelder in Microsoft Outlook möglich. Änderungen am Kontakt können zum Überschreiben bestehender Informationen in Microsoft Outlook führen.
+ui.jface.application.editor.action.OutlookImportAction\:title\:label\:de=Microsoft Outlook Kontakte importieren...
+ui.jface.application.editor.action.OutlookImportAction\:importprogress\:label\:de=Importiere alle Microsoft Outlook Kontakte... Bitte etwas Geduld...
+ui.jface.application.editor.action.OutlookImportAction\:add\:label\:de=Füge Microsoft Outlook Kontakte zum Adressbuch hinzu
+ui.jface.application.editor.action.OutlookImportAction\:check\:label\:de=Synchronisiere Kontakt: {%1}
+ui.jface.application.editor.action.OutlookImportAction\:reduce\:label\:de=Optimiere Microsoft Outlook Kontakte und Rufnummern...
+
+ui.jface.application.editor.action.OutlookCategoryImportAction\:title\:label\:de=Microsoft Outlook Ordner als Kategorie importieren...
+
+ui.jface.application.editor.action.OutlookOpenAction\:title\:label\:de=In Microsoft Outlook öffnen...
+
+ui.jface.application.editor.rendering.OutlookNumberType\:name\:label\:de=Typ (Outlook)
+ui.jface.application.editor.rendering.OutlookNumberType\:label\:label\:de=Rufnummertyp (Outlook)
+ui.jface.application.editor.rendering.OutlookNumberType\:HomeTelephoneNumber\:label\:de=Privat
+ui.jface.application.editor.rendering.OutlookNumberType\:Home2TelephoneNumber\:label\:de=Privat 2
+ui.jface.application.editor.rendering.OutlookNumberType\:HomeFaxNumber\:label\:de=Fax privat
+ui.jface.application.editor.rendering.OutlookNumberType\:MobileTelephoneNumber\:label\:de=Mobiltelefon
+ui.jface.application.editor.rendering.OutlookNumberType\:BusinessTelephoneNumber\:label\:de=Geschäftlich
+ui.jface.application.editor.rendering.OutlookNumberType\:Business2TelephoneNumber\:label\:de=Geschäftlich 2
+ui.jface.application.editor.rendering.OutlookNumberType\:BusinessFaxNumber\:label\:de=Fax geschäftl.
+ui.jface.application.editor.rendering.OutlookNumberType\:OtherTelephoneNumber\:label\:de=Weitere
+ui.jface.application.editor.rendering.OutlookNumberType\:OtherFaxNumber\:label\:de=Weitere Fax
+ui.jface.application.editor.rendering.OutlookNumberType\:CompanyMainTelephoneNumber\:label\:de=Firma
+ui.jface.application.editor.rendering.OutlookNumberType\:PrimaryTelephoneNumber\:label\:de=Haupttelefon
+ui.jface.application.editor.rendering.OutlookNumberType\:PagerNumber\:label\:de=Pager
+ui.jface.application.editor.rendering.OutlookNumberType\:TTYTDDTelephoneNumber\:label\:de=Texttelefon
+ui.jface.application.editor.rendering.OutlookNumberType\:CarTelephoneNumber\:label\:de=Auto
+ui.jface.application.editor.rendering.OutlookNumberType\:AssistantTelephoneNumber\:label\:de=Assistent
+ui.jface.application.editor.rendering.OutlookNumberType\:CallbackTelephoneNumber\:label\:de=Rückmeldung
+ui.jface.application.editor.rendering.OutlookNumberType\:ISDNNumber\:label\:de=ISDN
+ui.jface.application.editor.rendering.OutlookNumberType\:TelexNumber\:label\:de=Telex
+

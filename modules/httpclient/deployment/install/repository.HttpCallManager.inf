@@ -1,0 +1,7 @@
+repository.HttpCallManager\:remote_repository\:value=DefaultJournal
+repository.HttpCallManager\:enabled\:value=true
+repository.HttpCallManager\:enabled\:type=boolean
+repository.HttpCallManager\:priority\:value=2
+repository.HttpCallManager\:priority\:type=integer
+repository.CallManagerFactory\:manager_remote\:value=de.janrufmonitor.repository.HttpCallManager
+repository.CallManagerFactory\:manager_remote\:access=system

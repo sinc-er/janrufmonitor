@@ -1,0 +1,17 @@
+ui.jface.configuration.pages.TwitterService\:title\:label\:en=Twitter service
+ui.jface.configuration.pages.TwitterService\:description\:label\:en=Allows jAnrufmonitor to twitter call information automatically. An active twitter account is required.
+ui.jface.configuration.pages.TwitterService\:inmessage\:label\:en=message on incoming calls:
+ui.jface.configuration.pages.TwitterService\:outmessage\:label\:en=message on outgoing calls:
+ui.jface.configuration.pages.TwitterService\:outgoing\:label\:en=twitter outgoing calls
+ui.jface.configuration.pages.TwitterService\:incoming\:label\:en=twitter incoming calls
+ui.jface.configuration.pages.TwitterService\:enabled\:label\:en=Service enabled
+ui.jface.configuration.pages.TwitterService\:auth\:label\:en=Unlock with Twitter PIN
+ui.jface.configuration.pages.TwitterService\:unauth\:label\:en=remove twitter unlock
+ui.jface.configuration.pages.TwitterService\:isauth\:label\:en=Twitter service is authenticated.
+ui.jface.configuration.pages.TwitterService\:isnotauth\:label\:en=Twitter service is not authenticated.
+
+ui.jface.wizards.TwitterPINWizard\:title\:label\:en=Twitter PIN authentication
+ui.jface.wizards.pages.TwitterPINPage\:title\:label\:en=Twitter PIN request
+ui.jface.wizards.pages.TwitterPINPage\:description\:label\:en=Authenticate jAnrufmonitor with the Twitter PIN to post to your twitter account.
+ui.jface.wizards.pages.TwitterPINPage\:pin\:label\:en=Twitter PIN
+ui.jface.wizards.pages.TwitterPINPage\:rpin\:label\:en=request PIN

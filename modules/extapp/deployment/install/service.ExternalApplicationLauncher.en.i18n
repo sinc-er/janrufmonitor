@@ -1,0 +1,2 @@
+service.ExternalApplicationLauncher\:title\:label\:en=External application launcher
+service.ExternalApplicationLauncher\:executed\:label\:en=Command [{%1}] was executed.

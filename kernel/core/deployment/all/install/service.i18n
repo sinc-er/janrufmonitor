@@ -1,0 +1,16 @@
+service.AutoIdentifyDialog\:title\:label\:de=Automatische Vorwahlerkennung
+
+service.DefaultCallDialogService\:title\:label\:de=Dialog
+
+service.Journaling\:title\:label\:de=Protokollierungsdienst
+
+service.QuickIdentify\:title\:label\:de=Identifizierung
+
+
+service.update.UpdateManager\:nooverview\:label\:de=Die Liste der Updates ist leer.
+service.update.UpdateManager\:ioexception\:label\:de=Beim Abfragen der Update-Liste ist ein Fehler aufgetreten. Überprüfen Sie die Internet-Verbindung und stellen Sie sicher, dass jAnrufmonitor darauf zugreifen kann.
+
+service.AutoUpdateService\:title\:label\:de=Update Manager
+service.AutoUpdateService\:newupdates\:label\:de=Es stehen neue Updates zum Download zur Verfügung.
+
+service.GeoCoding\:title\:label\:de=Geokodierung

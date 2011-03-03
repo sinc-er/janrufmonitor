@@ -1,0 +1,9 @@
+repository.CallerManagerFactory\:manager_thb\:access=system
+repository.CallerManagerFactory\:manager_thb\:value=de.janrufmonitor.repository.ThunderbirdCallerManager
+repository.ThunderbirdCallerManager\:enabled\:value=false
+repository.ThunderbirdCallerManager\:enabled\:type=boolean
+repository.ThunderbirdCallerManager\:priority\:value=5
+repository.ThunderbirdCallerManager\:priority\:type=integer
+
+repository.ImExportFactory\:import_thb_caller\:value=de.janrufmonitor.repository.imexporter.ThunderbirdCallerImporter
+repository.ImExportFactory\:import_thb_caller\:access=system

@@ -1,0 +1,11 @@
+ui.jface.configuration.ConfigurationCommand\:page_sound\:value=de.janrufmonitor.ui.jface.configuration.pages.Sound
+ui.jface.configuration.ConfigurationCommand\:page_sound\:access=system
+ui.jface.application.RendererRegistry\:renderer_sound\:value=de.janrufmonitor.ui.jface.application.sound.rendering.Sound
+ui.jface.application.RendererRegistry\:renderer_sound\:access=system
+
++ui.jface.application.editor.Editor\:popup_actions\:value=sound_delete,sound_change,
+
+ui.jface.application.ActionRegistry\:action_sound_delete\:value=de.janrufmonitor.ui.jface.application.sound.action.DeleteAction
+ui.jface.application.ActionRegistry\:action_sound_delete\:access=system
+ui.jface.application.ActionRegistry\:action_sound_change\:value=de.janrufmonitor.ui.jface.application.sound.action.ChangeAction
+ui.jface.application.ActionRegistry\:action_sound_change\:access=system

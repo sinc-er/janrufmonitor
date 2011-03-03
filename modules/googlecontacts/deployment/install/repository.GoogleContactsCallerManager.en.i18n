@@ -1,0 +1,7 @@
+repository.GoogleContacts\:title\:label\:en=Google contacts
+repository.GoogleContactsCallerManager\:title\:label\:en=Google contacts
+repository.GoogleContactsCallerManager\:loginerror\:label\:en=Login at Google failed. Please check your credentials.
+repository.GoogleContactsCallerManager\:process\:label\:en=Synchronizing Google contacts... ({%1}/{%2})
+repository.GoogleContactsCallerManager\:finished\:label\:en={%1} Google contacts synchronized.
+
+ui.jface.application.editor.action.GoogleCategoryImportAction\:title\:label\:en=Import Google categories...

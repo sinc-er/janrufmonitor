@@ -1,0 +1,9 @@
+service.ServiceFactory\:service_blinker\:access=system
+service.ServiceFactory\:service_blinker\:value=de.janrufmonitor.service.blinker.IconBlinker
+service.IconBlinker\:priority\:value=200
+service.IconBlinker\:enabled\:value=false
+service.IconBlinker\:enabled\:type=boolean
+service.IconBlinker\:priority\:type=integer
+rules.RuleEngine\:blinker_rule\:value=IconBlinker%*%*%true%*%*
+rules.RuleEngine\:usestandard\:value=false
+rules.RuleEngine\:usestandard\:type=boolean

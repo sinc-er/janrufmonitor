@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<rdf:RDF 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:co="http://purl.org/rss/1.0/modules/company/"
+  xmlns:ti="http://purl.org/rss/1.0/modules/textinput/"
+  xmlns="http://purl.org/rss/1.0/"
+> 
+
+<channel>
+	<title>PowerISDNMonitor Journal</title>
+	<link>http://localhost/journal</link>
+	<description>-</description>
+	<language>de</language>
+	<copyright>Copyright: (C) Thilo Brandt, http://www.powerisdnmonitor.de</copyright>
+	<docs>http://www.powerisdnmonitor.de</docs>
+	
+</channel>
+
+<!-- START HTML JOURNAL -->
+
+<!-- END HTML JOURNAL -->
+</rdf:RDF>

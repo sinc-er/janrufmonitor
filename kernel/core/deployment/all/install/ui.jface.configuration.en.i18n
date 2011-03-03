@@ -1,0 +1,233 @@
+ui.jface.configuration.ConfigurationCommand\:title\:label\:en=Settings
+ui.jface.configuration.ConfigurationCommand\:java.lang.nullpointerexception\:label\:en=An object could not be initialized correctly. More details on this error were logged in jam-0.log.
+
+ui.jface.configuration.pages.Advanced\:title\:label\:en=Advanced
+ui.jface.configuration.pages.Advanced\:description\:label\:en=Advanced settings for special puposes.
+
+ui.jface.configuration.pages.AutoUpdate\:title\:label\:en=Updates...
+ui.jface.configuration.pages.AutoUpdate\:description\:label\:en=The Update service can be launched during startup time and will install all new updates automatically.
+ui.jface.configuration.pages.AutoUpdate\:enabled\:label\:en=Check for latest updates on program startup
+ui.jface.configuration.pages.AutoUpdate\:execute\:label\:en=Check for Updates now...
+
+ui.jface.configuration.pages.ConfigExport\:title\:label\:en=Settings export
+ui.jface.configuration.pages.ConfigExport\:description\:label\:en=The settings exports store the use settings in a directory. This export con be restored via the Module Manager.
+ui.jface.configuration.pages.ConfigExport\:execute\:label\:en=Export settings...
+ui.jface.configuration.pages.ConfigExport\:save\:label\:en=Directory for export
+ui.jface.configuration.pages.ConfigExport\:save\:description\:en=Choose a directory to export the settings.
+
+ui.jface.configuration.pages.BasicSettings\:title\:label\:en=basic settings
+ui.jface.configuration.pages.BasicSettings\:description\:label\:en=The basic settings allow to configure general telephone related settings for jAnrufmonitor.
+ui.jface.configuration.pages.BasicSettings\:clir\:label\:en=Symbol for CLIR caller:
+ui.jface.configuration.pages.BasicSettings\:intarea\:label\:en=Country code:
+ui.jface.configuration.pages.BasicSettings\:autodetectdialog\:label\:en=Show dialogue for automatic detection
+ui.jface.configuration.pages.BasicSettings\:delay\:label\:en=Delay for monitoring [in sec.]: 
+ui.jface.configuration.pages.BasicSettings\:areacode\:label\:en=Local area code:
+
+ui.jface.configuration.pages.Caller\:title\:label\:en=Phone books
+ui.jface.configuration.pages.Caller\:description\:label\:en=Phone books are used for identifiing incoming calls. They are executed in the order shown beneath.
+ui.jface.configuration.pages.Caller\:current\:label\:en=Order for Identification (higher priorities above):
+ui.jface.configuration.pages.Caller\:up\:label\:en=up
+ui.jface.configuration.pages.Caller\:down\:label\:en=down
+
+ui.jface.configuration.pages.CallerDirectory\:title\:label\:en=jAnrufmonitor address book
+ui.jface.configuration.pages.CallerDirectory\:enabled\:label\:en=Repository enabled
+ui.jface.configuration.pages.CallerDirectory\:description\:label\:en=The jAnrufmonitor address book stores contact information in a local database file. 
+
+ui.jface.configuration.pages.DefaultJournal\:title\:label\:en=jAnrufmonitor Journal
+ui.jface.configuration.pages.DefaultJournal\:enabled\:label\:en=Repository enabled
+ui.jface.configuration.pages.DefaultJournal\:description\:label\:en=The jAnrufmonitor Journal stores all calling information in a database on the local filesystem.
+
+ui.jface.configuration.pages.ArchiveJournal\:title\:label\:en=jAnrufmonitor Journal archiving
+ui.jface.configuration.pages.ArchiveJournal\:enabled\:label\:en=archiving enabled
+ui.jface.configuration.pages.ArchiveJournal\:description\:label\:en=The jAnrufmonitor archiving archives the call data from the current journal in a archive file. This file can be browsed using the build-in journal.
+ui.jface.configuration.pages.ArchiveJournal\:db\:label\:en=Current archiving file: 
+ui.jface.configuration.pages.ArchiveJournal\:timeframe\:label\:en=Archive calls older than 
+ui.jface.configuration.pages.ArchiveJournal\:7\:label\:en=one week
+ui.jface.configuration.pages.ArchiveJournal\:14\:label\:en=two weeks
+ui.jface.configuration.pages.ArchiveJournal\:30\:label\:en=one month
+ui.jface.configuration.pages.ArchiveJournal\:60\:label\:en=two months
+ui.jface.configuration.pages.ArchiveJournal\:90\:label\:en=three months
+ui.jface.configuration.pages.ArchiveJournal\:180\:label\:en=half a year
+ui.jface.configuration.pages.ArchiveJournal\:365\:label\:en=a year
+ui.jface.configuration.pages.ArchiveJournal\:lastrun\:label\:en=Last archiving run: 
+ui.jface.configuration.pages.ArchiveJournal\:success\:label\:en=Archiving successfully finished. {%1} calls were archived in the archive file {%2}.
+ui.jface.configuration.pages.ArchiveJournal\:failed\:label\:en=An severe error occured during archiving. Journal entries were not archived. Details to this error are logged in jam-0.log.
+
+
+
+ui.jface.configuration.pages.Dialog\:title\:label\:en=Dialogue
+ui.jface.configuration.pages.Dialog\:description\:label\:en=The Dialogue service shows up incoming calls in a popup window or in a balloon control.
+ui.jface.configuration.pages.Dialog\:enabled\:label\:en=Service enabled
+ui.jface.configuration.pages.Dialog\:position\:label\:en=Position of the dialogue
+ui.jface.configuration.pages.Dialog\:lefttop\:label\:en=Left upper corner
+ui.jface.configuration.pages.Dialog\:righttop\:label\:en=right upper corner
+ui.jface.configuration.pages.Dialog\:leftbottom\:label\:en=Left down corner
+ui.jface.configuration.pages.Dialog\:rightbottom\:label\:en=right down corner
+ui.jface.configuration.pages.Dialog\:center\:label\:en=center
+ui.jface.configuration.pages.Dialog\:showtime\:label\:en="Dialogue close" options
+ui.jface.configuration.pages.Dialog\:hide\:label\:en=Close after call was accepted
+ui.jface.configuration.pages.Dialog\:manual\:label\:en=Close manually
+ui.jface.configuration.pages.Dialog\:time\:label\:en=Close by time interval
+ui.jface.configuration.pages.Dialog\:freepos\:label\:en=User-defined position
+ui.jface.configuration.pages.Dialog\:showduration\:label\:en=Time interval for close in sec.: 
+ui.jface.configuration.pages.Dialog\:fontcolor\:label\:en=Font colour for caller: 
+ui.jface.configuration.pages.Dialog\:fontsize\:label\:en=Font size: 
+ui.jface.configuration.pages.Dialog\:assign\:label\:en=enable Name assigning 
+ui.jface.configuration.pages.Dialog\:balloon\:label\:en=open dialogue as balloon control
+ui.jface.configuration.pages.Dialog\:outgoing\:label\:en=show outgoing calls
+ui.jface.configuration.pages.Dialog\:focus\:label\:en=set focus on dialogue
+ui.jface.configuration.pages.Dialog\:usemsncolor\:label\:en=Take font colour from journal MSN colour selection
+
+ui.jface.configuration.pages.Info\:title\:label\:en=Info
+ui.jface.configuration.pages.Info\:description\:label\:en=Information on the programm itself, the operating system and Java.
+ui.jface.configuration.pages.Info\:program\:label\:en=Program information:
+ui.jface.configuration.pages.Info\:installpath\:label\:en=Installpath
+ui.jface.configuration.pages.Info\:userhome\:label\:en=User home
+ui.jface.configuration.pages.Info\:userdatadir\:label\:en=User data directory
+ui.jface.configuration.pages.Info\:configdir\:label\:en=Config directory
+ui.jface.configuration.pages.Info\:logdir\:label\:en=Log directory
+ui.jface.configuration.pages.Info\:photodir\:label\:en=central image store
+ui.jface.configuration.pages.Info\:temp\:label\:en=TEMP directory
+ui.jface.configuration.pages.Info\:version\:label\:en=Version
+ui.jface.configuration.pages.Info\:language\:label\:en=Language
+ui.jface.configuration.pages.Info\:os\:label\:en=OS
+ui.jface.configuration.pages.Info\:arch\:label\:en=Architecture
+ui.jface.configuration.pages.Info\:vm\:label\:en=Java VM
+ui.jface.configuration.pages.Info\:vmversion\:label\:en=Java Version
+ui.jface.configuration.pages.Info\:vmvendor\:label\:en=Java manufacturer
+ui.jface.configuration.pages.Info\:vmhome\:label\:en=Java installpath
+ui.jface.configuration.pages.Info\:rkey\:label\:en=Registry key
+ui.jface.configuration.pages.Info\:export\:label\:en=Save...
+ui.jface.configuration.pages.Info\:module\:label\:en=Module
+ui.jface.configuration.pages.Info\:modules\:label\:en=Installed modules:
+
+ui.jface.configuration.pages.Journal\:title\:label\:en=Journals
+ui.jface.configuration.pages.Journal\:description\:label\:en=Journals are used for storing calls in differnt formats.
+
+ui.jface.configuration.pages.ModuleManager\:title\:label\:en=Module Manager
+ui.jface.configuration.pages.ModuleManager\:description\:label\:en=Managing additional modules adds advanced fuctions to the jAnrufmonitor. The Module Manager allows you to install and uninstall certain modules.
+ui.jface.configuration.pages.ModuleManager\:oktitle\:label\:en=Installation successfully finished
+ui.jface.configuration.pages.ModuleManager\:okmessage\:label\:en=Installation successfully finished. Changes takes effect after the program was restarted.
+ui.jface.configuration.pages.ModuleManager\:failtitle\:label\:en=Installation failed
+ui.jface.configuration.pages.ModuleManager\:failmessage\:label\:en=An error occurred during the installation of {%1}. Refer to the jam-0.log for further information.
+ui.jface.configuration.pages.ModuleManager\:file\:label\:en=Select installable modules:
+ui.jface.configuration.pages.ModuleManager\:install\:label\:en=Install ...
+ui.jface.configuration.pages.ModuleManager\:okrtitle\:label\:en=Remove module
+ui.jface.configuration.pages.ModuleManager\:okrmessage\:label\:en=The module was removed successfully. Changed take effect after program restart.
+ui.jface.configuration.pages.ModuleManager\:failrtitle\:label\:en=Could not remove module
+ui.jface.configuration.pages.ModuleManager\:failrmessage\:label\:en=Could not remove module. either an error has occured or there are dependency modules refereing to this module. Refer to the jam-0.log for further information.
+ui.jface.configuration.pages.ModuleManager\:confirmdelete\:label\:en=Do you really want to remove the selected module?
+ui.jface.configuration.pages.ModuleManager\:remove\:label\:en=Currently installed modules:
+ui.jface.configuration.pages.ModuleManager\:uninstall\:label\:en=Remove ...
+ui.jface.configuration.pages.ModuleManager\:infotitle\:label\:en=Module information...
+ui.jface.configuration.pages.ModuleManager\:modname\:label\:en=Module name: 
+ui.jface.configuration.pages.ModuleManager\:modversion\:label\:en=Module version: 
+ui.jface.configuration.pages.ModuleManager\:modauthor\:label\:en=Creator: 
+ui.jface.configuration.pages.ModuleManager\:modwebsite\:label\:en=Website: 
+ui.jface.configuration.pages.ModuleManager\:modtype\:label\:en=Module type: 
+ui.jface.configuration.pages.ModuleManager\:application\:label\:en=Application
+ui.jface.configuration.pages.ModuleManager\:service\:label\:en=Service
+ui.jface.configuration.pages.ModuleManager\:repository\:label\:en=Repository
+ui.jface.configuration.pages.ModuleManager\:monitor\:label\:en=Observer
+ui.jface.configuration.pages.ModuleManager\:addon\:label\:en=Add-on
+
+ui.jface.configuration.pages.MsnManager\:title\:label\:en=MSN Manager
+ui.jface.configuration.pages.MsnManager\:description\:label\:en=All managed MSNs (Multiple Subscriber Number) can be assigned with a label, which is used for identification purposes.
+ui.jface.configuration.pages.MsnManager\:detectallmsn\:label\:en=Automatically detect all MSNs
+ui.jface.configuration.pages.MsnManager\:msn\:label\:en=MSN
+ui.jface.configuration.pages.MsnManager\:alias\:label\:en=Label
+ui.jface.configuration.pages.MsnManager\:addmsn\:label\:en=new
+ui.jface.configuration.pages.MsnManager\:editmsn\:label\:en=change
+ui.jface.configuration.pages.MsnManager\:removemsn\:label\:en=remove
+ui.jface.configuration.pages.MsnManager\:ctitle\:label\:en=remove MSN
+ui.jface.configuration.pages.MsnManager\:confirm\:label\:en=Do you really want to remove this MSN?
+
+
+ui.jface.configuration.pages.RuleAssistent\:title\:label\:en=Rule Assistent
+ui.jface.configuration.pages.RuleAssistent\:description\:label\:en=Manages rules to execute installed services or prevent their execution.
+ui.jface.configuration.pages.RuleAssistent\:ruledesc\:label\:en=Rule description: 
+ui.jface.configuration.pages.RuleAssistent\:rd_1\:label\:en=Calls on 
+ui.jface.configuration.pages.RuleAssistent\:rd_2\:label\:en=\ with 
+ui.jface.configuration.pages.RuleAssistent\:rd_3\:label\:en=\ on service "
+ui.jface.configuration.pages.RuleAssistent\:rd_4\:label\:en=" get executed. 
+ui.jface.configuration.pages.RuleAssistent\:rd_5\:label\:en=\ are accepted. 
+ui.jface.configuration.pages.RuleAssistent\:rd_6\:label\:en=\ are ignored.
+ui.jface.configuration.pages.RuleAssistent\:rd_7\:label\:en=\ The rule is  
+ui.jface.configuration.pages.RuleAssistent\:rd_8\:label\:en=\ The rule gets executed on  
+ui.jface.configuration.pages.RuleAssistent\:rd_9\:label\:en=\ from 
+ui.jface.configuration.pages.RuleAssistent\:rd_10\:label\:en=\ to 
+ui.jface.configuration.pages.RuleAssistent\:rd_11\:label\:en=\ .
+ui.jface.configuration.pages.RuleAssistent\:active\:label\:en=active. 
+ui.jface.configuration.pages.RuleAssistent\:notactive\:label\:en=inactive.
+ui.jface.configuration.pages.RuleAssistent\:allmsn\:label\:en=all MSNs
+ui.jface.configuration.pages.RuleAssistent\:singlemsn\:label\:en=MSN 
+ui.jface.configuration.pages.RuleAssistent\:allcip\:label\:en=any CIP
+ui.jface.configuration.pages.RuleAssistent\:singlecip\:label\:en=CIP 
+ui.jface.configuration.pages.RuleAssistent\:allcaller\:label\:en=all contacts
+ui.jface.configuration.pages.RuleAssistent\:singlecaller\:label\:en=Only selected contacts
+ui.jface.configuration.pages.RuleAssistent\:nocaller\:label\:en=no contacts
+ui.jface.configuration.pages.RuleAssistent\:new\:label\:en=New...
+ui.jface.configuration.pages.RuleAssistent\:change\:label\:en=Change...
+ui.jface.configuration.pages.RuleAssistent\:delete\:label\:en=Delete
+ui.jface.configuration.pages.RuleAssistent\:available\:label\:en=Available rules:
+ui.jface.configuration.pages.RuleAssistent\:deleteconfirmation\:label\:en=Do you really want to delete this rule?
+ui.jface.configuration.pages.RuleAssistent\:deletetitle\:label\:en=Delete rule
+ui.jface.configuration.pages.RuleAssistent\:1\:label\:en=Sunday
+ui.jface.configuration.pages.RuleAssistent\:2\:label\:en=Monday
+ui.jface.configuration.pages.RuleAssistent\:3\:label\:en=Tuesday
+ui.jface.configuration.pages.RuleAssistent\:4\:label\:en=Wednesday
+ui.jface.configuration.pages.RuleAssistent\:5\:label\:en=Thursday
+ui.jface.configuration.pages.RuleAssistent\:6\:label\:en=Friday
+ui.jface.configuration.pages.RuleAssistent\:7\:label\:en=Saturday
+ui.jface.configuration.pages.RuleAssistent\:copyconfirmation\:label\:en=Do you really want to copy this rule?
+ui.jface.configuration.pages.RuleAssistent\:copytitle\:label\:en=Copy rule
+ui.jface.configuration.pages.RuleAssistent\:copy\:label\:en=Copy...
+ui.jface.configuration.pages.RuleAssistent\:copyof\:label\:en=Copy of 
+
+ui.jface.configuration.pages.Services\:title\:label\:en=Services
+ui.jface.configuration.pages.Services\:description\:label\:en=Services enhance the functionality of jAnrufmonitor.
+
+ui.jface.configuration.pages.NumberSettings\:title\:label\:en=Number settings
+ui.jface.configuration.pages.NumberSettings\:internallength\:label\:en=max. length of internal telephone system numbers
+ui.jface.configuration.pages.NumberSettings\:telephonesystemprefix\:label\:en=Prefix of telephone system numbers
+ui.jface.configuration.pages.NumberSettings\:description\:label\:en=Adjust these options if numbers are not detected properly.
+ui.jface.configuration.pages.NumberSettings\:areacodeaddlength\:label\:en=max. length of caller number for auto area code prefix:
+ui.jface.configuration.pages.NumberSettings\:truncate\:label\:en=Removable leading digits:
+ui.jface.configuration.pages.NumberSettings\:intareaprefix\:label\:en=Prefix for international calls:
+ui.jface.configuration.pages.NumberSettings\:general\:label\:en=General number settings
+ui.jface.configuration.pages.NumberSettings\:tk\:label\:en=Number settings for telephone systems
+ui.jface.configuration.pages.NumberSettings\:label\:label\:en=Number format: 
+ui.jface.configuration.pages.NumberSettings\:format3\:label\:en=Regional format (1): (030) 123456
+ui.jface.configuration.pages.NumberSettings\:format4\:label\:en=Regional format (2): +49 30 123456
+ui.jface.configuration.pages.NumberSettings\:format5\:label\:en=Regional format (3): 030-123456
+ui.jface.configuration.pages.NumberSettings\:format6\:label\:en=Regional format (4): 030/123456
+ui.jface.configuration.pages.NumberSettings\:format1\:label\:en=International format (1): +49 (30) 123456
+ui.jface.configuration.pages.NumberSettings\:format2\:label\:en=International format (2): 0049 (30) 123456
+ui.jface.configuration.pages.NumberSettings\:dialprefix\:label\:en=Dial prefix for outgoing calls: 
+
+
+ui.jface.configuration.pages.ExpertMode\:title\:label\:en=Expert view
+ui.jface.configuration.pages.ExpertMode\:description\:label\:en=The expert view allows you to set detailed confgiguration settings, which required good technical skills.
+ui.jface.configuration.pages.ExpertMode\:expertmode\:label\:en=Expert view enabled
+
+ui.jface.configuration.pages.Wildcards\:title\:label\:en=Placeholder
+ui.jface.configuration.pages.Wildcards\:%callername%\:label\:en=Format for %callername%: 
+ui.jface.configuration.pages.Wildcards\:%msnformat%\:label\:en=Format for %msnformat%: 
+ui.jface.configuration.pages.Wildcards\:%callernumber%\:label\:en=Format for %callernumber%: 
+ui.jface.configuration.pages.Wildcards\:%calltime%\:label\:en=Format for %calltime%: 
+ui.jface.configuration.pages.Wildcards\:%date%\:label\:en=Format for %date%: 
+ui.jface.configuration.pages.Wildcards\:%time%\:label\:en=Format for %time%: 
+ui.jface.configuration.pages.Wildcards\:description\:label\:en=Placeholders are used in services and repository for passing caller and call data to the corresponding component. Every placeholder can exist out of multiple system placeholders.
+
+ui.jface.configuration.pages.Language\:title\:label\:en=Languages
+ui.jface.configuration.pages.Language\:description\:label\:en=Choose a valid language which jAnrufmonitor is running in. Keep in mind that not all provided modules support different languages. Changing the language settings will take effect after program restart.
+ui.jface.configuration.pages.Language\:language\:label\:en=Currently selected langauge: 
+
+ui.jface.configuration.pages.GeoCoding\:title\:label\:en=Geocoding
+ui.jface.configuration.pages.GeoCoding\:description\:label\:en=Geocoding determines the geo position of a contact based on its address oder arecode. It stores logitue and latitude value of a location for the contact.
+ui.jface.configuration.pages.GeoCoding\:enabled\:label\:en=Geocoding enabled
+ui.jface.configuration.pages.GeoCoding\:local_street\:label\:en=Street: 
+ui.jface.configuration.pages.GeoCoding\:local_streetno\:label\:en=Street no.: 
+ui.jface.configuration.pages.GeoCoding\:local_pcode\:label\:en=Postal code: 
+ui.jface.configuration.pages.GeoCoding\:local_city\:label\:en=City: 
+ui.jface.configuration.pages.GeoCoding\:local_country\:label\:en=Country: 

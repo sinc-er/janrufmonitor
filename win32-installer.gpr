@@ -1,0 +1,354 @@
+<giproject version="4.0">
+	<events>
+		<event eventid="EV_BEFORECMPUNINSTALL" name="remove_all">
+			<action expression="ClearFolder('%AppDataFolder%', '*.*', 0, 0)"/>
+			<action expression="ClearFolder('%AppDataFolder%\config', '*.*', 1, 1)"/>
+			<action expression="ClearFolder('%AppDataFolder%\images', '*.*', 1, 1)"/>
+			<action expression="ClearFolder('%AppDataFolder%\logs', '*.*', 1, 1)"/>
+			<action expression="ClearFolder('%AppDataFolder%\installed-modules', '*.*', 1, 1)"/>
+			<action expression="ClearFolder('%AppDataFolder%\install', '*.*', 1, 1)"/>
+			<action expression="ClearFolder('%AppDataFolder%\lib', '*.*', 1, 1)"/>
+			<action expression="ClearFolder('%AppDataFolder%\web-config', '*.*', 1, 1)"/>
+			<action expression="ClearFolder('%AppDataFolder%\.process', '*.*', 1, 1)"/>
+		</event>
+	</events>
+	<features>
+		<feature description="Installiert die jAnrufmonitor Basiskomponente." id="application" name="jAnrufmonitor Basiskomponente" required="1">
+			<components>
+				<component id="app" name="app"/>
+			</components>
+		</feature>
+		<feature description="Installiert die jAnrufmonitor ISDN-Überwachung für CAPI-fähige Endgeräte. Der CAPI-Treiber vom Hersteller des Endgerätes muss installiert sein." id="capi" name="ISDN-Überwachung">
+			<components>
+				<component id="capi" name="capi"/>
+			</components>
+			<excepts>
+				<feature id="fritzbox"/>
+				<feature id="tapi"/>
+				<feature id="f11"/>
+			</excepts>
+		</feature>
+		<feature description="Installiert die jAnrufmonitor Fritz!Box-Überwachung für AVM Fritz!Box Fon Telefonanlagen." id="fritzbox" name="Fritz!Box-Überwachung">
+			<components>
+				<component id="fritzbox" name="fritzbox"/>
+			</components>
+			<excepts>
+				<feature id="capi"/>
+				<feature id="tapi"/>
+				<feature id="f11"/>
+			</excepts>
+		</feature>
+		<feature description="Installiert die jAnrufmonitor MS TAPI-Überwachung für TAPI-fähige Endgeräte. Der TAPI-Treiber vom Hersteller des Endgerätes muss installiert sein." id="tapi" name="MS TAPI-Überwachung">
+			<components>
+				<component id="tapi" name="tapi"/>
+			</components>
+			<excepts>
+				<feature id="fritzbox"/>
+				<feature id="capi"/>
+				<feature id="f11"/>
+			</excepts>
+		</feature>
+		<feature condition="%OSVersion%=NT4 or %OSVersion%=2K or %OSVersion%=XP" description="Installiert die jAnrufmonitor Basiskomponente als Windows-Dienst." id="winservice" name="... als Windows-Dienst installieren">
+			<components>
+				<component id="ntservice" name="ntservice"/>
+			</components>
+		</feature>
+		<feature description="Führt die Installation zur SUN Java Runtime Environment JavaSE 6 aus." id="jre" name="Java Runtime Environment JavaSE 6">
+			<components>
+				<component id="jre" name="jre"/>
+			</components>
+		</feature>
+		<feature description="Installiert diverse zusätzliche Ländervorwahldateien." id="areacodes" name="Weitere Ländervorwahldateien">
+			<features>
+				<feature description="Vorwahldateien für Afrika" id="ac1" name="Afrika">
+					<components>
+						<component id="ac1" name="ac1"/>
+					</components>
+				</feature>
+				<feature description="Vorwahldateien für Amerika" id="ac2" name="Amerika">
+					<components>
+						<component id="ac2" name="ac2"/>
+					</components>
+				</feature>
+				<feature description="Vorwahldateien für Europa" id="ac3" name="Europa">
+					<components>
+						<component id="ac3" name="ac3"/>
+					</components>
+				</feature>
+				<feature description="Vorwahldateien für Asien/Australien" id="ac4" name="Asien">
+					<components>
+						<component id="ac4" name="ac4"/>
+					</components>
+				</feature>
+			</features>
+		</feature>
+		<feature description="Installiert ausgewählte jAnrufmonitor Module." id="modules" name="jAnrufmonitor Module">
+			<features>
+				<feature description="Anwendungen erweitern den jAnrufmonitor mit Zusatzfunktionalität, die die Basiskomponente nicht beinhaltet." id="applications" name="Anwendungen">
+					<features>
+						<feature description="Simuliert Anrufe ohne die CAPI Daten direkt auszuwerten." id="f2" name="Anruf-Simulator">
+							<components>
+								<component id="simulator" name="simulator"/>
+							</components>
+						</feature>
+					</features>
+				</feature>
+				<feature description="Dienste erweitern den jAnrufmonitor mit zusätzlicher anwendungsbezogener Funktionalität. Sie werden immer in die Anwendung integriert und bieten in der Regel eine eigene Konfigurationsoberfläche in der Administration." id="services" name="Dienste">
+					<features>
+						<feature description="Server Komponente für Netzwerkbetrieb. Dieser Dienst kann nicht zusammen mit dem Client-Dienst installiert werden." id="f12" name="Server-Dienst">
+							<components>
+								<component id="server" name="server"/>
+							</components>
+							<excepts>
+								<feature id="f11"/>
+							</excepts>
+						</feature>
+						<feature description="Client Komponente für Netzwerkbetrieb. Dieser Dienst kann nicht zusammen mit dem Server-Dienst installiert werden." id="f11" name="Client-Dienst">
+							<components>
+								<component id="client" name="client"/>
+							</components>
+							<excepts>
+								<feature id="f12"/>
+								<feature id="tapi"/>
+								<feature id="capi"/>
+								<feature id="fritzbox"/>
+							</excepts>
+						</feature>
+						<feature description="Dienst speichert Gesprächsnotizen zu eingehenden Anrufen." id="f13" name="Notizen-Dienst">
+							<components>
+								<component id="comment" name="comment"/>
+							</components>
+						</feature>
+						<feature description="Dienst versendet eine Email mit Anruferdaten nach Anruf-Eingang." id="f8" name="Email-Benachrichtigungsdienst">
+							<components>
+								<component id="email" name="email"/>
+							</components>
+						</feature>
+						<feature description="Dienst startet externe Anwendungen (EXE, BAT, COM)." id="f4" name="Dienst zum Starten externer Anwendungen">
+							<components>
+								<component id="extapp" name="extapp"/>
+							</components>
+						</feature>
+					</features>
+				</feature>
+				<feature description="Telefonbücher werden zur Speicherung der im jAnrufmonitor genutzten Daten verwendet." id="repositories" name="Telefonbücher">
+					<features>
+						<feature description="Identifiziert Anrufer über den Standard-Kontakte-Ordner von Outlook. Dieses Modul funktioniert nur mit MS Outlook 9x/200x/XP." id="f10" name="Microsoft Outlook(tm) Kontakte-Verzeichnis">
+							<components>
+								<component id="outlook" name="outlook"/>
+							</components>
+						</feature>
+					</features>
+				</feature>
+			</features>
+		</feature>
+	</features>
+	<installtypes>
+		<installtype default="1" description="Installiert jAnrufmonitor für ISDN. Der CAPI-Treiber des ISDN-Endgerätes und eine Java Runtime Environment JavaSE 6 müssen  installiert sein. Alternativ: Führen Sie eine 'Benutzerdefinierte Installation' aus und installieren Sie die Java Runtime Environment JavaSE 6." id="{C7CD317C-1F10-47FE-BF29-EF1C9D1DEE6E}" name="jAnrufmonitor für einen ISDN-Anschluss [empfohlen]">
+			<features>
+				<feature id="application"/>
+				<feature id="capi"/>
+			</features>
+		</installtype>
+		<installtype description="Installiert jAnrufmonitor für MS TAPI-fähige Endgeräte an einem Standard Telefonanschluss (z.B. T-Net). Der TAPI-Treiber des Telefongerätes (TK-Anlage) und eine Java Runtime Environment JavaSE 5 müssen installiert sein. Alternativ: Führen Sie eine 'Benutzerdefinierte Installation' aus und installieren Sie die Java Runtime Environment JavaSE 6." id="{CA4074FE-67CE-4732-98DB-CF111B7A0DA6}" name="jAnrufmonitor für einen Telefon-Anschluss (T-Net)">
+			<features>
+				<feature id="application"/>
+				<feature id="tapi"/>
+			</features>
+		</installtype>
+		<installtype description="Installiert jAnrufmonitor für eine AVM Fritz!Box. Der PC muss mit der AVM Fritz!Box Fon verbunden und eine Java Runtime Environment JavaSE 6 muss installiert sein. Alternativ: Führen Sie eine 'Benutzerdefinierte Installation' aus und installieren Sie die Java Runtime Environment JavaSE 6." id="{E3442B14-8208-4607-8737-FEE017F90479}" name="jAnrufmonitor für eine AVM Fritz!Box Fon">
+			<features>
+				<feature id="application"/>
+				<feature id="fritzbox"/>
+			</features>
+		</installtype>
+		<installtype custom="1" description="Installiert eine benutzerdefinierte Version von jAnrufmonitor (inkl. Java Runtime Environment JavaSE 6 und ausgewählte Module)." id="{4431F8C1-6DED-4881-87C7-617BAF27ADD8}" name="Benutzerdefinierte Installation">
+			<features>
+				<feature id="application"/>
+				<feature id="capi"/>
+			</features>
+		</installtype>
+	</installtypes>
+	<languages>
+		<language id="DEU"/>
+		<language id="DEU" pluginid="StdUI"/>
+	</languages>
+	<packages>
+		<package filename="jam50-win32" main="1">
+			<components>
+				<component dst="%AppDataFolder%" id="app" name="Basiskomponente">
+					<files>
+						<file dst="*.*" src="win32\*.*"/>
+					</files>
+					<shortcuts>
+						<shortcut cmdline="%AppDataFolder%\jam.exe" iconfile="%AppDataFolder%\images\jam.ico" name="%AppFolder%\%AppName%" workdir="%AppDataFolder%"/>
+						<shortcut cmdline="%AppDataFolder%\changes.txt" name="%AppFolder%\Versionshistorie"/>
+						<shortcut cmdline="%AppDataFolder%\license.txt" name="%AppFolder%\Lizenzbestimmungen (Freeware)"/>
+						<shortcut cmdline="%InstallPath%\Uninstall.exe" name="%AppFolder%\%AppName% entfernen"/>
+						<shortcut cmdline="%AppDataFolder%\jam.exe" iconfile="%AppDataFolder%\images\jam.ico" name="%StartupMenu%\%AppName%" workdir="%AppDataFolder%"/>
+						<shortcut cmdline="%AppDataFolder%" condition="%OSVersion%=Vista OR %OSVersion%=W7" name="%InstallPath%\jAnrufmonitor Roaming"/>
+					</shortcuts>
+				</component>
+				<component dst="%AppDataFolder%\jre" id="jre" name="Java Runtime Environment">
+					<files>
+						<file dst="*.*" src="jre1.6\*.*"/>
+					</files>
+					<runapps>
+						<runapp cmdline="%AppDataFolder%\jre\jre-6u16-windows-i586-iftw.exe" flags="check_exitcode" msg="Starte Installation SUN Java Runtime Environment..."/>
+					</runapps>
+				</component>
+				<component dst="%AppDataFolder%\install" id="capi" name="capi">
+					<files>
+						<file dst="*.*" src="modules\mod-mon-capi.*.*"/>
+					</files>
+					<shortcuts>
+						<shortcut cmdline="http://www.capi.org" name="%AppFolder%\Mehr Informationen zur CAPI..."/>
+					</shortcuts>
+				</component>
+				<component dst="%AppDataFolder%\install" id="fritzbox" name="fritzbox">
+					<files>
+						<file dst="*.*" src="modules\mod-mon-fritzbox.*.*"/>
+					</files>
+					<shortcuts>
+						<shortcut cmdline="http://fritz.box/" name="%AppFolder%\Fritz!Box Konfiguration"/>
+					</shortcuts>
+				</component>
+				<component dst="%AppDataFolder%\install" id="tapi" name="tapi">
+					<files>
+						<file dst="*.*" src="modules\mod-mon-xtapi.*.*"/>
+					</files>
+				</component>
+				<component id="ntservice" name="... als Windows-Dienst installieren">
+					<files>
+						<file condition="%OSPlatform%=NT" dst="*.*" src="ntservice\*.*"/>
+					</files>
+					<runapps>
+						<runapp cmdline="%AppDataFolder%\InstallService.bat" condition="%OSPlatform%=NT" msg="Installiere jAnrufmonitor als Windows-Dienst..." workdir="%AppDataFolder%"/>
+						<runapp arg="start jAnrufmonitor" cmdline="net" condition="%OSPlatform%=NT" msg="Installiere jAnrufmonitor als Windows-Dienst..." workdir="%AppDataFolder%"/>
+						<runapp cmdline="%AppDataFolder%\cleanexe.bat" condition="%OSPlatform%=NT" msg="Lösche nicht benötigte jAnrufmonitor Dateien..." workdir="%AppDataFolder%"/>
+						<runapp arg="stop jAnrufmonitor" cmdline="net" condition="%OSPlatform%=NT" msg="De-Installiere jAnrufmonitor als Windows-Dienst..." whenstart="before_uninstall" workdir="%AppDataFolder%"/>
+						<runapp cmdline="%AppDataFolder%\UninstallService.bat" condition="%OSPlatform%=NT" msg="De-Installiere jAnrufmonitor als Windows-Dienst..." whenstart="before_uninstall" workdir="%AppDataFolder%"/>
+					</runapps>
+					<shortcuts>
+						<shortcut cmdline="%AppDataFolder%\InstallService.bat" condition="%OSPlatform%=NT" name="%AppFolder%\jAnrufmonitor als Dienst installieren..."/>
+						<shortcut cmdline="%AppDataFolder%\UninstallService.bat" condition="%OSPlatform%=NT" name="%AppFolder%\jAnrufmonitor als Dienst entfernen..."/>
+						<shortcut action="remove" cmdline="%AppDataFolder%\jam.exe" condition="%OSPlatform%=NT" iconfile="%AppDataFolder%\images\jam.ico" name="%StartupMenu%\%AppName%" workdir="%AppDataFolder%"/>
+						<shortcut action="remove" cmdline="%AppDataFolder%\jam.exe" condition="%OSPlatform%=NT" iconfile="%AppDataFolder%\images\jam.ico" name="%AppFolder%\%AppName%" workdir="%AppDataFolder%"/>
+					</shortcuts>
+				</component>
+				<component dst="%AppDataFolder%\install" id="simulator" name="Anruf-Simulator">
+					<files>
+						<file dst="*.*" src="modules\mod-app-simulator.*.*"/>
+					</files>
+				</component>
+				<component dst="%AppDataFolder%\install" id="gcc" name="Webcommand Creator">
+					<files>
+						<file dst="*.*" src="modules\mod-app-gcc.*.*"/>
+					</files>
+				</component>
+				<component dst="%AppDataFolder%\install" id="server" name="Server-Dienst">
+					<files>
+						<file dst="*.*" src="modules\mod-srv-server.*.*"/>
+					</files>
+				</component>
+				<component dst="%AppDataFolder%\install" id="client" name="Client-Dienst">
+					<files>
+						<file dst="*.*" src="modules\mod-srv-client.*.*"/>
+					</files>
+				</component>
+				<component dst="%AppDataFolder%\install" id="extapp" name="Dienst zum Starten externer Anwendungen">
+					<files>
+						<file dst="*.*" src="modules\mod-srv-extapp.*.*"/>
+					</files>
+				</component>
+				<component dst="%AppDataFolder%\install" id="comment" name="Notizen Dienst">
+					<files>
+						<file dst="*.*" src="modules\mod-srv-comment.*.*"/>
+					</files>
+				</component>
+				<component dst="%AppDataFolder%\install" id="email" name="Email-Benachrichtigung">
+					<files>
+						<file dst="*.*" src="modules\mod-srv-mail.*.*"/>
+					</files>
+				</component>
+				<component dst="%AppDataFolder%\install" id="outlook" name="Microsoft Outlook(tm) Kontakte-Verzeichnis">
+					<files>
+						<file dst="*.*" src="modules\mod-rep-outlook.*.*"/>
+					</files>
+				</component>
+				<component dst="%AppDataFolder%\install" id="ac1" name="Vorwahldatei Afrika">
+					<files>
+						<file dst="*.*" src="intareacodes\areacodes.africa.jam.zip"/>
+					</files>
+				</component>
+				<component dst="%AppDataFolder%\install" id="ac2" name="Vorwahldatei Amerika">
+					<files>
+						<file dst="*.*" src="intareacodes\areacodes.america.jam.zip"/>
+					</files>
+				</component>
+				<component dst="%AppDataFolder%\install" id="ac3" name="Vorwahldatei Europa">
+					<files>
+						<file dst="*.*" src="intareacodes\areacodes.europe.jam.zip"/>
+					</files>
+				</component>
+				<component dst="%AppDataFolder%\install" id="ac4" name="Vorwahldatei Asien">
+					<files>
+						<file dst="*.*" src="intareacodes\areacodes.asia.jam.zip"/>
+					</files>
+				</component>
+			</components>
+			<plugins>
+				<plugin id="StdUI">
+					<config>
+						<paramgroup name="Config">
+							<param name="PreInstallDialogSequence" value="DLG_WELCOME,DLG_LICENSE,DLG_INSTALLTYPE,DLG_DIR,DLG_GROUP,DLG_START"/>
+							<param name="ShowMainWindow" value="1"/>
+							<param name="ShowDialogTitle" value="1"/>
+							<param name="ShowDialogSubTitle" value="1"/>
+							<param name="ShowFinalDialog" value="1"/>
+							<param name="GradientTopColor" value="$FFFFFF"/>
+							<param name="GradientBottomColor" value="$6fb7ff"/>
+							<param name="StretchBanner" value="0"/>
+							<param name="DialogFont" value="MS Sans Serif,8"/>
+							<param name="DialogBitmap" value="%Presetup%\gins.bmp"/>
+							<param name="DialogTitleFont" value="MS Sans Serif,10,$000000,B"/>
+							<param name="DialogTitleShadow" value="0"/>
+							<param name="DialogTitleShadowColor" value="$C0C0C0"/>
+							<param name="DialogPosition" value="1,1"/>
+							<param name="DialogSubTitleFont" value="MS Sans Serif,8,$000000"/>
+						</paramgroup>
+						<paramgroup name="StaticBitmaps">
+							<param name="Bitmap1" value="%Presetup%\jamlogo.bmp,30,10,1,$FFFFFF"/>
+						</paramgroup>
+						<paramgroup name="Labels">
+							<param name="TitleShadow" value="%AppName%,32,22,0,Arial,30,$000000,B"/>
+							<param name="Title" value="%AppName%,30,20,0,Arial,30,$6fb7ff,B"/>
+							<param name="SubTitleShadow" value="%AppSubTitle%,62,72,0,Arial,24,$000000,B"/>
+							<param name="SubTitle" value="%AppSubTitle%,60,70,0,Arial,24,$6fb7ff,B"/>
+						</paramgroup>
+					</config>
+				</plugin>
+			</plugins>
+			<presetup>
+				<file src="presetup\*.*"/>
+			</presetup>
+		</package>
+	</packages>
+	<variables>
+		<var name="AppID" value="jam50"/>
+		<var name="AppName" value="jAnrufmonitor 5.0"/>
+		<var name="AppSubTitle" value="'- Wissen, wer anruft !'"/>
+		<var name="AppIcon" value="%AppDataFolder%\images\jam.ico"/>
+		<var name="CompanyName" value="Thilo Brandt"/>
+		<var name="OutputPath" value="../../../../published/_current"/>
+		<var name="Password"/>
+		<var name="CompressionLevel" value="7"/>
+		<var name="AutoSelectLanguage" value="1"/>
+		<var name="Uninstall" value="1"/>
+		<var name="ProgramGroup" value="%AppName%"/>
+		<var name="AppFolder" value="%ProgramsMenu%\%ProgramGroup%"/>
+		<var name="InstallPath" value="%ProgramFiles%\jAnrufmonitor"/>
+		<var condition="%OSVersion%=Vista AND %InstallPath%='%ProgramFiles%\jAnrufmonitor' OR %OSVersion%=W7 AND %InstallPath%='%ProgramFiles%\jAnrufmonitor'" name="AppDataFolder" value="%CommonAppData%\jAnrufmonitor"/>
+		<var name="AppDataFolder" value="%InstallPath%"/>
+	</variables>
+</giproject>

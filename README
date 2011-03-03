@@ -1,0 +1,12 @@
+------------------------------------------------------
+jAnrufmonitor 5.0
+
+Website: http://www.janrufmonitor.de
+Author: Thilo Brandt (mail@thilo-brandt.de)
+------------------------------------------------------
+
+This github repository contains the source files and build infrastructure of jAnrufmonitor 5.0 (Patch 30+). This software was originally developed as freeware and is now under social coding.
+
+For any commercial usage of this source, the author must be notified and referenced by the commercial product or company.
+
+Please refer also to the software licence agreement located in the guthub repository under ./kernel/core/deployment/all/license.txt.

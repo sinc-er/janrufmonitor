@@ -1,0 +1,6 @@
+@echo off
+@echo Running on Java:
+java -version
+@echo ...
+@echo Starting jAnrufmonitor ...
+java -Djava.library.path=. -cp jamapi.jar;jam.jar;hsqldb.jar de.janrufmonitor.application.RunConsole

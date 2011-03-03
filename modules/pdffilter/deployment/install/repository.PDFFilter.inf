@@ -1,0 +1,7 @@
+repository.PDFFilter\:info\:value=PDF-Exportfilter für Journale
+repository.ImExportFactory\:export_pdffile\:value=de.janrufmonitor.repository.imexporter.PDFFilter
+repository.ImExportFactory\:export_pdffile\:access=system
+
+repository.PDFCallerListFilter\:info\:value=PDF-Exportfilter für Adressbuch
+repository.ImExportFactory\:export_pdfclfile\:value=de.janrufmonitor.repository.imexporter.PDFCallerListFilter
+repository.ImExportFactory\:export_pdfclfile\:access=system

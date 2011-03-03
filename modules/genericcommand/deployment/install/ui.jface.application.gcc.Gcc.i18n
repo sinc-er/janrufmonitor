@@ -1,0 +1,13 @@
+ui.jface.application.gcc.GccCommand\:label\:label\:de=Webcommand Creator
+ui.jface.application.gcc.GccCommand\:title\:label\:de=Webcommand Creator
+ui.jface.application.gcc.wizard.GccWizard\:title\:label\:de=Webcommand Creator
+ui.jface.application.gcc.wizard.pages.GccPage\:title\:label\:de=Neues Webcommand erstellen
+ui.jface.application.gcc.wizard.pages.GccPage\:description\:label\:de=Erzeugt ein neues Webcommand, welches im Journal und Adressbuch verwendet werden kann.
+ui.jface.application.gcc.wizard.pages.GccPage\:url\:label\:de=Web-URL: 
+ui.jface.application.gcc.wizard.pages.GccPage\:name\:label\:de=Anzeigename: 
+ui.jface.application.gcc.wizard.pages.GccPage\:journal\:label\:de=Dieses Webcommand im Journal anzeigen
+ui.jface.application.gcc.wizard.pages.GccPage\:editor\:label\:de=Dieses Webcommand im Adressbuch anzeigen
+ui.jface.application.gcc.wizard.pages.GccPage\:dialog\:label\:de=Dieses Webcommand im Dialog anzeigen
+ui.jface.application.gcc.wizard.pages.GccPage\:dname\:label\:de=Ablage-Verzeichnis für neues Webcommand
+ui.jface.application.gcc.wizard.pages.GccPage\:dlabel\:label\:de=Verzeichnis für neues Webcommand Modul
+ui.jface.application.gcc.wizard.pages.GccPage\:dmessage\:label\:de=Wählen Sie ein Ablage-Verzeichnis für das neues Webcommand

@@ -1,0 +1,7 @@
+service.ServiceFactory\:service_googlemaps\:access=system
+service.ServiceFactory\:service_googlemaps\:value=de.janrufmonitor.service.google.Maps
+service.GoogleMaps\:enabled\:value=false
+service.GoogleMaps\:enabled\:type=boolean
+service.GoogleMaps\:priority\:value=999
+service.GoogleMaps\:priority\:type=integer
+service.GoogleMaps\:url\:value=http://maps.google.com/?q=

@@ -1,0 +1,14 @@
+command.CommandFactory\:command_jface_dp\:value=de.janrufmonitor.ui.jface.dialogs.DialogPropagator
+command.CommandFactory\:command_jface_dp\:access=system
+ui.jface.dialogs.DialogPropagator\:error_extension\:value=.html
+
+# added 4.5.0
+ui.jface.dialogs.DialogPropagator\:error_url\:value=
+
+
+command.CommandFactory\:command_infocommand\:value=de.janrufmonitor.ui.jface.application.info.InfoCommand
+command.CommandFactory\:command_infocommand\:access=system
+
+#added 5.0.19
+command.CommandFactory\:command_donationcommand\:value=de.janrufmonitor.ui.jface.application.donation.DonationCommand
+command.CommandFactory\:command_donationcommand\:access=system

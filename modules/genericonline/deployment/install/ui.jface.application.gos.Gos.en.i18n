@@ -1,0 +1,27 @@
+ui.jface.application.gos.GosCommand\:label\:label\:en=Directory Assistance Module Creator
+ui.jface.application.gos.GosCommand\:title\:label\:en=Directory Assistance Module Creator
+ui.jface.application.gos.wizard.GosWizard\:title\:label\:en=Directory Assistance Module Creator
+ui.jface.application.gos.wizard.pages.GosPage\:title\:label\:en=Create new Directory Assistance module 
+ui.jface.application.gos.wizard.pages.GosPage\:description\:label\:en=Creates a new Directory Assistance module to identify callers over an internet service.
+ui.jface.application.gos.wizard.pages.GosPage\:url\:label\:en=URL: 
+ui.jface.application.gos.wizard.pages.GosPage\:name\:label\:en=Name of Directory Assistance service: 
+ui.jface.application.gos.wizard.pages.GosPage\:version\:label\:en=Module version: 
+
+ui.jface.application.gos.wizard.pages.GosPage\:offset\:label\:en=Offset:
+ui.jface.application.gos.wizard.pages.GosPage\:lastname\:label\:en=Pattern for lastname:
+ui.jface.application.gos.wizard.pages.GosPage\:firstname\:label\:en=Pattern for firstname:
+ui.jface.application.gos.wizard.pages.GosPage\:street\:label\:en=Pattern for street:
+ui.jface.application.gos.wizard.pages.GosPage\:streetno\:label\:en=Pattern for street no:
+ui.jface.application.gos.wizard.pages.GosPage\:postal\:label\:en=Pattern for postal code:
+ui.jface.application.gos.wizard.pages.GosPage\:city\:label\:en=Pattern for city:
+ui.jface.application.gos.wizard.pages.GosPage\:area\:label\:en=Pattern for areacode:
+ui.jface.application.gos.wizard.pages.GosPage\:number\:label\:en=Pattern for number:
+ui.jface.application.gos.wizard.pages.GosPage\:intarea\:label\:en=International area code:
+ui.jface.application.gos.wizard.pages.GosPage\:locale\:label\:en=Locale:
+ui.jface.application.gos.wizard.pages.GosPage\:testnumber\:label\:en=Phonenumber for testing: 
+ui.jface.application.gos.wizard.pages.GosPage\:test\:label\:en=Execute test
+ui.jface.application.gos.wizard.pages.GosPage\:notidentified\:label\:en=The phonenumber {%1} was not identified. Either the number is not available at this Directory Assistance service or the patterns are wrong.
+
+ui.jface.application.gos.wizard.pages.GosPage\:dname\:label\:en=Directory for storing the new Directory Assistance module 
+ui.jface.application.gos.wizard.pages.GosPage\:dlabel\:label\:en=Directory for new Directory Assistance module 
+ui.jface.application.gos.wizard.pages.GosPage\:dmessage\:label\:en=Choose a directory to store the new Directory Assistance module 

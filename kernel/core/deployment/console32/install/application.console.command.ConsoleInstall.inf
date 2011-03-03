@@ -1,0 +1,2 @@
+command.CommandFactory\:command_install\:value=de.janrufmonitor.application.console.command.ConsoleInstall
+command.CommandFactory\:command_install\:access=system

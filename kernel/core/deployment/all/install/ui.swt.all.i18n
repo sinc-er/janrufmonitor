@@ -1,0 +1,11 @@
+ui.swt.controls.ConfigShutdown\:shutdowntitle\:label\:de=jAnrufmonitor - Aktualisierung erfolgreich
+ui.swt.controls.ConfigShutdown\:shutdown\:label\:de=jAnrufmonitor muss neu gestartet werden, da eine Aktualisierung durchgeführt wurde.
+
+service.trayicon.Activator\:label\:label\:de=Überwachung aktiv
+service.TrayIcon\:title\:label\:de=TrayIcon
+service.TrayIcon\:exit\:label\:de=Beenden
+service.TrayIcon\:sub_component_admin_config\:label\:de=Einstellungen
+service.TrayIcon\:sub_component_admin\:label\:de=Administration
+service.TrayIcon\:tooltip\:label\:de=Es wurden keine\r\nAnrufe registriert. 
+
+service.ConfigService\:title\:label\:de=Konfigurationsassistent

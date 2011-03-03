@@ -1,0 +1,3 @@
+ui.jface.configuration.ConfigurationCommand\:page_xtapi\:value=de.janrufmonitor.ui.jface.configuration.pages.XTapi
+ui.jface.configuration.ConfigurationCommand\:page_xtapi\:access=system
+ui.jface.configuration.ConfigurationCommand\:page_xtapi\:mode=expert

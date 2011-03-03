@@ -1,0 +1,5 @@
+command.CommandFactory\:command_gcc\:value=de.janrufmonitor.ui.jface.application.gcc.GccCommand
+command.CommandFactory\:command_gcc\:access=system
+service.TrayIcon\:sub_component_admin_gcc\:value=GccCommand
+service.TrayIcon\:sub_component_admin_gcc\:position=51
+service.TrayIcon\:sub_component_admin_gcc\:access=system

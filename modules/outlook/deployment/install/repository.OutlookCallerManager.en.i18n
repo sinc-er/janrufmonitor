@@ -1,0 +1,36 @@
+repository.OutlookCallerManager\:title\:label\:en=Microsoft Outlook Contacts
+repository.OutlookCallerManager\:display\:label\:en=The selected contact does not exist in Microsoft Outlook.
+repository.OutlookCallerManager\:sync\:label\:en=Contacts from Microsoft Outlook contact folder are read. This could take several minutes. During this time not all contacts are shown in the address book.
+repository.OutlookCallerManager\:olstarterror\:label\:en=An error occured during startup of Microsoft Outlook. Either this version is not compatible with jAnrufmonitor or a required component is not installed. Install all required components with the Microsoft Office setup assisstent.
+repository.OutlookCallerManager\:olstore\:label\:en=Private and business contacts are not separated in this view. Changing the contact in jAnrufmonitor could lead to inconsistency in Microsoft Outlook contacts. 
+ui.jface.application.editor.action.OutlookImportAction\:title\:label\:en=Import Microsoft Outlook contacts...
+ui.jface.application.editor.action.OutlookImportAction\:importprogress\:label\:en=Importing all Microsoft Outlook contacts... Please, be patient...
+ui.jface.application.editor.action.OutlookImportAction\:add\:label\:en=Adding Microsoft Outlook contacts to address book...
+ui.jface.application.editor.action.OutlookImportAction\:reduce\:label\:en=Optimizing Microsoft Outlook contacts and call numbers...
+ui.jface.application.editor.action.OutlookImportAction\:check\:label\:en=Synchronizing contact: {%1}
+
+ui.jface.application.editor.action.OutlookCategoryImportAction\:title\:label\:en=Import Microsoft Outlook folders as categories...
+
+ui.jface.application.editor.action.OutlookOpenAction\:title\:label\:en=Open with Microsoft Outlook...
+
+ui.jface.application.editor.rendering.OutlookNumberType\:name\:label\:en=Type (Outlook)
+ui.jface.application.editor.rendering.OutlookNumberType\:label\:label\:en=Number type (Outlook)
+ui.jface.application.editor.rendering.OutlookNumberType\:HomeTelephoneNumber\:label\:en=Private
+ui.jface.application.editor.rendering.OutlookNumberType\:Home2TelephoneNumber\:label\:en=Private 2
+ui.jface.application.editor.rendering.OutlookNumberType\:HomeFaxNumber\:label\:en=Fax private
+ui.jface.application.editor.rendering.OutlookNumberType\:MobileTelephoneNumber\:label\:en=Mobilte
+ui.jface.application.editor.rendering.OutlookNumberType\:BusinessTelephoneNumber\:label\:en=Business
+ui.jface.application.editor.rendering.OutlookNumberType\:Business2TelephoneNumber\:label\:en=Business 2
+ui.jface.application.editor.rendering.OutlookNumberType\:BusinessFaxNumber\:label\:en=Fax business
+ui.jface.application.editor.rendering.OutlookNumberType\:OtherTelephoneNumber\:label\:en=Other
+ui.jface.application.editor.rendering.OutlookNumberType\:OtherFaxNumber\:label\:en=Other Fax
+ui.jface.application.editor.rendering.OutlookNumberType\:CompanyMainTelephoneNumber\:label\:en=Company
+ui.jface.application.editor.rendering.OutlookNumberType\:PrimaryTelephoneNumber\:label\:en=main phone
+ui.jface.application.editor.rendering.OutlookNumberType\:PagerNumber\:label\:en=Pager
+ui.jface.application.editor.rendering.OutlookNumberType\:TTYTDDTelephoneNumber\:label\:en=Text phone
+ui.jface.application.editor.rendering.OutlookNumberType\:CarTelephoneNumber\:label\:en=Auto
+ui.jface.application.editor.rendering.OutlookNumberType\:AssistantTelephoneNumber\:label\:en=Assistent
+ui.jface.application.editor.rendering.OutlookNumberType\:CallbackTelephoneNumber\:label\:en=Callback
+ui.jface.application.editor.rendering.OutlookNumberType\:ISDNNumber\:label\:en=ISDN
+ui.jface.application.editor.rendering.OutlookNumberType\:TelexNumber\:label\:en=Telex
+

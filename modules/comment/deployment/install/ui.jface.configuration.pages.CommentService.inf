@@ -1,0 +1,2 @@
+ui.jface.configuration.ConfigurationCommand\:page_comment\:value=de.janrufmonitor.ui.jface.configuration.pages.CommentService
+ui.jface.configuration.ConfigurationCommand\:page_comment\:access=system

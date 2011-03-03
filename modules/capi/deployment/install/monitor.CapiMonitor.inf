@@ -1,0 +1,17 @@
+monitor.CapiMonitor\:available\:type=boolean
+monitor.CapiMonitor\:available\:value=true
+monitor.CapiMonitor\:busyonbusy\:type=boolean
+monitor.CapiMonitor\:busyonbusy\:value=false
+monitor.CapiMonitor\:spoofing\:type=boolean
+monitor.CapiMonitor\:spoofing\:value=false
+monitor.CapiMonitor\:maxcon\:type=integer
+monitor.CapiMonitor\:maxcon\:value=1
+monitor.CapiMonitor\:maxblock\:type=integer
+monitor.CapiMonitor\:maxblock\:value=2
+monitor.CapiMonitor\:blocksize\:type=integer
+monitor.CapiMonitor\:blocksize\:value=128
+
+monitor.MonitorListener\:monitor\:value=de.powerisdnmonitor.capi.CapiMonitor
+monitor.MonitorListener\:monitor\:access=system
+monitor.MonitorListener\:priority\:value=1
+monitor.MonitorListener\:priority\:type=integer

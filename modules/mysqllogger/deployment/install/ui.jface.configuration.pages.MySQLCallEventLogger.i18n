@@ -1,0 +1,8 @@
+ui.jface.configuration.pages.MySQLCallEventLogger\:title\:label\:de=MySQL Anrufereignis Monitor
+ui.jface.configuration.pages.MySQLCallEventLogger\:description\:label\:de=Der Dienst MySQL Anrufereignis Monitor speichert die Anrufereignisse wie Klingeln, Rufannahme etc. in einer MySQL Datenbank.
+ui.jface.configuration.pages.MySQLCallEventLogger\:dbserver\:label\:de=Datenbank-Server: 
+ui.jface.configuration.pages.MySQLCallEventLogger\:dbdb\:label\:de=Datenbank-Name: 
+ui.jface.configuration.pages.MySQLCallEventLogger\:dbport\:label\:de=Datenbank-Port: 
+ui.jface.configuration.pages.MySQLCallEventLogger\:dbuser\:label\:de=Datenbank-Benutzer: 
+ui.jface.configuration.pages.MySQLCallEventLogger\:dbpassword\:label\:de=Datenbank-Passwort: 
+ui.jface.configuration.pages.MySQLCallEventLogger\:enabled\:label\:de=Dienst aktiviert

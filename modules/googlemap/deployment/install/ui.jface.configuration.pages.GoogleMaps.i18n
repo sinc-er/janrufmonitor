@@ -1,0 +1,3 @@
+ui.jface.configuration.pages.GoogleMaps\:title\:label\:de=Google Maps-Lokalisierungsdienst
+ui.jface.configuration.pages.GoogleMaps\:description\:label\:de=Mit Hilfe dieses Dienstes können die übermittelten Anruferdaten auf einer Landkarte lokalisiert werden. Es ist eine Verbindung zum Online-Dienst maps.google.com notwendig.
+ui.jface.configuration.pages.GoogleMaps\:enabled\:label\:de=Dienst aktiviert

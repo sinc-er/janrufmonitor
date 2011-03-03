@@ -1,0 +1,3 @@
+repository.MacAddressBookManager\:title\:label\:en=Apple Mac address book
+
+ui.jface.application.editor.action.MacCategoryImportAction\:title\:label\:en=Import Apple Mac address book groups as categories...

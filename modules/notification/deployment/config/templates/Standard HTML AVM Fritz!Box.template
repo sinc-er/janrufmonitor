@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+
+<table cellspacing="5" cellpadding="5" border="0">
+<tr>
+    <td><img src="data:image/jpeg;base64,%r:imagebase64%"></td>
+    <td>
+	<font face="Arial">
+		<font size="2"><b>
+			%a:fn% %a:ln%
+			</b><br>
+		</font>
+		<font size="2">
+			%a:str% %a:no%
+			<br>
+			%a:pcode% %a:city%
+			<br>
+			%a:cntry%
+		</font>
+	</font>
+<p>
+<font face="Arial">
+<strong>
+%callernumber%
+</strong>
+</font>
+</p>
+
+<p>
+<font face="Arial" size="2">
+auf Apparat %msn% %msnalias%
+</font>
+</p>
+
+<p><font size="2">
+<font face="Arial">
+Anrufstatus:
+<img style="width: 16px; height: 16px" alt="<!-- start_translate:%a:status%,de:end_translate-->" hspace="0" src="<!-- start_file:%imagepath%/%a:status%.gif:end_file-->" align="absMiddle" border="0">
+&nbsp;<font size="1"><!-- start_translate:%a:status%,de:end_translate--></font>
+</font></font></p>
+
+<p><font size="2">
+<font face="Arial">
+Anrufzeit:
+%date% um %time%
+</font></font></p>
+<p><font size="2">
+<font face="Arial">
+Gesprächsdauer:
+%r:FritzBoxDuration%
+</font></font></p>
+	</td>
+</tr>
+</table>
+<hr><font face="Arial"><font size="1">
+Diese Email wurde durch die <a href="http://www.janrufmonitor.de">jAnrufmonitor</a> Emailbenachrichtigung automatisch erstellt.
+<br></font>
+</font></font></p>
+
+</body>
+</html>

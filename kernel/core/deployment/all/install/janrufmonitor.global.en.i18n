@@ -1,0 +1,51 @@
+janrufmonitor.global\:title\:label\:en=Telephone basic settings
+core\:title\:label\:en=jAnrufmonitor base component
+
+exception.Message\:unknown\:label\:en=General error\n\nMore details on this error were logged in jam-0.log.
+exception.Message\:unknown\:description\:en=pim-error-0001
+exception.Message\:lockedarchive\:label\:en=Database error\n\nAt least one database archive could not be opened. Make sure that no other application has a lock on the database. More details on this error were logged in jam-0.log.
+exception.Message\:invalidarchive\:label\:en=Database error\n\nAn error occured during database write or read processes. More details on this error were logged in janrufmonitor-0.log.
+
+installer.InstallerEngine\:title\:label\:en=Installation module
+installer.InstallerEngine\:null\:label\:en=A bugfix or a configuration data was installed. It is recommended to restart jAnrufmonitor to make changes take effect.
+installer.InstallerEngine\:moduleversionrule\:label\:en=An old module version has been found. Please uninstall this module before you install the latest module version.
+installer.InstallerEngine\:pimversionrule\:label\:en=The selected module could not be installed with this jAnrufmonitor version. Update the program to the latest version.
+installer.InstallerEngine\:dependencyrule\:label\:en=The selected moduel could not be installed due to a missing dependency module. Install teh missing dependency module first.
+installer.InstallerEngine\:invaliddescriptor\:label\:en=No module descriptor was found for the installed module.
+installer.InstallerEngine\:conflictrule\:label\:en=The selected module could not be installed because of conflicts with an other installed module. You cannot run both modules in parallel.
+
+manager.CipManager\:1\:label\:en=Speech
+manager.CipManager\:2\:label\:en=Unrestricted digital information
+manager.CipManager\:3\:label\:en=Restricted digital information
+manager.CipManager\:4\:label\:en=3.1 kHz audio
+manager.CipManager\:5\:label\:en=7 kHz audio
+manager.CipManager\:6\:label\:en=Video
+manager.CipManager\:7\:label\:en=Packet Mode
+manager.CipManager\:8\:label\:en=56 kBit/s rate adaption
+manager.CipManager\:9\:label\:en=Unrestricted digital information with tones
+manager.CipManager\:16\:label\:en=Telephony
+manager.CipManager\:17\:label\:en=Group 2/3 fax
+manager.CipManager\:18\:label\:en=Group 4 fax
+manager.CipManager\:19\:label\:en=Teletex service
+manager.CipManager\:20\:label\:en=Teletex service
+manager.CipManager\:21\:label\:en=Teletex service
+manager.CipManager\:22\:label\:en=Videotex
+manager.CipManager\:23\:label\:en=Telex
+manager.CipManager\:24\:label\:en=Message Handling system X.400
+manager.CipManager\:25\:label\:en=OSI application X.200
+manager.CipManager\:26\:label\:en=7 kHz telephony
+manager.CipManager\:27\:label\:en=Video telephony
+manager.CipManager\:28\:label\:en=Video telephony
+manager.CipManager\:100\:label\:en=VoIP
+manager.CipManager\:999\:label\:en=unknown service
+
+manager.MsnManager\:title\:label\:en=MSN Manager
+
+monitor.MonitorListener\:title\:label\:en=Observer
+monitor.MonitorListener\:on\:label\:en=Call observation enabled.
+monitor.MonitorListener\:off\:label\:en=Call observation disabled. No calls will be recognized.
+rules.RuleEngine\:title\:label\:en=Regel assistent
+rules.RuleEngine\:rulelabel\:label\:en=Rule #
+
+runtime.LauncherFactory\:title\:label\:en=Launcher Registry
+

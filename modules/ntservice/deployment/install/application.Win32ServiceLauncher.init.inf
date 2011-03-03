@@ -1,0 +1,3 @@
+runtime.LauncherFactory\:launcher_win32serv\:value=de.janrufmonitor.application.launcher.Win32ServiceLauncher
+runtime.LauncherFactory\:launcher_win32serv\:access=system
+application.Win32ServiceLauncher\:filename\:value=ntservice.properties

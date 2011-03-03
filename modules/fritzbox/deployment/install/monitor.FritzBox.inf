@@ -1,0 +1,26 @@
+monitor.MonitorListener\:monitor_fb\:value=de.janrufmonitor.fritzbox.FritzBoxMonitor
+monitor.MonitorListener\:monitor_fb\:access=system
+
+repository.ImExportFactory\:import_fritzbox\:value=de.janrufmonitor.repository.imexporter.FritzBoxCallListImporter
+repository.ImExportFactory\:import_fritzbox\:access=system
+
+monitor.FritzBoxMonitor\:boxip\:value=fritz.box
+monitor.FritzBoxMonitor\:boxpassword\:value=
+monitor.FritzBoxMonitor\:boxport\:value=80
+monitor.FritzBoxMonitor\:boxmport\:value=1012
+monitor.FritzBoxMonitor\:boxdate\:value=dd.MM.yy HH:mm
+monitor.FritzBoxMonitor\:activemonitor\:value=false
+monitor.FritzBoxMonitor\:activemonitor\:type=boolean
+monitor.FritzBoxMonitor\:boxclickdial\:value=50
+monitor.FritzBoxMonitor\:outgoing\:value=true
+monitor.FritzBoxMonitor\:outgoing\:type=boolean
+monitor.FritzBoxMonitor\:retrymax\:value=5
+monitor.FritzBoxMonitor\:autoreconnect\:value=true
+monitor.FritzBoxMonitor\:autoreconnect\:type=boolean
+
+repository.CallerManagerFactory\:manager_fbp\:access=system
+repository.CallerManagerFactory\:manager_fbp\:value=de.janrufmonitor.repository.FritzBoxPhonebookManager
+repository.FritzBoxPhonebookManager\:enabled\:value=false
+repository.FritzBoxPhonebookManager\:enabled\:type=boolean
+repository.FritzBoxPhonebookManager\:priority\:value=5
+repository.FritzBoxPhonebookManager\:priority\:type=integer

@@ -1,0 +1,2 @@
+ui.jface.configuration.ConfigurationCommand\:page_googlemaps\:value=de.janrufmonitor.ui.jface.configuration.pages.GoogleMaps
+ui.jface.configuration.ConfigurationCommand\:page_googlemaps\:access=system

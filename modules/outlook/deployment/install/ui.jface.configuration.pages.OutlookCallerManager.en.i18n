@@ -1,0 +1,12 @@
+ui.jface.configuration.pages.OutlookCallerManager\:title\:label\:en=Microsoft Outlook Contacts
+ui.jface.configuration.pages.OutlookCallerManager\:description\:label\:en=This module identifies calls with the Microsoft Outlook Contacts folder.
+ui.jface.configuration.pages.OutlookCallerManager\:enabled\:label\:en=Repository enabled
+ui.jface.configuration.pages.OutlookCallerManager\:split\:label\:en=Split private and bussiness phones
+ui.jface.configuration.pages.OutlookCallerManager\:import\:label\:en=Import options
+ui.jface.configuration.pages.OutlookCallerManager\:sf\:label\:en=Import contact folder: {%1} ({%2} contacts)
+ui.jface.configuration.pages.OutlookCallerManager\:index\:label\:en=Check for new Outlook contacts: 
+ui.jface.configuration.pages.OutlookCallerManager\:mode\:label\:en=Access permissions: 
+ui.jface.configuration.pages.OutlookCallerManager\:mode1\:label\:en=Only identify
+ui.jface.configuration.pages.OutlookCallerManager\:mode2\:label\:en=identify, address book (read-only)
+ui.jface.configuration.pages.OutlookCallerManager\:mode3\:label\:en=identify, address book (read/write)
+ui.jface.configuration.pages.OutlookCallerManager\:keepextension\:label\:en=Keep extension number if present

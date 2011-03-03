@@ -1,0 +1,15 @@
+service.ServiceFactory\:service_twitter\:access=system
+service.ServiceFactory\:service_twitter\:value=de.janrufmonitor.service.twitter.TwitterService
+service.TwitterService\:enabled\:value=false
+service.TwitterService\:enabled\:type=boolean
+service.TwitterService\:priority\:value=100
+service.TwitterService\:priority\:type=integer
+service.TwitterService\:inmessage\:value=Erhalte gerade einen Anruf von %callernumber%.
+service.TwitterService\:outmessage\:value=Rufe gerade %callernumber% an.
+
+rules.RuleEngine\:twitter_rule\:value=TwitterService%*%*%true%*%*
+rules.RuleEngine\:usestandard\:value=false
+rules.RuleEngine\:usestandard\:type=boolean
+
+command.CommandFactory\:command_twitter\:value=de.janrufmonitor.service.twitter.TwitterPINCommand
+command.CommandFactory\:command_twitter\:access=system

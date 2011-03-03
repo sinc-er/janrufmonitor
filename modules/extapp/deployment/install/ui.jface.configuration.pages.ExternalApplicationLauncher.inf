@@ -1,0 +1,2 @@
+ui.jface.configuration.ConfigurationCommand\:page_extapp\:value=de.janrufmonitor.ui.jface.configuration.pages.ExternalApplicationLauncher
+ui.jface.configuration.ConfigurationCommand\:page_extapp\:access=system

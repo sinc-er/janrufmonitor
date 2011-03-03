@@ -1,0 +1,7 @@
+repository.HttpCallerManager\:remote_repository\:value=CallerDirectory
+repository.HttpCallerManager\:enabled\:value=true
+repository.HttpCallerManager\:enabled\:type=boolean
+repository.HttpCallerManager\:priority\:value=2
+repository.HttpCallerManager\:priority\:type=integer
+repository.CallerManagerFactory\:manager_remote\:value=de.janrufmonitor.repository.HttpCallerManager
+repository.CallerManagerFactory\:manager_remote\:access=system

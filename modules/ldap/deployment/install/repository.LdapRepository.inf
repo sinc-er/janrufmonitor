@@ -1,0 +1,13 @@
+repository.CallerManagerFactory\:manager_ldapc\:access=system
+repository.CallerManagerFactory\:manager_ldapc\:value=de.janrufmonitor.repository.LdapRepository
+repository.LdapRepository\:enabled\:value=false
+repository.LdapRepository\:enabled\:type=boolean
+repository.LdapRepository\:priority\:value=5
+repository.LdapRepository\:priority\:type=integer
+repository.LdapRepository\:maxresults\:value=200
+repository.LdapRepository\:maxresults\:type=integer
+repository.LdapRepository\:port\:value=389
+repository.LdapRepository\:port\:type=integer
+repository.LdapRepository\:server\:value=localhost
+repository.LdapRepository\:basedn\:value=ou=People,dc=company,dc=com
+repository.LdapRepository\:user\:value=cn=Administrator

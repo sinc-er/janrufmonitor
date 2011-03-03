@@ -1,0 +1,3 @@
+service.Server\:title\:label\:de=Server Erweiterung
+service.Server\:connected\:label\:de=Ein Client hat sich am Server angemeldet: {%1} [{%2}]
+server.security.SecurityManager\:title\:label\:de=Server Sicherheitsmanager

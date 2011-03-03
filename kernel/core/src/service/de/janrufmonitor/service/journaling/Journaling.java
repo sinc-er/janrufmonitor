@@ -1,0 +1,120 @@
+package de.janrufmonitor.service.journaling;
+
+import java.util.List;
+
+import de.janrufmonitor.framework.ICall;
+import de.janrufmonitor.framework.event.IEvent;
+import de.janrufmonitor.framework.event.IEventBroker;
+import de.janrufmonitor.framework.event.IEventConst;
+import de.janrufmonitor.framework.event.IEventSender;
+import de.janrufmonitor.repository.ICallManager;
+import de.janrufmonitor.repository.types.IWriteCallRepository;
+import de.janrufmonitor.runtime.IRuntime;
+import de.janrufmonitor.runtime.PIMRuntime;
+import de.janrufmonitor.service.AbstractReceiverConfigurableService;
+
+public class Journaling extends AbstractReceiverConfigurableService implements IEventSender {
+    
+    private String ID = "Journaling";
+    private String NAMESPACE = "service.Journaling";
+
+	private IRuntime m_runtime;
+    
+    public Journaling() {
+        super();
+        this.getRuntime().getConfigurableNotifier().register(this);
+    }
+    
+    public String getNamespace() {
+        return this.NAMESPACE;
+    }
+
+	public String getID() {
+		return this.ID;
+	}
+    
+	public void shutdown() {
+		super.shutdown();
+		IEventBroker eventBroker = this.getRuntime().getEventBroker();
+		eventBroker.unregister(this, eventBroker.createEvent(IEventConst.EVENT_TYPE_IDENTIFIED_CALL));
+		eventBroker.unregister(this, eventBroker.createEvent(IEventConst.EVENT_TYPE_IDENTIFIED_OUTGOING_CALL));
+		eventBroker.unregister(this, eventBroker.createEvent(IEventConst.EVENT_TYPE_IDENTIFIED_OUTGOING_CALL_ACCEPTED));
+		eventBroker.unregister(this, eventBroker.createEvent(IEventConst.EVENT_TYPE_CALLACCEPTED));
+		eventBroker.unregister(this, eventBroker.createEvent(IEventConst.EVENT_TYPE_CALLCLEARED));        
+		eventBroker.unregister(this, eventBroker.createEvent(IEventConst.EVENT_TYPE_MANUALCALLACCEPTED));
+		eventBroker.unregister(this, eventBroker.createEvent(IEventConst.EVENT_TYPE_CALLREJECTED));
+		eventBroker.unregister(this);
+		this.m_logger.info("Journaling is shut down ...");
+	}
+    
+	public void startup() {
+		super.startup();
+
+		IEventBroker eventBroker = this.getRuntime().getEventBroker();
+		eventBroker.register(this, eventBroker.createEvent(IEventConst.EVENT_TYPE_IDENTIFIED_CALL));
+		eventBroker.register(this, eventBroker.createEvent(IEventConst.EVENT_TYPE_IDENTIFIED_OUTGOING_CALL));
+		eventBroker.register(this, eventBroker.createEvent(IEventConst.EVENT_TYPE_IDENTIFIED_OUTGOING_CALL_ACCEPTED));
+		eventBroker.register(this, eventBroker.createEvent(IEventConst.EVENT_TYPE_CALLACCEPTED));
+		eventBroker.register(this, eventBroker.createEvent(IEventConst.EVENT_TYPE_CALLCLEARED));
+		eventBroker.register(this, eventBroker.createEvent(IEventConst.EVENT_TYPE_MANUALCALLACCEPTED));
+		eventBroker.register(this, eventBroker.createEvent(IEventConst.EVENT_TYPE_CALLREJECTED));
+		eventBroker.register(this);
+		this.m_logger.info("Journaling is started ...");
+	}
+
+	public void receivedOtherEventCall(IEvent event) {
+		if(event.getType() == IEventConst.EVENT_TYPE_CALLACCEPTED ||
+		   event.getType() == IEventConst.EVENT_TYPE_CALLCLEARED ||
+		   event.getType() == IEventConst.EVENT_TYPE_MANUALCALLACCEPTED || 
+		   event.getType() == IEventConst.EVENT_TYPE_CALLREJECTED ||
+		   event.getType() == IEventConst.EVENT_TYPE_IDENTIFIED_OUTGOING_CALL_ACCEPTED) {
+			
+			// checks wether this service is available for the incoming MSN or not.
+			ICall updateCall = (ICall)event.getData();
+			if (updateCall==null) {
+				this.m_logger.warning("Call reference is null.");
+				return;
+			}
+			if (this.getRuntime().getRuleEngine().validate(this.ID, updateCall.getMSN(), updateCall.getCIP(), updateCall.getCaller().getPhoneNumber())) {
+				List callManagerList = this.getRuntime().getCallManagerFactory().getAllCallManagers();
+				ICallManager icm = null;
+				IEventBroker eventBroker = this.getRuntime().getEventBroker();
+				for (int i = 0; i < callManagerList.size(); i++) {
+					icm = (ICallManager) callManagerList.get(i);
+
+					// check if the repository manager allows read/write access
+					if (icm.isActive() && icm.isSupported(IWriteCallRepository.class)) {
+						((IWriteCallRepository)icm).updateCall(updateCall);
+						this.m_logger.info("Call update sent to repository manager <" + icm.getManagerID() + ">: " + updateCall);
+						eventBroker.send(this, eventBroker.createEvent(IEventConst.EVENT_TYPE_UPDATE_CALL, updateCall));
+					}
+				}
+			}
+		}
+	}
+
+	public void receivedValidRule(ICall aCall) {
+		List callManagerList = this.getRuntime().getCallManagerFactory().getAllCallManagers();
+		ICallManager icm = null;
+		for (int i = 0; i < callManagerList.size(); i++) {
+			icm = (ICallManager) callManagerList.get(i);
+
+			// check if the repository manager allows read/write access
+			if (icm.isActive() && icm.isSupported(IWriteCallRepository.class)) {
+				((IWriteCallRepository)icm).setCall(aCall);
+				this.m_logger.info("Call sent to repository manager <" + icm.getManagerID() + ">: " + aCall);
+			}
+		}
+	}
+	
+	public IRuntime getRuntime() {
+		if (this.m_runtime==null)
+			this.m_runtime = PIMRuntime.getInstance();
+		return this.m_runtime;
+	}
+
+	public String getSenderID() {
+		return this.getID();
+	}
+
+}

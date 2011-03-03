@@ -1,0 +1,6 @@
+repository.MoonyImporter\:info\:value=Migrationsfilter für Moony Anrufhistorie
+repository.ImExportFactory\:import_moonyfile\:value=de.janrufmonitor.repository.imexporter.MoonyImporter
+repository.ImExportFactory\:import_moonyfile\:access=system
+repository.MoonyCallerImporter\:info\:value=Migrationsfilter für Moony Anruferliste
+repository.ImExportFactory\:import_moony2file\:value=de.janrufmonitor.repository.imexporter.MoonyCallerImporter
+repository.ImExportFactory\:import_moony2file\:access=system

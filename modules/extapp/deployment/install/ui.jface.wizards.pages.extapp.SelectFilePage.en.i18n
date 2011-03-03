@@ -1,0 +1,4 @@
+ui.jface.wizards.pages.extapp.SelectFilePage\:title\:label\:en=Choose application
+ui.jface.wizards.pages.extapp.SelectFilePage\:description\:label\:en=Choose an application (*.exe, *.com, *.cmd) which is assigned for the MSN.
+ui.jface.wizards.pages.extapp.SelectFilePage\:sound\:label\:en=Application file: 
+

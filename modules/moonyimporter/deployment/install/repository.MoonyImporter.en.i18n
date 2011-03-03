@@ -1,0 +1,4 @@
+repository.MoonyImporter\:filtername\:label\:en=Moony call history (*.inf)
+repository.MoonyImporter\:title\:label\:en=Import filter for Moony call history
+repository.MoonyCallerImporter\:filtername\:label\:en=Moony caller list (callers.inf)
+repository.MoonyCallerImporter\:title\:label\:en=Import filter for Moony caller lists

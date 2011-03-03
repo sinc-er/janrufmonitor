@@ -1,0 +1,3 @@
+repository.LdapRepository\:title\:label\:en=LDAP-based address book
+repository.LdapRepository\:loginerror\:label\:en=Login to the LDAP server failed. Please check your credentials.
+

@@ -1,0 +1,2 @@
+service.client.RequesterFactory\:title\:label\:en=Client HTTP Handler
+service.commons.Requester\:title\:label\:en=Client Request Handler

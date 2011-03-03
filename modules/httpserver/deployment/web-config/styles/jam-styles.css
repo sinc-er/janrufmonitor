@@ -1,0 +1,74 @@
+body {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 9pt;
+	padding : 30px 30px 30px 30px;
+}
+
+h1 { 
+	font-size:  12pt;
+ }
+ 
+ h2 { 
+ 	font-size: 11pt;
+  }
+  
+  th {
+	font-size : 9pt;
+	text-align : left;
+	width : 400px;
+	border-bottom-width : thin;
+	border-bottom-style : solid;
+	border-bottom-color : Silver;
+	background-color : #D4D0C8;
+}
+   
+  td {
+	font-size : 9pt;
+	text-align : left;
+		border-bottom-color : #D4D0C8;
+	border-bottom-style : dotted;
+	border-bottom-width : thin;
+}
+   
+table {
+	border: thin solid Silver;
+	width : 600px;
+}
+
+button {
+	font-size : 8pt;
+	width : 52px;
+	height : 20px;
+}
+ 
+#footer {
+	padding : 10px 0px 10px 0px;
+	font-size : 8pt;
+}
+
+#logo {
+	margin-right : 25px;
+}
+
+#header {
+	width : 600px;
+	text-align : left;
+	vertical-align : text-top;
+}
+
+#system {
+	font-style : italic;
+	color : Silver;
+}
+
+#savebutton {
+	margin-top : 15px;
+}
+
+.currentvalue {
+	font-weight : bold;
+}
+
+.navlink {
+	margin-right : 25px;
+}

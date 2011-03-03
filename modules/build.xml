@@ -1,0 +1,16 @@
+<project name="jAnrufmonitor All Modules" default="publish_all" basedir="./">
+    <target name="publish_all">
+        <subant target="">
+            <fileset dir="." includes="*/build.xml"/>
+        </subant>
+    </target>
+    <!--
+    <target name="init">
+        <subant target="copy_i18n">
+            <fileset dir="." includes="*/build.xml"/>
+        </subant>
+    </target>
+    
+    -->
+</project>
+

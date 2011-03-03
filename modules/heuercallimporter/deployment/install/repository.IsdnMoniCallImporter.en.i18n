@@ -1,0 +1,5 @@
+repository.IsdnMoniCallImporter\:filtername\:label\:en=ISDNMoni caller history (*.tel)
+repository.IsdnMoniCallImporter\:title\:label\:en=Import filter for ISDNMoni caller history
+repository.IsdnMoniCallImporter\:confirmmessage\:label\:en=Don't show this message in future.
+repository.IsdnMoniCallImporter\:message\:label\:en=Call detection
+repository.IsdnMoniCallImporter\:message\:description\:en=ISDNMoni caller history entries are going to be imported. Do you want to import the caller data into the address book?

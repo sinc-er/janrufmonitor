@@ -1,0 +1,2 @@
+service.MySQLCallEventLogger\:title\:label\:de=MySQL Anrufereignis Monitor
+service.MySQLCallEventLogger\:connecterror\:label\:de=Verbindung zum MySQL-Server konnte nicht hergestellt werden. Überprüfen Sie die angegebenen Verbindungseinstellungen.

@@ -1,0 +1,3 @@
+repository.XlsFilter\:filtername\:label\:en=Microsoft Excel Worksheet (*.xls)
+repository.XlsFilter\:title\:label\:en=Microsoft Excel export filter for Journals
+repository.XlsFilter\:confirmmessage\:label\:en=Don't show this message again

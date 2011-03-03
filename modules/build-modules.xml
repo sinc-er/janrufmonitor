@@ -1,0 +1,181 @@
+<project name="jAnrufmonitor Generic Module" default="bundle" basedir="../../">
+  <property file="build.properties"/>
+
+  <property name="debugger" value="on"/>
+     
+  <condition property="os" value="macosx">
+      <os family="mac"/>
+  </condition>
+   <condition property="os" value="win">
+      <os family="windows"/>
+  </condition>
+    <condition property="os" value="linux">
+      <os family="unix"/>
+  </condition>
+  
+  <property name="jam.download.server" value="http://downloads.janrufmonitor.de/released/5.0/"/>
+  <property name="jam.updates.server" value="${jam.download.server}descriptors/"/>
+
+  <property name="jam.modules.extlib" value="${jam.extlib.root}/modules"/>
+  
+  <property name="jam.kernel.extlib" value="${jam.extlib.root}/kernel"/>
+  <property name="jam.kernel.extlib.all" value="${jam.kernel.extlib}/all"/>
+  <property name="jam.kernel.extlib.allui" value="${jam.kernel.extlib}/allui"/>
+  <property name="jam.kernel.extlib.osdepend" value="${jam.kernel.extlib}/${os}/${os.arch}"/>
+   
+  <target name="init_module">
+     <echo message="Creating folder structure..."/>
+     <tstamp/>
+     <property name="jam.build.dir" value="${jam.build.root}/${DSTAMP}"/>
+     <property name="jam.classes.dir" value="${jam.build.dir}/classes"/>
+     <property name="jam.modules.classes.dir" value="${jam.classes.dir}/modules"/>
+     <property name="jam.modules.lib.dir" value="${jam.build.dir}/lib/modules"/>
+     <property name="jam.kernel.lib.dir" value="${jam.build.dir}/lib/kernel"/>
+
+     <mkdir dir="${jam.build.dir}"/>
+     <mkdir dir="${jam.modules.extlib}"/>
+  </target>
+  
+    <target name="build_kernel">
+        <echo message="Building jAnrufmonitor kernel components..."/>
+        <subant target="">
+            <fileset dir="${jam.kernel.root}" includes="build.xml"/>
+        </subant>
+  </target> 
+  <!--
+   <target name="x">
+    <available file="${jam.mod.root}/deployment/install" type="dir"
+           property="xxx" />
+  </target> 
+  
+  <target name="copy_i18n" depends="x" if="xxx">
+      <echo message="Processing module ${jam.mod.short}"/>
+      <echo message="Fetsching /Users/brandtt/Perforce/Java/Projekte/jAnrufmonitor/_current/projects/${jam.mod.short}/deployment/install"/>
+      <delete dir="${jam.mod.root}/deployment/install" includes="*.i18n"/>
+      <copy todir="${jam.mod.root}/deployment/install">
+          <fileset dir="/Users/brandtt/Perforce/Java/Projekte/jAnrufmonitor/_current/projects/${jam.mod.short}/deployment/install" includes="*.i18n"/>
+      </copy>
+      <echo message="Copied to ${jam.mod.root}/deployment/install"/>
+  </target> 
+-->
+  <target name="module_compile" depends="sync_extlib,init_module" description="compile the module source" >
+    <loadfile srcFile="${jam.mod.root}/deployment/~meta-inf/descriptor.properties" property="jam.mod.name">
+		<filterchain>
+			<linecontains>
+			  	<contains value="jam.mod.name="/>	
+			</linecontains>
+			<tokenfilter>
+		    	<replacestring from="jam.mod.name="/>
+			</tokenfilter>
+			<striplinebreaks/>					
+		</filterchain>
+	</loadfile>
+    
+    <echo message="Compile module: ${jam.mod.name}" />
+	
+	<loadfile srcFile="${jam.mod.root}/deployment/~meta-inf/descriptor.properties" property="jam.mod.version">
+		<filterchain>
+			<linecontains>
+			  	<contains value="jam.mod.version="/>	
+			</linecontains>
+			<tokenfilter>
+		    	<replacestring from="jam.mod.version="/>
+			</tokenfilter>
+			<striplinebreaks/>					
+		</filterchain>
+	</loadfile>
+    <echo message="Compile module version: ${jam.mod.version}" />
+    <mkdir dir="${jam.modules.classes.dir}/${jam.mod.name}"/>
+
+    <javac srcdir="${jam.mod.root}/src" destdir="${jam.modules.classes.dir}/${jam.mod.name}" target="${jam.modules.compiler}" source="${jam.modules.compiler}" debug="${debugger}" optimize="on" includeAntRuntime="false">
+        <classpath>
+        <pathelement path="${classpath}"/>
+        <pathelement path="${java.class.path}/"/>
+        <fileset dir="${jam.kernel.extlib.all}">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${jam.kernel.extlib.allui}">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${jam.kernel.extlib.osdepend}">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${jam.kernel.lib.dir}">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${jam.modules.extlib}">
+            <include name="*.jar"/>
+        </fileset>
+        </classpath>
+    </javac>
+  </target>
+  
+   
+  <target name="distribute" depends="module_compile" description="distribute the module source to jars" >
+      <property name="jam.dist.dir" value="${jam.dist.root}/${DSTAMP}"/>
+      <property name="jam.modules.dist.dir" value="${jam.dist.dir}/modules"/>
+      <property name="jam.dist.updates.dir" value="${jam.dist.dir}/descriptors"/>
+  
+      <mkdir dir="${jam.dist.updates.dir}"/>
+      <mkdir dir="${jam.modules.lib.dir}/${jam.mod.name}/lib"/>
+  </target>
+  
+    <target name="bundle" depends="bundle_module" description="bundle the module source to jam.zip archives" >
+      <copy todir="${jam.modules.lib.dir}/${jam.mod.name}">
+          <fileset dir="${jam.mod.root}/deployment"/>
+      </copy>
+      
+      <zip zipfile="${jam.modules.dist.dir}/${jam.mod.name}.${jam.mod.version}.jam.zip" basedir="${jam.modules.lib.dir}/${jam.mod.name}"/>
+      
+      <loadfile srcFile="${jam.mod.root}/deployment/~meta-inf/descriptor.properties" property="jam.mod.namespace">
+		<filterchain>
+			<linecontains>
+			  	<contains value="jam.mod.namespace="/>	
+			</linecontains>
+			<tokenfilter>
+		    	<replacestring from="jam.mod.namespace="/>
+			</tokenfilter>
+			<striplinebreaks/>					
+		</filterchain>
+	</loadfile>
+	
+	<copy file="${jam.mod.root}/deployment/~meta-inf/descriptor.properties" tofile="${jam.dist.updates.dir}/${jam.mod.namespace}.properties"/>
+	<echo file="${jam.dist.updates.dir}/${jam.mod.namespace}.properties" append="true">${line.separator}jam.mod.update.http=${jam.download.server}modules/${jam.mod.name}.${jam.mod.version}.jam.zip${line.separator}</echo>
+	
+	<echo file="${jam.dist.updates.dir}/updates" append="true">${jam.mod.namespace}=${jam.updates.server}${jam.mod.namespace}.properties${line.separator}</echo>
+
+  </target>
+  
+      <target name="bundle_headless" depends="bundle_module" description="bundle the module source to jam.zip archives" >
+      <copy todir="${jam.modules.lib.dir}/${jam.mod.name}">
+          <fileset dir="${jam.mod.root}/deployment" excludes="**/*ui.swt.*,**/*ui.jface.*,**/ui.jface.*"/>
+      </copy>
+      
+      <mkdir dir="${jam.modules.dist.dir}/headless/"/>
+      
+      <zip zipfile="${jam.modules.dist.dir}/headless/${jam.mod.name}.${jam.mod.version}_hl.jam.zip" basedir="${jam.modules.lib.dir}/${jam.mod.name}"/>
+      
+      <loadfile srcFile="${jam.mod.root}/deployment/~meta-inf/descriptor.properties" property="jam.mod.namespace">
+		<filterchain>
+			<linecontains>
+			  	<contains value="jam.mod.namespace="/>	
+			</linecontains>
+			<tokenfilter>
+		    	<replacestring from="jam.mod.namespace="/>
+			</tokenfilter>
+			<striplinebreaks/>					
+		</filterchain>
+	</loadfile>
+	
+	<copy file="${jam.mod.root}/deployment/~meta-inf/descriptor.properties" tofile="${jam.dist.updates.dir}/${jam.mod.namespace}.properties"/>
+	<echo file="${jam.dist.updates.dir}/${jam.mod.namespace}.properties" append="true">${line.separator}jam.mod.update.http=${jam.download.server}modules/${jam.mod.name}.${jam.mod.version}.jam.zip${line.separator}</echo>
+	
+	<echo file="${jam.dist.updates.dir}/updates" append="true">${jam.mod.namespace}=${jam.updates.server}${jam.mod.namespace}.properties${line.separator}</echo>
+
+  </target>
+
+  <target name="clean" description="clean up the module source" >
+      <delete dir="${jam.build.dir}"/>
+  </target>
+</project>
+

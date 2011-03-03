@@ -1,0 +1,12 @@
+<html>
+<body>
+<h3>Eventing with the framework.</h3>
+This package offers an eventing mechanism within the framework. The central component of this eventing
+is the so called <code>IEventBroker</code>. It is accepting an d delegating all the events whcih are send through the framework.
+The <code>IEventBroker</code> offers the possibility to register as an <code>IEventSender</code> or/and as an <code>IEventReceiver</code> at the
+framework event mechanism. It is recommended for services, repository managers and UI components to use at least one the
+communication channel with the framework. The eventing is currently the one and only porssibility to reetrived current information on calls and callers, e.g.,
+recognizing an incoming call or getting an identified call.<br><br>
+
+</body>
+</html>

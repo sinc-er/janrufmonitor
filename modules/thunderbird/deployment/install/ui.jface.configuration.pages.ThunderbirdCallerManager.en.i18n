@@ -1,0 +1,3 @@
+ui.jface.configuration.pages.ThunderbirdCallerManager\:title\:label\:en=Mozilla Thunderbird address book
+ui.jface.configuration.pages.ThunderbirdkCallerManager\:description\:label\:en=This module identifies calls with the Mozilla Thunderbird address book.
+ui.jface.configuration.pages.ThunderbirdCallerManager\:enabled\:label\:en=Repository enabled

@@ -1,0 +1,5 @@
+ui.jface.configuration.ConfigurationCommand\:page_mysql_callmanager\:value=de.janrufmonitor.ui.jface.configuration.pages.MySqlJournal
+ui.jface.configuration.ConfigurationCommand\:page_mysql_callmanager\:access=system
+
+ui.jface.configuration.ConfigurationCommand\:page_mysql_callermanager\:value=de.janrufmonitor.ui.jface.configuration.pages.MySqlAddressbook
+ui.jface.configuration.ConfigurationCommand\:page_mysql_callermanager\:access=system

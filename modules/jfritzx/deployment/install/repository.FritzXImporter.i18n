@@ -1,0 +1,8 @@
+repository.FritzXImporter\:title\:label\:de=Importfilter für Fritz!X Daten
+repository.FritzXCallImporter\:filtername\:label\:de=Fritz!X Anrufliste (inccall.dbf)
+repository.FritzXCallImporter\:title\:label\:de=Importfilter für Fritz!X Anrufliste 
+repository.FritzXCallImporter\:confirmmessage\:label\:de=Diese Meldung nicht mehr anzeigen.
+
+repository.FritzXCallImporter2\:filtername\:label\:de=Fritz!X Anrufliste (fritz!xcharge.dbf)
+repository.FritzXCallImporter2\:title\:label\:de=Importfilter für Fritz!X Anrufliste 
+repository.FritzXCallImporter2\:confirmmessage\:label\:de=Diese Meldung nicht mehr anzeigen.

@@ -1,0 +1,11 @@
+ui.swt.controls.ConfigShutdown\:shutdowntitle\:label\:en=jAnrufmonitor - Update successfully installed
+ui.swt.controls.ConfigShutdown\:shutdown\:label\:en=jAnrufmonitor needs to be restarted due to an update of the module component.
+
+service.trayicon.Activator\:label\:label\:en=Observation active
+service.TrayIcon\:title\:label\:en=TrayIcon
+service.TrayIcon\:exit\:label\:en=Quit
+service.TrayIcon\:sub_component_admin_config\:label\:en=Settings
+service.TrayIcon\:sub_component_admin\:label\:en=Administration
+service.TrayIcon\:tooltip\:label\:en=No calls registered. 
+
+service.ConfigService\:title\:label\:en=Configuration assistant

@@ -1,0 +1,19 @@
+ui.jface.configuration.pages.Sound\:title\:label\:en=Sound service
+ui.jface.configuration.pages.Sound\:description\:label\:en=The sound service plays WAV/MP3 files during a incoming call.
+ui.jface.configuration.pages.Sound\:enabled\:label\:en=Service enabled
+ui.jface.configuration.pages.Sound\:msn\:label\:en=MSN
+ui.jface.configuration.pages.Sound\:add\:label\:en=add
+ui.jface.configuration.pages.Sound\:remove\:label\:en=remove
+ui.jface.configuration.pages.Sound\:edit\:label\:en=edit
+ui.jface.configuration.pages.Sound\:alias\:label\:en=Sound file
+ui.jface.configuration.pages.Sound\:default_soundfile\:label\:en=Default sound file: 
+
+ui.jface.application.sound.rendering.Sound\:name\:label\:en=Sound file
+ui.jface.application.sound.rendering.Sound\:yes\:label\:en=Yes
+
+
+ui.jface.application.sound.action.DeleteAction\:title\:label\:en=Remove sound file
+ui.jface.application.sound.action.DeleteAction\:delete\:label\:en=Remove sound file for selected caller
+ui.jface.application.sound.action.DeleteAction\:delete\:description\:en=Do you really want to remove the sound file assignment of the selected caller?
+
+ui.jface.application.sound.action.ChangeAction\:title\:label\:en=Assign sound file

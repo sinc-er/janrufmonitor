@@ -1,0 +1,38 @@
+# caller manager
+repository.CallerDirectory\:title\:label\:de=jAnrufmonitor Adressbuch
+repository.CallerDirectory\:migrate\:label\:de=Konvertierungshinweis\n\nEs wurde eine alte Adress-Datenbank entdeckt, die in der aktuellen Version nicht genutzt werden kann. Alle Daten der alten Adress-Datenbank wurden in das neue Format konvertiert und eine Sicherungskopie der alten Adress-Datenbank erstellt.
+repository.CallerDirectory\:internal\:label\:de=interne Anlagenrufnummer
+
+# call manager
+repository.DefaultJournal\:title\:label\:de=jAnrufmonitor Journal
+repository.DefaultJournal\:migrate\:label\:de=Konvertierungshinweis\n\nEs wurde eine alte Journal-Datenbank entdeckt, die in der aktuellen Version nicht genutzt werden kann. Alle Daten der alten Datenbank-Datei wurden in das neue Format konvertiert und eine Sicherungskopie der alten Datenbank-Datei erstellt.
+repository.DefaultJournal\:notidentified\:label\:de=jAnrufmonitor Journal-Fehler\n\nEs wurde ein nicht identifizierter Anruf entdeckt. Möglicherweise wurde die Rufnummer nicht erkannt, da sie in einem falschen Format vorlag oder da keine entsprechende Vorwahl gefunden wurde. Dieser Anruf kann nicht ins Journal übernommen werden und wird verworfen.
+
+repository.CountryDirectory\:title\:label\:de=Ländercode und Vorwahlverzeichnis
+
+# Import/Export-Filter
+repository.DatFileCallerExporter\:filtername\:label\:de=jAnrufmonitor Adressbuch (*.dat)
+
+repository.DatFileCallerImporter\:filtername\:label\:de=jAnrufmonitor Adressbuch (*.dat)
+
+repository.DatFileCallExporter\:filtername\:label\:de=jAnrufmonitor Journal (*.dat)
+
+repository.DatFileCallImporter\:filtername\:label\:de=jAnrufmonitor Journal (*.dat)
+
+repository.ImExportFactory\:title\:label\:de=Import- und Export-Filter für Journal und Adressbuch
+
+repository.OldDatFileCallerImporter\:filtername\:label\:de=PowerISDNMonitor Anrufer 3.3x (*.dat)
+
+repository.OldDatFileCallImporter\:filtername\:label\:de=PowerISDNMonitor Journal 3.3x (*.dat)
+
+repository.VcfFileCallerImporter\:filtername\:label\:de=vCard-Dateien (*.vcf)
+
+repository.EabFileCallerExporter\:filtername\:label\:de=jAnrufmonitor Anruferliste (*.eab)
+
+repository.EabFileCallerImporter\:filtername\:label\:de=jAnrufmonitor Anruferliste (*.eab)
+
+repository.VcfFileCallerExporter\:filtername\:label\:de=vCard-Datei (*.vcf)
+
+repository.ArchiveJournal\:title\:label\:de=jAnrufmonitor Journal-Archiv
+
+repository.GpxCallerExporter\:filtername\:label\:de=GPS Exchange Format (*.gpx)

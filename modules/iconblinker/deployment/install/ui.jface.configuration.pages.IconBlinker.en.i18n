@@ -1,0 +1,4 @@
+ui.jface.configuration.pages.IconBlinker\:title\:label\:en=TrayIcon Blinker
+ui.jface.configuration.pages.IconBlinker\:description\:label\:en=Shows incoming call by displaying a blinking icon in the Windows Tray-Bar.
+ui.jface.configuration.pages.IconBlinker\:enabled\:label\:en=Service enabled
+ui.jface.configuration.pages.IconBlinker\:callblink\:label\:en=Only blink while call is active

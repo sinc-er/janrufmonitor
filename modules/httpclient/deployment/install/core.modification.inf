@@ -1,0 +1,22 @@
+
+# remove native capi settings
+-ui.jface.configuration.ConfigurationCommand\:page_ci\:value=de.janrufmonitor.ui.jface.configuration.pages.CapiSettings
+-ui.jface.configuration.ConfigurationCommand\:page_ci\:access=system
+-ui.jface.configuration.ConfigurationCommand\:page_cinfo\:value=de.janrufmonitor.ui.jface.configuration.pages.CapiInfo
+-ui.jface.configuration.ConfigurationCommand\:page_cinfo\:access=system
+-ui.jface.application.journal.Journal\:filter_rejected\:value=(5,rejected\=yes)
+-ui.jface.application.journal.Journal\:filter_rejected\:default=(5,rejected\=yes)
+monitor.CapiMonitor\:available\:value=false
+ui.jface.configuration.ConfigurationCommand\:page_reject\:mode=hidden
+ui.jface.configuration.ConfigurationCommand\:page_basic\:mode=hidden
+
+
+# remove native tapi settings
+-ui.jface.configuration.ConfigurationCommand\:page_xtapi\:value=de.janrufmonitor.ui.jface.configuration.pages.XTapi
+-ui.jface.configuration.ConfigurationCommand\:page_xtapi\:access=system
+monitor.XTapiMonitor\:activemonitor\:value=false
+
+ui.jface.configuration.ConfigurationCommand\:page_basic\:mode=hidden
+ui.jface.application.journal.Journal\:filter_limit100\:value=(10,100)
+~ui.jface.application.journal.Journal\:filter\:value=(10,100)
+

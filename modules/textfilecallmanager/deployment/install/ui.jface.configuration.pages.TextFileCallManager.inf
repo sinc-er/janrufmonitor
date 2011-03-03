@@ -1,0 +1,2 @@
+ui.jface.configuration.ConfigurationCommand\:page_text_callmanager\:value=de.janrufmonitor.ui.jface.configuration.pages.TextFileCallManager
+ui.jface.configuration.ConfigurationCommand\:page_text_callmanager\:access=system

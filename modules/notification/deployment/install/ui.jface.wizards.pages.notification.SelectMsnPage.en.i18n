@@ -1,0 +1,6 @@
+ui.jface.wizards.pages.notification.SelectMsnPage\:title\:label\:en=Define MSN
+ui.jface.wizards.pages.notification.SelectMsnPage\:description\:label\:en=Choose a MSN (Multiple Subscriber Number) which is used for mail notification.
+ui.jface.wizards.pages.notification.SelectMsnPage\:name\:label\:en=Assign mail notification on the following MSN: 
+ui.jface.wizards.pages.notification.SelectMsnPage\:default\:label\:en=Default
+
+

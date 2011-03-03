@@ -1,0 +1,5 @@
+ui.jface.wizards.pages.notification.SelectMailTemplatePage\:title\:label\:en=Use mail template
+ui.jface.wizards.pages.notification.SelectMailTemplatePage\:description\:label\:en=Choose a template as base of the email
+ui.jface.wizards.pages.notification.SelectMailTemplatePage\:active\:label\:en=Use email templates 
+ui.jface.wizards.pages.notification.SelectMailTemplatePage\:templates\:label\:en=Available templates: 
+

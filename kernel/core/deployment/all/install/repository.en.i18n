@@ -1,0 +1,38 @@
+# caller manager
+repository.CallerDirectory\:title\:label\:en=jAnrufmonitor address book
+repository.CallerDirectory\:migrate\:label\:en=Hint\n\nAn old address book format was detected. The files will be converted into the current format.
+repository.CallerDirectory\:internal\:label\:en=internal telephone system number
+
+# call manager
+repository.DefaultJournal\:title\:label\:en=jAnrufmonitor Journal
+repository.DefaultJournal\:migrate\:label\:en=Hint\n\nAn old journal format was detected. The files will be converted into the current format.
+repository.DefaultJournal\:notidentified\:label\:en=jAnrufmonitor journal error\n\nAn unidentified caller was detected, which was not stored in the current journal.
+
+repository.CountryDirectory\:title\:label\:en=Country and area code directory
+
+# Import/Export-Filter
+repository.DatFileCallerExporter\:filtername\:label\:en=jAnrufmonitor Address book (*.dat)
+
+repository.DatFileCallerImporter\:filtername\:label\:en=jAnrufmonitor Address book (*.dat)
+
+repository.DatFileCallExporter\:filtername\:label\:en=jAnrufmonitor Journal (*.dat)
+
+repository.DatFileCallImporter\:filtername\:label\:en=jAnrufmonitor Journal (*.dat)
+
+repository.ImExportFactory\:title\:label\:en=Import and export filter for journal and address book
+
+repository.OldDatFileCallerImporter\:filtername\:label\:en=PowerISDNMonitor caller file 3.3x (*.dat)
+
+repository.OldDatFileCallImporter\:filtername\:label\:en=PowerISDNMonitor journal file 3.3x (*.dat)
+
+repository.VcfFileCallerImporter\:filtername\:label\:en=vCard file (*.vcf)
+
+repository.EabFileCallerExporter\:filtername\:label\:en=jAnrufmonitor caller list (*.eab)
+
+repository.EabFileCallerImporter\:filtername\:label\:en=jAnrufmonitor caller list (*.eab)
+
+repository.VcfFileCallerExporter\:filtername\:label\:en=vCard file (*.vcf)
+
+repository.ArchiveJournal\:title\:label\:en=jAnrufmonitor Journal archive
+
+repository.GpxCallerExporter\:filtername\:label\:en=GPS Exchange Format (*.gpx)

@@ -1,0 +1,4 @@
+ui.jface.configuration.pages.IconBlinker\:title\:label\:de=TrayIcon Blinker
+ui.jface.configuration.pages.IconBlinker\:description\:label\:de=Der TrayIcon Blinker signalisiert eingehende Anrufe mit Hilfe eines blinkenden Icons in der Tray-Bar.
+ui.jface.configuration.pages.IconBlinker\:enabled\:label\:de=Dienst aktiviert
+ui.jface.configuration.pages.IconBlinker\:callblink\:label\:de=Nur während des Anrufes blinken

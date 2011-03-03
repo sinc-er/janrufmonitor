@@ -1,0 +1,6 @@
+ui.jface.application.RendererRegistry\:renderer_sample\:value=de.janrufmonitor.ui.jface.application.journal.rendering.GenericUserDefinedRenderer
+ui.jface.application.RendererRegistry\:renderer_sample\:access=system
+ui.jface.application.RendererRegistry\:sample_id\:value=sample
+ui.jface.application.RendererRegistry\:sample_id\:access=system
+ui.jface.application.journal.rendering.generic.sample\:attribute-id\:value=sample
+ui.jface.application.journal.rendering.generic.sample\:attribute-label\:value=Beispiel Spalte

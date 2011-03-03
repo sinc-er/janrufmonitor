@@ -1,0 +1,202 @@
+<project name="jAnrufmonitor kernel" default="bundle" basedir="../">
+  <property file="build.properties"/>
+  
+  <property name="debugger" value="on"/>
+     
+  <condition property="os" value="macosx">
+      <os family="mac"/>
+  </condition>
+   <condition property="os" value="win">
+      <os family="windows"/>
+  </condition>
+    <condition property="os" value="linux">
+      <os family="unix"/>
+  </condition>
+
+  <property name="jam.kernel.src.api" value="${jam.kernel.root}/framework/src"/>
+  <property name="jam.kernel.src.core" value="${jam.kernel.root}/core/src"/>
+
+  <property name="jam.kernel.extlib" value="${jam.extlib.root}/kernel"/>
+  <property name="jam.kernel.extlib.all" value="${jam.kernel.extlib}/all"/>
+  <property name="jam.kernel.extlib.allui" value="${jam.kernel.extlib}/allui"/>
+  <property name="jam.kernel.extlib.osdepend" value="${jam.kernel.extlib}/${os}/${os.arch}"/>
+   
+  <target name="init_kernel">
+     <echo message="Initializing jAnrufmonitor kernel components..."/>
+     <tstamp/>
+     <property name="jam.build.dir" value="${jam.build.root}/${DSTAMP}"/>
+     
+     <property name="jam.classes.dir" value="${jam.build.dir}/classes"/>
+     <property name="jam.kernel.classes.dir" value="${jam.classes.dir}/kernel"/>
+     <property name="jam.kernel.lib.dir" value="${jam.build.dir}/lib/kernel"/>
+
+     <mkdir dir="${jam.build.dir}"/>
+  </target>
+  
+  
+    <target name="check_extlib">
+       <echo message="Checking for required 3rd party libraries..."/>
+       <condition property="do.sync.extlib" value="false">
+        <and>
+            <available file="${jam.kernel.extlib.all}/hsqldb.jar"/>
+            <available file="${jam.kernel.extlib.all}/jffix.jar"/>
+            <available file="${jam.kernel.extlib.allui}/i18n.jar"/>
+            <available file="${jam.kernel.extlib.allui}/jface.jar"/>
+            <available file="${jam.kernel.extlib.allui}/commands.jar"/>
+            <available file="${jam.kernel.extlib.allui}/osgi.jar"/>
+            <available file="${jam.kernel.extlib.osdepend}/swt.jar"/>
+        </and>
+      </condition>
+    </target>
+    
+    <target name="sync_extlib" depends="check_extlib" unless="do.sync.extlib">
+    
+     <echo message="Synchronizing required 3rd party libraries from downloads.janrufmonitor.de..."/>
+     <mkdir dir="${jam.kernel.extlib}"/>
+     <mkdir dir="${jam.kernel.extlib.all}"/>
+     <mkdir dir="${jam.kernel.extlib.allui}"/>
+     <mkdir dir="${jam.kernel.extlib.osdepend}"/>
+     
+     <get dest="${jam.kernel.extlib.all}">
+        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/common/hsqldb.jar"/> 
+        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/common/jffix.jar"/> 
+     </get>
+     <get dest="${jam.kernel.extlib.allui}">
+        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/common/i18n.jar"/> 
+        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/common/jface.jar"/> 
+        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/common/commands.jar"/> 
+        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/common/osgi.jar"/> 
+        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/common/runtime.jar"/> 
+     </get>
+     <get dest="${jam.kernel.extlib.osdepend}">
+        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/${os}/${os.arch}/swt.jar"/> 
+     </get>
+
+  </target>
+
+  <target name="kernel_framework_compile" depends="sync_extlib,init_kernel" description="compile the kernel framework source" >
+    <echo message="jAnrufmonitor kernel framework compile..."/>
+    <mkdir dir="${jam.kernel.classes.dir}/api"/>
+    <mkdir dir="${jam.kernel.classes.dir}/core"/>
+
+    <javac srcdir="${jam.kernel.src.api}/api" destdir="${jam.kernel.classes.dir}/api" target="${jam.modules.compiler}" source="${jam.modules.compiler}" debug="${debugger}" optimize="on" includeAntRuntime="false">
+    <classpath>
+      <pathelement path="${classpath}"/>
+      <pathelement path="${java.class.path}/"/>
+      <pathelement path="${jam.kernel.classes.dir}/api"/>
+    </classpath>
+    </javac>
+    <javac srcdir="${jam.kernel.src.core}/core" destdir="${jam.kernel.classes.dir}/core" target="${jam.modules.compiler}" source="${jam.modules.compiler}" debug="${debugger}" optimize="on" includeAntRuntime="false">
+    <classpath>
+      <pathelement path="${classpath}"/>
+      <pathelement path="${java.class.path}/"/>
+      <pathelement path="${jam.kernel.classes.dir}/api"/>
+      <pathelement path="${jam.kernel.classes.dir}/core"/>
+    </classpath>
+    </javac>
+    <javac srcdir="${jam.kernel.src.core}/repository" destdir="${jam.kernel.classes.dir}/core" target="${jam.modules.compiler}" source="${jam.modules.compiler}" debug="${debugger}" optimize="on" includeAntRuntime="false">
+    <classpath>
+      <pathelement path="${classpath}"/>
+      <pathelement path="${java.class.path}/"/>
+	  <pathelement path="${jam.kernel.extlib.all}/hsqldb.jar"/>
+      <pathelement path="${jam.kernel.classes.dir}/api"/>
+      <pathelement path="${jam.kernel.classes.dir}/core"/>
+    </classpath>
+    </javac>
+    <javac srcdir="${jam.kernel.src.core}/service" destdir="${jam.kernel.classes.dir}/core" target="${jam.modules.compiler}" source="${jam.modules.compiler}" debug="${debugger}" optimize="on" includeAntRuntime="false">
+    <classpath>
+      <pathelement path="${classpath}"/>
+      <pathelement path="${java.class.path}/"/>
+      <pathelement path="${jam.kernel.classes.dir}/api"/>
+      <pathelement path="${jam.kernel.classes.dir}/core"/>
+    </classpath>
+    </javac>
+    <javac srcdir="${jam.kernel.src.core}/platform/all" destdir="${jam.kernel.classes.dir}/core" target="${jam.modules.compiler}" source="${jam.modules.compiler}" debug="${debugger}" optimize="on" includeAntRuntime="false">
+    <classpath>
+      <pathelement path="${classpath}"/>
+      <pathelement path="${java.class.path}/"/>
+      <pathelement path="${jam.kernel.classes.dir}/api"/>
+      <pathelement path="${jam.kernel.classes.dir}/core"/>
+  	  <pathelement path="${jam.kernel.extlib.osdepend}/swt.jar"/>
+    </classpath>
+    </javac>
+  </target>
+
+  <target name="kernel_core_compile" depends="kernel_framework_compile" description="compile the kernel core source" >
+    <echo message="jAnrufmonitor kernel core compile..."/>
+    <mkdir dir="${jam.kernel.classes.dir}/coreui"/>
+    <mkdir dir="${jam.kernel.classes.dir}/corewin32"/>
+
+    <javac srcdir="${jam.kernel.src.api}/ui" destdir="${jam.kernel.classes.dir}/coreui" target="${jam.modules.compiler}" source="${jam.modules.compiler}" debug="${debugger}" optimize="on" includeAntRuntime="false">
+    <classpath>
+      <pathelement path="${classpath}"/>
+      <pathelement path="${java.class.path}/"/>
+      <pathelement path="${jam.kernel.classes.dir}/api"/>
+      <pathelement path="${jam.kernel.extlib.osdepend}/swt.jar"/>
+	  <pathelement path="${jam.kernel.extlib.allui}/i18n.jar"/>
+	  <pathelement path="${jam.kernel.extlib.allui}/jface.jar"/>
+	  
+	  <pathelement path="${jam.kernel.extlib.allui}/osgi.jar"/>
+	  <pathelement path="${jam.kernel.extlib.allui}/runtime.jar"/>
+      <pathelement path="${jam.kernel.extlib.allui}/commands.jar"/>
+	  
+    </classpath>
+    </javac>
+
+    <javac srcdir="${jam.kernel.src.core}/ui" destdir="${jam.kernel.classes.dir}/coreui" target="${jam.modules.compiler}" source="${jam.modules.compiler}" debug="${debugger}" optimize="on" includeAntRuntime="false">
+    <classpath>
+      <pathelement path="${classpath}"/>
+      <pathelement path="${java.class.path}/"/>
+      <pathelement path="${jam.kernel.classes.dir}/api"/>
+      <pathelement path="${jam.kernel.classes.dir}/apiui"/>
+      <pathelement path="${jam.kernel.classes.dir}/core"/>
+      <pathelement path="${jam.kernel.extlib.osdepend}/swt.jar"/>
+	  <pathelement path="${jam.kernel.extlib.allui}/i18n.jar"/>
+	  <pathelement path="${jam.kernel.extlib.allui}/jface.jar"/>
+	  
+	  <pathelement path="${jam.kernel.extlib.allui}/osgi.jar"/>
+	  <pathelement path="${jam.kernel.extlib.allui}/runtime.jar"/>
+      <pathelement path="${jam.kernel.extlib.allui}/commands.jar"/>
+	  
+    </classpath>
+    </javac>
+
+    <javac srcdir="${jam.kernel.src.core}/platform/win32" destdir="${jam.kernel.classes.dir}/corewin32" target="${jam.modules.compiler}" source="${jam.modules.compiler}" debug="${debugger}" optimize="on" includeAntRuntime="false">
+    <classpath>
+      <pathelement path="${classpath}"/>
+      <pathelement path="${java.class.path}/"/>
+      <pathelement path="${jam.kernel.classes.dir}/api"/>
+      <pathelement path="${jam.kernel.classes.dir}/core"/>
+    </classpath>
+    </javac>  
+  </target>
+
+<target name="compile" depends="kernel_core_compile" description="compile the kernel source" >
+    <echo message="jAnrufmonitor kernel compile..."/>
+</target>
+
+<target name="bundle" depends="compile" description="bundle the kernel source to jars" >
+    <echo message="jAnrufmonitor kernel jar bundeling..."/>
+    <mkdir dir="${jam.kernel.lib.dir}"/>
+    <jar jarfile="${jam.kernel.lib.dir}/jamapi.jar" basedir="${jam.kernel.classes.dir}/api"/>
+    <jar jarfile="${jam.kernel.lib.dir}/jam.jar" basedir="${jam.kernel.classes.dir}/core" >
+        <manifest> 
+        <attribute name="Class-Path" value="swt.jar
+  jamapi.jar
+  i18n.jar
+  hsqldb.jar
+  jffix.jar"/>
+        <attribute name="Main-Class" value="de.janrufmonitor.application.RunUI"/>
+        </manifest> 
+    </jar>
+    <jar jarfile="${jam.kernel.lib.dir}/jamui.jar" basedir="${jam.kernel.classes.dir}/coreui"/>
+    <jar jarfile="${jam.kernel.lib.dir}/jamwin32.jar" basedir="${jam.kernel.classes.dir}/corewin32"/>
+</target>
+
+<target name="clean" description="clean up the kernel source" >
+    <echo message="jAnrufmonitor build clean-up..."/>
+    <delete dir="${jam.build.dir}"/>
+</target>
+
+</project>
+

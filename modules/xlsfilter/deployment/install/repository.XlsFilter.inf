@@ -1,0 +1,3 @@
+repository.XlsFilter\:info\:value=Microsoft Excel Exportfilter für Journale
+repository.ImExportFactory\:export_xlsfile\:value=de.janrufmonitor.repository.imexporter.XlsFilter
+repository.ImExportFactory\:export_xlsfile\:access=system

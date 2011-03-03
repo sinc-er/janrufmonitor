@@ -1,0 +1,4 @@
+ui.jface.wizards.pages.sound.SelectFilePage\:title\:label\:de=Sound-Datei wählen
+ui.jface.wizards.pages.sound.SelectFilePage\:description\:label\:de=Wählen Sie die Sound-Datei, die zugewiesen werden soll. Optimale Soundqualität wird mit\ndem WAV-Format in Mono, 8-bit, 22kHz Sample-Rate erreicht.
+ui.jface.wizards.pages.sound.SelectFilePage\:sound\:label\:de=Sound-Datei (WAV/MP3-Format): 
+

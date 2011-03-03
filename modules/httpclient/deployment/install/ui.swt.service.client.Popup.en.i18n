@@ -1,0 +1,7 @@
+ui.swt.service.client.Popup\:title\:label\:en=Client Popup
+ui.swt.service.client.Popup\:error\:label\:en=Error on Client extension
+ui.swt.service.client.Popup\:warning\:label\:en=Warning on Client extension
+ui.swt.service.client.Popup\:networkerror\:label\:en=A network error has occured during a client action:\n\n
+ui.swt.service.client.Popup\:servernotfound\:label\:en=Please check the network settings and the client extension configuration.\nThe following server could not be reached:\n
+ui.swt.service.client.Popup\:servernotauthorized\:label\:en=The server rejected a client action:\n
+ui.swt.service.client.Popup\:servershutdown\:label\:en=The server was shutdown and the connection for this client was closed.

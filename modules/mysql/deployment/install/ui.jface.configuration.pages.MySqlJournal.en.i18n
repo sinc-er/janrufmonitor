@@ -1,0 +1,16 @@
+ui.jface.configuration.pages.MySqlJournal\:title\:label\:en=MySQL Database Journal
+ui.jface.configuration.pages.MySqlJournal\:description\:label\:en=The MySQL Database Journal stores all incoming call data in the configured database.
+ui.jface.configuration.pages.MySqlJournal\:dbserver\:label\:en=Database server: 
+ui.jface.configuration.pages.MySqlJournal\:dbdb\:label\:en=Database name: 
+ui.jface.configuration.pages.MySqlJournal\:dbport\:label\:en=Database port: 
+ui.jface.configuration.pages.MySqlJournal\:dbuser\:label\:en=Database user: 
+ui.jface.configuration.pages.MySqlJournal\:dbpassword\:label\:en=Database password: 
+ui.jface.configuration.pages.MySqlJournal\:enabled\:label\:en=Repository enabled
+
+ui.jface.configuration.pages.MySqlAddressbook\:title\:label\:en=MySQL Database Addressbook
+ui.jface.configuration.pages.MySqlAddressbook\:description\:label\:en=The MySQL Database Addressbook stores all contact information in the configured database.
+ui.jface.configuration.pages.MySqlAddressbook\:dbserver\:label\:en=Database server: 
+ui.jface.configuration.pages.MySqlAddressbook\:dbdb\:label\:en=Database name: 
+ui.jface.configuration.pages.MySqlAddressbook\:dbuser\:label\:en=Database user: 
+ui.jface.configuration.pages.MySqlAddressbook\:dbpassword\:label\:en=Database password: 
+ui.jface.configuration.pages.MySqlAddressbook\:enabled\:label\:en=Repository enabled

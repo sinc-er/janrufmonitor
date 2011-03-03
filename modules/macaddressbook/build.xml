@@ -1,0 +1,23 @@
+<project name="jAnrufmonitor Module" default="bundle" basedir="../../">
+    <property name="jam.mod.short" value="macaddressbook" />
+
+    <property file="build.properties"/>
+    <property name="jam.mod.root" value="${jam.modules.root}/${jam.mod.short}"/>
+ 
+    <import file="../../${jam.modules.root}/build-modules.xml" /> 
+    
+    <target name="check_extlib" depends="build_kernel">
+        <property name="jam.modules.compiler" value="1.6"/>
+    </target>
+    
+    <target name="sync_extlib" depends="check_extlib" unless="do.sync.extlib"></target>
+
+    <target name="bundle_module" depends="distribute" description="bundle the module source to jam.zip archives" >
+      <echo message="jAnrufmonitor Kernel framework compile..."/>
+
+      <jar jarfile="${jam.modules.lib.dir}/${jam.mod.name}/lib/${jam.mod.name}.jar" basedir="${jam.modules.classes.dir}/${jam.mod.name}"/>
+      
+    </target>
+
+</project>
+

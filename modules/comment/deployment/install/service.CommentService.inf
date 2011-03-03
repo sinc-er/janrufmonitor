@@ -1,0 +1,14 @@
+service.ServiceFactory\:service_comment\:value=de.janrufmonitor.service.comment.CommentService
+service.ServiceFactory\:service_comment\:access=system
+service.CommentService\:enabled\:value=false
+service.CommentService\:enabled\:type=boolean
+service.CommentService\:path\:value=%datapath%notes
+service.CommentService\:path\:type=file
+service.CommentService\:fileext\:value=.comment
+service.CommentService\:autocreatecomment\:value=false
+service.CommentService\:autocreatecomment\:type=boolean
+service.CommentService\:starttext\:value=Angerufen am %date% auf %msnformat%:
+service.CommentService\:maxtext\:value=128
+service.CommentService\:maxtext\:type=integer
+service.CommentService\:status\:value= ,Neu,In Bearbeitung,Erledigt
+service.CommentService\:followupcolor\:value=255,0,0

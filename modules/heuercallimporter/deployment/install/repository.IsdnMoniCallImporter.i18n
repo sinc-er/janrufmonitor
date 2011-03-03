@@ -1,0 +1,5 @@
+repository.IsdnMoniCallImporter\:filtername\:label\:de=ISDNMoni Anruferhistorie (*.tel)
+repository.IsdnMoniCallImporter\:title\:label\:de=Importfilter für ISDNMoni Anruferhistorie
+repository.IsdnMoniCallImporter\:confirmmessage\:label\:de=Diese Meldung nicht mehr anzeigen.
+repository.IsdnMoniCallImporter\:message\:label\:de=Anrufer-Erkennung
+repository.IsdnMoniCallImporter\:message\:description\:de=Es werden Journal-Einträge aus einer ISDNMoni Anruferhistorie-Datei importiert. Sollen die Anrufer-Informationen ins Adressbuch übernommen werden?

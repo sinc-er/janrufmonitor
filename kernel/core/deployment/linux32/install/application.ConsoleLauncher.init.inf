@@ -1,0 +1,4 @@
+runtime.LauncherFactory\:launcher_consoleapp\:value=de.janrufmonitor.application.launcher.ConsoleLauncher
+runtime.LauncherFactory\:launcher_consoleapp\:access=system
+application.ConsoleLauncher\:filename\:value=jam.sh
+application.ConsoleLauncher\:separator\:value=:

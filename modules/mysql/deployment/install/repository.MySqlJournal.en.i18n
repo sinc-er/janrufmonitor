@@ -1,0 +1,4 @@
+repository.MySqlJournal\:title\:label\:en=MySQL-Database Journal
+repository.MySqlJournal\:connecterror\:label\:en=Connection to MySQL server could not be established. Please check the connection settings.
+repository.MySqlAddressbook\:title\:label\:en=MySQL-Database Addressbook
+repository.MySqlAddressbook\:connecterror\:label\:en=Connection to MySQL server could not be established. Please check the connection settings.

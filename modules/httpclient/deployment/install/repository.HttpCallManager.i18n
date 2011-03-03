@@ -1,0 +1,2 @@
+repository.HttpCallManager\:title\:label\:de=Serverbasiertes Journal
+repository.HttpCallManager\:empty\:label\:de=Das angeforderte Journal hat entweder ein falsches Format, beinhaltet unerlaubte Sonderzeichen oder wurde unvollständig übertragen. Überprüfen Sie die Netzwerkverbindung und stellen Sie die Übertragung vom Server sicher. Details zum Problem wurden in der Logdatei jam-0.log gespeichert.

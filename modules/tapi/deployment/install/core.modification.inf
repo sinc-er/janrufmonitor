@@ -1,0 +1,8 @@
+monitor.CapiMonitor\:available\:value=false
+service.Reject\:enabled\:value=false
+ui.jface.configuration.ConfigurationCommand\:page_reject\:mode=hidden
+ui.jface.configuration.ConfigurationCommand\:page_basic\:mode=hidden
+ui.jface.application.journal.Journal\:renderer\:value=imagepreview,date,number,name,msn
+-ui.jface.application.journal.Journal\:filter_rejected\:value=(5,rejected\=yes)
+-ui.jface.application.journal.Journal\:filter_rejected\:default=(5,rejected\=yes)
+ui.jface.application.journal.Journal\:col_size_imagepreview\:value=56

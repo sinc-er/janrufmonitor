@@ -1,0 +1,4 @@
+ui.jface.configuration.pages.TextFileCallManager\:title\:label\:de=Textdatei-basiertes Journal
+ui.jface.configuration.pages.TextFileCallManager\:description\:label\:de=Das Textdatei-basierte Journal speichert alle eingehenden Anrufe mit ihren Informationen in einer DAT-Datei.
+#ui.jface.configuration.pages.TextFileCallManager\:database\:label\:de=Textbasierte Journal-Datei: 
+ui.jface.configuration.pages.TextFileCallManager\:enabled\:label\:de=Datenablage aktiviert

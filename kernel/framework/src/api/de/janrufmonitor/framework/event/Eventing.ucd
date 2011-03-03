@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" size="716,921" id="einsteinbrandtjAnrufmonitorFramework686" metadata="nsuml-1.4" initialized="true" showWireOptions="7" zoom="0.75" scrolledX="31" scrolledY="119">
+  <children xsi:type="editmodel:InterfaceEditModel" location="50,858" size="117,43" stereotype="interface" id="einsteinbrandtjAnrufmonitorFramework723" runTimeClassModel="einsteinbrandtjAnrufmonitorFramework725;einsteinbrandtjAnrufmonitorFramework743;einsteinbrandtjAnrufmonitorFramework737;einsteinbrandtjAnrufmonitorFramework739;einsteinbrandtjAnrufmonitorFramework731;einsteinbrandtjAnrufmonitorFramework733;einsteinbrandtjAnrufmonitorFramework727;einsteinbrandtjAnrufmonitorFramework741;einsteinbrandtjAnrufmonitorFramework735;einsteinbrandtjAnrufmonitorFramework729">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showPublicMethods="true" showPackageMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" location="50,221" size="138,117" stereotype="interface" targetConnections="//@children.3/@sourceConnections.0" id="einsteinbrandtjAnrufmonitorFramework687" runTimeClassModel="einsteinbrandtjAnrufmonitorFramework696;einsteinbrandtjAnrufmonitorFramework689;einsteinbrandtjAnrufmonitorFramework694">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="98,54">
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework696"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework694"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework689"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" id="einsteinbrandtjAnrufmonitorFramework699" connectionRouterKind="Manhattan" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.0/@children.1" sourceEnd="//@children.1/@sourceConnections.0/@children.0">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="-1,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showPublicMethods="true" showPackageMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" location="163,495" size="119,171" stereotype="interface" targetConnections="//@children.1/@sourceConnections.0 //@children.3/@sourceConnections.1" id="einsteinbrandtjAnrufmonitorFramework690" runTimeClassModel="einsteinbrandtjAnrufmonitorFramework714;einsteinbrandtjAnrufmonitorFramework717;einsteinbrandtjAnrufmonitorFramework711;einsteinbrandtjAnrufmonitorFramework709;einsteinbrandtjAnrufmonitorFramework703;einsteinbrandtjAnrufmonitorFramework705">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="96,108">
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework705"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework709"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework703"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework714"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework717"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework711"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" id="einsteinbrandtjAnrufmonitorFramework721" connectionRouterKind="Manhattan" source="//@children.2" target="//@children.5" targetEnd="//@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.2/@sourceConnections.0/@children.0">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,-1" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showPublicMethods="true" showPackageMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" location="359,280" size="156,225" stereotype="interface" id="einsteinbrandtjAnrufmonitorFramework780" runTimeClassModel="einsteinbrandtjAnrufmonitorFramework811;einsteinbrandtjAnrufmonitorFramework795;einsteinbrandtjAnrufmonitorFramework791;einsteinbrandtjAnrufmonitorFramework807;einsteinbrandtjAnrufmonitorFramework798;einsteinbrandtjAnrufmonitorFramework802;einsteinbrandtjAnrufmonitorFramework814;einsteinbrandtjAnrufmonitorFramework782;einsteinbrandtjAnrufmonitorFramework788">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="133,162">
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework807"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework811"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework802"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework814"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework791"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework788"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework782"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework795"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework798"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" id="einsteinbrandtjAnrufmonitorFramework823" connectionRouterKind="Manhattan" source="//@children.3" target="//@children.1" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,-1" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" id="einsteinbrandtjAnrufmonitorFramework819" connectionRouterKind="Manhattan" source="//@children.3" target="//@children.2" targetEnd="//@children.3/@sourceConnections.1/@children.1" sourceEnd="//@children.3/@sourceConnections.1/@children.0">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,-1" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" id="einsteinbrandtjAnrufmonitorFramework817" connectionRouterKind="Manhattan" source="//@children.3" target="//@children.5" targetEnd="//@children.3/@sourceConnections.2/@children.1" sourceEnd="//@children.3/@sourceConnections.2/@children.0">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,-1" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" id="einsteinbrandtjAnrufmonitorFramework821" connectionRouterKind="Manhattan" source="//@children.3" target="//@children.4" targetEnd="//@children.3/@sourceConnections.3/@children.1" sourceEnd="//@children.3/@sourceConnections.3/@children.0">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,-1" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showPublicMethods="true" showPackageMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" location="568,50" size="128,99" stereotype="interface" targetConnections="//@children.3/@sourceConnections.3" id="einsteinbrandtjAnrufmonitorFramework783" runTimeClassModel="einsteinbrandtjAnrufmonitorFramework827;einsteinbrandtjAnrufmonitorFramework825">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="90,36">
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework827"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework825"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showPublicMethods="true" showPackageMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" location="447,583" size="147,225" stereotype="interface" targetConnections="//@children.2/@sourceConnections.0 //@children.3/@sourceConnections.2" id="einsteinbrandtjAnrufmonitorFramework706" runTimeClassModel="einsteinbrandtjAnrufmonitorFramework762;einsteinbrandtjAnrufmonitorFramework758;einsteinbrandtjAnrufmonitorFramework753;einsteinbrandtjAnrufmonitorFramework768;einsteinbrandtjAnrufmonitorFramework755;einsteinbrandtjAnrufmonitorFramework766;einsteinbrandtjAnrufmonitorFramework770;einsteinbrandtjAnrufmonitorFramework750;einsteinbrandtjAnrufmonitorFramework746">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="124,162">
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework746"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework753"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework770"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework755"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework762"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework758"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework766"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework750"/>
+      <children xsi:type="editmodel:MethodEditModel" id="einsteinbrandtjAnrufmonitorFramework768"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showPublicMethods="true" showPackageMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true"/>
+  </children>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showPublicMethods="true" showPackageMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showInterfaceStereotype="true" showClassStereotype="true" showPackageStereotype="true"/>
+</editmodel:ClassDiagramEditModel>

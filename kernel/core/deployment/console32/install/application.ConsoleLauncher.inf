@@ -1,0 +1,13 @@
+runtime.LauncherFactory\:launcher_consoleapp\:value=de.janrufmonitor.application.launcher.ConsoleLauncher
+runtime.LauncherFactory\:launcher_consoleapp\:access=system
+
+# the follwoing lines can be uncommented for the windows platform
+#application.ConsoleLauncher\:filename\:value=jam.bat
+#application.ConsoleLauncher\:separator\:value=;
+
+# the follwoing lines can be uncommented for linux platforms
+#application.ConsoleLauncher\:filename\:value=jam.sh
+#application.ConsoleLauncher\:separator\:value=:
+
+ui.UIFactory\:headless\:value=true
+ui.UIFactory\:headless\:type=boolean

@@ -1,0 +1,11 @@
+service.Server\:enabled\:value=true
+service.Server\:enabled\:type=boolean
+service.Server\:priority\:value=1
+service.Server\:priority\:type=integer
+service.Server\:port\:value=5555
+service.Server\:port\:type=integer
+service.ServiceFactory\:service_server\:value=de.janrufmonitor.service.server.Server
+service.ServiceFactory\:service_server\:access=system
+server.security.SecurityManager\:allowed\:value=*.*.*.*
+server.security.SecurityManager\:browser\:value=true
+server.security.SecurityManager\:browser\:type=boolean

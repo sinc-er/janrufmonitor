@@ -1,0 +1,4 @@
+ui.jface.configuration.pages.MacAddressBookManager\:title\:label\:en=Apple Mac address book
+ui.jface.configuration.pages.MacAddressBookManager\:description\:label\:en=This module identifies calls with the Mac build-in address book.
+ui.jface.configuration.pages.MacAddressBookManager\:enabled\:label\:en=Repository enabled
+ui.jface.configuration.pages.MacAddressBookManager\:keepextension\:label\:en=Keep extension number if present

@@ -1,0 +1,13 @@
+ui.jface.application.gcc.GccCommand\:label\:label\:en=Webcommand Creator
+ui.jface.application.gcc.GccCommand\:title\:label\:en=Webcommand Creator
+ui.jface.application.gcc.wizard.GccWizard\:title\:label\:en=Webcommand Creator
+ui.jface.application.gcc.wizard.pages.GccPage\:title\:label\:en=Create new Webcommand
+ui.jface.application.gcc.wizard.pages.GccPage\:description\:label\:en=Creates a new Webcommand which can be used in the journal and address book.
+ui.jface.application.gcc.wizard.pages.GccPage\:url\:label\:en=Web-URL: 
+ui.jface.application.gcc.wizard.pages.GccPage\:name\:label\:en=Display name: 
+ui.jface.application.gcc.wizard.pages.GccPage\:journal\:label\:en=Use the Webcommand in journal.
+ui.jface.application.gcc.wizard.pages.GccPage\:editor\:label\:en=Use this Webcommand in address book.
+ui.jface.application.gcc.wizard.pages.GccPage\:dialog\:label\:en=Use this Webcommand in dialogue.
+ui.jface.application.gcc.wizard.pages.GccPage\:dname\:label\:en=Creation directory for new Webcommand
+ui.jface.application.gcc.wizard.pages.GccPage\:dlabel\:label\:en=Directory for new Webcommand module
+ui.jface.application.gcc.wizard.pages.GccPage\:dmessage\:label\:en=Choose a directory for the new Webcommand

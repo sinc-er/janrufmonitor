@@ -1,0 +1,3 @@
+command.CommandFactory\:command_fbdial\:value=de.janrufmonitor.application.console.command.ConsoleDial
+command.CommandFactory\:command_fbdial\:access=system
++application.Run\:commands\:value=dial,

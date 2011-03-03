@@ -1,0 +1,12 @@
+
+ui.jface.configuration.pages.Reject\:title\:label\:en=Reject service
+ui.jface.configuration.pages.Reject\:description\:label\:en=Unpopular callers can be rejected permanently by this service. The caller is charged for this service.
+ui.jface.configuration.pages.Reject\:enabled\:label\:en=Service enabled
+ui.jface.configuration.pages.Reject\:allclir\:label\:en=Reject all CLIR callers
+ui.jface.configuration.pages.Reject\:areacodes\:label\:en=Rejectable numbers\nor number fragment  
+ui.jface.configuration.pages.Reject\:add\:label\:en=add
+ui.jface.configuration.pages.Reject\:remove\:label\:en=remove
+ui.jface.configuration.pages.Reject\:edit\:label\:en=rejectable number
+
+ui.jface.application.editor.action.QuickRejectAction\:title\:label\:en=Toggle reject flag
+ui.jface.application.journal.action.RejectAction\:title\:label\:en=Reject this number

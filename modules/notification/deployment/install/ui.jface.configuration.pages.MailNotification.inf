@@ -1,0 +1,2 @@
+ui.jface.configuration.ConfigurationCommand\:page_mail\:value=de.janrufmonitor.ui.jface.configuration.pages.MailNotification
+ui.jface.configuration.ConfigurationCommand\:page_mail\:access=system

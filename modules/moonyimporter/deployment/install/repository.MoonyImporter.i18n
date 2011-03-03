@@ -1,0 +1,4 @@
+repository.MoonyImporter\:filtername\:label\:de=Moony Anruferhistorie (*.inf)
+repository.MoonyImporter\:title\:label\:de=Importfilter für Moony Anruferhistorie
+repository.MoonyCallerImporter\:filtername\:label\:de=Moony Anruferliste (callers.inf)
+repository.MoonyCallerImporter\:title\:label\:de=Importfilter für Moony Anrufer

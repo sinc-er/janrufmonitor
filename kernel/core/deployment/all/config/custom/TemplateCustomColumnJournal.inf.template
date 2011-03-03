@@ -1,0 +1,6 @@
+ui.jface.application.RendererRegistry\:renderer_<ID>\:value=de.janrufmonitor.ui.jface.application.journal.rendering.GenericUserDefinedRenderer
+ui.jface.application.RendererRegistry\:renderer_<ID>\:access=system
+ui.jface.application.RendererRegistry\:<ID>_id\:value=<ID>
+ui.jface.application.RendererRegistry\:<ID>_id\:access=system
+ui.jface.application.journal.rendering.generic.<ID>\:attribute-id\:value=<ID>
+ui.jface.application.journal.rendering.generic.<ID>\:attribute-label\:value=<COLUMN LABEL>

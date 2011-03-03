@@ -1,0 +1,11 @@
+ui.jface.configuration.pages.CommentService\:title\:label\:en=Comment management
+ui.jface.configuration.pages.CommentService\:description\:label\:en=The comment management allows you to create comments on incomning calls.
+ui.jface.configuration.pages.CommentService\:path\:label\:en=Directory for comments: 
+ui.jface.configuration.pages.CommentService\:path\:description\:en=Choose a directory for storing th ecomments.
+ui.jface.configuration.pages.CommentService\:enabled\:label\:en=Service enabled
+ui.jface.configuration.pages.CommentService\:autocreatecomment\:label\:en=Start comment manager on incoming call automatically
+ui.jface.configuration.pages.CommentService\:endless\:label\:en=Use endless comments per caller
+ui.jface.configuration.pages.CommentService\:starttext\:label\:en=Comments: 
+ui.jface.configuration.pages.CommentService\:maxtext\:label\:en=Character count for preview:\(0 = entire text)
+ui.jface.configuration.pages.CommentService\:status\:label\:en=Available status: 
+ui.jface.configuration.pages.CommentService\:followupcolor\:label\:en=Colour for follow-up comments: 

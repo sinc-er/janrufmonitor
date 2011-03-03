@@ -1,0 +1,1 @@
+application.Run\:commands\:value=status,journal,searchupdates,update,install,import,simulate,info,cfg_set

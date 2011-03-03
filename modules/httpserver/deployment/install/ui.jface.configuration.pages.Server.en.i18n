@@ -1,0 +1,11 @@
+ui.jface.configuration.pages.Server\:title\:label\:en=Server extension
+ui.jface.configuration.pages.Server\:description\:label\:en=The server extension allows client to access caller information from a PC with no telephone device.
+ui.jface.configuration.pages.Server\:enabled\:label\:en=Service enabled
+ui.jface.configuration.pages.Server\:add\:label\:en=<<
+ui.jface.configuration.pages.Server\:port\:label\:en=Server port: 
+ui.jface.configuration.pages.Server\:remove\:label\:en=>>
+ui.jface.configuration.pages.Server\:alias\:label\:en=IP-Address / DNS
+ui.jface.configuration.pages.Server\:allowed\:label\:en=Allowed Clients: 
+ui.jface.configuration.pages.Server\:edit\:label\:en=Add/Edit Client 
+ui.jface.configuration.pages.Server\:msnlimit\:label\:en=Limit client on these MSNs 
+ui.jface.configuration.pages.Server\:browser\:label\:en=Allow browser connections

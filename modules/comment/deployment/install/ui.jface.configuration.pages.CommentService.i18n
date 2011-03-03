@@ -1,0 +1,11 @@
+ui.jface.configuration.pages.CommentService\:title\:label\:de=Notizenverwaltung
+ui.jface.configuration.pages.CommentService\:description\:label\:de=Mit Hilfe der Notizenverwaltung können Sie zu eingehenden Telefonaten Gesprächsnotizen erfassen und verwalten. Notizen können zu jedem Anrufer erstellt werden, der eine Rufnummer übermittelt.
+ui.jface.configuration.pages.CommentService\:path\:label\:de=Ablageverzeichnis für Notizen: 
+ui.jface.configuration.pages.CommentService\:path\:description\:de=Wählen Sie ein Verzeichnis zur Ablage der Notizen.
+ui.jface.configuration.pages.CommentService\:enabled\:label\:de=Dienst aktiviert
+ui.jface.configuration.pages.CommentService\:autocreatecomment\:label\:de=Notizenverwaltung automatisch bei Anruf starten
+ui.jface.configuration.pages.CommentService\:endless\:label\:de=Alle Notizen eines Anrufers fortlaufend protokollieren
+ui.jface.configuration.pages.CommentService\:starttext\:label\:de=Kommentar für neue Notiz: 
+ui.jface.configuration.pages.CommentService\:maxtext\:label\:de=Anzahl der Zeichen in der Notizvorschau:\n(0 = gesamter Text) 
+ui.jface.configuration.pages.CommentService\:status\:label\:de=Verfügbare Status: 
+ui.jface.configuration.pages.CommentService\:followupcolor\:label\:de=Farbe für Notizen mit Verfolgung:  

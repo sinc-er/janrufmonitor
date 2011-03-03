@@ -1,0 +1,16 @@
+service.AutoIdentifyDialog\:title\:label\:en=Automatic areacode detection
+
+service.DefaultCallDialogService\:title\:label\:en=Dialogue
+
+service.Journaling\:title\:label\:en=Prtotcol service
+
+service.QuickIdentify\:title\:label\:en=Identification service
+
+
+service.update.UpdateManager\:nooverview\:label\:en=The Update list is empty.
+service.update.UpdateManager\:ioexception\:label\:en=An error occured during requesting the update service. Make sure that your internet connection is available for requesting.
+
+service.AutoUpdateService\:title\:label\:en=Update Manager
+service.AutoUpdateService\:newupdates\:label\:en=New updates available!
+
+service.GeoCoding\:title\:label\:en=Geocoding

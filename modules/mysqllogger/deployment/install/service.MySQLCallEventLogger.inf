@@ -1,0 +1,16 @@
+service.ServiceFactory\:service_mclogger\:access=system
+service.ServiceFactory\:service_mclogger\:value=de.janrufmonitor.service.calleventlogger.MySQLCallEventLogger
+service.MySQLCallEventLogger\:priority\:value=200
+service.MySQLCallEventLogger\:enabled\:value=false
+service.MySQLCallEventLogger\:enabled\:type=boolean
+service.MySQLCallEventLogger\:priority\:type=integer
+service.MySQLCallEventLogger\:dbserver\:value=localhost
+service.MySQLCallEventLogger\:dbdb\:value=jam_logger
+service.MySQLCallEventLogger\:dbport\:value=3306
+service.MySQLCallEventLogger\:dbport\:type=integer
+service.MySQLCallEventLogger\:dbuser\:value=root
+service.MySQLCallEventLogger\:dbpassword\:value=
+service.MySQLCallEventLogger\:logdetails\:value=true
+rules.RuleEngine\:blinker_rule\:value=MySQLCallEventLogger%*%*%true%*%*
+rules.RuleEngine\:usestandard\:value=false
+rules.RuleEngine\:usestandard\:type=boolean

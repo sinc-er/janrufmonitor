@@ -1,0 +1,3 @@
+repository.CsvFilter\:info\:value=CSV Exportfilter für Journale
+repository.ImExportFactory\:export_csvfile\:value=de.janrufmonitor.repository.imexporter.CsvFilter
+repository.ImExportFactory\:export_csvfile\:access=system

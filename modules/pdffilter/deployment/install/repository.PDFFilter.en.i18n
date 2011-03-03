@@ -1,0 +1,7 @@
+repository.PDFFilter\:filtername\:label\:en=PDF Document (*.pdf)
+repository.PDFFilter\:title\:label\:en=PDF export filter for Journals
+repository.PDFFilter\:confirmmessage\:label\:en=Don't show this message again
+
+repository.PDFCallerListFilter\:filtername\:label\:en=PDF telephone list (*.pdf)
+repository.PDFCallerListFilter\:title\:label\:en=PDF export filter for address book
+repository.PDFCallerListFilter\:confirmmessage\:label\:en=Don't show this message again

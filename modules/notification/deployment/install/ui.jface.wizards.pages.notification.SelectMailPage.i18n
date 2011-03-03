@@ -1,0 +1,5 @@
+ui.jface.wizards.pages.notification.SelectMailPage\:title\:label\:de=Mail-Adressen wählen
+ui.jface.wizards.pages.notification.SelectMailPage\:description\:label\:de=Wählen Sie eine Absender- und Empfänger-Adresse die der MSN zugewiesen werden soll.
+ui.jface.wizards.pages.notification.SelectMailPage\:mailto\:label\:de=Empfänger-Adresse: 
+ui.jface.wizards.pages.notification.SelectMailPage\:mailfrom\:label\:de=Absender-Adresse: 
+

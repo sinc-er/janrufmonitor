@@ -1,0 +1,2 @@
+command.CommandFactory\:command_cfgset\:value=de.janrufmonitor.application.console.command.ConsoleConfigSet
+command.CommandFactory\:command_cfgset\:access=system

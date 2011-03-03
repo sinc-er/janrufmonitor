@@ -1,0 +1,7 @@
+repository.JFritzImporter\:title\:label\:de=Importfilter für JFritz Daten
+repository.JFritzCallImporter\:filtername\:label\:de=JFritz Anrufliste (calls.csv)
+repository.JFritzCallImporter\:title\:label\:de=Importfilter für JFritz Anrufliste 
+repository.JFritzCallImporter\:confirmmessage\:label\:de=Diese Meldung nicht mehr anzeigen.
+repository.JFritzCallerImporter\:filtername\:label\:de=JFritz Telefonliste (contacts.csv)
+repository.JFritzCallerImporter\:title\:label\:de=Importfilter für JFritz Telefonliste 
+repository.JFritzCallerImporter\:confirmmessage\:label\:de=Diese Meldung nicht mehr anzeigen.

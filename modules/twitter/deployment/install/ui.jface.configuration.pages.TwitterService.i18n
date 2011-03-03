@@ -1,0 +1,29 @@
+ui.jface.configuration.pages.TwitterService\:title\:label\:de=Twitter Benachrichtigung
+ui.jface.configuration.pages.TwitterService\:description\:label\:de=Ermöglicht das Twittern von Gesprächsinformationen als Nachricht beim Onlinedienst twitter.com. Es wird ein aktiver Twitter-Account benötigt.
+
+ui.jface.configuration.pages.TwitterService\:inmessage\:label\:de=Nachricht bei eingehenden Gesprächen:
+ui.jface.configuration.pages.TwitterService\:outmessage\:label\:de=Nachricht bei ausgehenden Gesprächen:
+ui.jface.configuration.pages.TwitterService\:outgoing\:label\:de=ausgehende Gespräche twittern
+ui.jface.configuration.pages.TwitterService\:incoming\:label\:de=eingehende Gespräche twittern
+
+ui.jface.configuration.pages.TwitterService\:enabled\:label\:de=Dienst aktiviert
+
+ui.jface.configuration.pages.TwitterService\:auth\:label\:de=Mit Twitter PIN freischalten
+
+ui.jface.configuration.pages.TwitterService\:unauth\:label\:de=Twitter Freischaltung löschen
+
+ui.jface.configuration.pages.TwitterService\:isauth\:label\:de=Twitter Benachrichtigung ist bereits freigeschaltet.
+
+ui.jface.configuration.pages.TwitterService\:isnotauth\:label\:de=Twitter Benachrichtigung ist nicht freigeschaltet.
+
+
+ui.jface.wizards.TwitterPINWizard\:title\:label\:de=Twitter PIN Authentifizierung
+
+ui.jface.wizards.pages.TwitterPINPage\:title\:label\:de=Twitter PIN Abfrage
+
+ui.jface.wizards.pages.TwitterPINPage\:description\:label\:de=Mit der Twitter PIN authentifizieren Sie jAnrufmonitor um über Ihren Twitter Account Nachrichten zu veröffentlichen.
+
+ui.jface.wizards.pages.TwitterPINPage\:pin\:label\:de=Twitter PIN
+
+ui.jface.wizards.pages.TwitterPINPage\:rpin\:label\:de=PIN anfordern
+

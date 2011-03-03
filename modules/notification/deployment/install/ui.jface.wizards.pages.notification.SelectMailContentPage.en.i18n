@@ -1,0 +1,6 @@
+ui.jface.wizards.pages.notification.SelectMailContentPage\:title\:label\:en=Define mail content
+ui.jface.wizards.pages.notification.SelectMailContentPage\:description\:label\:en=Specify the content of the mail. Use placeholders for adding call information to the mail body or subject.
+ui.jface.wizards.pages.notification.SelectMailContentPage\:format\:label\:en=Mail format: 
+ui.jface.wizards.pages.notification.SelectMailContentPage\:encoding\:label\:en=Encoding: 
+ui.jface.wizards.pages.notification.SelectMailContentPage\:subject\:label\:en=Subject: 
+ui.jface.wizards.pages.notification.SelectMailContentPage\:content\:label\:en=Body: 

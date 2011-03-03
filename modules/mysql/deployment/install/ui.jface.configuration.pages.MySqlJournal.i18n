@@ -1,0 +1,17 @@
+ui.jface.configuration.pages.MySqlJournal\:title\:label\:de=MySQL Datenbank Journal
+ui.jface.configuration.pages.MySqlJournal\:description\:label\:de=Das MySQL Datenbank Journal speichert alle eingehenden Anrufe mit ihren Informationen in einer Datenbank.
+ui.jface.configuration.pages.MySqlJournal\:dbserver\:label\:de=Datenbank-Server: 
+ui.jface.configuration.pages.MySqlJournal\:dbdb\:label\:de=Datenbank-Name: 
+ui.jface.configuration.pages.MySqlJournal\:dbport\:label\:de=Datenbank-Port: 
+ui.jface.configuration.pages.MySqlJournal\:dbuser\:label\:de=Datenbank-Benutzer: 
+ui.jface.configuration.pages.MySqlJournal\:dbpassword\:label\:de=Datenbank-Passwort: 
+ui.jface.configuration.pages.MySqlJournal\:enabled\:label\:de=Datenablage aktiviert
+
+ui.jface.configuration.pages.MySqlAddressbook\:title\:label\:de=MySQL Datenbank Adressbuch
+ui.jface.configuration.pages.MySqlAddressbook\:description\:label\:de=Das MySQL Datenbank Adressbuch speichert Kontakt-Informationen in einer Datenbank.
+ui.jface.configuration.pages.MySqlAddressbook\:dbserver\:label\:de=Datenbank-Server: 
+ui.jface.configuration.pages.MySqlAddressbook\:dbdb\:label\:de=Datenbank-Name: 
+ui.jface.configuration.pages.MySqlAddressbook\:dbuser\:label\:de=Datenbank-Benutzer: 
+ui.jface.configuration.pages.MySqlAddressbook\:dbpassword\:label\:de=Datenbank-Passwort: 
+ui.jface.configuration.pages.MySqlAddressbook\:enabled\:label\:de=Datenablage aktiviert
+ui.jface.configuration.pages.MySqlAddressbook\:dbport\:label\:de=Datenbank-Port: 

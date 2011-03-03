@@ -1,0 +1,2 @@
+ui.jface.configuration.ConfigurationCommand\:page_server\:value=de.janrufmonitor.ui.jface.configuration.pages.Server
+ui.jface.configuration.ConfigurationCommand\:page_server\:access=system

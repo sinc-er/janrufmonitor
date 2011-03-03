@@ -1,0 +1,3 @@
+ui.jface.configuration.pages.ThunderbirdCallerManager\:title\:label\:de=Mozilla Thunderbird Adressbuch
+ui.jface.configuration.pages.ThunderbirdCallerManager\:description\:label\:de=Das Mozilla Thunderbird Adressbuch identifiziert eingehende Anrufe direkt mit dem Adressbuch des Mailprogrammes.
+ui.jface.configuration.pages.ThunderbirdCallerManager\:enabled\:label\:de=Datenablage aktiviert

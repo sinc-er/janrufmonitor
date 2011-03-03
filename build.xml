@@ -1,0 +1,835 @@
+<project name="jAnrufmonitor Distribution" default="publish_all" basedir=".">
+  <property file="build.properties"/>
+  
+  <condition property="is.macosx" value="yes">
+      <os family="mac"/>
+  </condition>
+  <condition property="is.win" value="yes">
+      <os family="windows"/>
+  </condition>
+    
+  <condition property="os" value="macosx">
+      <os family="mac"/>
+  </condition>
+  <condition property="os" value="win">
+      <os family="windows"/>
+  </condition>
+  <condition property="os" value="linux">
+      <os family="unix"/>
+  </condition>
+  <condition property="osarch" value="32">
+      <os arch="x86"/>
+  </condition>
+  <condition property="osarch" value="64">
+      <os arch="x86_64"/>
+  </condition>
+  
+    <property name="jam.download.server" value="http://downloads.janrufmonitor.de/released/5.0/"/>
+    <property name="jam.updates.server" value="${jam.download.server}descriptors/"/>
+
+    <property name="jam.kernel.extlib" value="${jam.extlib.root}/kernel"/>
+    <property name="jam.kernel.extlib.all" value="${jam.kernel.extlib}/all"/>
+    <property name="jam.kernel.extlib.allui" value="${jam.kernel.extlib}/allui"/>
+    <property name="jam.kernel.extlib.osdepend" value="${jam.kernel.extlib}/${os}/${os.arch}"/>
+  
+    <property name="jam.kernel.config" value="${jam.kernel.root}/core/deployment"/>
+    <property name="jam.kernel.config.all" value="${jam.kernel.config}/all"/>
+    <property name="jam.kernel.config.osdepend" value="${jam.kernel.config}/${os}${osarch}"/>
+
+    <target name="extlib">
+        <subant target="sync_extlib">
+            <fileset dir="kernel" includes="build.xml"/>
+        </subant>
+    </target>
+
+    <target name="build_kernel">
+        <subant target="">
+            <fileset dir="kernel" includes="build.xml"/>
+        </subant>
+    </target>
+    
+    <target name="build_modules">
+        <subant target="">
+            <fileset dir="modules" includes="build.xml"/>
+        </subant>
+    </target>
+    
+    <target name="build_monitor_modules">
+        <subant target="">
+            <fileset dir="modules/capi" includes="build.xml"/>
+        </subant>
+        <subant target="">
+            <fileset dir="modules/tapi" includes="build.xml"/>
+        </subant>
+        <subant target="">
+            <fileset dir="modules/fritzbox" includes="build.xml"/>
+        </subant>
+            <subant target="">
+            <fileset dir="modules/httpclient" includes="build.xml"/>
+        </subant>
+    </target>
+    
+    <target name="build_headless_monitor_modules">
+        <subant target="bundle_headless">
+            <fileset dir="modules/capi" includes="build.xml"/>
+        </subant>
+        <subant target="bundle_headless">
+            <fileset dir="modules/fritzbox" includes="build.xml"/>
+        </subant>
+    </target>
+    
+    <target name="init_distribution" depends="build_kernel" description="initialize the distribution..." >
+     <tstamp/>
+     <property name="jam.build.dir" value="${jam.build.root}/${DSTAMP}"/>
+     <property name="jam.dist.dir" value="${jam.dist.root}/${DSTAMP}"/>
+     <property name="jam.pub.dir" value="${jam.pub.root}/_current"/>
+     <mkdir dir="${jam.dist.dir}"/>
+     
+     <property name="jam.kernel.lib" value="${jam.build.dir}/lib/kernel"/>
+     
+    </target>
+    
+    <target name="win32_distribution" depends="init_distribution" description="create win32 distribution" >
+        <echo message="Create win32 distribution..." />
+        <mkdir dir="${jam.kernel.extlib}/win/x86"/>
+        <get dest="${jam.kernel.extlib}/win/x86">
+            <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/win/x86/swt.jar"/> 
+        </get>
+        <create-bundle os="win" arch="32"/>
+    </target>
+    
+    <target name="win64_distribution" depends="init_distribution" description="create win64 distribution" >
+        <echo message="Create win64 distribution..." />
+        <mkdir dir="${jam.kernel.extlib}/win/x86_64"/>
+        <get dest="${jam.kernel.extlib}/win/x86_64">
+            <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/win/x86_64/swt.jar"/> 
+        </get>
+        <create-bundle os="win" arch="64"/>
+    </target>
+    
+    <target name="linux32_distribution" depends="init_distribution" description="create linux32 distribution" >
+        <echo message="Create linux32 distribution..." />
+        <mkdir dir="${jam.kernel.extlib}/linux/x86"/>
+        <get dest="${jam.kernel.extlib}/linux/x86">
+            <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/linux/x86/swt.jar"/> 
+        </get>
+        <create-bundle os="linux" arch="32"/>
+    </target>
+    
+    <target name="linux64_distribution" depends="init_distribution" description="create linux64 distribution" >
+        <echo message="Create linux64 distribution..." />
+        <mkdir dir="${jam.kernel.extlib}/linux/x86_64"/>
+        <get dest="${jam.kernel.extlib}/linux/x86_64">
+            <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/linux/x86_64/swt.jar"/> 
+        </get>
+        <create-bundle os="linux" arch="64"/>
+    </target>
+    
+    <target name="macosx64_distribution" depends="init_distribution" description="create macosx64 distribution" >
+        <echo message="Create macosx64 distribution..." />
+        <mkdir dir="${jam.kernel.extlib}/macosx/x86_64"/>
+        <get dest="${jam.kernel.extlib}/macosx/x86_64">
+            <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/macosx/x86_64/swt.jar"/> 
+        </get>
+        <create-bundle os="macosx" arch="64"/>
+    </target>
+    
+    <target name="console_distribution" depends="init_distribution" description="create console distribution" >
+        <echo message="Create console distribution..." />
+        <create-console-bundle os="console" arch="32"/>
+    </target>
+    
+    <target name="current_distribution" depends="init_distribution" description="create distribution of parent os" >
+        <create-bundle os="${os}" arch="${osarch}"/>
+    </target>
+    
+    
+    <target name="init_bundle" depends="init_distribution,build_monitor_modules" description="initialize the bundeling..." >
+     <mkdir dir="${jam.pub.dir}"/>
+    </target>
+    
+    <target name="init_headless_bundle" depends="init_distribution,build_headless_monitor_modules" description="initialize the headless bundeling..." >
+     <mkdir dir="${jam.pub.dir}"/>
+    </target>
+    
+    <target name="bundle_console" depends="init_headless_bundle,console_distribution" description="create console bundles" >
+        <echo message="Publishing console capi version..." />
+    
+        <loadfile srcFile="./kernel/core/deployment/all/~meta-inf/descriptor.properties" property="jam.version">
+		<filterchain>
+			<linecontains>
+			  	<contains value="jam.mod.version="/>	
+			</linecontains>
+			<tokenfilter>
+		    	<replacestring from="jam.mod.version="/>
+			</tokenfilter>
+			<striplinebreaks/>					
+		</filterchain>
+	  </loadfile>
+      
+      <copy todir="${jam.dist.dir}/jam50-console-capi">
+          <fileset dir="${jam.dist.dir}/jam50-console32"/>
+      </copy>
+      <copy todir="${jam.dist.dir}/jam50-console-capi/install">
+          <fileset dir="${jam.dist.dir}/modules/headless/" includes="*capi*.jam.zip"/>
+      </copy>
+      <zip zipfile="${jam.pub.dir}/jam50-console-capi.zip" basedir="${jam.dist.dir}/jam50-console-capi"/>   
+      
+      <echo message="Publishing console fritzbox version..." />      
+      <copy todir="${jam.dist.dir}/jam50-console-fritzbox">
+          <fileset dir="${jam.dist.dir}/jam50-console32"/>
+      </copy>
+      <copy todir="${jam.dist.dir}/jam50-console-fritzbox/install">
+          <fileset dir="${jam.dist.dir}/modules/headless/" includes="*fritzbox*.jam.zip"/>
+      </copy>
+      <zip zipfile="${jam.pub.dir}/jam50-console-fritzbox.zip" basedir="${jam.dist.dir}/jam50-console-fritzbox"/>   
+      
+    </target>
+    
+    <target name="bundle_win32" depends="init_bundle,win32_distribution" description="create win32 bundles" >
+      <echo message="Publishing win32 capi version..." />
+      
+        <loadfile srcFile="./kernel/core/deployment/all/~meta-inf/descriptor.properties" property="jam.version">
+		<filterchain>
+			<linecontains>
+			  	<contains value="jam.mod.version="/>	
+			</linecontains>
+			<tokenfilter>
+		    	<replacestring from="jam.mod.version="/>
+			</tokenfilter>
+			<striplinebreaks/>					
+		</filterchain>
+	  </loadfile>
+      
+      <copy todir="${jam.dist.dir}/jam50-win32-capi">
+          <fileset dir="${jam.dist.dir}/jam50-win32"/>
+      </copy>
+      <copy todir="${jam.dist.dir}/jam50-win32-capi/install">
+          <fileset dir="${jam.dist.dir}/modules" includes="*capi*.jam.zip"/>
+      </copy>
+      <zip zipfile="${jam.pub.dir}/jam50-win32-capi.zip" basedir="${jam.dist.dir}/jam50-win32-capi"/>    
+      
+      <echo message="Publishing win32 tapi version..." />
+      <copy todir="${jam.dist.dir}/jam50-win32-tapi">
+          <fileset dir="${jam.dist.dir}/jam50-win32"/>
+      </copy>
+      <copy todir="${jam.dist.dir}/jam50-win32-tapi/install">
+          <fileset dir="${jam.dist.dir}/modules" includes="*mon-xtapi*.jam.zip"/>
+      </copy>
+      <zip zipfile="${jam.pub.dir}/jam50-win32-tapi.zip" basedir="${jam.dist.dir}/jam50-win32-tapi"/> 
+      
+      <echo message="Publishing win32 fritzbox version..." />
+      <copy todir="${jam.dist.dir}/jam50-win32-fritzbox">
+          <fileset dir="${jam.dist.dir}/jam50-win32"/>
+      </copy>
+      <copy todir="${jam.dist.dir}/jam50-win32-fritzbox/install">
+          <fileset dir="${jam.dist.dir}/modules" includes="*fritzbox*.jam.zip"/>
+      </copy>
+      <zip zipfile="${jam.pub.dir}/jam50-win32-fritzbox.zip" basedir="${jam.dist.dir}/jam50-win32-fritzbox"/>  
+      
+      <echo message="Publishing win32 client version..." />
+      <copy todir="${jam.dist.dir}/jam50-win32-client">
+          <fileset dir="${jam.dist.dir}/jam50-win32"/>
+      </copy>
+      <copy todir="${jam.dist.dir}/jam50-win32-client/install">
+          <fileset dir="${jam.dist.dir}/modules" includes="*client*.jam.zip"/>
+      </copy>
+      <zip zipfile="${jam.pub.dir}/jam50-win32-client.zip" basedir="${jam.dist.dir}/jam50-win32-client"/> 
+    </target>
+    
+    <target name="bundle_win64" depends="init_bundle,win64_distribution" description="create win64 bundles" >
+      <echo message="Publishing win64 fritzbox version..." />
+      <copy todir="${jam.dist.dir}/jam50-win64-fritzbox">
+          <fileset dir="${jam.dist.dir}/jam50-win64"/>
+      </copy>
+      <copy todir="${jam.dist.dir}/jam50-win64-fritzbox/install">
+          <fileset dir="${jam.dist.dir}/modules" includes="*fritzbox*.jam.zip"/>
+      </copy>
+      <zip zipfile="${jam.pub.dir}/jam50-win64-fritzbox.zip" basedir="${jam.dist.dir}/jam50-win64-fritzbox"/>  
+      
+      <echo message="Publishing win64 client version..." />
+      <copy todir="${jam.dist.dir}/jam50-win64-client">
+          <fileset dir="${jam.dist.dir}/jam50-win64"/>
+      </copy>
+      <copy todir="${jam.dist.dir}/jam50-win64-client/install">
+          <fileset dir="${jam.dist.dir}/modules" includes="*client*.jam.zip"/>
+      </copy>
+      <zip zipfile="${jam.pub.dir}/jam50-win64-client.zip" basedir="${jam.dist.dir}/jam50-win64-client"/> 
+    </target>
+    
+    <target name="bundle_linux32" depends="init_bundle,linux32_distribution" description="create linux32 bundles" >
+      <echo message="Publishing linux32 capi version..." />
+      <copy todir="${jam.dist.dir}/jam50-linux32-capi">
+          <fileset dir="${jam.dist.dir}/jam50-linux32"/>
+      </copy>
+      <copy todir="${jam.dist.dir}/jam50-linux32-capi/install">
+          <fileset dir="${jam.dist.dir}/modules" includes="*capi*.jam.zip"/>
+      </copy>
+      <tar destfile="${jam.pub.dir}/jam50-linux32-capi.tar.gz" basedir="${jam.dist.dir}/jam50-linux32-capi" compression="gzip">
+	    <tarfileset dir="${jam.dist.dir}/jam50-linux32-capi" mode="755" username="root" group="root">
+		  <include name="${jam.dist.dir}/jam50-linux32-capi/jam.sh"/>
+	    </tarfileset>
+	  </tar>       
+        
+      <echo message="Publishing linux32 fritzbox version..." />
+      <copy todir="${jam.dist.dir}/jam50-linux32-fritzbox">
+          <fileset dir="${jam.dist.dir}/jam50-linux32"/>
+      </copy>
+      <copy todir="${jam.dist.dir}/jam50-linux32-fritzbox/install">
+          <fileset dir="${jam.dist.dir}/modules" includes="*fritzbox*.jam.zip"/>
+      </copy>
+      <tar destfile="${jam.pub.dir}/jam50-linux32-fritzbox.tar.gz" basedir="${jam.dist.dir}/jam50-linux32-fritzbox" compression="gzip">
+	    <tarfileset dir="${jam.dist.dir}/jam50-linux32-fritzbox" mode="755" username="root" group="root">
+		  <include name="${jam.dist.dir}/jam50-linux32-fritzbox/jam.sh"/>
+	    </tarfileset>
+	  </tar> 
+      
+      <echo message="Publishing linux32 client version..." />
+      <copy todir="${jam.dist.dir}/jam50-linux32-client">
+          <fileset dir="${jam.dist.dir}/jam50-linux32"/>
+      </copy>
+      <copy todir="${jam.dist.dir}/jam50-linux32-client/install">
+          <fileset dir="${jam.dist.dir}/modules" includes="*client*.jam.zip"/>
+      </copy>
+      <tar destfile="${jam.pub.dir}/jam50-linux32-client.tar.gz" basedir="${jam.dist.dir}/jam50-linux32-client" compression="gzip">
+	    <tarfileset dir="${jam.dist.dir}/jam50-linux32-client" mode="755" username="root" group="root">
+		  <include name="${jam.dist.dir}/jam50-linux32-client/jam.sh"/>
+	    </tarfileset>
+	  </tar>
+    </target>
+    
+    <target name="bundle_linux64" depends="init_bundle,linux64_distribution" description="create linux64 bundles" >
+        
+      <echo message="Publishing linux64 fritzbox version..." />
+      <copy todir="${jam.dist.dir}/jam50-linux64-fritzbox">
+          <fileset dir="${jam.dist.dir}/jam50-linux64"/>
+      </copy>
+      <copy todir="${jam.dist.dir}/jam50-linux64-fritzbox/install">
+          <fileset dir="${jam.dist.dir}/modules" includes="*fritzbox*.jam.zip"/>
+      </copy>
+      <tar destfile="${jam.pub.dir}/jam50-linux64-fritzbox.tar.gz" basedir="${jam.dist.dir}/jam50-linux64-fritzbox" compression="gzip">
+	    <tarfileset dir="${jam.dist.dir}/jam50-linux64-fritzbox" mode="755" username="root" group="root">
+		  <include name="${jam.dist.dir}/jam50-linux64-fritzbox/jam.sh"/>
+	    </tarfileset>
+	  </tar>
+            
+      <echo message="Publishing linux64 client version..." />
+      <copy todir="${jam.dist.dir}/jam50-linux64-client">
+          <fileset dir="${jam.dist.dir}/jam50-linux64"/>
+      </copy>
+      <copy todir="${jam.dist.dir}/jam50-linux64-client/install">
+          <fileset dir="${jam.dist.dir}/modules" includes="*client*.jam.zip"/>
+      </copy>
+      <tar destfile="${jam.pub.dir}/jam50-linux64-client.tar.gz" basedir="${jam.dist.dir}/jam50-linux64-client" compression="gzip">
+	    <tarfileset dir="${jam.dist.dir}/jam50-linux64-client" mode="755" username="root" group="root">
+		  <include name="${jam.dist.dir}/jam50-linux64-client/jam.sh"/>
+	    </tarfileset>
+	  </tar>
+     
+    </target>
+    
+    <target name="bundle_macosx64" depends="init_bundle,macosx64_distribution" description="create macosx64 bundles" if="is.macosx">
+      <taskdef name="jarbundler" classname="net.sourceforge.jarbundler.JarBundler" classpath="./ant/lib/jarbundler-2.1.0.jar"/>
+
+      <echo message="Publishing macosx64 fritzbox version..." />
+      <copy todir="${jam.dist.dir}/jam50-macosx64-fritzbox">
+          <fileset dir="${jam.dist.dir}/jam50-macosx64"/>
+      </copy>
+      
+      <delete file="${jam.dist.dir}/jam50-macosx64-fritzbox/lib/osgi.jar" />
+      <delete file="${jam.dist.dir}/jam50-macosx64-fritzbox/lib/runtime.jar" />
+      <delete file="${jam.dist.dir}/jam50-macosx64-fritzbox/lib/jface.jar" />
+      <delete file="${jam.dist.dir}/jam50-macosx64-fritzbox/lib/i18n.jar" />
+      <delete file="${jam.dist.dir}/jam50-macosx64-fritzbox/lib/commands.jar" />
+      
+      <copy todir="${jam.dist.dir}/jam50-macosx64-fritzbox">
+          <fileset dir="${jam.dist.dir}/jam50-macosx64/lib"/>
+      </copy>
+      
+      <delete file="${jam.dist.dir}/jam50-macosx64-fritzbox/jamui.jar" />
+      
+      <copy todir="${jam.dist.dir}/jam50-macosx64-fritzbox/install">
+          <fileset dir="${jam.dist.dir}/modules" includes="*fritzbox*.jam.zip"/>
+          <fileset dir="${jam.dist.dir}/modules" includes="*macab*.jam.zip"/>
+      </copy>
+      <copy todir="${jam.dist.dir}/jam50-macosx64-fritzbox">
+        <fileset dir="${jam.build.dir}/lib/modules/mod-mon-fritzbox" includes="**/*.jar" />
+        <fileset dir="${jam.build.dir}/lib/modules/mod-rep-macab" includes="**/*.jar" />
+      </copy>
+      
+      <loadfile srcFile="./kernel/core/deployment/all/~meta-inf/descriptor.properties" property="jam.version">
+		<filterchain>
+			<linecontains>
+			  	<contains value="jam.mod.version="/>	
+			</linecontains>
+			<tokenfilter>
+		    	<replacestring from="jam.mod.version="/>
+			</tokenfilter>
+			<striplinebreaks/>					
+		</filterchain>
+	  </loadfile>
+      
+      <mkdir dir="${jam.dist.dir}/jarbundler/jam50-fritzbox/"/>
+      <jarbundler dir="${jam.dist.dir}/jarbundler/jam50-fritzbox/"
+              name="jAnrufmonitor - AVM Fritz!Box Edition"
+              shortname="jAnrufmonitor"
+              signature="jam"
+              mainclass="de.janrufmonitor.application.RunUI64"
+              icon="./kernel/core/deployment/macosx64/images/jam.icns"
+              jvmversion="1.4+"
+              version="${jam.version}"
+              infostring="jAnrufmonitor 5.0, copyright 2008 - 2011"
+              build="${jam.version}"
+              bundleid="de.janrufmonitor.core" 
+              startOnMainThread="true"
+              developmentregion="German"
+              vmoptions="-Djam.ui.toplevel=false -Djam.ui.trayitem=true"> 
+                
+        <!-- Adjust the look, feel and behavior -->
+    
+        <javaproperty name="apple.laf.useScreenMenuBar" value="true"/>
+        <javaproperty name="apple.awt.brushMetal" value="true"/>
+        <javaproperty name="apple.awt.showGrowBox" value="false"/>
+
+    
+        <!-- Just proving we can include a file.  Might use it in the About box --> 
+    
+        <javafileset dir="${jam.dist.dir}/jam50-macosx64-fritzbox" >
+            <exclude name="**/*.jar" />
+        </javafileset>
+    
+        <jarfileset dir="${jam.dist.dir}/jam50-macosx64-fritzbox" >
+            <include name="**/*.jar" />
+        </jarfileset>
+                           
+      </jarbundler>
+      
+       <delete file="${jam.pub.dir}/jam50-macosx-fritzbox.dmg" />
+      
+      <exec dir="." os="Mac OS X" executable="/bin/sh">
+        <arg value="-c"/>
+        <arg value="./mkdmg.sh /Users/brandtt/git/janrufmonitor/ ./${jam.dist.dir}/jarbundler/jam50-fritzbox/ ./${jam.pub.dir}/ jam50-macosx-fritzbox"/>
+      </exec>
+      
+      
+      <echo message="Publishing macosx64 client version..." />
+      <copy todir="${jam.dist.dir}/jam50-macosx64-client">
+          <fileset dir="${jam.dist.dir}/jam50-macosx64"/>
+      </copy>
+      
+      <delete file="${jam.dist.dir}/jam50-macosx64-client/lib/osgi.jar" />
+      <delete file="${jam.dist.dir}/jam50-macosx64-client/lib/runtime.jar" />
+      <delete file="${jam.dist.dir}/jam50-macosx64-client/lib/jface.jar" />
+      <delete file="${jam.dist.dir}/jam50-macosx64-client/lib/i18n.jar" />
+      <delete file="${jam.dist.dir}/jam50-macosx64-client/lib/commands.jar" />
+      
+      <copy todir="${jam.dist.dir}/jam50-macosx64-client">
+          <fileset dir="${jam.dist.dir}/jam50-macosx64/lib"/>
+      </copy>
+      
+      <delete file="${jam.dist.dir}/jam50-macosx64-client/jamui.jar" />
+      
+      <copy todir="${jam.dist.dir}/jam50-macosx64-client/install">
+          <fileset dir="${jam.dist.dir}/modules" includes="*client*.jam.zip"/>
+          <fileset dir="${jam.dist.dir}/modules" includes="*macab*.jam.zip"/>
+      </copy>
+      <copy todir="${jam.dist.dir}/jam50-macosx64-client">
+        <fileset dir="${jam.build.dir}/lib/modules/mod-srv-client" includes="**/*.jar" />
+        <fileset dir="${jam.build.dir}/lib/modules/mod-rep-macab" includes="**/*.jar" />
+      </copy>
+      
+      <loadfile srcFile="./kernel/core/deployment/all/~meta-inf/descriptor.properties" property="jam.version">
+		<filterchain>
+			<linecontains>
+			  	<contains value="jam.mod.version="/>	
+			</linecontains>
+			<tokenfilter>
+		    	<replacestring from="jam.mod.version="/>
+			</tokenfilter>
+			<striplinebreaks/>					
+		</filterchain>
+	  </loadfile>
+      
+      <mkdir dir="${jam.dist.dir}/jarbundler/jam50-client/"/>
+      <jarbundler dir="${jam.dist.dir}/jarbundler/jam50-client/"
+              name="jAnrufmonitor - Client Edition"
+              shortname="jAnrufmonitor"
+              signature="jam"
+              mainclass="de.janrufmonitor.application.RunUI64"
+              icon="./kernel/core/deployment/macosx64/images/jam.icns"
+              jvmversion="1.4+"
+              version="${jam.version}"
+              infostring="jAnrufmonitor 5.0, copyright 2008 - 2011"
+              build="${jam.version}"
+              bundleid="de.janrufmonitor.core" 
+              startOnMainThread="true"
+              developmentregion="German"
+              vmoptions="-Djam.ui.toplevel=false -Djam.ui.trayitem=true"> 
+                
+        <!-- Adjust the look, feel and behavior -->
+    
+        <javaproperty name="apple.laf.useScreenMenuBar" value="true"/>
+        <javaproperty name="apple.awt.brushMetal" value="true"/>
+        <javaproperty name="apple.awt.showGrowBox" value="false"/>
+
+    
+        <!-- Just proving we can include a file.  Might use it in the About box --> 
+    
+        <javafileset dir="${jam.dist.dir}/jam50-macosx64-client" >
+            <exclude name="**/*.jar" />
+        </javafileset>
+    
+        <jarfileset dir="${jam.dist.dir}/jam50-macosx64-client" >
+            <include name="**/*.jar" />
+        </jarfileset>
+                           
+      </jarbundler>
+      
+      <delete file="${jam.pub.dir}/jam50-macosx-client.dmg" />
+      
+      <exec dir="." os="Mac OS X" executable="/bin/sh">
+        <arg value="-c"/>
+        <arg value="./mkdmg.sh /Users/brandtt/git/janrufmonitor/ ./${jam.dist.dir}/jarbundler/jam50-client/ ./${jam.pub.dir}/ jam50-macosx-client"/>
+      </exec>
+    </target>
+    
+    <target name="bundle_win32_installer" depends="init_bundle,win32_distribution,build_modules" description="creates win32 installer bundle" >
+      <mkdir dir="${jam.dist.dir}/installers/win32-installer/"/>
+    
+      <copy todir="${jam.dist.dir}/installers/">
+          <fileset dir="./internal/tools/"/>
+      </copy>
+    
+      <copy todir="${jam.dist.dir}/installers/win32-installer/">
+          <fileset file="./win32-installer.gpr"/>
+      </copy>
+      
+      <mkdir dir="${jam.dist.dir}/installers/win32-installer/presetup"/>
+      <copy todir="${jam.dist.dir}/installers/win32-installer/presetup/">
+          <fileset file="./jamlogo.bmp"/>
+          <fileset file="${jam.kernel.config.all}/license.txt"/>
+      </copy>
+      
+      <mkdir dir="${jam.dist.dir}/installers/win32-installer/intareacodes"/>
+      <copy todir="${jam.dist.dir}/installers/win32-installer/intareacodes/">
+          <fileset dir="${jam.kernel.root}/core/intareacodes" includes="areacodes.*.jam.zip"/>
+      </copy>
+      
+      <mkdir dir="${jam.dist.dir}/installers/win32-installer/win32"/>
+      <copy todir="${jam.dist.dir}/installers/win32-installer/win32/">
+          <fileset dir="${jam.dist.dir}/jam50-win32"/>
+      </copy>
+      
+      <mkdir dir="${jam.dist.dir}/installers/win32-installer/modules"/>
+      <copy todir="${jam.dist.dir}/installers/win32-installer/modules/">
+          <fileset dir="${jam.dist.dir}/modules"/>
+      </copy>
+      
+      <mkdir dir="${jam.dist.dir}/installers/win32-installer/ntservice"/>
+      <copy todir="${jam.dist.dir}/installers/win32-installer/ntservice/">
+          <fileset dir="${jam.dist.dir}/modules/ntservice"/>
+      </copy>
+      
+      <mkdir dir="${jam.dist.dir}/installers/win32-installer/jre1.6"/>
+      <copy todir="${jam.dist.dir}/installers/win32-installer/jre1.6/">
+          <fileset dir="./internal/jre/jre1.6/"/>
+      </copy>
+    </target>
+    
+    <target name="bundle_win64_installer" depends="init_bundle,win64_distribution,build_modules" description="creates win64 installer bundle" >
+      <mkdir dir="${jam.dist.dir}/installers/win64-installer/"/>
+    
+      <copy todir="${jam.dist.dir}/installers/">
+          <fileset dir="./internal/tools/"/>
+      </copy>
+    
+      <copy todir="${jam.dist.dir}/installers/win64-installer/">
+          <fileset file="./win64-installer.gpr"/>
+      </copy>
+      
+      <mkdir dir="${jam.dist.dir}/installers/win64-installer/presetup"/>
+      <copy todir="${jam.dist.dir}/installers/win64-installer/presetup/">
+          <fileset file="./jamlogo.bmp"/>
+          <fileset file="${jam.kernel.config.all}/license.txt"/>
+      </copy>
+      
+      <mkdir dir="${jam.dist.dir}/installers/win64-installer/intareacodes"/>
+      <copy todir="${jam.dist.dir}/installers/win64-installer/intareacodes/">
+          <fileset dir="${jam.kernel.root}/core/intareacodes" includes="areacodes.*.jam.zip"/>
+      </copy>
+      
+      <mkdir dir="${jam.dist.dir}/installers/win64-installer/win64"/>
+      <copy todir="${jam.dist.dir}/installers/win64-installer/win64/">
+          <fileset dir="${jam.dist.dir}/jam50-win64"/>
+      </copy>
+      
+      <mkdir dir="${jam.dist.dir}/installers/win64-installer/modules"/>
+      <copy todir="${jam.dist.dir}/installers/win64-installer/modules/">
+          <fileset dir="${jam.dist.dir}/modules"/>
+      </copy>
+
+      <mkdir dir="${jam.dist.dir}/installers/win64-installer/jre1.6"/>
+      <copy todir="${jam.dist.dir}/installers/win64-installer/jre1.6/">
+          <fileset dir="./internal/jre/jre1.6/"/>
+      </copy>
+    </target>
+
+    
+    <target name="publish_win32" depends="bundle_win32,bundle_win32_installer" description="publishes win32 bundle" >
+      <mkdir dir="${jam.pub.dir}/core.${jam.version}.win.32.jam"/>
+      <copy todir="${jam.pub.dir}/core.${jam.version}.win.32.jam">
+          <fileset dir="${jam.dist.dir}/jam50-win32"/>
+      </copy>
+    </target>
+    
+    <target name="publish_win64" depends="bundle_win64,bundle_win32_installer" description="publishes wi64 bundle" >
+    </target>
+    
+    <target name="publish_linux32" depends="bundle_linux32" description="publishes linux32 bundle" >
+    </target>
+    
+    <target name="publish_linux64" depends="bundle_linux64" description="publishes linux64 bundle" >
+    </target>
+    
+    <target name="publish_macosx64" depends="bundle_macosx64" description="publishes macosx64 bundle" >
+      <mkdir dir="${jam.pub.dir}/core.${jam.version}.macosx.64.jam"/>
+      <copy todir="${jam.pub.dir}/core.${jam.version}.macosx.64.jam">
+          <fileset dir="${jam.dist.dir}/jam50-macosx64"/>
+      </copy>
+    </target>
+    
+    <target name="publish_all" depends="init_bundle" description="publishes all bundles" >
+        <subant target="publish_win32" buildpath="."/>
+        <subant target="publish_win64" buildpath="."/>
+        <subant target="publish_linux32" buildpath="."/>
+        <subant target="publish_linux64" buildpath="."/>
+        <subant target="publish_macosx64" buildpath="."/>
+        
+        
+        <mkdir dir="${jam.pub.dir}/descriptors"/>
+        <copy todir="${jam.pub.dir}/descriptors">
+          <fileset dir="${jam.dist.dir}/descriptors" />
+        </copy>
+        
+        <mkdir dir="${jam.pub.dir}/modules"/>
+        <copy todir="${jam.pub.dir}/modules">
+          <fileset dir="${jam.dist.dir}/modules" />
+        </copy>
+    </target>
+    
+    <target name="publish_rssfeed" depends="build_kernel, init_distribution" description="publish rss feed content for homepage">
+        <delete file="./internal/websites/homepage/changes.txt"/>
+        <delete file="./internal/websites/homepage/changes.rss"/>
+        <copy file="${jam.kernel.config.all}/changes.txt" todir="./internal/websites/homepage/"/>
+        <java classname="de.janrufmonitor.application.ChangeLog2RSS" failonerror="true">
+            <arg value="./internal/websites/homepage/changes.txt"/>
+            <classpath>
+                <pathelement location="${jam.kernel.lib}/jam.jar"/>
+                <pathelement location="${jam.kernel.lib}/jamapi.jar"/>
+                <pathelement path="${java.class.path}"/>
+            </classpath>
+       </java>
+    </target>
+    
+    <target name="publish_javadoc" description="publish javadoc">
+        <javadoc overview="${jam.kernel.root}/framework/src/api/overview.html" packagenames="de.janrufmonitor.*" sourcepath="${jam.kernel.root}/framework/src/api" defaultexcludes="yes" destdir="${jam.doc.root}/javadoc" author="true" version="true" use="true" windowtitle="jAnrufmonitor Framework 5.0"> 
+            <doctitle><![CDATA[<h1>jAnrufmonitor Framework 5.0</h1>]]></doctitle>
+            <bottom><![CDATA[<i>Copyright &#169; 2011 by Thilo Brandt. All Rights Reserved.</i>]]></bottom> 
+            <group title="Framework" packages="de.janrufmonitor.framework:de.janrufmonitor.framework.*"/>
+            <group title="Runtime Environment" packages="de.janrufmonitor.runtime:de.janrufmonitor.runtime.*"/> 
+            <group title="Services" packages="de.janrufmonitor.service"/> 
+            <group title="Repository" packages="de.janrufmonitor.repository:de.janrufmonitor.repository.*"/> 
+            <group title="User Interface" packages="de.janrufmonitor.ui:de.janrufmonitor.ui.*"/> 
+
+            <link offline="false" href="http://java.sun.com/javase/6/docs/api/" packagelistLoc="/tmp"/> 
+            <link offline="false" href="http://help.eclipse.org/galileo/index.jsp?topic=/org.eclipse.platform.doc.isv/reference/api/index.html" packagelistLoc="/tmp"/> 
+        </javadoc>
+
+    </target>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<macrodef name="create-bundle">
+    <attribute name="os"/>
+    <attribute name="arch"/>
+
+    <sequential>
+    <property name="jam.bundle.os" value="@{os}"/>
+    <property name="jam.bundle.osarch" value="@{arch}"/>
+    
+    <condition property="jam.bundle.osarch2" value="x86_64" else="x86">
+        <matches string="${jam.bundle.osarch}" pattern="64"/>
+    </condition>
+	
+    <property name="jam.dist.os.dir" value="${jam.dist.dir}/jam50-${jam.bundle.os}${jam.bundle.osarch}"/>
+    <property name="jam.dist.updates.dir" value="${jam.dist.dir}/descriptors"/>
+    
+    <mkdir dir="${jam.dist.os.dir}"/>
+    <mkdir dir="${jam.dist.updates.dir}"/>
+    <mkdir dir="${jam.dist.os.dir}/lib"/>
+    <mkdir dir="${jam.dist.os.dir}/install"/>
+
+    <copy todir="${jam.dist.os.dir}">
+      <fileset dir="${jam.kernel.config.all}" includes="*.*, images/**, config/**"/>
+    </copy>
+    <copy todir="${jam.dist.os.dir}">
+      <fileset dir="${jam.kernel.config}/${jam.bundle.os}${jam.bundle.osarch}" includes="*.*"/>
+    </copy>
+    <copy todir="${jam.dist.os.dir}">
+      <fileset dir="${jam.kernel.extlib}/${jam.bundle.os}/${jam.bundle.osarch2}"/>
+    </copy>
+    <copy todir="${jam.dist.os.dir}">
+      <fileset dir="${jam.kernel.extlib.all}"/>
+      <fileset file="${jam.kernel.lib}/jam.jar"/>
+      <fileset file="${jam.kernel.lib}/jamapi.jar"/>
+    </copy>
+    <copy todir="${jam.dist.os.dir}/lib">
+      <fileset dir="${jam.kernel.extlib.allui}"/>
+      <fileset file="${jam.kernel.lib}/jamui.jar"/>
+      <fileset file="${jam.kernel.lib}/jam${jam.bundle.os}${jam.bundle.osarch}.jar"/>
+    </copy>
+	
+	<loadfile srcFile="${jam.kernel.config.all}/~meta-inf/descriptor.properties" property="jam.kernel.namespace">
+		<filterchain>
+			<linecontains>
+			  	<contains value="jam.mod.namespace="/>	
+			</linecontains>
+			<tokenfilter>
+		    	<replacestring from="jam.mod.namespace="/>
+			</tokenfilter>
+			<striplinebreaks/>					
+		</filterchain>
+	</loadfile>
+	
+		<loadfile srcFile="${jam.kernel.config.all}/~meta-inf/descriptor.properties" property="jam.kernel.name">
+		<filterchain>
+			<linecontains>
+			  	<contains value="jam.mod.name="/>	
+			</linecontains>
+			<tokenfilter>
+		    	<replacestring from="jam.mod.name="/>
+			</tokenfilter>
+			<striplinebreaks/>					
+		</filterchain>
+	</loadfile>
+	
+	<loadfile srcFile="${jam.kernel.config.all}/~meta-inf/descriptor.properties" property="jam.kernel.version">
+		<filterchain>
+			<linecontains>
+			  	<contains value="jam.mod.version="/>	
+			</linecontains>
+			<tokenfilter>
+		    	<replacestring from="jam.mod.version="/>
+			</tokenfilter>
+			<striplinebreaks/>					
+		</filterchain>
+	</loadfile>
+	
+	<copy file="${jam.kernel.config.all}/~meta-inf/descriptor.properties" tofile="${jam.dist.updates.dir}/${jam.kernel.namespace}.${jam.kernel.version}.${jam.bundle.os}.${jam.bundle.osarch}.properties"/>
+	<echo file="${jam.dist.updates.dir}/${jam.kernel.namespace}.${jam.kernel.version}.${jam.bundle.os}.${jam.bundle.osarch}.properties" append="true">${line.separator}jam.mod.update.http=${jam.download.server}${jam.kernel.name}.${jam.kernel.version}.${jam.bundle.os}.${jam.bundle.osarch}.jam.zip${line.separator}</echo>
+
+	<echo file="${jam.dist.updates.dir}/updates" append="true">${jam.kernel.namespace}.${jam.kernel.version}.${jam.bundle.os}.${jam.bundle.osarch}=${jam.updates.server}${jam.kernel.namespace}.${jam.kernel.version}.${jam.bundle.os}.${jam.bundle.osarch}.properties${line.separator}</echo>
+	
+    <zip destfile="${jam.dist.os.dir}/install/coreconfig.init.jam.zip" excludes="*.*">
+      <fileset dir="${jam.kernel.config.all}" excludes="*.*, images/**, config/**"/>
+      <fileset dir="${jam.kernel.config}/${jam.bundle.os}${jam.bundle.osarch}" excludes="*.*"/>
+    </zip>
+	</sequential>
+</macrodef>
+    
+<macrodef name="create-console-bundle">
+    <attribute name="os"/>
+    <attribute name="arch"/>
+
+    <sequential>
+    <property name="jam.bundle.os" value="@{os}"/>
+    <property name="jam.bundle.osarch" value="@{arch}"/>
+    
+    <condition property="jam.bundle.osarch2" value="x86" else="x86_64">
+        <matches string="${jam.bundle.osarch}" pattern="32"/>
+    </condition>
+	
+    <property name="jam.dist.os.dir" value="${jam.dist.dir}/jam50-${jam.bundle.os}${jam.bundle.osarch}"/>
+    <property name="jam.dist.updates.dir" value="${jam.dist.dir}/descriptors"/>
+    
+    <mkdir dir="${jam.dist.os.dir}"/>
+    <mkdir dir="${jam.dist.updates.dir}"/>
+    <mkdir dir="${jam.dist.os.dir}/lib"/>
+    <mkdir dir="${jam.dist.os.dir}/install"/>
+
+    <copy todir="${jam.dist.os.dir}">
+      <fileset dir="${jam.kernel.config.all}" includes="*.*, images/**, config/**"/>
+    </copy>
+    <copy todir="${jam.dist.os.dir}">
+      <fileset dir="${jam.kernel.config}/${jam.bundle.os}${jam.bundle.osarch}" includes="*.*"/>
+    </copy>
+    <copy todir="${jam.dist.os.dir}">
+      <fileset dir="${jam.kernel.extlib.all}"/>
+      <fileset file="${jam.kernel.lib}/jam.jar"/>
+      <fileset file="${jam.kernel.lib}/jamapi.jar"/>
+    </copy>
+	
+	<loadfile srcFile="${jam.kernel.config.all}/~meta-inf/descriptor.properties" property="jam.kernel.namespace">
+		<filterchain>
+			<linecontains>
+			  	<contains value="jam.mod.namespace="/>	
+			</linecontains>
+			<tokenfilter>
+		    	<replacestring from="jam.mod.namespace="/>
+			</tokenfilter>
+			<striplinebreaks/>					
+		</filterchain>
+	</loadfile>
+	
+		<loadfile srcFile="${jam.kernel.config.all}/~meta-inf/descriptor.properties" property="jam.kernel.name">
+		<filterchain>
+			<linecontains>
+			  	<contains value="jam.mod.name="/>	
+			</linecontains>
+			<tokenfilter>
+		    	<replacestring from="jam.mod.name="/>
+			</tokenfilter>
+			<striplinebreaks/>					
+		</filterchain>
+	</loadfile>
+	
+	<loadfile srcFile="${jam.kernel.config.all}/~meta-inf/descriptor.properties" property="jam.kernel.version">
+		<filterchain>
+			<linecontains>
+			  	<contains value="jam.mod.version="/>	
+			</linecontains>
+			<tokenfilter>
+		    	<replacestring from="jam.mod.version="/>
+			</tokenfilter>
+			<striplinebreaks/>					
+		</filterchain>
+	</loadfile>
+	
+	<copy file="${jam.kernel.config.all}/~meta-inf/descriptor.properties" tofile="${jam.dist.updates.dir}/${jam.kernel.namespace}.${jam.kernel.version}.${jam.bundle.os}.${jam.bundle.osarch}.properties"/>
+	<echo file="${jam.dist.updates.dir}/${jam.kernel.namespace}.${jam.kernel.version}.${jam.bundle.os}.${jam.bundle.osarch}.properties" append="true">${line.separator}jam.mod.update.http=${jam.download.server}${jam.kernel.name}.${jam.kernel.version}.${jam.bundle.os}.${jam.bundle.osarch}.jam.zip${line.separator}</echo>
+
+	<echo file="${jam.dist.updates.dir}/updates" append="true">${jam.kernel.namespace}.${jam.kernel.version}.${jam.bundle.os}.${jam.bundle.osarch}=${jam.updates.server}${jam.kernel.namespace}.${jam.kernel.version}.${jam.bundle.os}.${jam.bundle.osarch}.properties${line.separator}</echo>
+	
+    <zip destfile="${jam.dist.os.dir}/install/coreconfig.init.jam.zip" excludes="*.*">
+      <fileset dir="${jam.kernel.config.all}" excludes="*.*, images/**, config/**"/>
+      <fileset dir="${jam.kernel.config}/${jam.bundle.os}${jam.bundle.osarch}" excludes="*.*"/>
+    </zip>
+	</sequential>
+</macrodef>
+  
+</project>

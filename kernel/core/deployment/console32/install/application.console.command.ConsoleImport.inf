@@ -1,0 +1,2 @@
+command.CommandFactory\:command_import\:value=de.janrufmonitor.application.console.command.ConsoleImport
+command.CommandFactory\:command_import\:access=system

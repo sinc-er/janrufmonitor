@@ -1,0 +1,3 @@
+service.Server\:title\:label\:en=Server extension
+service.Server\:connected\:label\:en=A new client has been connected: {%1} [{%2}]
+server.security.SecurityManager\:title\:label\:en=Server security manager

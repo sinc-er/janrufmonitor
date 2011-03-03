@@ -1,0 +1,2 @@
+ui.jface.configuration.ConfigurationCommand\:page_twitters\:value=de.janrufmonitor.ui.jface.configuration.pages.TwitterService
+ui.jface.configuration.ConfigurationCommand\:page_twitters\:access=system

@@ -1,0 +1,3 @@
+ui.jface.configuration.ConfigurationCommand\:page_cemonitor\:value=de.janrufmonitor.ui.jface.configuration.pages.MySQLCallEventLogger
+ui.jface.configuration.ConfigurationCommand\:page_cemonitor\:access=system
+

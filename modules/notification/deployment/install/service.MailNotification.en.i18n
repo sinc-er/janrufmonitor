@@ -1,0 +1,14 @@
+service.MailNotification\:title\:label\:en=Email notification
+service.MailNotification\:missed\:label\:en=missed
+service.MailNotification\:accepted\:label\:en=accepted
+service.MailNotification\:rejected\:label\:en=rejected
+service.MailNotification\:outgoing\:label\:en=outgoing
+service.MailNotification\:failconnect\:label\:en=Email notification could not connect to SMTP server <{%1}>, port <{%2}> with user credetials <{%3}>. Please check the configuration in settings -> services -> Email notification.
+service.MailNotification\:failserver\:label\:en=Email notification could not connect to SMTP server <{%1}>, port <{%2}>. This server seems not to be running. Please check the network connection.
+service.MailNotification\:failhost\:label\:en=The SMTP server <{%1}> could not be resolved. This server seems not to be existant. Please check the configuration in settings -> services -> Email notification.
+service.MailNotification\:failconnect\:label\:en=Email notification could not connect to SMTP server <{%1}>, port <{%2}> with user credetials <{%3}>. User and password were rejected by the server. Please check the configuration in settings -> services -> Email notification.
+service.MailNotification\:addedmailone\:label\:en=A new mail is queued for sending...
+service.MailNotification\:addedmailmulti\:label\:en={%1} new mails waiting for sending...
+service.MailNotification\:sentmail\:label\:en={%1} mails were sended.
+service.MailNotification\:testmail\:label\:en=A testmail was created.
+service.MailNotification\:notstarted\:label\:en=Email notification is not started. Testmail was not sent.

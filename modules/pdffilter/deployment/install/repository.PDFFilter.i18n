@@ -1,0 +1,7 @@
+repository.PDFFilter\:filtername\:label\:de=PDF Dokument (*.pdf)
+repository.PDFFilter\:title\:label\:de=PDF-Exportfilter für Journale
+repository.PDFFilter\:confirmmessage\:label\:de=Diese Meldung nicht mehr anzeigen.
+
+repository.PDFCallerListFilter\:filtername\:label\:de=PDF Telefonliste (*.pdf)
+repository.PDFCallerListFilter\:title\:label\:de=PDF-Exportfilter für Adressbuch
+repository.PDFCallerListFilter\:confirmmessage\:label\:de=Diese Meldung nicht mehr anzeigen.

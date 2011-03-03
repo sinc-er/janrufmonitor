@@ -1,0 +1,5 @@
+ui.jface.configuration.pages.HtmlCallManager\:title\:label\:en=HTML/XML based Journal
+ui.jface.configuration.pages.HtmlCallManager\:description\:label\:en=The HTML/XML based Journal stores incoming calls in an HTML and XML file which can be opened by any Webbrowser.
+ui.jface.configuration.pages.HtmlCallManager\:database\:label\:en=Output file: 
+ui.jface.configuration.pages.HtmlCallManager\:enabled\:label\:en=Repository enabled
+ui.jface.configuration.pages.HtmlCallManager\:template\:label\:en=Template: 

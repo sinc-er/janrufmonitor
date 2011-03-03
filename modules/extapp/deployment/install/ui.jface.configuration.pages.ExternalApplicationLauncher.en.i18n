@@ -1,0 +1,10 @@
+ui.jface.configuration.pages.ExternalApplicationLauncher\:title\:label\:en=External application launcher
+ui.jface.configuration.pages.ExternalApplicationLauncher\:description\:label\:en=Allows you to start any external application during a incoming call is detected.
+ui.jface.configuration.pages.ExternalApplicationLauncher\:enabled\:label\:en=Service enabled
+ui.jface.configuration.pages.ExternalApplicationLauncher\:outgoing\:label\:en=also execute for outgoing calls
+ui.jface.configuration.pages.ExternalApplicationLauncher\:msn\:label\:en=MSN
+ui.jface.configuration.pages.ExternalApplicationLauncher\:add\:label\:en=add
+ui.jface.configuration.pages.ExternalApplicationLauncher\:remove\:label\:en=remove
+ui.jface.configuration.pages.ExternalApplicationLauncher\:edit\:label\:en=edit
+ui.jface.configuration.pages.ExternalApplicationLauncher\:alias\:label\:en=Application
+ui.jface.configuration.pages.ExternalApplicationLauncher\:default_extapp\:label\:en=Default application: 

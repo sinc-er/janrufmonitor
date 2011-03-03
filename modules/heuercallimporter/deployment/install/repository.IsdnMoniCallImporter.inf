@@ -1,0 +1,3 @@
+repository.IsdnMoniCallImporter\:info\:value=Migrationsfilter für Heuers ISDNMoni
+repository.ImExportFactory\:import_isdnmonifile\:value=de.janrufmonitor.repository.imexporter.IsdnMoniCallImporter
+repository.ImExportFactory\:import_isdnmonifile\:access=system

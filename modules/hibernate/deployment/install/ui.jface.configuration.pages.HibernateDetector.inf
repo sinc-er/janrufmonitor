@@ -1,0 +1,2 @@
+ui.jface.configuration.ConfigurationCommand\:page_hibernate\:value=de.janrufmonitor.ui.jface.configuration.pages.HibernateDetector
+ui.jface.configuration.ConfigurationCommand\:page_hibernate\:access=system

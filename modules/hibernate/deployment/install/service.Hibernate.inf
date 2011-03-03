@@ -1,0 +1,8 @@
+service.HibernateDetector\:delay\:value=60
+service.HibernateDetector\:delay\:type=integer
+service.HibernateDetector\:enabled\:value=true
+service.HibernateDetector\:enabled\:type=boolean
+service.HibernateDetector\:priority\:value=200
+service.HibernateDetector\:priority\:type=integer
+service.ServiceFactory\:service_hibernate\:value=de.janrufmonitor.service.HibernateDetector
+service.ServiceFactory\:service_hibernate\:access=system

@@ -1,0 +1,3 @@
+service.client.RequesterFactory\:server\:value=127.0.0.1
+service.client.RequesterFactory\:port\:value=5555
+service.client.RequesterFactory\:port\:type=integer

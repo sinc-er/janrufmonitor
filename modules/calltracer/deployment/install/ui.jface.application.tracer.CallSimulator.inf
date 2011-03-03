@@ -1,0 +1,13 @@
+command.CommandFactory\:command_callsimulator\:value=de.janrufmonitor.ui.jface.application.tracer.CallSimulatorCommand
+command.CommandFactory\:command_callsimulator\:access=system
+service.TrayIcon\:sub_component_admin_simulator\:value=CallSimulatorCommand
+service.TrayIcon\:sub_component_admin_simulator\:position=50
+service.TrayIcon\:sub_component_admin_simulator\:access=system
+ui.jface.application.tracer.CallSimulator\:enabled\:value=true
+ui.jface.application.tracer.CallSimulator\:enabled\:type=boolean
+ui.jface.application.tracer.CallSimulator\:height\:type=integer
+ui.jface.application.tracer.CallSimulator\:height\:value=155
+ui.jface.application.tracer.CallSimulator\:maximized\:type=boolean
+ui.jface.application.tracer.CallSimulator\:maximized\:value=false
+ui.jface.application.tracer.CallSimulator\:width\:type=integer
+ui.jface.application.tracer.CallSimulator\:width\:value=610

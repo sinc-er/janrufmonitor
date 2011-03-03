@@ -1,0 +1,6 @@
+repository.JFritzCallImporter\:info\:value=Importfilter für JFritz Anrufliste
+repository.ImExportFactory\:import_jfritzfile\:value=de.janrufmonitor.repository.imexporter.JFritzCallImporter
+repository.ImExportFactory\:import_jfritzfile\:access=system
+repository.JFritzCallerImporter\:info\:value=Importfilter für JFritz Telefonliste
+repository.ImExportFactory\:import_jfritz2file\:value=de.janrufmonitor.repository.imexporter.JFritzCallerImporter
+repository.ImExportFactory\:import_jfritz2file\:access=system

@@ -1,0 +1,51 @@
+service.Journaling\:priority\:value=100
+service.Journaling\:priority\:type=integer
+service.Journaling\:priority\:access=system
+service.Journaling\:enabled\:value=true
+service.Journaling\:enabled\:type=boolean
+service.ServiceFactory\:service_journaling\:value=de.janrufmonitor.service.journaling.Journaling
+service.ServiceFactory\:service_journaling\:access=system
+
+service.QuickIdentify\:priority\:value=1
+service.QuickIdentify\:priority\:type=integer
+service.QuickIdentify\:priority\:access=system
+service.QuickIdentify\:enabled\:value=true
+service.QuickIdentify\:enabled\:type=boolean
+service.ServiceFactory\:service_quickidentify\:value=de.janrufmonitor.service.identification.QuickIdentify
+service.ServiceFactory\:service_quickidentify\:access=system
+
+
+command.CommandFactory\:command_activator\:value=de.janrufmonitor.service.trayicon.Activator
+command.CommandFactory\:command_activator\:access=system
+
+service.update.UpdateManager\:url\:value=http://downloads.janrufmonitor.de/released/5.0/descriptors/
+service.update.UpdateManager\:url\:access=system
+service.AutoUpdateService\:priority\:value=999
+service.AutoUpdateService\:priority\:type=integer
+service.AutoUpdateService\:enabled\:value=true
+service.AutoUpdateService\:enabled\:type=boolean
+service.ServiceFactory\:service_autoupdate\:value=de.janrufmonitor.service.update.AutoUpdateService
+service.ServiceFactory\:service_autoupdate\:access=system
+
+#added 5.0.14
+service.update.UpdateManager\:registry\:value=http://downloads.janrufmonitor.de/registry
+service.update.UpdateManager\:registry\:access=system
+
+#added 5.0.19
+service.DonationService\:priority\:value=999
+service.DonationService\:priority\:type=integer
+service.DonationService\:enabled\:value=true
+service.DonationService\:enabled\:type=boolean
+service.DonationService\:count\:type=integer
+service.DonationService\:count\:value=0
+service.ServiceFactory\:service_donation\:value=de.janrufmonitor.service.donation.DonationService
+service.ServiceFactory\:service_donation\:access=system
+
+#added 5.0.22
+service.GeoCoding\:priority\:value=2
+service.GeoCoding\:priority\:type=integer
+service.GeoCoding\:enabled\:value=true
+service.GeoCoding\:enabled\:type=boolean
+service.ServiceFactory\:service_geo\:value=de.janrufmonitor.service.geo.GeoCoding
+service.ServiceFactory\:service_geo\:access=system
+rules.RuleEngine\:Standard4_rule\:value=Standard \#4%GeoCoding%*%*%true%*%*%*
