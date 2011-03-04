@@ -3,14 +3,23 @@
   
   <property name="debugger" value="on"/>
      
-  <condition property="os" value="macosx">
+  <condition property="jam.os" value="macosx">
       <os family="mac"/>
   </condition>
-   <condition property="os" value="win">
+  <condition property="jam.os" value="win">
       <os family="windows"/>
   </condition>
-    <condition property="os" value="linux">
+  <condition property="jam.os" value="linux">
       <os family="unix"/>
+  </condition>
+  <condition property="jam.osarch" value="32">
+      <os arch="x86"/>
+  </condition>
+  <condition property="jam.osarch" value="64">
+      <os arch="x86_64"/>
+  </condition>
+  <condition property="jam.osarch" value="64">
+      <os arch="amd64"/>
   </condition>
 
   <property name="jam.kernel.src.api" value="${jam.kernel.root}/framework/src"/>
@@ -19,7 +28,7 @@
   <property name="jam.kernel.extlib" value="${jam.extlib.root}/kernel"/>
   <property name="jam.kernel.extlib.all" value="${jam.kernel.extlib}/all"/>
   <property name="jam.kernel.extlib.allui" value="${jam.kernel.extlib}/allui"/>
-  <property name="jam.kernel.extlib.osdepend" value="${jam.kernel.extlib}/${os}/${os.arch}"/>
+  <property name="jam.kernel.extlib.osdepend" value="${jam.kernel.extlib}/${jam.os}/${jam.osarch}"/>
    
   <target name="init_kernel">
      <echo message="Initializing jAnrufmonitor kernel components..."/>
@@ -69,7 +78,7 @@
         <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/common/runtime.jar"/> 
      </get>
      <get dest="${jam.kernel.extlib.osdepend}">
-        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/${os}/${os.arch}/swt.jar"/> 
+        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/${jam.os}/${jam.osarch}/swt.jar"/> 
      </get>
 
   </target>

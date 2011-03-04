@@ -8,20 +8,23 @@
       <os family="windows"/>
   </condition>
     
-  <condition property="os" value="macosx">
+  <condition property="jam.os" value="macosx">
       <os family="mac"/>
   </condition>
-  <condition property="os" value="win">
+  <condition property="jam.os" value="win">
       <os family="windows"/>
   </condition>
-  <condition property="os" value="linux">
+  <condition property="jam.os" value="linux">
       <os family="unix"/>
   </condition>
-  <condition property="osarch" value="32">
+  <condition property="jam.osarch" value="32">
       <os arch="x86"/>
   </condition>
-  <condition property="osarch" value="64">
+  <condition property="jam.osarch" value="64">
       <os arch="x86_64"/>
+  </condition>
+  <condition property="jam.osarch" value="64">
+      <os arch="amd64"/>
   </condition>
   
     <property name="jam.download.server" value="http://downloads.janrufmonitor.de/released/5.0/"/>
@@ -30,11 +33,11 @@
     <property name="jam.kernel.extlib" value="${jam.extlib.root}/kernel"/>
     <property name="jam.kernel.extlib.all" value="${jam.kernel.extlib}/all"/>
     <property name="jam.kernel.extlib.allui" value="${jam.kernel.extlib}/allui"/>
-    <property name="jam.kernel.extlib.osdepend" value="${jam.kernel.extlib}/${os}/${os.arch}"/>
+    <property name="jam.kernel.extlib.osdepend" value="${jam.kernel.extlib}/${jam.os}/${jam.osarch}"/>
   
     <property name="jam.kernel.config" value="${jam.kernel.root}/core/deployment"/>
     <property name="jam.kernel.config.all" value="${jam.kernel.config}/all"/>
-    <property name="jam.kernel.config.osdepend" value="${jam.kernel.config}/${os}${osarch}"/>
+    <property name="jam.kernel.config.osdepend" value="${jam.kernel.config}/${jam.os}${jam.osarch}"/>
 
     <target name="extlib">
         <subant target="sync_extlib">
@@ -91,45 +94,45 @@
     
     <target name="win32_distribution" depends="init_distribution" description="create win32 distribution" >
         <echo message="Create win32 distribution..." />
-        <mkdir dir="${jam.kernel.extlib}/win/x86"/>
-        <get dest="${jam.kernel.extlib}/win/x86">
-            <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/win/x86/swt.jar"/> 
+        <mkdir dir="${jam.kernel.extlib}/win/32"/>
+        <get dest="${jam.kernel.extlib}/win/32">
+            <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/win/32/swt.jar"/> 
         </get>
         <create-bundle os="win" arch="32"/>
     </target>
     
     <target name="win64_distribution" depends="init_distribution" description="create win64 distribution" >
         <echo message="Create win64 distribution..." />
-        <mkdir dir="${jam.kernel.extlib}/win/x86_64"/>
-        <get dest="${jam.kernel.extlib}/win/x86_64">
-            <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/win/x86_64/swt.jar"/> 
+        <mkdir dir="${jam.kernel.extlib}/win/64"/>
+        <get dest="${jam.kernel.extlib}/win/64">
+            <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/win/64/swt.jar"/> 
         </get>
         <create-bundle os="win" arch="64"/>
     </target>
     
     <target name="linux32_distribution" depends="init_distribution" description="create linux32 distribution" >
         <echo message="Create linux32 distribution..." />
-        <mkdir dir="${jam.kernel.extlib}/linux/x86"/>
-        <get dest="${jam.kernel.extlib}/linux/x86">
-            <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/linux/x86/swt.jar"/> 
+        <mkdir dir="${jam.kernel.extlib}/linux/32"/>
+        <get dest="${jam.kernel.extlib}/linux/32">
+            <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/linux/32/swt.jar"/> 
         </get>
         <create-bundle os="linux" arch="32"/>
     </target>
     
     <target name="linux64_distribution" depends="init_distribution" description="create linux64 distribution" >
         <echo message="Create linux64 distribution..." />
-        <mkdir dir="${jam.kernel.extlib}/linux/x86_64"/>
-        <get dest="${jam.kernel.extlib}/linux/x86_64">
-            <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/linux/x86_64/swt.jar"/> 
+        <mkdir dir="${jam.kernel.extlib}/linux/64"/>
+        <get dest="${jam.kernel.extlib}/linux/64">
+            <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/linux/64/swt.jar"/> 
         </get>
         <create-bundle os="linux" arch="64"/>
     </target>
     
     <target name="macosx64_distribution" depends="init_distribution" description="create macosx64 distribution" >
         <echo message="Create macosx64 distribution..." />
-        <mkdir dir="${jam.kernel.extlib}/macosx/x86_64"/>
-        <get dest="${jam.kernel.extlib}/macosx/x86_64">
-            <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/macosx/x86_64/swt.jar"/> 
+        <mkdir dir="${jam.kernel.extlib}/macosx/64"/>
+        <get dest="${jam.kernel.extlib}/macosx/64">
+            <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/macosx/64/swt.jar"/> 
         </get>
         <create-bundle os="macosx" arch="64"/>
     </target>
@@ -140,7 +143,7 @@
     </target>
     
     <target name="current_distribution" depends="init_distribution" description="create distribution of parent os" >
-        <create-bundle os="${os}" arch="${osarch}"/>
+        <create-bundle os="${jam.os}" arch="${jam.osarch}"/>
     </target>
     
     
@@ -671,10 +674,6 @@
     <sequential>
     <property name="jam.bundle.os" value="@{os}"/>
     <property name="jam.bundle.osarch" value="@{arch}"/>
-    
-    <condition property="jam.bundle.osarch2" value="x86_64" else="x86">
-        <matches string="${jam.bundle.osarch}" pattern="64"/>
-    </condition>
 	
     <property name="jam.dist.os.dir" value="${jam.dist.dir}/jam50-${jam.bundle.os}${jam.bundle.osarch}"/>
     <property name="jam.dist.updates.dir" value="${jam.dist.dir}/descriptors"/>
@@ -691,7 +690,7 @@
       <fileset dir="${jam.kernel.config}/${jam.bundle.os}${jam.bundle.osarch}" includes="*.*"/>
     </copy>
     <copy todir="${jam.dist.os.dir}">
-      <fileset dir="${jam.kernel.extlib}/${jam.bundle.os}/${jam.bundle.osarch2}"/>
+      <fileset dir="${jam.kernel.extlib}/${jam.bundle.os}/${jam.bundle.osarch}"/>
     </copy>
     <copy todir="${jam.dist.os.dir}">
       <fileset dir="${jam.kernel.extlib.all}"/>
