@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/core"/>
+	<classpathentry kind="src" path="src/platform/all"/>
+	<classpathentry kind="src" path="src/platform/win32"/>
+	<classpathentry kind="src" path="src/repository"/>
+	<classpathentry kind="src" path="src/service"/>
+	<classpathentry kind="src" path="src/ui"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="JAM_LIB/kernel/all/hsqldb.jar"/>
+	<classpathentry kind="var" path="JAM_LIB/kernel/allui/commands.jar"/>
+	<classpathentry kind="var" path="JAM_LIB/kernel/allui/i18n.jar"/>
+	<classpathentry kind="var" path="JAM_LIB/kernel/allui/jface.jar"/>
+	<classpathentry kind="var" path="JAM_LIB/kernel/allui/osgi.jar"/>
+	<classpathentry kind="var" path="JAM_LIB/kernel/allui/runtime.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/jAnrufmonitor Kernel Framework"/>
+	<classpathentry kind="var" path="JAM_OSDEPENDEND_LIB/swt.jar"/>
+	<classpathentry kind="output" path="build"/>
+</classpath>

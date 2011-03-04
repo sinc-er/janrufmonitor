@@ -130,6 +130,7 @@
   </target>
   
     <target name="bundle" depends="bundle_module" description="bundle the module source to jam.zip archives" >
+      <mkdir dir="${jam.modules.dist.dir}"/>
       <copy todir="${jam.modules.lib.dir}/${jam.mod.name}">
           <fileset dir="${jam.mod.root}/deployment"/>
       </copy>
@@ -155,7 +156,8 @@
 
   </target>
   
-      <target name="bundle_headless" depends="bundle_module" description="bundle the module source to jam.zip archives" >
+  <target name="bundle_headless" depends="bundle_module" description="bundle the module source to jam.zip archives" >
+      <mkdir dir="${jam.modules.dist.dir}"/>
       <copy todir="${jam.modules.lib.dir}/${jam.mod.name}">
           <fileset dir="${jam.mod.root}/deployment" excludes="**/*ui.swt.*,**/*ui.jface.*,**/ui.jface.*"/>
       </copy>

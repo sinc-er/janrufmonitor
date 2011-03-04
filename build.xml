@@ -496,7 +496,7 @@
       </exec>
     </target>
     
-    <target name="bundle_win32_installer" depends="init_bundle,win32_distribution,build_modules" description="creates win32 installer bundle" >
+    <target name="bundle_win32_installer" depends="init_bundle,win32_distribution,build_modules" description="creates win32 installer bundle" if="is.win">
       <mkdir dir="${jam.dist.dir}/installers/win32-installer/"/>
     
       <copy todir="${jam.dist.dir}/installers/">
@@ -539,7 +539,7 @@
       </copy>
     </target>
     
-    <target name="bundle_win64_installer" depends="init_bundle,win64_distribution,build_modules" description="creates win64 installer bundle" >
+    <target name="bundle_win64_installer" depends="init_bundle,win64_distribution,build_modules" description="creates win64 installer bundle" if="is.win">
       <mkdir dir="${jam.dist.dir}/installers/win64-installer/"/>
     
       <copy todir="${jam.dist.dir}/installers/">
