@@ -79,14 +79,6 @@ public class FilterAction extends AbstractAction implements JournalConfigConst {
 			super(shell);
 		}
 		
-		public void setFilters(IFilter[] filters) {
-			this.m_filters = filters;
-		}
-		
-		public IFilter[] getFilters() {
-			return this.m_filters;
-		}
-		
 		protected Control createContents(Composite parent) {
 			Control c = super.createContents(parent);
 			

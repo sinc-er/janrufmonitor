@@ -37,17 +37,8 @@ public class InstallerEngine {
 	private class GenericFileFilter implements java.io.FileFilter {
 
 	    String[] extensions;
-	    String description;
 	    boolean includeDirectory;
 
-		/**
-		 * Constructor for certain extensions.
-		 * 
-		 * @param ext file extension.
-		 */
-	    public GenericFileFilter(String ext) {
-	        this(new String[]{ext}, null);
-	    }
 	    
 		/**
 		 * Constructor for certain extensions.
@@ -56,18 +47,8 @@ public class InstallerEngine {
 		 * @param includeDirectory directory inclusion flag
 		 */
 		public GenericFileFilter(String ext, boolean includeDirectory) {
-			this(new String[]{ext}, null, includeDirectory);
+			this(new String[]{ext}, includeDirectory);
 		}
-
-		/**
-		 * Constructor for multiple extensions and descriptions
-		 * 
-		 * @param exts extensions
-		 * @param desc descriptions
-		 */
-	    public GenericFileFilter(String[] exts, String desc) {
-	        this(exts, desc, true);
-	    }
 
 		/**
 		 * Constructor for multiple extensions and descriptions of directories
@@ -76,12 +57,11 @@ public class InstallerEngine {
 		 * @param desc descriptions
 		 * @param includeDirectory include directories for filtering
 		 */
-	    public GenericFileFilter(String[] exts, String desc, boolean includeDirectory) {
+	    public GenericFileFilter(String[] exts, boolean includeDirectory) {
 	        this.extensions = new String[exts.length];
 	        for (int i = exts.length - 1; i >= 0; i--) {
 	            this.extensions[i] = exts[i].toLowerCase();
 	        }
-	        this.description = (desc == null ? exts[0] : desc);
 	        this.includeDirectory = includeDirectory;
 	    }
 
@@ -100,21 +80,6 @@ public class InstallerEngine {
 	            }
 	        }
 	        return false;
-	    }
-
-		/**
-		 * Gets the description of the filter.
-		 */
-	    public String getDescription() {
-	        return this.description;
-	    }
-
-		/**
-		 * Gets all supported extension by the filter.
-		 * @return all extensions
-		 */
-	    public String[] getExtensions() {
-	        return this.extensions;
 	    }
 
 	}
