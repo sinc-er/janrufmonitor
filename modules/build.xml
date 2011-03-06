@@ -4,13 +4,10 @@
             <fileset dir="." includes="*/build.xml"/>
         </subant>
     </target>
-    <!--
-    <target name="init">
-        <subant target="copy_i18n">
+    <target name="sync_extlib">
+        <subant target="sync_extlib">
             <fileset dir="." includes="*/build.xml"/>
         </subant>
     </target>
-    
-    -->
 </project>
 

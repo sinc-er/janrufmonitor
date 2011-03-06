@@ -640,9 +640,6 @@ public class OutlookContactProxy implements OutlookContactConst {
 					Dispatch.call(contact, "Display");
 					return;
 				}		
-				
-				if (contact!=null)
-					contact.release();
 			}
 			PropagationFactory.getInstance().fire(
 				new Message(Message.INFO, OutlookContactManager.NAMESPACE, "display", new Exception("Sync contact folder with MS Outlook..."))
