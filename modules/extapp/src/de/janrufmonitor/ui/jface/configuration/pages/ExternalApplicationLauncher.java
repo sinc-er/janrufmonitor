@@ -276,18 +276,10 @@ public class ExternalApplicationLauncher extends AbstractConfigPage {
 	    private String[] m_ext;
 	    private int m_style;
 		
-		public FileDialogFieldEditor(String name, String labelText, Composite parent){
-			this(name, labelText, parent, SWT.SAVE);
-		}
-		
 		public FileDialogFieldEditor(String name, String labelText, Composite parent, int dialogStyle){
 			super(name, labelText, parent);
 			this.setLabelText(labelText);
 			this.m_style = dialogStyle;
-		}
-		
-		public String getValue() {
-			return this.m_textField.getText();
 		}
 		
 		protected void adjustForNumColumns(int numCols) {

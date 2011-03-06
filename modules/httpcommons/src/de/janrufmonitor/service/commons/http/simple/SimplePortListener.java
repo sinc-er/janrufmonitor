@@ -19,13 +19,11 @@ public class SimplePortListener {
 	private class ServerThread implements Runnable {
 
 		private ServerSocket m_socket;
-		private boolean m_running;
 		
 		public void run() {
 			if (m_h!=null) {
 				Connection connection = ConnectionFactory.getConnection(m_h);
 		        try {
-		        	this.m_running = true;
 		        	this.m_socket = new ServerSocket(getPort());
 		        	//this.m_socket.setSoTimeout(15000);
 		        	connection.connect(this.m_socket);
@@ -33,11 +31,6 @@ public class SimplePortListener {
 					m_logger.severe(e.getMessage());
 				}
 			}
-			this.m_running = false;
-		}
-		
-		public boolean isRunning() {
-			return this.m_running;
 		}
 		
 		public void close() {

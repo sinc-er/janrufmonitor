@@ -675,46 +675,26 @@ public class MailNotification extends AbstractConfigPage {
 			return template;
 		}
 		
-		public void setTemplate(String t) {
-			this.template = t;
-		}
-		
 		public String getBody() {
 			return body;
 		}
-		public void setBody(String body) {
-			this.body = body;
-		}
+
 		public String getEncoding() {
 			return encoding;
 		}
-		public void setEncoding(String encoding) {
-			this.encoding = encoding;
-		}
+
 		public String getFormat() {
 			return format;
 		}
-		public void setFormat(String format) {
-			this.format = format;
-		}
+
 		public IMsn getMsn() {
 			return m;
 		}
-		public void setMsn(IMsn m) {
-			this.m = m;
-		}
+
 		public String getSubject() {
 			return subject;
 		}
-		public void setSubject(String subject) {
-			this.subject = subject;
-		}
-		public void setMailfrom(String mailfrom) {
-			this.mailfrom = mailfrom;
-		}
-		public void setMailto(String mailto) {
-			this.mailto = mailto;
-		}
+
 		
 		public String getMailfrom() {
 			return mailfrom;

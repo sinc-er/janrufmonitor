@@ -75,9 +75,6 @@ public class IsdnMoniCallImporter implements ICallImporter {
 			this.m_pns = pns;
 		}
 		
-		public MigratorThread(ICallList cl, String line, List pns) {
-			this(cl, null , line, pns);
-		}
 
 		public void run() {
 			int sep = line.indexOf("->");
