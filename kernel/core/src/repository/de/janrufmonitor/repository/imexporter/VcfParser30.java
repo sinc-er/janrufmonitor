@@ -280,25 +280,29 @@ public class VcfParser30 {
 								}
 							} 
 							if (isEncoding) {
-								if (img_type==null || img_type.trim().length()==0) img_type = "jpg";
-								StringBuffer img_content = new StringBuffer();
-								img_content.append(value[1]);
-								img_content.append("\n");
-								do {
-									j++;
-									value[1]= lines[j];		
-									if (value[1].startsWith(" ")) value[1] = value[1].substring(1);
+								try {
+									if (img_type==null || img_type.trim().length()==0) img_type = "jpg";
+									StringBuffer img_content = new StringBuffer();
 									img_content.append(value[1]);
 									img_content.append("\n");
-								} while (value[1].indexOf("=")<0);
-								
-								String img = getImageFromBase64(img_content.toString(), img_type);
-								if (img!=null) {
-									this.m_logger.info("Set attribute photo.");
-									private_attributes.add(PIMRuntime.getInstance().getCallerFactory().createAttribute(IJAMConst.ATTRIBUTE_NAME_IMAGEPATH, PathResolver.getInstance().encode(img)));
-									bussiness_attributes.add(PIMRuntime.getInstance().getCallerFactory().createAttribute(IJAMConst.ATTRIBUTE_NAME_IMAGEPATH, PathResolver.getInstance().encode(img)));
-									private_attributes.add(PIMRuntime.getInstance().getCallerFactory().createAttribute(IJAMConst.ATTRIBUTE_NAME_IMAGEURL, value[1]));
-									bussiness_attributes.add(PIMRuntime.getInstance().getCallerFactory().createAttribute(IJAMConst.ATTRIBUTE_NAME_IMAGEURL, value[1]));
+									do {
+										j++;
+										value[1]= lines[j];		
+										if (value[1].startsWith(" ")) value[1] = value[1].substring(1);
+										img_content.append(value[1]);
+										img_content.append("\n");
+									} while (value[1].indexOf("=")<0);
+									
+									String img = getImageFromBase64(img_content.toString(), img_type);
+									if (img!=null) {
+										this.m_logger.info("Set attribute photo.");
+										private_attributes.add(PIMRuntime.getInstance().getCallerFactory().createAttribute(IJAMConst.ATTRIBUTE_NAME_IMAGEPATH, PathResolver.getInstance().encode(img)));
+										bussiness_attributes.add(PIMRuntime.getInstance().getCallerFactory().createAttribute(IJAMConst.ATTRIBUTE_NAME_IMAGEPATH, PathResolver.getInstance().encode(img)));
+										private_attributes.add(PIMRuntime.getInstance().getCallerFactory().createAttribute(IJAMConst.ATTRIBUTE_NAME_IMAGEURL, value[1]));
+										bussiness_attributes.add(PIMRuntime.getInstance().getCallerFactory().createAttribute(IJAMConst.ATTRIBUTE_NAME_IMAGEURL, value[1]));
+									}
+								} catch (Exception ex) {
+									this.m_logger.log(Level.SEVERE, "VCF parsing error: PHOTO: "+ex.getMessage(), ex);
 								}
 							}
 						}
