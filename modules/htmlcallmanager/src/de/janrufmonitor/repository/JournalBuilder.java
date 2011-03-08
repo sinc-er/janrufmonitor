@@ -66,17 +66,16 @@ public class JournalBuilder {
 	private static String parseRenderer(String text, ICall call) {
 		String prefix = "%r:";
 		String postfix = "%";
-		
-
-		String id = text.substring(text.indexOf(prefix) + prefix.length(), text.indexOf(postfix, text.indexOf(prefix) + prefix.length()));
-		ITableCellRenderer r = RendererRegistry.getInstance().getRenderer(id.toLowerCase());
-		if (r!=null) {
-			r.updateData(call);
-			text = StringUtils.replaceString(text, prefix + id + postfix, r.renderAsText());
-		} else {
-			text = StringUtils.replaceString(text, prefix + id + postfix, "");
+		if (text.indexOf(prefix)>-1) {
+			String id = text.substring(text.indexOf(prefix) + prefix.length(), text.indexOf(postfix, text.indexOf(prefix) + prefix.length()));
+			ITableCellRenderer r = RendererRegistry.getInstance().getRenderer(id.toLowerCase());
+			if (r!=null) {
+				r.updateData(call);
+				text = StringUtils.replaceString(text, prefix + id + postfix, r.renderAsText());
+			} else {
+				text = StringUtils.replaceString(text, prefix + id + postfix, "");
+			}
 		}
-		
 		return text;
 	}
 	
