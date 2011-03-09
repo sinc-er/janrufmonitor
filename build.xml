@@ -663,7 +663,7 @@
         <delete dir="${jam.build.root}" />
         <delete dir="${jam.dist.root}" />
         <delete dir="${jam.extlib.root}" />
-        <delete dir="${jam.pub.dir}" />
+        <delete dir="${jam.pub.dir}" includeemptydirs="true" />
     </target>    
     
     <target name="clean_build" description="clean all build and dist files"> 

@@ -66,21 +66,16 @@
      <mkdir dir="${jam.kernel.extlib.allui}"/>
      <mkdir dir="${jam.kernel.extlib.osdepend}"/>
      
-     <get dest="${jam.kernel.extlib.all}">
-        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/common/hsqldb.jar"/> 
-        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/common/jffix.jar"/> 
-     </get>
-     <get dest="${jam.kernel.extlib.allui}">
-        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/common/i18n.jar"/> 
-        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/common/jface.jar"/> 
-        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/common/commands.jar"/> 
-        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/common/osgi.jar"/> 
-        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/common/runtime.jar"/> 
-     </get>
-     <get dest="${jam.kernel.extlib.osdepend}">
-        <url url="http://downloads.janrufmonitor.de/dev/5.0/lib/${jam.os}/${jam.osarch}/swt.jar"/> 
-     </get>
+     <get dest="${jam.kernel.extlib.all}/hsqldb.jar" src="http://downloads.janrufmonitor.de/dev/5.0/lib/common/hsqldb.jar"/>
+     <get dest="${jam.kernel.extlib.all}/jffix.jar" src="http://downloads.janrufmonitor.de/dev/5.0/lib/common/jffix.jar"/>
 
+     <get dest="${jam.kernel.extlib.allui}/i18n.jar" src="http://downloads.janrufmonitor.de/dev/5.0/lib/common/i18n.jar"/>
+     <get dest="${jam.kernel.extlib.allui}/jface.jar" src="http://downloads.janrufmonitor.de/dev/5.0/lib/common/jface.jar"/>
+     <get dest="${jam.kernel.extlib.allui}/commands.jar" src="http://downloads.janrufmonitor.de/dev/5.0/lib/common/commands.jar"/>
+     <get dest="${jam.kernel.extlib.allui}/osgi.jar" src="http://downloads.janrufmonitor.de/dev/5.0/lib/common/osgi.jar"/>
+     <get dest="${jam.kernel.extlib.allui}/runtime.jar" src="http://downloads.janrufmonitor.de/dev/5.0/lib/common/runtime.jar"/>
+
+     <get dest="${jam.kernel.extlib.osdepend}/swt.jar" src="http://downloads.janrufmonitor.de/dev/5.0/lib/${jam.os}/${jam.osarch}/swt.jar" />
   </target>
 
   <target name="kernel_framework_compile" depends="sync_extlib,init_kernel" description="compile the kernel framework source" >
@@ -206,6 +201,19 @@
     <echo message="jAnrufmonitor build clean-up..."/>
     <delete dir="${jam.build.dir}"/>
     <delete dir="${jam.dist.dir}"/>
+</target>
+
+<target name="prepare_eclipse">
+    <delete dir="${jam.kernel.root}/core/build"/>
+    <copy todir="${jam.kernel.root}/framework/build">
+      <fileset dir="${jam.kernel.root}/core/deployment/all" includes="config/logging*"/>
+    </copy>
+    <copy todir="${jam.kernel.root}/core/build">
+      <fileset dir="${jam.kernel.root}/core/deployment/all"/>
+    </copy>
+    <copy todir="${jam.kernel.root}/core/build">
+      <fileset dir="${jam.kernel.root}/core/deployment/${jam.os}${jam.osarch}"/>
+    </copy>
 </target>
 
 </project>

@@ -51,22 +51,7 @@
             <fileset dir="${jam.kernel.root}" includes="build.xml"/>
         </subant>
   </target> 
-  <!--
-   <target name="x">
-    <available file="${jam.mod.root}/deployment/install" type="dir"
-           property="xxx" />
-  </target> 
-  
-  <target name="copy_i18n" depends="x" if="xxx">
-      <echo message="Processing module ${jam.mod.short}"/>
-      <echo message="Fetsching /Users/brandtt/Perforce/Java/Projekte/jAnrufmonitor/_current/projects/${jam.mod.short}/deployment/install"/>
-      <delete dir="${jam.mod.root}/deployment/install" includes="*.i18n"/>
-      <copy todir="${jam.mod.root}/deployment/install">
-          <fileset dir="/Users/brandtt/Perforce/Java/Projekte/jAnrufmonitor/_current/projects/${jam.mod.short}/deployment/install" includes="*.i18n"/>
-      </copy>
-      <echo message="Copied to ${jam.mod.root}/deployment/install"/>
-  </target> 
--->
+
   <target name="module_compile" depends="sync_extlib,init_module" description="compile the module source" >
     <loadfile srcFile="${jam.mod.root}/deployment/~meta-inf/descriptor.properties" property="jam.mod.name">
 		<filterchain>
@@ -183,6 +168,12 @@
 	
 	<echo file="${jam.dist.updates.dir}/updates" append="true">${jam.mod.namespace}=${jam.updates.server}${jam.mod.namespace}.properties${line.separator}</echo>
 
+  </target>
+  
+  <target name="prepare_eclipse">
+    <copy todir="${jam.kernel.root}/core/build">
+        <fileset dir="${jam.mod.root}/deployment"/>
+    </copy>
   </target>
 
   <target name="clean" description="clean up the module source" >
