@@ -15,5 +15,40 @@
 	<classpathentry kind="var" path="JAM_LIB/kernel/allui/runtime.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/jAnrufmonitor Kernel Framework"/>
 	<classpathentry kind="var" path="JAM_OSDEPENDEND_LIB/swt.jar"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Call Simulator/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Comment/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Email Notification/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module External Application Launcher/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Filter CSV/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Filter Excel XLS/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Filter Fritz!X/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Filter Heuers ISDN Monitor/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Filter JFritz/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Filter Moony/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Filter PDF/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Generic Online Information Creator/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Generic WebCommand Creator/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Google Contacts/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Google Maps/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Hibernate Detector/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module HTML CallManager/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module HTTP Client/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module HTTP Commons/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module HTTP Server/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module IconBlinker/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module iMac Address Book/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module LDAP/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Microsoft Outlook Contacts/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module MySQL/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module MySQL Logger/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Reject/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Sound Notification/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Textfile CallManager/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Thunderbird/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Twitter Notification/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Module Windows Service/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Monitor AVM Fritz!Box Fon/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Monitor CAPI/build"/>
+	<classpathentry kind="lib" path="/jAnrufmonitor Monitor TAPI/build"/>
 	<classpathentry kind="output" path="build"/>
 </classpath>

@@ -131,7 +131,6 @@ public class RunUI64 {
     public static void quit() {
 		RunUI64.m_logger.info("Stopping ...");
 		PIMRuntime.getInstance().shutdown();
-		//System.exit(0);
     }
     
     private static void dumpException(Exception ex){
@@ -223,11 +222,7 @@ public class RunUI64 {
 		};
 		thread.setName("JAM-EmergencyShutdown-Thread-(non-deamon)");
 		LoggingInitializer.run();
-		
-//		if (JamCacheMasterClassLoader.getInstance().isValid()) {
-//			Thread.currentThread().setContextClassLoader(JamCacheMasterClassLoader.getInstance());
-//		}
-		
+
 		final String[] args2 = args;
     	try {
     		Thread mainT = new Thread(new Runnable(){
@@ -244,8 +239,8 @@ public class RunUI64 {
     		
     		try {
 				Class clazz = Class.forName("de.janrufmonitor.ui.swt.DisplayManager");
-				Method m = clazz.getDeclaredMethod("getDefaultDisplay", (Class) null);
-				m.invoke((Object) null,(Object)  null);
+				Method m = clazz.getDeclaredMethod("getDefaultDisplay");
+				m.invoke(null);
 			} catch (ClassNotFoundException e) {
 				System.exit(0);
 			} catch (SecurityException e) {
@@ -259,17 +254,6 @@ public class RunUI64 {
 			} catch (InvocationTargetException e) {
 				System.exit(0);
 			}
-    		
-    		
-//    		DisplayManager.getDefaultDisplay();
-    		
-//	    	while (true) {
-//	    		try {
-//					Thread.sleep(Short.MAX_VALUE);
-//				} catch (InterruptedException e) {
-//					LogManager.getLogManager().getLogger(IJAMConst.DEFAULT_LOGGER).severe(e.getMessage());
-//				}
-//	    	}
     	} catch (Error e) {    
     		String isInstallerRun = System.getProperty(IJAMConst.SYSTEM_INSTALLER_RUN);
     		if (isInstallerRun!=null && isInstallerRun.equalsIgnoreCase("true")) {
