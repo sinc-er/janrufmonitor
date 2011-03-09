@@ -6,12 +6,14 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import de.janrufmonitor.framework.ICall;
 import de.janrufmonitor.framework.ICallList;
+import de.janrufmonitor.framework.ICaller;
 import de.janrufmonitor.framework.IJAMConst;
 import de.janrufmonitor.framework.i18n.II18nManager;
 import de.janrufmonitor.runtime.PIMRuntime;
@@ -19,6 +21,7 @@ import de.janrufmonitor.ui.jface.application.RendererRegistry;
 import de.janrufmonitor.ui.jface.application.rendering.ITableCellRenderer;
 import de.janrufmonitor.util.formatter.Formatter;
 import de.janrufmonitor.util.io.Base64Encoder;
+import de.janrufmonitor.util.io.ImageHandler;
 import de.janrufmonitor.util.io.PathResolver;
 import de.janrufmonitor.util.io.Stream;
 import de.janrufmonitor.util.string.StringUtils;
@@ -91,7 +94,40 @@ public class JournalBuilder {
 		String postfix = ":end_call-->";
 		String scall = text.substring(text.indexOf(prefix) + prefix.length(), text.indexOf(postfix));
 		Formatter f = Formatter.getInstance(PIMRuntime.getInstance());		
-		return StringUtils.replaceString(text, prefix + scall + postfix, f.parse(parseRenderer(scall, call), call) + IJAMConst.CRLF+prefix + scall + postfix);
+		return StringUtils.replaceString(text, prefix + scall + postfix, f.parse(parseRenderer(parseCallerImage(scall, call), call), call) + IJAMConst.CRLF+prefix + scall + postfix);
+	}
+	
+	/**
+	 * Introduced for console version of html callmanager. Since no renderer are available on console, 
+	 * a mechanism is needed for rendering caller images.
+	 * 
+	 * @param text
+	 * @param call
+	 * @return
+	 * @throws IOException
+	 */
+	private static String parseCallerImage(String text, ICall call) throws IOException{
+		String prefix = "<!-- start_caller_image:";
+		String postfix = ":end_caller_image-->";
+		while (text.indexOf(prefix)>=0) {
+			String token = text.substring(text.indexOf(prefix) + prefix.length(), text.indexOf(postfix));
+			String[] elements = token.split(";");
+			if (elements.length>2) {
+				continue;
+			}
+			ICaller c = call.getCaller();
+			if (ImageHandler.getInstance().hasImage(c)) {
+				ByteArrayOutputStream bos = new ByteArrayOutputStream();
+				Base64Encoder b64 = new Base64Encoder(bos);
+				InputStream fin = ImageHandler.getInstance().getImageStream(c);
+				Stream.copy(new BufferedInputStream(fin), b64, true);	
+				text = StringUtils.replaceString(text, prefix + token + postfix, "<img src=\"data:image/jpeg;base64,"+bos.toString()+"\" "+(elements.length==2 ? "width=\""+elements[0]+"\" height=\""+elements[1]+"\" " : "")+"/>");
+			} else {
+				text = StringUtils.replaceString(text, prefix + token + postfix, "");
+			}
+					
+		}
+		return text;
 	}
 	
 	private static String parseImage(String text) throws IOException{

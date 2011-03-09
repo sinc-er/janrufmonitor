@@ -136,7 +136,7 @@ public class HtmlCallManager extends AbstractPersistentCallManager implements
 		b.unregister(this, b.createEvent(IEventConst.EVENT_TYPE_CALLACCEPTED));
 		b.unregister(this, b.createEvent(IEventConst.EVENT_TYPE_CALLCLEARED));
 		b.unregister(this, b.createEvent(IEventConst.EVENT_TYPE_CALLREJECTED));
-		this.saveDatabase();
+		//this.saveDatabase();
 	}
 
 	public void startup() {
