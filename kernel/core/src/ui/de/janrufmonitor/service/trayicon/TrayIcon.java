@@ -378,7 +378,9 @@ public class TrayIcon extends AbstractReceiverConfigurableService implements Com
 				return 1;
 			}
 			return 0;
-		} catch (Exception ex) { 
+		} catch (NumberFormatException ex){
+			 return 0;
+		} catch (Exception ex) {
 			this.m_logger.log(Level.SEVERE, ex.getMessage(), ex);
 		}
 			
