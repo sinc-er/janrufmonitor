@@ -99,6 +99,10 @@ public class ClientClickDialAction extends AbstractAction  {
 	}
 
 	public boolean isEnabled() {
+		// introduced since some TAPIs might reset and stop monitoring after calling GetDialExtension
+		boolean isSecureMonitor = Boolean.parseBoolean(System.getProperty(IJAMConst.SYSTEM_MONITOR_SECURE, "false"));
+		if (isSecureMonitor) return false;
+		
 		if (isConnected()) {
 			IRequester r = this.getRequester(new GetDialExtensions());
 			IHttpResponse resp = r.request();

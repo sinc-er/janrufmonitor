@@ -4,6 +4,7 @@ import java.util.Properties;
 
 import org.eclipse.swt.widgets.Shell;
 
+import de.janrufmonitor.framework.IJAMConst;
 import de.janrufmonitor.framework.configuration.IConfigurable;
 import de.janrufmonitor.runtime.IRuntime;
 import de.janrufmonitor.runtime.PIMRuntime;
@@ -35,6 +36,10 @@ public class ClientDialerCommand extends AbstractAsyncDisplayCommand implements 
 	}
 
 	public boolean isExecutable() {
+		// introduced since some TAPIs might reset and stop monitoring after calling GetDialExtension
+		boolean isSecureMonitor = Boolean.parseBoolean(System.getProperty(IJAMConst.SYSTEM_MONITOR_SECURE, "false"));
+		if (isSecureMonitor) return false;
+		
 		if (isConnected()) {
 			IRequester r = this.getRequester(new GetDialExtensions());
 			IHttpResponse resp = r.request();
