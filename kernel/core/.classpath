@@ -50,5 +50,6 @@
 	<classpathentry kind="lib" path="/jAnrufmonitor Monitor AVM Fritz!Box Fon/build"/>
 	<classpathentry kind="lib" path="/jAnrufmonitor Monitor CAPI/build"/>
 	<classpathentry kind="lib" path="/jAnrufmonitor Monitor TAPI/build"/>
+	<classpathentry kind="var" path="JAM_LIB/modules/mysql.jar"/>
 	<classpathentry kind="output" path="build"/>
 </classpath>

@@ -364,10 +364,14 @@ public class MySqlJournal extends AbstractDatabaseCallManager implements IRemote
 		
 		public void commit() throws SQLException {
 			// do nothing for mysql, since auto-commit is active
+			if (this.m_logger.isLoggable(Level.INFO))
+				this.m_logger.info("Ignoring COMMIT call, due to auto-commit.");
 		}
 		
 		public void rollback() throws SQLException {
 			// do nothing for mysql, since auto-rollback is active
+			if (this.m_logger.isLoggable(Level.INFO))
+				this.m_logger.info("Ignoring ROLLBACK call, due to auto-commit.");
 		}
 
 	}
