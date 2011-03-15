@@ -141,6 +141,12 @@ public class CountryDirectory extends AbstractReadOnlyDatabaseCallerManager {
 						this.m_logger.log(Level.SEVERE, e.getMessage(), e);
 					}
 				}
+				if (p.getIntAreaCode().length()>0 && p.getAreaCode().length()>0 && p.getCallNumber().length()>0) {
+					if (this.m_logger.isLoggable(Level.INFO))
+						this.m_logger.info("Normalized phone number, but could not detect a country: "+p);
+					
+					return getRuntime().getCallerFactory().createCaller(getRuntime().getCallerFactory().createName("", "unknown country 00"+p.getIntAreaCode()), p);
+				}
 			} catch (Exception ex) {
 				this.m_logger.log(Level.SEVERE, (pnp!=null ? "Error while analyzing number ["+pnp.getTelephoneNumber() + "]: " : "") +ex.getMessage(), ex);
 			}
@@ -208,6 +214,9 @@ public class CountryDirectory extends AbstractReadOnlyDatabaseCallerManager {
 						return check;
 					}
 				}
+				this.m_logger.warning("number contains invalid intareacode: "+pn.getTelephoneNumber());
+				if (pn.getTelephoneNumber().length()>3)
+					return pn.getTelephoneNumber().substring(1,3);
 			}
 			return this.getLocalAreaCode();
 		}
