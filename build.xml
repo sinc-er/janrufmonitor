@@ -594,7 +594,7 @@
       </copy>
     </target>
     
-    <target name="publish_win64" depends="bundle_win64,bundle_win32_installer" description="publishes wi64 bundle" >
+    <target name="publish_win64" depends="bundle_win64,bundle_win64_installer" description="publishes wi64 bundle" >
     </target>
     
     <target name="publish_linux32" depends="bundle_linux32" description="publishes linux32 bundle" >
