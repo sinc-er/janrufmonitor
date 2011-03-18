@@ -277,7 +277,7 @@
       <copy todir="${jam.dist.dir}/jam50-linux32-capi/install">
           <fileset dir="${jam.dist.dir}/modules" includes="*capi*.jam.zip"/>
       </copy>
-      <tar destfile="${jam.pub.dir}/jam50-linux32-capi.tar.gz" basedir="${jam.dist.dir}/jam50-linux32-capi" compression="gzip">
+      <tar destfile="${jam.pub.dir}/jam50-linux-capi.tar.gz" basedir="${jam.dist.dir}/jam50-linux32-capi" compression="gzip">
 	    <tarfileset dir="${jam.dist.dir}/jam50-linux32-capi" mode="755" username="root" group="root">
 		  <include name="${jam.dist.dir}/jam50-linux32-capi/jam.sh"/>
 	    </tarfileset>
@@ -290,7 +290,7 @@
       <copy todir="${jam.dist.dir}/jam50-linux32-fritzbox/install">
           <fileset dir="${jam.dist.dir}/modules" includes="*fritzbox*.jam.zip"/>
       </copy>
-      <tar destfile="${jam.pub.dir}/jam50-linux32-fritzbox.tar.gz" basedir="${jam.dist.dir}/jam50-linux32-fritzbox" compression="gzip">
+      <tar destfile="${jam.pub.dir}/jam50-linux-fritzbox.tar.gz" basedir="${jam.dist.dir}/jam50-linux32-fritzbox" compression="gzip">
 	    <tarfileset dir="${jam.dist.dir}/jam50-linux32-fritzbox" mode="755" username="root" group="root">
 		  <include name="${jam.dist.dir}/jam50-linux32-fritzbox/jam.sh"/>
 	    </tarfileset>
@@ -303,7 +303,7 @@
       <copy todir="${jam.dist.dir}/jam50-linux32-client/install">
           <fileset dir="${jam.dist.dir}/modules" includes="*client*.jam.zip"/>
       </copy>
-      <tar destfile="${jam.pub.dir}/jam50-linux32-client.tar.gz" basedir="${jam.dist.dir}/jam50-linux32-client" compression="gzip">
+      <tar destfile="${jam.pub.dir}/jam50-linux-client.tar.gz" basedir="${jam.dist.dir}/jam50-linux32-client" compression="gzip">
 	    <tarfileset dir="${jam.dist.dir}/jam50-linux32-client" mode="755" username="root" group="root">
 		  <include name="${jam.dist.dir}/jam50-linux32-client/jam.sh"/>
 	    </tarfileset>
@@ -505,7 +505,7 @@
       </exec>
     </target>
     
-    <target name="bundle_win32_installer" depends="init_bundle,win32_distribution,build_modules" description="creates win32 installer bundle" if="is.win">
+    <target name="bundle_win32_installer" depends="init_bundle,win32_distribution,build_modules" description="creates win32 installer bundle" >
       <mkdir dir="${jam.dist.dir}/installers/win32-installer/"/>
     
       <copy todir="${jam.dist.dir}/installers/">
@@ -548,7 +548,7 @@
       </copy>
     </target>
     
-    <target name="bundle_win64_installer" depends="init_bundle,win64_distribution,build_modules" description="creates win64 installer bundle" if="is.win">
+    <target name="bundle_win64_installer" depends="init_bundle,win64_distribution,build_modules" description="creates win64 installer bundle" >
       <mkdir dir="${jam.dist.dir}/installers/win64-installer/"/>
     
       <copy todir="${jam.dist.dir}/installers/">
@@ -603,6 +603,9 @@
     <target name="publish_linux64" depends="bundle_linux64" description="publishes linux64 bundle" >
     </target>
     
+    <target name="publish_console" depends="bundle_console" description="publishes console bundle" >
+    </target>
+    
     <target name="publish_macosx64" depends="bundle_macosx64" description="publishes macosx64 bundle" >
       <mkdir dir="${jam.pub.dir}/core.${jam.version}.macosx.64.jam"/>
       <copy todir="${jam.pub.dir}/core.${jam.version}.macosx.64.jam">
@@ -615,6 +618,7 @@
         <subant target="publish_win64" buildpath="."/>
         <subant target="publish_linux32" buildpath="."/>
         <subant target="publish_linux64" buildpath="."/>
+        <subant target="publish_console" buildpath="."/>
         <subant target="publish_macosx64" buildpath="."/>
         
         

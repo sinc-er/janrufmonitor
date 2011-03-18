@@ -1,5 +1,26 @@
 ﻿===
 
+jAnrufmonitor 5.0.30 (01.04.2011)
+---------------------------------
+
+Neu:
+- Überwachung: Unterstützung für LANCOM LANCAPI
+- Neue VM Option: -Djam.monitor.secure=true für sichere Überwachung bei einigen TAPI Treibern
+- Erkennung von Spoofing Rufnummern aus dem Ausland (Spam-Anrufe)
+
+Bugfix:
+- Adressbuch: "Kontakte zusammenführen" scheitert bei mehreren gleichen Rufnummern
+- Adressbuch: vCard Filter exportiert keine Fotos
+
+Module:
+- Emailbenachrichtigung: Email-Benachrichtigung zeigt im HTML-Format keine Fotos
+- PDF-Export-Filter: Fotos werden nicht mehr exportiert
+- MySQL Modul: Commit und Rollback Fehler beim Einsatz in der Console Version
+- HTML/XML Journal: ClassNotFoundException beim Einsatz in der Console Version
+
+
+===
+
 jAnrufmonitor 5.0.29 (01.02.2011)
 ---------------------------------
 
