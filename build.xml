@@ -590,7 +590,17 @@
     <target name="publish_win32" depends="bundle_win32,bundle_win32_installer" description="publishes win32 bundle" >
       <mkdir dir="${jam.pub.dir}/core.${jam.version}.win.32.jam"/>
       <copy todir="${jam.pub.dir}/core.${jam.version}.win.32.jam">
-          <fileset dir="${jam.dist.dir}/jam50-win32"/>
+        <fileset file="${jam.kernel.lib}/jam.jar"/>
+        <fileset file="${jam.kernel.lib}/jamapi.jar"/>
+      </copy>
+      <copy todir="${jam.pub.dir}/core.${jam.version}.win.32.jam/lib">
+        <fileset file="${jam.kernel.lib}/jamui.jar"/>
+        <fileset file="${jam.kernel.lib}/jamwin32.jar"/>
+      </copy>
+      <copy todir="${jam.pub.dir}/core.${jam.version}.win.32.jam">
+        <fileset dir="${jam.kernel.config.all}" excludes="*.*, images/**, config/**, data/**, install/*.lib.deploy"/>
+        <fileset dir="${jam.kernel.config.all}" includes="changes.txt, license.txt"/>
+        <fileset dir="${jam.kernel.config}/win32" excludes="*.*"/>
       </copy>
     </target>
     
@@ -609,7 +619,17 @@
     <target name="publish_macosx64" depends="bundle_macosx64" description="publishes macosx64 bundle" >
       <mkdir dir="${jam.pub.dir}/core.${jam.version}.macosx.64.jam"/>
       <copy todir="${jam.pub.dir}/core.${jam.version}.macosx.64.jam">
-          <fileset dir="${jam.dist.dir}/jam50-macosx64"/>
+        <fileset file="${jam.kernel.lib}/jam.jar"/>
+        <fileset file="${jam.kernel.lib}/jamapi.jar"/>
+      </copy>
+      <copy todir="${jam.pub.dir}/core.${jam.version}.macosx.64.jam/lib">
+        <fileset file="${jam.kernel.lib}/jamui.jar"/>
+        <fileset file="${jam.kernel.lib}/jammacosx64.jar"/>
+      </copy>
+      <copy todir="${jam.pub.dir}/core.${jam.version}.macosx.64.jam">
+        <fileset dir="${jam.kernel.config.all}" excludes="*.*, images/**, config/**, data/**, install/*.lib.deploy"/>
+        <fileset dir="${jam.kernel.config.all}" includes="changes.txt, license.txt"/>
+        <fileset dir="${jam.kernel.config}/macosx64" excludes="*.*"/>
       </copy>
     </target>
     
