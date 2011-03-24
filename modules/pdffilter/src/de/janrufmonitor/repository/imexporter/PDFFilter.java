@@ -2,6 +2,7 @@ package de.janrufmonitor.repository.imexporter;
 
 import java.awt.Color;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -138,6 +139,9 @@ public class PDFFilter implements ICallExporter{
 									} else {
 										table.addCell(" ");
 									}
+								} else if(new File(cellContent).exists()) {
+									Image pdfImage = Image.getInstance(cellContent);
+									table.addCell(pdfImage);
 								} else {
 									Image pdfImage = Image.getInstance(SWTImageManager.getInstance(PIMRuntime.getInstance()).getImagePath(cellContent));
 									table.addCell(pdfImage);
