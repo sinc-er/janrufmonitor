@@ -654,6 +654,7 @@
     </target>
     
     <target name="publish_rssfeed" depends="build_kernel, init_distribution" description="publish rss feed content for homepage">
+        <mkdir dir="./internal/websites/homepage/"/>
         <delete file="./internal/websites/homepage/changes.txt"/>
         <delete file="./internal/websites/homepage/changes.rss"/>
         <copy file="${jam.kernel.config.all}/changes.txt" todir="./internal/websites/homepage/"/>
