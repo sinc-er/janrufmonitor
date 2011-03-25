@@ -1,0 +1,15 @@
+# added 5.0.14
+command.CommandFactory\:command_tdialercommand\:value=de.janrufmonitor.ui.jface.application.dialer.TapiDialerCommand
+command.CommandFactory\:command_tdialercommand\:access=system
+service.TrayIcon\:component_dialer\:value=TapiDialerCommand
+service.TrayIcon\:component_dialer\:position=19
+service.TrayIcon\:component_dialer\:access=system
+service.TrayIcon\:component_sep_dial\:value=separator
+service.TrayIcon\:component_sep_dial\:position=18
+service.TrayIcon\:component_sep_dial\:access=system
+
+
+ui.jface.application.ActionRegistry\:action_tapi_clickdial\:value=de.janrufmonitor.ui.jface.application.tapi.action.TapiClickDialAction
+ui.jface.application.ActionRegistry\:action_tapi_clickdial\:access=system
++ui.jface.application.editor.Editor\:popup_actions\:value=tapi_clickdial,
++ui.jface.application.journal.Journal\:popup_actions\:value=tapi_clickdial,
