@@ -66,6 +66,7 @@
         <fileset file="${jam.modules.extlib}/log.jar"/>
         <fileset file="${jam.modules.extlib}/log-api.jar"/>
         <fileset file="${jam.modules.extlib}/codec.jar"/>
+        <fileset file="${jam.modules.extlib}/http-commons.jar"/>
       </copy>
     </target>
 
