@@ -31,6 +31,8 @@ public interface IFritzBoxFirmware {
     public final static byte TYPE_FRITZBOX_7141 = 40;
     public final static byte TYPE_FRITZBOX_5140 = 43;
     public final static byte TYPE_FRITZBOX_7270 = 54;
+    public final static byte TYPE_FRITZBOX_5124_ANNEXB = 56;
+    public final static byte TYPE_FRITZBOX_7170_ANNEXA = 58;
     public final static byte TYPE_FRITZBOX_7113 = 60;
     public final static byte TYPE_FRITZBOX_7240 = 73;
     public final static byte TYPE_FRITZBOX_7270V3 = 74;
