@@ -78,6 +78,8 @@ public class FirmwareData {
             return "FRITZ!Box Fon 5124 (Annex B)";   
         case IFritzBoxFirmware.TYPE_FRITZBOX_7170_ANNEXA:
             return "FRITZ!Box Fon 7170 (Annex A)";  
+        case IFritzBoxFirmware.TYPE_FRITZBOX_7340:
+            return "FRITZ!Box Fon 7340";  
 		default:			
 		}
 		return "unknown";
