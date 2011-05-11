@@ -21,6 +21,7 @@ import de.janrufmonitor.framework.IJAMConst;
 import de.janrufmonitor.framework.IMultiPhoneCaller;
 import de.janrufmonitor.framework.IPhonenumber;
 import de.janrufmonitor.framework.i18n.II18nManager;
+import de.janrufmonitor.framework.monitor.PhonenumberInfo;
 import de.janrufmonitor.repository.imexport.ICallerExporter;
 import de.janrufmonitor.repository.imexport.IImExporter;
 import de.janrufmonitor.runtime.PIMRuntime;
@@ -86,15 +87,28 @@ public class VcfFileCallerExporter implements ICallerExporter {
 					IPhonenumber p = null;
 					for (int k=0,l=pns.size();k<l;k++) {
 						p = (IPhonenumber) pns.get(k);
+						if (p.isClired()) continue;
 						String numbertype = this.getPhoneType(p, c);
-						if (numbertype.equalsIgnoreCase(IJAMConst.ATTRIBUTE_VALUE_LANDLINE_TYPE)) {
-							vcf.append("TEL;TYPE=home:");vcf.append(f.parse(number_pattern, p));vcf.append(CRLF);
-						}
-						if (numbertype.equalsIgnoreCase(IJAMConst.ATTRIBUTE_VALUE_FAX_TYPE)) {
-							vcf.append("TEL;TYPE=fax,home:");vcf.append(f.parse(number_pattern, p));vcf.append(CRLF);
-						}
-						if (numbertype.equalsIgnoreCase(IJAMConst.ATTRIBUTE_VALUE_MOBILE_TYPE)) {
-							vcf.append("TEL;TYPE=cell:");vcf.append(f.parse(number_pattern, p));vcf.append(CRLF);
+						if (PhonenumberInfo.isInternalNumber(p)) {
+							if (numbertype.equalsIgnoreCase(IJAMConst.ATTRIBUTE_VALUE_LANDLINE_TYPE)) {
+								vcf.append("TEL;TYPE=home:");vcf.append(p.getCallNumber());vcf.append(CRLF);
+							}	
+							if (numbertype.equalsIgnoreCase(IJAMConst.ATTRIBUTE_VALUE_FAX_TYPE)) {
+								vcf.append("TEL;TYPE=fax,home:");vcf.append(p.getCallNumber());vcf.append(CRLF);
+							}
+							if (numbertype.equalsIgnoreCase(IJAMConst.ATTRIBUTE_VALUE_MOBILE_TYPE)) {
+								vcf.append("TEL;TYPE=cell:");vcf.append(p.getCallNumber());vcf.append(CRLF);
+							}
+						} else {
+							if (numbertype.equalsIgnoreCase(IJAMConst.ATTRIBUTE_VALUE_LANDLINE_TYPE)) {
+								vcf.append("TEL;TYPE=home:");vcf.append(f.parse(number_pattern, p));vcf.append(CRLF);
+							}	
+							if (numbertype.equalsIgnoreCase(IJAMConst.ATTRIBUTE_VALUE_FAX_TYPE)) {
+								vcf.append("TEL;TYPE=fax,home:");vcf.append(f.parse(number_pattern, p));vcf.append(CRLF);
+							}
+							if (numbertype.equalsIgnoreCase(IJAMConst.ATTRIBUTE_VALUE_MOBILE_TYPE)) {
+								vcf.append("TEL;TYPE=cell:");vcf.append(f.parse(number_pattern, p));vcf.append(CRLF);
+							}
 						}
 					}
 				} else {
