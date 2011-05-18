@@ -27,6 +27,34 @@ public class FritzBoxCallCsv extends AbstractFritzBoxCall {
 		// 1;18.08.06 10:07;;02736294863;FON S0;911955;0:01
 		super(csvline, config);
 	}
+	
+	public Date getPrecalculatedDate() {
+		if (this.m_line==null || this.m_line.trim().length()==0) return null;
+		
+		/**
+		 * Added 2011/01/05: added do to NumberFormatException in log, remove the header
+		 */
+		if (this.m_line.trim().toLowerCase().startsWith("typ;")) return null;
+		try {
+			String call[] = this.m_line.split(";");
+			if (call.length>=7) {
+				// create call data
+				SimpleDateFormat sdf = new SimpleDateFormat(this.m_config.getProperty(CFG_DATEFORMAT, "dd.MM.yy HH:mm"));
+				try {
+					return sdf.parse(call[1]);
+				} catch (ParseException e) {
+					Logger.getLogger(IJAMConst.DEFAULT_LOGGER).severe("Wrong date format detected.");
+				}
+			}
+		} catch (NumberFormatException ex) {
+			Logger.getLogger(IJAMConst.DEFAULT_LOGGER).log(Level.SEVERE, ex.toString(), ex);
+		} catch (Exception ex) {
+			Logger.getLogger(IJAMConst.DEFAULT_LOGGER).warning(ex.toString() + ":" +ex.getMessage() + " : problem with line parsing : "+this.m_line);
+			if (ex instanceof NullPointerException)
+				Logger.getLogger(IJAMConst.DEFAULT_LOGGER).log(Level.SEVERE, ex.toString(), ex);
+		}
+		return null;
+	}
 
 	public ICall toCall() {
 		if (this.m_line==null || this.m_line.trim().length()==0) return null;

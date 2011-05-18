@@ -219,8 +219,15 @@ public class SynchronizerService extends AbstractReceiverConfigurableService imp
 					Properties conf = PIMRuntime.getInstance().getConfigManagerFactory().getConfigManager().getProperties(FritzBoxMonitor.NAMESPACE);
 					ICall c = null;
 					FritzBoxUUIDManager.getInstance().init();
+					long synctime = Long.parseLong(SynchronizerService.this.m_configuration.getProperty(CFG_SYNCTIME, "-1"));
 					for (int i=0,j=result.size();i<j;i++) {
 						call = new FritzBoxCallCsv((String) result.get(i), conf);
+						Date calltime = call.getPrecalculatedDate();
+						if (calltime!=null && calltime.getTime()<synctime && synctime>0) {
+							if (m_logger.isLoggable(Level.INFO))
+								m_logger.info("Call import skipped by timestamp (last sync time: "+new Date(synctime).toString()+", call time: "+calltime.toString()+") from FritzBox.");
+							continue;
+						}
 						c = call.toCall();
 						if (c!=null) {
 							if (getRuntime().getMsnManager().isMsnMonitored(
@@ -229,7 +236,7 @@ public class SynchronizerService extends AbstractReceiverConfigurableService imp
 								if (!m_callList.contains(c))
 									m_callList.add(c);
 								else {
-									m_logger.warning("Call already imported from FritzBox: "+c.toString());
+									m_logger.warning("Duplicated call imported from FritzBox: "+c.toString());
 									c.setUUID(c.getUUID()+"-1");
 									ICip cip = c.getCIP();
 									cip.setCIP("4"); // just a dirty hack 
@@ -253,7 +260,7 @@ public class SynchronizerService extends AbstractReceiverConfigurableService imp
 							ICall ca = null;
 
 							// added 2008/04/22: check sync point cleanup
-							long synctime = Long.parseLong(SynchronizerService.this.m_configuration.getProperty(CFG_SYNCTIME, "-1"));
+							synctime = Long.parseLong(SynchronizerService.this.m_configuration.getProperty(CFG_SYNCTIME, "-1"));
 							boolean syncclean = SynchronizerService.this.m_configuration.getProperty(CFG_SYNCCLEAN, "false").equalsIgnoreCase("true");
 							if (syncclean && synctime>0 && cm.isSupported(IReadCallRepository.class) && cm.isSupported(IWriteCallRepository.class)) {
 								
@@ -340,6 +347,10 @@ public class SynchronizerService extends AbstractReceiverConfigurableService imp
 									new Exception(StringUtils.replaceString(text, "{%1}", Integer.toString(m_callList.size())))),
 							"Tray");	
 					
+					SynchronizerService.this.m_configuration.setProperty(CFG_SYNCTIME, Long.toString(System.currentTimeMillis()));
+					getRuntime().getConfigManagerFactory().getConfigManager().setProperties(NAMESPACE, SynchronizerService.this.m_configuration);
+					getRuntime().getConfigManagerFactory().getConfigManager().saveConfiguration();
+					
 				}
 			} catch (IOException e) {
 				m_logger.warning(e.toString());
@@ -419,8 +430,15 @@ public class SynchronizerService extends AbstractReceiverConfigurableService imp
 								FritzBoxCallCsv call = null;
 								Properties conf = PIMRuntime.getInstance().getConfigManagerFactory().getConfigManager().getProperties(FritzBoxMonitor.NAMESPACE);
 								ICall c = null;
+								long synctime = Long.parseLong(SynchronizerService.this.m_configuration.getProperty(CFG_SYNCTIME, "-1"));
 								for (int i=0,j=result.size();i<j;i++) {
 									call = new FritzBoxCallCsv((String) result.get(i), conf);
+									Date calltime = call.getPrecalculatedDate();
+									if (calltime!=null && calltime.getTime()<synctime && synctime>0) {
+										if (m_logger.isLoggable(Level.INFO))
+											m_logger.info("Call import skipped by timestamp (last sync time: "+new Date(synctime).toString()+", call time: "+calltime.toString()+") from FritzBox.");
+										continue;
+									}
 									c = call.toCall();
 									if (c!=null) {
 										if (getRuntime().getMsnManager().isMsnMonitored(
@@ -429,7 +447,7 @@ public class SynchronizerService extends AbstractReceiverConfigurableService imp
 											if (!m_callList.contains(c))
 												m_callList.add(c);
 											else {
-												m_logger.warning("Call already imported from FritzBox: "+c.toString());
+												m_logger.warning("Duplicated call imported from FritzBox: "+c.toString());
 												c.setUUID(c.getUUID()+"-1");
 												ICip cip = c.getCIP();
 												cip.setCIP("4"); // just a dirty hack 
@@ -463,7 +481,7 @@ public class SynchronizerService extends AbstractReceiverConfigurableService imp
 									if (cm!=null && cm.isActive() && cm.isSupported(IWriteCallRepository.class)) {
 										ICall ca = null;
 										// added 2008/04/22: check sync point cleanup
-										long synctime = Long.parseLong(SynchronizerService.this.m_configuration.getProperty(CFG_SYNCTIME, "-1"));
+										synctime = Long.parseLong(SynchronizerService.this.m_configuration.getProperty(CFG_SYNCTIME, "-1"));
 										boolean syncclean = SynchronizerService.this.m_configuration.getProperty(CFG_SYNCCLEAN, "false").equalsIgnoreCase("true");
 										if (syncclean && synctime>0 && cm.isSupported(IReadCallRepository.class)) {
 											progressMonitor.setTaskName(getI18nManager()
