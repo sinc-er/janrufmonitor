@@ -3,15 +3,15 @@ core\:title\:label\:de=jAnrufmonitor Basiskomponente
 
 exception.Message\:unknown\:label\:de=Allgemeiner Programmfehler\n\nDetailinformationen zu diesem Fehler wurden im jam-0.log gespeichert.
 exception.Message\:unknown\:description\:de=pim-error-0001
-exception.Message\:lockedarchive\:label\:de=Datenbankfehler\n\nDie Datenbankdatei {%1} konnte nicht geöffnet werden, da sie von einer anderen Anwendung gesperrt ist. Stellen Sie sicher, dass nur eine jAnrufmonitor Instanz auf die Datenbank zugreift. Löschen Sie alle .lck Dateien im jAnrufmonitor Verzeichnis und in den Unterverzeichnissen, falls das Problem weiterhin besteht.
-exception.Message\:invalidarchive\:label\:de=Datenbankfehler\n\nEs ist ein Fehler beim Erstellen oder Lesen der Datenbankdatei {%1} aufgetreten. Die Datei ist nicht lesbar. Löschen Sie die Datei, um den Fehler beim nächsten Programmstart zu beheben.
+exception.Message\:lockedarchive\:label\:de=Datenbankfehler\n\nDie Datenbankdatei {%1} konnte nicht ge\u00F6ffnet werden, da sie von einer anderen Anwendung gesperrt ist. Stellen Sie sicher, dass nur eine jAnrufmonitor Instanz auf die Datenbank zugreift. L\u00F6schen Sie alle .lck Dateien im jAnrufmonitor Verzeichnis und in den Unterverzeichnissen, falls das Problem weiterhin besteht.
+exception.Message\:invalidarchive\:label\:de=Datenbankfehler\n\nEs ist ein Fehler beim Erstellen oder Lesen der Datenbankdatei {%1} aufgetreten. Die Datei ist nicht lesbar. L\u00F6schen Sie die Datei, um den Fehler beim n\u00E4chsten Programmstart zu beheben.
 
 installer.InstallerEngine\:title\:label\:de=Installationsmodul
-installer.InstallerEngine\:null\:label\:de=Es wurde ein Bugfix oder eine Konfigurationsänderung installiert. Es kann erforderlich sein, jAnrufmonitor neu zu starten, bevor die Änderungen wirksam werden.
-installer.InstallerEngine\:moduleversionrule\:label\:de=Es wurde eine ältere Modulversion entdeckt, die das Aktualisieren auf die neue Version verhindert. Die alte Modulversion muss zuerst deinstalliert werden.
+installer.InstallerEngine\:null\:label\:de=Es wurde ein Bugfix oder eine Konfigurations\u00E4nderung installiert. Es kann erforderlich sein, jAnrufmonitor neu zu starten, bevor die \u00C4nderungen wirksam werden.
+installer.InstallerEngine\:moduleversionrule\:label\:de=Es wurde eine \u00E4ltere Modulversion entdeckt, die das Aktualisieren auf die neue Version verhindert. Die alte Modulversion muss zuerst deinstalliert werden.
 installer.InstallerEngine\:pimversionrule\:label\:de=Das Modul kann in dieser jAnrufmonitor Version nicht installiert werden. Aktualisieren Sie die Programmversion zuerst und installieren Sie das Modul danach erneut.
-installer.InstallerEngine\:dependencyrule\:label\:de=Das Modul kann nicht installiert werden, da mindestens ein abhängiges Modul nicht vorhanden ist. Entnehmen Sie der Installationsbeschreibung, welche Module zuerst installiert werden müssen und führen Sie die Installation danach erneut aus.
-installer.InstallerEngine\:invaliddescriptor\:label\:de=Es konnte keine Modulbeschreibung für das ausgewählte Modul ermittelt werden. Installieren Sie das Modul erneut um den Fehler zu beheben.
+installer.InstallerEngine\:dependencyrule\:label\:de=Das Modul kann nicht installiert werden, da mindestens ein abhängiges Modul nicht vorhanden ist. Entnehmen Sie der Installationsbeschreibung, welche Module zuerst installiert werden m\u00FCssen und f\u00FChren Sie die Installation danach erneut aus.
+installer.InstallerEngine\:invaliddescriptor\:label\:de=Es konnte keine Modulbeschreibung f\u00FCr das ausgew\u00E4hlte Modul ermittelt werden. Installieren Sie das Modul erneut um den Fehler zu beheben.
 installer.InstallerEngine\:conflictrule\:label\:de=Das Modul kann nicht installiert werden, da mindestens ein Modul vorhanden ist, welches nicht in Kombination mit diesem Modul betrieben werden kann.
 
 manager.CipManager\:1\:label\:de=Sprachdienst (ISDN)
@@ -41,9 +41,9 @@ manager.CipManager\:999\:label\:de=unbekannter Dienst
 
 manager.MsnManager\:title\:label\:de=MSN Manager
 
-monitor.MonitorListener\:title\:label\:de=Überwachungskomponente
-monitor.MonitorListener\:on\:label\:de=Die Anrufüberwachung wurde eingeschaltet.
-monitor.MonitorListener\:off\:label\:de=Die Anrufüberwachung wurde ausgeschaltet. Es werden zur Zeit keine Anrufe erkannt.
+monitor.MonitorListener\:title\:label\:de=\u00DCberwachungskomponente
+monitor.MonitorListener\:on\:label\:de=Die Anruf\u00FCberwachung wurde eingeschaltet.
+monitor.MonitorListener\:off\:label\:de=Die Anruf\u00FCberwachung wurde ausgeschaltet. Es werden zur Zeit keine Anrufe erkannt.
 
 rules.RuleEngine\:title\:label\:de=Regel-Assistent
 rules.RuleEngine\:rulelabel\:label\:de=Regel #

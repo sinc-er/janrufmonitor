@@ -1,4 +1,4 @@
-ui.jface.wizards.CallerWizard\:title\:label\:de=Kontakt anlegen/ändern
+ui.jface.wizards.CallerWizard\:title\:label\:de=Kontakt anlegen/\u00E4ndern
 ui.jface.wizards.CallerWizard\:title2\:label\:de=Kontakt anzeigen
 
 ui.jface.wizards.EditorFilterWizard\:title\:label\:de=Filter anlegen/bearbeiten
@@ -9,46 +9,46 @@ ui.jface.wizards.FilterWizard\:title\:label\:de=Filter anlegen/bearbeiten
 
 ui.jface.wizards.JournalCallerWizard\:title\:label\:de=Kontakt verwalten
 
-ui.jface.wizards.MsnWizard\:title\:label\:de=MSN anlegen/ändern
+ui.jface.wizards.MsnWizard\:title\:label\:de=MSN anlegen/\u00E4ndern
 
 ui.jface.wizards.RuleWizard\:title\:label\:de=Regeln anlegen/bearbeiten
 
-ui.jface.wizards.CallerCombineWizard\:title\:label\:de=Kontakte zusammenführen
+ui.jface.wizards.CallerCombineWizard\:title\:label\:de=Kontakte zusammenf\u00FChren
 
 ui.jface.wizards.UpdateWizard\:title\:label\:de=Updates...
 ui.jface.wizards.UpdateWizard\:success\:label\:de=Update erfolgreich
-ui.jface.wizards.UpdateWizard\:success\:description\:de=Die gewählten Updates konnten erfolgreich durchgeführt werden. Die Änderungen werden erst nach einem Programmneustart wirksam.
-ui.jface.wizards.UpdateWizard\:updates\:label\:de=Ausgewählte Updates werden geladen und installiert...
+ui.jface.wizards.UpdateWizard\:success\:description\:de=Die gew\u00E4hlten Updates konnten erfolgreich durchgef\u00FChrt werden. Die \u00C4nderungen werden erst nach einem Programmneustart wirksam.
+ui.jface.wizards.UpdateWizard\:updates\:label\:de=Ausgew\u00E4hlte Updates werden geladen und installiert...
 ui.jface.wizards.UpdateWizard\:install\:label\:de=Installiere Modul: 
-ui.jface.wizards.UpdateWizard\:moreupdates\:label\:de=Weitere Updates verfügbar...
-ui.jface.wizards.UpdateWizard\:moreupdates\:description\:de=Es stehen weitere Updates zur Verfügung, die erst nach einem Programmneustart installiert werden können. Führen Sie den Update-Wizard erneut aus, um weitere Updates zu installieren.
+ui.jface.wizards.UpdateWizard\:moreupdates\:label\:de=Weitere Updates verf\u00FCgbar...
+ui.jface.wizards.UpdateWizard\:moreupdates\:description\:de=Es stehen weitere Updates zur Verf\u00FCgung, die erst nach einem Programmneustart installiert werden k\u00F6nnen. F\u00FChren Sie den Update-Wizard erneut aus, um weitere Updates zu installieren.
 
 #pages
-ui.jface.wizards.pages.CallerCombinePage\:title\:label\:de=Kontakte zusammenführen...
-ui.jface.wizards.pages.CallerCombinePage\:description\:label\:de=Führen Sie Kontakte zusammen, um Duplikate aus der Kontakteliste zu entfernen.
-ui.jface.wizards.pages.CallerCombinePage\:name\:label\:de=Wählen Sie einen Kontakt aus, den Sie weiter verwenden möchten:
+ui.jface.wizards.pages.CallerCombinePage\:title\:label\:de=Kontakte zusammenf\u00FChren...
+ui.jface.wizards.pages.CallerCombinePage\:description\:label\:de=F\u00FChren Sie Kontakte zusammen, um Duplikate aus der Kontakteliste zu entfernen.
+ui.jface.wizards.pages.CallerCombinePage\:name\:label\:de=W\u00E4hlen Sie einen Kontakt aus, den Sie weiter verwenden m\u00F6chten:
 ui.jface.wizards.pages.CallerPage\:phonegroup\:label\:de=Rufnummer-Details
-ui.jface.wizards.pages.CallerPage\:intarea\:label\:de=Ländercode: 
+ui.jface.wizards.pages.CallerPage\:intarea\:label\:de=L\u00E4ndercode: 
 ui.jface.wizards.pages.CallerPage\:area\:label\:de=Ortsnetzkennzahl: 
 ui.jface.wizards.pages.CallerPage\:number\:label\:de=Rufnummer:  
-ui.jface.wizards.pages.CallerPage\:numbererror\:label\:de=Das Feld Rufnummer enthält keinen gültigen Wert.  
-ui.jface.wizards.pages.CallerPage\:areaerror\:label\:de=Die Ortsnetzkennzahl ist ungültig. Ortsnetzkennzahlen dürfen aus max. 8 Ziffern bestehen und nicht mit einer Null beginnen. 
-ui.jface.wizards.pages.CallerPage\:intareaerror\:label\:de=Der Ländercode ist ungültig. Ländercodes dürfen aus max. 4 Ziffern bestehen und nicht mit einer Null beginnen. Es sind keine Sonderzeichen zugelassen. 
+ui.jface.wizards.pages.CallerPage\:numbererror\:label\:de=Das Feld Rufnummer enth\u00E4lt keinen g\u00FCltigen Wert.  
+ui.jface.wizards.pages.CallerPage\:areaerror\:label\:de=Die Ortsnetzkennzahl ist ung\u00FCltig. Ortsnetzkennzahlen d\u00FCrfen aus max. 8 Ziffern bestehen und nicht mit einer Null beginnen. 
+ui.jface.wizards.pages.CallerPage\:intareaerror\:label\:de=Der L\u00E4ndercode ist ung\u00FCltig. L\u00E4ndercodes d\u00FCrfen aus max. 4 Ziffern bestehen und nicht mit einer Null beginnen. Es sind keine Sonderzeichen zugelassen. 
 ui.jface.wizards.pages.CallerPage\:internal\:label\:de=Rufnummer ist eine interne Telefonanlagennummer
-ui.jface.wizards.pages.CallerPage\:internalerror\:label\:de=Interne Telefonanlagennummern müssen aus mind. 1 Ziffer bestehen.
+ui.jface.wizards.pages.CallerPage\:internalerror\:label\:de=Interne Telefonanlagennummern m\u00FCssen aus mind. 1 Ziffer bestehen.
 ui.jface.wizards.pages.CallerPage\:preview\:label\:de=Vorschau: 
 ui.jface.wizards.pages.CallerPage\:title\:label\:de=Kontakt...
 ui.jface.wizards.pages.CallerPage\:callergroup\:label\:de=Kontakt-Details
 ui.jface.wizards.pages.CallerPage\:description\:label\:de=Geben Sie die Informationen zum Kontakt ein, die bei der Identifizierung mit dem Adressbuch\nangezeigt werden.\n\n
-ui.jface.wizards.pages.CallerPage\:lastnameerror\:label\:de=Das Feld Nachname oder Vorname enthält keinen gültigen Wert.
+ui.jface.wizards.pages.CallerPage\:lastnameerror\:label\:de=Das Feld Nachname oder Vorname enth\u00E4lt keinen g\u00FCltigen Wert.
 ui.jface.wizards.pages.CallerPage\:firstname\:label\:de=Vorname: 
 ui.jface.wizards.pages.CallerPage\:lastname\:label\:de=Nachname: 
 ui.jface.wizards.pages.CallerPage\:additional\:label\:de=Zusatzangaben:  
-ui.jface.wizards.pages.CallerPage\:select\:label\:de=Wählen Sie ein Bild für diesen Kontakt: 
+ui.jface.wizards.pages.CallerPage\:select\:label\:de=W\u00E4hlen Sie ein Bild f\u00FCr diesen Kontakt: 
 ui.jface.wizards.pages.CallerPage\:cis\:label\:de=Bild zentral verwalten
 ui.jface.wizards.pages.CallerPage\:remove\:label\:de=Bild entfernen
 ui.jface.wizards.pages.CallerPage\:pixel\:label\:de=Format: max. 90 x 110 Pixel
-ui.jface.wizards.pages.CallerPage\:imageerror\:label\:de=Die angegebene Bilddatei ist nicht mehr vorhanden. Die Bildzuweisung wird jetzt automatisch entfernt. Weisen Sie eine neue Bilddatei zu, falls Sie in Zukunft ein Bild bei diesem Kontakt eingeblendet haben möchten.
+ui.jface.wizards.pages.CallerPage\:imageerror\:label\:de=Die angegebene Bilddatei ist nicht mehr vorhanden. Die Bildzuweisung wird jetzt automatisch entfernt. Weisen Sie eine neue Bilddatei zu, falls Sie in Zukunft ein Bild bei diesem Kontakt eingeblendet haben m\u00F6chten.
 ui.jface.wizards.pages.CallerPage\:tooltipprefix\:label\:de=Platzhalter: 
 ui.jface.wizards.pages.CallerPage\:street\:label\:de=Strasse:
 ui.jface.wizards.pages.CallerPage\:streetno\:label\:de=Hausnummer:
@@ -56,10 +56,10 @@ ui.jface.wizards.pages.CallerPage\:postalcode\:label\:de=PLZ:
 ui.jface.wizards.pages.CallerPage\:city2\:label\:de=Stadt/Gemeinde:
 ui.jface.wizards.pages.CallerPage\:country\:label\:de=Land/Region:
 ui.jface.wizards.pages.CallerPage\:addressgroup\:label\:de=Adresse
-ui.jface.wizards.pages.CallerPage\:reject\:label\:de=Anrufer automatisch Abweisen (kostenpflichtig für den Anrufer)
+ui.jface.wizards.pages.CallerPage\:reject\:label\:de=Anrufer automatisch Abweisen (kostenpflichtig f\u00FCr den Anrufer)
 ui.jface.wizards.pages.CallerPage\:categorygroup\:label\:de=Kategorie
 ui.jface.wizards.pages.CallerPage\:std_phone\:label\:de=Rufnummer 
-ui.jface.wizards.pages.CallerPage\:add_phone\:label\:de=Rufnummer hinzufügen
+ui.jface.wizards.pages.CallerPage\:add_phone\:label\:de=Rufnummer hinzuf\u00FCgen
 ui.jface.wizards.pages.CallerPage\:remove_phone\:label\:de=Rufnummer entfernen
 
 ui.jface.wizards.pages.CallerPage\:fn\:label\:de=Vorname
@@ -73,31 +73,31 @@ ui.jface.wizards.pages.CallerPage\:cntry\:label\:de=Land/Region
 
 
 ui.jface.wizards.pages.EditorCategoryPage\:title\:label\:de=Erstellen/Bearbeiten einer Kategorie
-ui.jface.wizards.pages.EditorCategoryPage\:description\:label\:de=Geben Sie einen Name für diese Kategorie ein. Der Name darf max. 128 Zeichen lang sein.
+ui.jface.wizards.pages.EditorCategoryPage\:description\:label\:de=Geben Sie einen Name f\u00FCr diese Kategorie ein. Der Name darf max. 128 Zeichen lang sein.
 ui.jface.wizards.pages.EditorCategoryPage\:category\:label\:de=Kategorie: 
 
-ui.jface.wizards.pages.EditorFilterPhonePage\:title\:label\:de=Filtern mit Ländercode und Ortsnetzkennzahl
-ui.jface.wizards.pages.EditorFilterPhonePage\:description\:label\:de=Geben Sie einen Ländercode und/oder eine Ortsnetzkennzahl nach denen gefiltert werden soll.
-ui.jface.wizards.pages.EditorFilterPhonePage\:intarea\:label\:de=Ländercode: 
+ui.jface.wizards.pages.EditorFilterPhonePage\:title\:label\:de=Filtern mit L\u00E4ndercode und Ortsnetzkennzahl
+ui.jface.wizards.pages.EditorFilterPhonePage\:description\:label\:de=Geben Sie einen L\u00E4ndercode und/oder eine Ortsnetzkennzahl nach denen gefiltert werden soll.
+ui.jface.wizards.pages.EditorFilterPhonePage\:intarea\:label\:de=L\u00E4ndercode: 
 ui.jface.wizards.pages.EditorFilterPhonePage\:area\:label\:de=Ortsnetzkennzahl: 
-ui.jface.wizards.pages.EditorFilterPhonePage\:areaerror\:label\:de=Die Ortsnetzkennzahl ist ungültig. Ortsnetzkennzahlen dürfen aus max. 8 Ziffern bestehen und nicht mit einer Null beginnen. 
-ui.jface.wizards.pages.EditorFilterPhonePage\:intareaerror\:label\:de=Der Ländercode ist ungültig. Ländercode dürfen aus max. 4 Ziffern bestehen und nicht mit einer Null beginnen. Es sind keine Sonderzeichen zugelassen. 
+ui.jface.wizards.pages.EditorFilterPhonePage\:areaerror\:label\:de=Die Ortsnetzkennzahl ist ung\u00FCltig. Ortsnetzkennzahlen d\u00FCrfen aus max. 8 Ziffern bestehen und nicht mit einer Null beginnen. 
+ui.jface.wizards.pages.EditorFilterPhonePage\:intareaerror\:label\:de=Der L\u00E4ndercode ist ung\u00FCltig. L\u00E4ndercode d\u00FCrfen aus max. 4 Ziffern bestehen und nicht mit einer Null beginnen. Es sind keine Sonderzeichen zugelassen. 
 ui.jface.wizards.pages.EditorFilterPhonePage\:internal\:label\:de=Rufnummer ist eine interne Telefonanlagennummer
-ui.jface.wizards.pages.EditorFilterPhonePage\:internalerror\:label\:de=Interne Telefonanlagennummern müssen aus mind. 1 Ziffer bestehen.
+ui.jface.wizards.pages.EditorFilterPhonePage\:internalerror\:label\:de=Interne Telefonanlagennummern m\u00FCssen aus mind. 1 Ziffer bestehen.
 
 ui.jface.wizards.pages.FilterCipPage\:title\:label\:de=Dienstmerkmal (CIP) festlegen
-ui.jface.wizards.pages.FilterCipPage\:description\:label\:de=Wählen Sie ein Dienstmerkmal (CIP) für das dieser Filter erstellt werden soll.
+ui.jface.wizards.pages.FilterCipPage\:description\:label\:de=W\u00E4hlen Sie ein Dienstmerkmal (CIP) f\u00FCr das dieser Filter erstellt werden soll.
 ui.jface.wizards.pages.FilterCipPage\:name\:label\:de=Filter auf folgendes Dienstmerkmal anwenden: 
 ui.jface.wizards.pages.FilterCipPage\:*\:label\:de=Alle Dienstmerkmale
 
 ui.jface.wizards.pages.FilterDatePage\:title\:label\:de=Zeitraum festlegen
-ui.jface.wizards.pages.FilterDatePage\:description\:label\:de=Wählen Sie einen Zeitraum für den dieser Filter erstellt werden soll.
+ui.jface.wizards.pages.FilterDatePage\:description\:label\:de=W\u00E4hlen Sie einen Zeitraum f\u00FCr den dieser Filter erstellt werden soll.
 ui.jface.wizards.pages.FilterDatePage\:name\:label\:de=Individueller Zeitraum festlegen 
 ui.jface.wizards.pages.FilterDatePage\:*\:label\:de=keine Zeitraumbegrenzung
 ui.jface.wizards.pages.FilterDatePage\:from\:label\:de=Von: 
 ui.jface.wizards.pages.FilterDatePage\:to\:label\:de=Bis: 
 ui.jface.wizards.pages.FilterDatePage\:current\:label\:de=bis zum aktuellen Datum (heute)
-ui.jface.wizards.pages.FilterDatePage\:times\:label\:de=Zeiträume:
+ui.jface.wizards.pages.FilterDatePage\:times\:label\:de=Zeitr\u00E4ume:
 ui.jface.wizards.pages.FilterDatePage\:0\:label\:de= 
 ui.jface.wizards.pages.FilterDatePage\:-100\:label\:de=heute
 ui.jface.wizards.pages.FilterDatePage\:-101\:label\:de=gestern
@@ -113,17 +113,17 @@ ui.jface.wizards.pages.FilterDatePage\:90\:label\:de=letzten 3 Monate
 ui.jface.wizards.pages.FilterDatePage\:365\:label\:de=letzten 12 Monate
 
 ui.jface.wizards.pages.FilterMsnPage\:title\:label\:de=MSN festlegen
-ui.jface.wizards.pages.FilterMsnPage\:description\:label\:de=Wählen Sie eine MSN (Mehrfachrufnummer) für die dieser Filter erstellt werden soll.
+ui.jface.wizards.pages.FilterMsnPage\:description\:label\:de=W\u00E4hlen Sie eine MSN (Mehrfachrufnummer) f\u00FCr die dieser Filter erstellt werden soll.
 ui.jface.wizards.pages.FilterMsnPage\:name\:label\:de=Filter auf folgende MSN anwenden: 
 ui.jface.wizards.pages.FilterMsnPage\:*\:label\:de=Alle MSNs
 
-ui.jface.wizards.pages.FilterItemCountPage\:title\:label\:de=Anzahl der Einträge limitieren
-ui.jface.wizards.pages.FilterItemCountPage\:description\:label\:de=Wählen Sie die Anzahl der Einträge, die maximal dargestellt werden soll.
-ui.jface.wizards.pages.FilterItemCountPage\:name\:label\:de=Maximale Anzahl an Einträgen: 
+ui.jface.wizards.pages.FilterItemCountPage\:title\:label\:de=Anzahl der Eintr\u00E4ge limitieren
+ui.jface.wizards.pages.FilterItemCountPage\:description\:label\:de=W\u00E4hlen Sie die Anzahl der Eintr\u00E4ge, die maximal dargestellt werden soll.
+ui.jface.wizards.pages.FilterItemCountPage\:name\:label\:de=Maximale Anzahl an Eintr\u00E4gen: 
 ui.jface.wizards.pages.FilterItemCountPage\:-1\:label\:de=unbegrenzt
 
-ui.jface.wizards.pages.FilterCallTypePage\:title\:label\:de=Anruftypen einschränken
-ui.jface.wizards.pages.FilterCallTypePage\:description\:label\:de=Wählen Sie die Anruftypen, die dargestellt werden sollen.
+ui.jface.wizards.pages.FilterCallTypePage\:title\:label\:de=Anruftypen einschr\u00E4nken
+ui.jface.wizards.pages.FilterCallTypePage\:description\:label\:de=W\u00E4hlen Sie die Anruftypen, die dargestellt werden sollen.
 ui.jface.wizards.pages.FilterCallTypePage\:*\:label\:de=Alle Anruftypen anzeigen 
 ui.jface.wizards.pages.FilterCallTypePage\:rejected\:label\:de=abgewiesene Anrufe
 ui.jface.wizards.pages.FilterCallTypePage\:accepted\:label\:de=angenommene Anrufe
@@ -131,9 +131,9 @@ ui.jface.wizards.pages.FilterCallTypePage\:outgoing\:label\:de=ausgehende Anrufe
 ui.jface.wizards.pages.FilterCallTypePage\:missed\:label\:de=verpasste Anrufe
 
 ui.jface.wizards.pages.FilterPhonesPage\:title\:label\:de=Rufnummern festlegen
-ui.jface.wizards.pages.FilterPhonesPage\:description\:label\:de=Wählen Sie Rufnummern bei denen der Filter angewandt werden soll. Rufnummern müssen im Adressbuch hinterlegt sein.
+ui.jface.wizards.pages.FilterPhonesPage\:description\:label\:de=W\u00E4hlen Sie Rufnummern bei denen der Filter angewandt werden soll. Rufnummern m\u00FCssen im Adressbuch hinterlegt sein.
 ui.jface.wizards.pages.FilterPhonesPage\:selectedphones\:label\:de=Filter bei diesen Rufnummern anwenden: 
-ui.jface.wizards.pages.FilterPhonesPage\:allphones\:label\:de=Verfügbare Rufnummern: 
+ui.jface.wizards.pages.FilterPhonesPage\:allphones\:label\:de=Verf\u00FCgbare Rufnummern: 
 ui.jface.wizards.pages.FilterPhonesPage\:*\:label\:de=Filter auf alle Rufnummern anwenden
 ui.jface.wizards.pages.FilterPhonesPage\:clir\:label\:de=CLIR Anrufer
 ui.jface.wizards.pages.FilterPhonesPage\:add\:label\:de=\ > 
@@ -141,20 +141,20 @@ ui.jface.wizards.pages.FilterPhonesPage\:remove\:label\:de=\ <
 
 ui.jface.wizards.pages.MsnPage\:title\:label\:de=Mehrfachrufnummer (MSN)
 ui.jface.wizards.pages.MsnPage\:description\:label\:de=Geben Sie eine von Ihrem Telefonanbieter zugewiesene MSN an und legen Sie eine Bezeichnung fest.
-ui.jface.wizards.pages.MsnPage\:msnerror\:label\:de=Das Feld Mehrfachrufnummer (MSN) hat keinen gültigen Wert.
-ui.jface.wizards.pages.MsnPage\:adderror\:label\:de=Das Feld Bezeichnung hat keinen gültigen Wert.
+ui.jface.wizards.pages.MsnPage\:msnerror\:label\:de=Das Feld Mehrfachrufnummer (MSN) hat keinen g\u00FCltigen Wert.
+ui.jface.wizards.pages.MsnPage\:adderror\:label\:de=Das Feld Bezeichnung hat keinen g\u00FCltigen Wert.
 ui.jface.wizards.pages.MsnPage\:msn\:label\:de=Mehrfachrufnummer (MSN): 
 ui.jface.wizards.pages.MsnPage\:additional\:label\:de=Bezeichnung:  
 
 ui.jface.wizards.pages.RuleCipPage\:title\:label\:de=Dienstmerkmal (CIP) festlegen
-ui.jface.wizards.pages.RuleCipPage\:description\:label\:de=Wählen Sie ein Dienstmerkmal (CIP) für das diese Regel erstellt werden soll.
+ui.jface.wizards.pages.RuleCipPage\:description\:label\:de=W\u00E4hlen Sie ein Dienstmerkmal (CIP) f\u00FCr das diese Regel erstellt werden soll.
 ui.jface.wizards.pages.RuleCipPage\:name\:label\:de=Regel auf folgendes Dienstmerkmal anwenden: 
 ui.jface.wizards.pages.RuleCipPage\:*\:label\:de=Alle Dienstmerkmale
 
 ui.jface.wizards.pages.RuleExPhonesPage\:title\:label\:de=Rufnummern von Regel ausschliessen
-ui.jface.wizards.pages.RuleExPhonesPage\:description\:label\:de=Wählen Sie Rufnummern die von dieser Regel ausgeschlossen werden sollen. Rufnummern müssen im Adressbuch hinterlegt sein.
+ui.jface.wizards.pages.RuleExPhonesPage\:description\:label\:de=W\u00E4hlen Sie Rufnummern die von dieser Regel ausgeschlossen werden sollen. Rufnummern m\u00FCssen im Adressbuch hinterlegt sein.
 ui.jface.wizards.pages.RuleExPhonesPage\:selectedphones\:label\:de=Regel bei diesen Rufnummern ignorieren: 
-ui.jface.wizards.pages.RuleExPhonesPage\:allphones\:label\:de=Verfügbare Rufnummern: 
+ui.jface.wizards.pages.RuleExPhonesPage\:allphones\:label\:de=Verf\u00FCgbare Rufnummern: 
 ui.jface.wizards.pages.RuleExPhonesPage\:*\:label\:de=Keine Rufnummern ignorieren
 ui.jface.wizards.pages.RuleExPhonesPage\:clir\:label\:de=CLIR Anrufer
 ui.jface.wizards.pages.RuleExPhonesPage\:internal\:label\:de=interne Anlagenrufnummern
@@ -162,7 +162,7 @@ ui.jface.wizards.pages.RuleExPhonesPage\:add\:label\:de=\ >
 ui.jface.wizards.pages.RuleExPhonesPage\:remove\:label\:de=\ < 
 
 ui.jface.wizards.pages.RuleMsnPage\:title\:label\:de=MSN festlegen
-ui.jface.wizards.pages.RuleMsnPage\:description\:label\:de=Wählen Sie eine MSN (Mehrfachrufnummer) für die diese Regel erstellt werden soll.
+ui.jface.wizards.pages.RuleMsnPage\:description\:label\:de=W\u00E4hlen Sie eine MSN (Mehrfachrufnummer) f\u00FCr die diese Regel erstellt werden soll.
 ui.jface.wizards.pages.RuleMsnPage\:name\:label\:de=Regel auf folgende MSN anwenden: 
 ui.jface.wizards.pages.RuleMsnPage\:*\:label\:de=Alle MSNs
 
@@ -172,9 +172,9 @@ ui.jface.wizards.pages.RuleNamePage\:name\:label\:de=Regelname:
 ui.jface.wizards.pages.RuleNamePage\:nameerror\:label\:de=Der Regelname muss mind. 1 Zeichen enthalten. 
 
 ui.jface.wizards.pages.RulePhonesPage\:title\:label\:de=Rufnummern festlegen
-ui.jface.wizards.pages.RulePhonesPage\:description\:label\:de=Wählen Sie Rufnummern bei denen die Regel angewandt werden soll. Rufnummern müssen im Adressbuch hinterlegt sein.
+ui.jface.wizards.pages.RulePhonesPage\:description\:label\:de=W\u00E4hlen Sie Rufnummern bei denen die Regel angewandt werden soll. Rufnummern m\u00FCssen im Adressbuch hinterlegt sein.
 ui.jface.wizards.pages.RulePhonesPage\:selectedphones\:label\:de=Regel bei diesen Rufnummern anwenden: 
-ui.jface.wizards.pages.RulePhonesPage\:allphones\:label\:de=Verfügbare Rufnummern: 
+ui.jface.wizards.pages.RulePhonesPage\:allphones\:label\:de=Verf\u00FCgbare Rufnummern: 
 ui.jface.wizards.pages.RulePhonesPage\:*\:label\:de=Regel auf alle Rufnummern anwenden
 ui.jface.wizards.pages.RulePhonesPage\:clir\:label\:de=CLIR Anrufer
 ui.jface.wizards.pages.RulePhonesPage\:internal\:label\:de=interne Anlagenrufnummern
@@ -182,14 +182,14 @@ ui.jface.wizards.pages.RulePhonesPage\:add\:label\:de=\ >
 ui.jface.wizards.pages.RulePhonesPage\:remove\:label\:de=\ < 
 
 ui.jface.wizards.pages.RuleServicePage\:title\:label\:de=Dienst festlegen
-ui.jface.wizards.pages.RuleServicePage\:description\:label\:de=Wählen Sie einen Dienst für den diese Regel erstellt werden soll.
-ui.jface.wizards.pages.RuleServicePage\:name\:label\:de=Regel für folgenden Dienst festlegen: 
+ui.jface.wizards.pages.RuleServicePage\:description\:label\:de=W\u00E4hlen Sie einen Dienst f\u00FCr den diese Regel erstellt werden soll.
+ui.jface.wizards.pages.RuleServicePage\:name\:label\:de=Regel f\u00FCr folgenden Dienst festlegen: 
 ui.jface.wizards.pages.RuleServicePage\:nameerror\:label\:de=Der Dienstname muss mind. 1 Zeichen enthalten. 
 
 ui.jface.wizards.pages.RuleTimeslotPage\:title\:label\:de=Zeitraum festlegen
-ui.jface.wizards.pages.RuleTimeslotPage\:description\:label\:de=Wählen Sie einen Zeitraum in dem diese Regel aktiv sein soll.
-ui.jface.wizards.pages.RuleTimeslotPage\:name\:label\:de=Regel für folgenden Zeitraum festlegen: 
-ui.jface.wizards.pages.RuleTimeslotPage\:tserror\:label\:de=Es muss mind. 1 Tag ausgewählt werden.
+ui.jface.wizards.pages.RuleTimeslotPage\:description\:label\:de=W\u00E4hlen Sie einen Zeitraum in dem diese Regel aktiv sein soll.
+ui.jface.wizards.pages.RuleTimeslotPage\:name\:label\:de=Regel f\u00FCr folgenden Zeitraum festlegen: 
+ui.jface.wizards.pages.RuleTimeslotPage\:tserror\:label\:de=Es muss mind. 1 Tag ausgew\u00E4hlt werden.
 ui.jface.wizards.pages.RuleTimeslotPage\:timeslotactive\:label\:de=Regel zu jeder Zeit anwenden
 ui.jface.wizards.pages.RuleTimeslotPage\:sunday\:label\:de=Sonntag
 ui.jface.wizards.pages.RuleTimeslotPage\:monday\:label\:de=Montag
@@ -202,14 +202,14 @@ ui.jface.wizards.pages.RuleTimeslotPage\:from\:label\:de=Start-Zeit
 ui.jface.wizards.pages.RuleTimeslotPage\:to\:label\:de=Ende-Zeit
 ui.jface.wizards.pages.RuleTimeslotPage\:toerror\:label\:de=Ende-Zeit hat nicht das Format 01:23
 ui.jface.wizards.pages.RuleTimeslotPage\:fromerror\:label\:de=Start-Zeit hat nicht das Format 01:23
-ui.jface.wizards.pages.RuleTimeslotPage\:startenderror\:label\:de=Ungültiger Zeitraum. Ende-Zeit liegt vor der Start-Zeit.
+ui.jface.wizards.pages.RuleTimeslotPage\:startenderror\:label\:de=Ung\u00FCltiger Zeitraum. Ende-Zeit liegt vor der Start-Zeit.
 
 ui.jface.wizards.pages.UpdatesPage\:title\:label\:de=Aktuelle Updates...
 ui.jface.wizards.pages.UpdatesPage\:description\:label\:de=Halten Sie jAnrufmonitor immer aktuell und installieren Sie die neuesten\nVersionen und Module.
-ui.jface.wizards.pages.UpdatesPage\:updates\:label\:de=Verfügbare Updates
-ui.jface.wizards.pages.UpdatesPage\:updates\:description\:de=Wählen Sie die zu installierenden Updates aus und beenden Sie mit "Fertig stellen". Die gewählten Updates werden dann automatisch installiert.
+ui.jface.wizards.pages.UpdatesPage\:updates\:label\:de=Verf\u00FCgbare Updates
+ui.jface.wizards.pages.UpdatesPage\:updates\:description\:de=W\u00E4hlen Sie die zu installierenden Updates aus und beenden Sie mit "Fertig stellen". Die gew\u00E4hlten Updates werden dann automatisch installiert.
 ui.jface.wizards.pages.UpdatesPage\:refresh\:label\:de=Aktualisieren...
-ui.jface.wizards.pages.UpdatesPage\:noupdates\:label\:de=Es sind keine Updates verfügbar.
+ui.jface.wizards.pages.UpdatesPage\:noupdates\:label\:de=Es sind keine Updates verf\u00FCgbar.
 ui.jface.wizards.pages.UpdatesPage\:task\:label\:de=Liste mit aktuellen Updates wird angefordert...
 ui.jface.wizards.pages.UpdatesPage\:modname\:label\:de=Modul
 ui.jface.wizards.pages.UpdatesPage\:newversion\:label\:de=neu
@@ -219,49 +219,49 @@ ui.jface.wizards.pages.UpdatesPage\:currentversion\:label\:de=aktuell
 # added 4.5.5
 
 ui.jface.wizards.InitializerWizard\:title\:label\:de=Konfigurations-Wizard
-ui.jface.wizards.InitializerWizard\:changeudpath\:label\:de=Speicherort für Benuterdaten wird geändert...
+ui.jface.wizards.InitializerWizard\:changeudpath\:label\:de=Speicherort f\u00FCr Benuterdaten wird ge\u00E4ndert...
 ui.jface.wizards.InitializerWizard\:msnsave\:label\:de=Einstellungen zu Mehrfachrufnummern (MSN) werden gespeichert...
 ui.jface.wizards.InitializerWizard\:numberformat\:label\:de=Einstellungen zum Rufnummernformat werden gespeichert...
-ui.jface.wizards.InitializerWizard\:areacode\:label\:de=Einstellungen zur Länderkennung und Vorwahl werden gespeichert...
+ui.jface.wizards.InitializerWizard\:areacode\:label\:de=Einstellungen zur L\u00E4nderkennung und Vorwahl werden gespeichert...
 ui.jface.wizards.InitializerWizard\:finalize\:label\:de=Konfiguration wird gespeichert und aktiviert. Bitte etwas Geduld...
 ui.jface.wizards.pages.InitWelcomePage\:title\:label\:de=Willkommen!
 ui.jface.wizards.pages.InitWelcomePage\:description\:label\:de=Herzlich Willkommen zu jAnrufmonitor. 
-ui.jface.wizards.pages.InitWelcomePage\:welcome\:label\:de=Herzlich Willkommen zu jAnrufmonitor.\n\nDanke, dass Sie sich für jAnrufmonitor entschieden haben. Es wird nun eine für Sie\ngültige Konfiguration ermittelt. Dabei werden einige Daten vom System automatisch ermittelt,\nandere werden von Ihnen erfragt. Füllen Sie die im Wizard offenen Konfigurationsfelder\nbitte aus.
+ui.jface.wizards.pages.InitWelcomePage\:welcome\:label\:de=Herzlich Willkommen zu jAnrufmonitor.\n\nDanke, dass Sie sich f\u00FCr jAnrufmonitor entschieden haben. Es wird nun eine f\u00FCr Sie\ng\u00FCltige Konfiguration ermittelt. Dabei werden einige Daten vom System automatisch ermittelt,\nandere werden von Ihnen erfragt. F\u00FCllen Sie die im Wizard offenen Konfigurationsfelder\nbitte aus.
 
-ui.jface.wizards.pages.InitDataPathPage\:title\:label\:de=Speicherort für Benutzerdaten
-ui.jface.wizards.pages.InitDataPathPage\:description\:label\:de=Wählen Sie einen Speicherort für Benutzerdaten um Adressbücher und Journale abzulegen.
-ui.jface.wizards.pages.InitDataPathPage\:message\:label\:de=Wählen Sie einen Ordner für die Benutzerdaten.
-ui.jface.wizards.pages.InitDataPathPage\:label\:label\:de=Ordner für Benutzerdaten
-ui.jface.wizards.pages.InitDataPathPage\:name\:label\:de=Ordner für Benutzerdaten wählen
+ui.jface.wizards.pages.InitDataPathPage\:title\:label\:de=Speicherort f\u00FCr Benutzerdaten
+ui.jface.wizards.pages.InitDataPathPage\:description\:label\:de=W\u00E4hlen Sie einen Speicherort f\u00FCr Benutzerdaten um Adressb\u00FCcher und Journale abzulegen.
+ui.jface.wizards.pages.InitDataPathPage\:message\:label\:de=W\u00E4hlen Sie einen Ordner f\u00FCr die Benutzerdaten.
+ui.jface.wizards.pages.InitDataPathPage\:label\:label\:de=Ordner f\u00FCr Benutzerdaten
+ui.jface.wizards.pages.InitDataPathPage\:name\:label\:de=Ordner f\u00FCr Benutzerdaten w\u00E4hlen
 
 ui.jface.wizards.pages.InitMsnPage\:title\:label\:de=Mehrfachrufnummern (MSN) festlegen
-ui.jface.wizards.pages.InitMsnPage\:description\:label\:de=Alle vom jAnrufmonitor zu überwachende MSNs (Mehrfachrufnummer) können mit einem Bezeichner versehen werden, der bei der Identifizierung angezeigt wird.
+ui.jface.wizards.pages.InitMsnPage\:description\:label\:de=Alle vom jAnrufmonitor zu \u00FCberwachende MSNs (Mehrfachrufnummer) k\u00F6nnen mit einem Bezeichner versehen werden, der bei der Identifizierung angezeigt wird.
 ui.jface.wizards.pages.InitMsnPage\:msn\:label\:de=MSN
 ui.jface.wizards.pages.InitMsnPage\:alias\:label\:de=Bezeichnung
 ui.jface.wizards.pages.InitMsnPage\:addmsn\:label\:de=neu
-ui.jface.wizards.pages.InitMsnPage\:editmsn\:label\:de=ändern
+ui.jface.wizards.pages.InitMsnPage\:editmsn\:label\:de=\u00E4ndern
 ui.jface.wizards.pages.InitMsnPage\:removemsn\:label\:de=entfernen
 ui.jface.wizards.pages.InitMsnPage\:ctitle\:label\:de=MSN entfernen
-ui.jface.wizards.pages.InitMsnPage\:confirm\:label\:de=Soll die ausgewählte MSN wirklich entfernt werden?
+ui.jface.wizards.pages.InitMsnPage\:confirm\:label\:de=Soll die ausgew\u00E4hlte MSN wirklich entfernt werden?
 
 ui.jface.wizards.pages.InitFinalizePage\:title\:label\:de=Konfiguration fertigstellen...
-ui.jface.wizards.pages.InitFinalizePage\:description\:label\:de=Die Konfiguration wurde vollständig ermittelt.
-ui.jface.wizards.pages.InitFinalizePage\:finalize\:label\:de=Die Konfiguartion ist jetzt vollständig und das Programm betriebsbereit.\nDrücken Sie "Fertig stellen" um die Einstellungen zu speichern und zu aktivieren.
-ui.jface.wizards.pages.InitFinalizePage\:enabled\:label\:de=Diesen Wizard beim nächsten Starten erneut anzeigen.
+ui.jface.wizards.pages.InitFinalizePage\:description\:label\:de=Die Konfiguration wurde vollst\u00E4ndig ermittelt.
+ui.jface.wizards.pages.InitFinalizePage\:finalize\:label\:de=Die Konfiguartion ist jetzt vollst\u00E4ndig und das Programm betriebsbereit.\nDr\u00FCcken Sie "Fertig stellen" um die Einstellungen zu speichern und zu aktivieren.
+ui.jface.wizards.pages.InitFinalizePage\:enabled\:label\:de=Diesen Wizard beim n\u00E4chsten Starten erneut anzeigen.
 
 ui.jface.wizards.pages.InitNumberFormatPage\:title\:label\:de=Rufnummernformat festlegen
-ui.jface.wizards.pages.InitNumberFormatPage\:description\:label\:de=Alle im jAnrufmonitor genutzten Rufnummern müssen in einem einheitlichen Format dargestellt werden. Wählen Sie ein passendes Rufnummernformat.
+ui.jface.wizards.pages.InitNumberFormatPage\:description\:label\:de=Alle im jAnrufmonitor genutzten Rufnummern m\u00FCssen in einem einheitlichen Format dargestellt werden. W\u00E4hlen Sie ein passendes Rufnummernformat.
 ui.jface.wizards.pages.InitNumberFormatPage\:label\:label\:de=Rufnummernformat: 
 ui.jface.wizards.pages.InitNumberFormatPage\:format3\:label\:de=Format nach Norm E.123 nat: (030) 123456
 ui.jface.wizards.pages.InitNumberFormatPage\:format4\:label\:de=Regionales Format: 030-123456
 ui.jface.wizards.pages.InitNumberFormatPage\:format1\:label\:de=Kanonisches Rufnummernformat: +49 (30) 123456
 ui.jface.wizards.pages.InitNumberFormatPage\:format2\:label\:de=Internationales Format: 0049 (30) 123456
 
-ui.jface.wizards.pages.InitAreaCodePage\:title\:label\:de=Ländercode und Ortsnetzkennzahl festlegen
-ui.jface.wizards.pages.InitAreaCodePage\:description\:label\:de=Um Anrufe korrekt identifizieren zu können, müssen Angaben zur Länderkennung und zur Vorwahl des Standortes vorgenommen werden.
-ui.jface.wizards.pages.InitAreaCodePage\:intarea\:label\:de=Ländercode: 
-ui.jface.wizards.pages.InitAreaCodePage\:area\:label\:de=Ortsnetzkennzahl: \n(mit führender Null)
-ui.jface.wizards.pages.InitAreaCodePage\:leadingzero\:label\:de=Der Ländercode darf nicht mit einer führenden Null beginnen.
+ui.jface.wizards.pages.InitAreaCodePage\:title\:label\:de=L\u00E4ndercode und Ortsnetzkennzahl festlegen
+ui.jface.wizards.pages.InitAreaCodePage\:description\:label\:de=Um Anrufe korrekt identifizieren zu k\u00F6nnen, m\u00FCssen Angaben zur L\u00E4nderkennung und zur Vorwahl des Standortes vorgenommen werden.
+ui.jface.wizards.pages.InitAreaCodePage\:intarea\:label\:de=L\u00E4ndercode: 
+ui.jface.wizards.pages.InitAreaCodePage\:area\:label\:de=Ortsnetzkennzahl: \n(mit f\u00FChrender Null)
+ui.jface.wizards.pages.InitAreaCodePage\:leadingzero\:label\:de=Der L\u00E4ndercode darf nicht mit einer f\u00FChrenden Null beginnen.
 ui.jface.wizards.pages.InitAreaCodePage\:noleadingzero\:label\:de=Die Ortsnetzkennzahl des Standortes muss immer mit einer Null beginnen, z.B. 07265
 ui.jface.wizards.pages.InitAreaCodePage\:unknownareacode\:label\:de=Unbekannte Ortsnetzkennzahl
 

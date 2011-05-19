@@ -1,7 +1,7 @@
 ui.swt.controls.ConfigShutdown\:shutdowntitle\:label\:de=jAnrufmonitor - Aktualisierung erfolgreich
-ui.swt.controls.ConfigShutdown\:shutdown\:label\:de=jAnrufmonitor muss neu gestartet werden, da eine Aktualisierung durchgeführt wurde.
+ui.swt.controls.ConfigShutdown\:shutdown\:label\:de=jAnrufmonitor muss neu gestartet werden, da eine Aktualisierung durchgef\u00FChrt wurde.
 
-service.trayicon.Activator\:label\:label\:de=Überwachung aktiv
+service.trayicon.Activator\:label\:label\:de=\u00DCberwachung aktiv
 service.TrayIcon\:title\:label\:de=TrayIcon
 service.TrayIcon\:exit\:label\:de=Beenden
 service.TrayIcon\:sub_component_admin_config\:label\:de=Einstellungen

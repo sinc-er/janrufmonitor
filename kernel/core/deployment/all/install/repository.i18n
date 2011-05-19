@@ -6,9 +6,9 @@ repository.CallerDirectory\:internal\:label\:de=interne Anlagenrufnummer
 # call manager
 repository.DefaultJournal\:title\:label\:de=jAnrufmonitor Journal
 repository.DefaultJournal\:migrate\:label\:de=Konvertierungshinweis\n\nEs wurde eine alte Journal-Datenbank entdeckt, die in der aktuellen Version nicht genutzt werden kann. Alle Daten der alten Datenbank-Datei wurden in das neue Format konvertiert und eine Sicherungskopie der alten Datenbank-Datei erstellt.
-repository.DefaultJournal\:notidentified\:label\:de=jAnrufmonitor Journal-Fehler\n\nEs wurde ein nicht identifizierter Anruf entdeckt. Möglicherweise wurde die Rufnummer nicht erkannt, da sie in einem falschen Format vorlag oder da keine entsprechende Vorwahl gefunden wurde. Dieser Anruf kann nicht ins Journal übernommen werden und wird verworfen.
+repository.DefaultJournal\:notidentified\:label\:de=jAnrufmonitor Journal-Fehler\n\nEs wurde ein nicht identifizierter Anruf entdeckt. M\u00F6glicherweise wurde die Rufnummer nicht erkannt, da sie in einem falschen Format vorlag oder da keine entsprechende Vorwahl gefunden wurde. Dieser Anruf kann nicht ins Journal \u00FCbernommen werden und wird verworfen.
 
-repository.CountryDirectory\:title\:label\:de=Ländercode und Vorwahlverzeichnis
+repository.CountryDirectory\:title\:label\:de=L\u00E4ndercode und Vorwahlverzeichnis
 
 # Import/Export-Filter
 repository.DatFileCallerExporter\:filtername\:label\:de=jAnrufmonitor Adressbuch (*.dat)
@@ -19,7 +19,7 @@ repository.DatFileCallExporter\:filtername\:label\:de=jAnrufmonitor Journal (*.d
 
 repository.DatFileCallImporter\:filtername\:label\:de=jAnrufmonitor Journal (*.dat)
 
-repository.ImExportFactory\:title\:label\:de=Import- und Export-Filter für Journal und Adressbuch
+repository.ImExportFactory\:title\:label\:de=Import- und Export-Filter f\u00FCr Journal und Adressbuch
 
 repository.OldDatFileCallerImporter\:filtername\:label\:de=PowerISDNMonitor Anrufer 3.3x (*.dat)
 
