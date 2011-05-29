@@ -1,20 +1,20 @@
 ui.jface.configuration.pages.FritzBoxVoip\:title\:label\:de=AVM Fritz!Box Fon-Einstellungen
-ui.jface.configuration.pages.FritzBoxVoip\:description\:label\:de=Die AVM Fritz!Box Fon Telefonanlagen bieten die Möglichkeit Anrufe zu erkennen. Hier können Sie die notwendigen Einstellungen Ihrer Fritz!Box Fon vornehmen.
+ui.jface.configuration.pages.FritzBoxVoip\:description\:label\:de=Die AVM Fritz!Box Fon Telefonanlagen bieten die M\u00F6glichkeit Anrufe zu erkennen. Hier k\u00F6nnen Sie die notwendigen Einstellungen Ihrer Fritz!Box Fon vornehmen.
 ui.jface.configuration.pages.FritzBoxVoip\:boxip\:label\:de=IP-Adresse der Fritz!Box Fon: 
-ui.jface.configuration.pages.FritzBoxVoip\:boxclickdial\:label\:de=Nebenstelle für ausgehende Telefonate: 
+ui.jface.configuration.pages.FritzBoxVoip\:boxclickdial\:label\:de=Nebenstelle f\u00FCr ausgehende Telefonate: 
 ui.jface.configuration.pages.FritzBoxVoip\:boxpassword\:label\:de=Fritz!Box Fon-Passwort: 
 ui.jface.configuration.pages.FritzBoxVoip\:boxport\:label\:de=Port: 
-ui.jface.configuration.pages.FritzBoxVoip\:boxareacode\:label\:de=Vorwahl des Fritz!Box Fon-Standorts:\n(mit führender Null) 
+ui.jface.configuration.pages.FritzBoxVoip\:boxareacode\:label\:de=Vorwahl des Fritz!Box Fon-Standorts:\n(mit f\u00FChrender Null) 
 ui.jface.configuration.pages.FritzBoxVoip\:boxdate\:label\:de=Datumsformat: 
 ui.jface.configuration.pages.FritzBoxVoip\:activemonitor\:label\:de=Überwachung aktiviert (erfordert Programmneustart)
-ui.jface.configuration.pages.FritzBoxVoip\:outgoing\:label\:de=Ausgehende Anrufe überwachen
+ui.jface.configuration.pages.FritzBoxVoip\:outgoing\:label\:de=Ausgehende Anrufe \u00FCberwachen
 ui.jface.configuration.pages.FritzBoxVoip\:retrymax\:label\:de=Anzahl der automatischen Verbindungsversuche: 
-ui.jface.configuration.pages.FritzBoxVoip\:festnetzalias\:label\:de=MSN für "Festnetz" Anrufe:
-ui.jface.configuration.pages.FritzBoxVoip\:syncdelete\:label\:de=Anrufliste auf Fritz!Box Fon nach Synchronisation löschen
+ui.jface.configuration.pages.FritzBoxVoip\:festnetzalias\:label\:de=MSN f\u00FCr "Festnetz" Anrufe:
+ui.jface.configuration.pages.FritzBoxVoip\:syncdelete\:label\:de=Anrufliste auf Fritz!Box Fon nach Synchronisation l\u00F6schen
 ui.jface.configuration.pages.FritzBoxVoip\:fbinfo\:label\:de=Fritz!Box Fon-Infos:
 ui.jface.configuration.pages.FritzBoxVoip\:all_analog\:label\:de=Alle analogen Nebenstellen
-ui.jface.configuration.pages.FritzBoxVoip\:all_isdn\:label\:de=Alle ISDN Geräte
-ui.jface.configuration.pages.FritzBoxVoip\:dialprefixes\:label\:de=Wählpräfixe festlegen:\n(Komma-separiert, ohne Leerzeichen)
+ui.jface.configuration.pages.FritzBoxVoip\:all_isdn\:label\:de=Alle ISDN Ger\u00E4te
+ui.jface.configuration.pages.FritzBoxVoip\:dialprefixes\:label\:de=W\u00E4hlpr\u00E4fixe festlegen:\n(Komma-separiert, ohne Leerzeichen)
 
 
 ui.jface.configuration.pages.FritzBoxSynchronizer\:title\:label\:de=AVM Fritz!Box Fon Synchronizer
@@ -23,10 +23,10 @@ ui.jface.configuration.pages.FritzBoxSynchronizer\:description\:label\:de=Dienst
 ui.jface.configuration.pages.FritzBoxSynchronizer\:enabled\:label\:de=Dienst aktiviert
 ui.jface.configuration.pages.FritzBoxSynchronizer\:syncdialog\:label\:de=Dialog beim Synchronisieren ausblenden
 ui.jface.configuration.pages.FritzBoxSynchronizer\:syncclean\:label\:de=Redundante Informationen entfernen
-ui.jface.configuration.pages.FritzBoxSynchronizer\:race\:label\:de=Nach Gesprächsende Anrufliste synchronisieren
+ui.jface.configuration.pages.FritzBoxSynchronizer\:race\:label\:de=Nach Gespr\u00E4chsende Anrufliste synchronisieren
 ui.jface.configuration.pages.FritzBoxSynchronizer\:syncnotification\:label\:de=Emailbenachrichtigung nach dem Synchronisieren versenden
 ui.jface.configuration.pages.FritzBoxSynchronizer\:synctimer\:label\:de=Zeitgesteuertes Synchronisieren [min]: 
 
 ui.jface.configuration.pages.FritzBoxPhonebookManager\:title\:label\:de=AVM Fritz!Box Fon Telefonbuch
-ui.jface.configuration.pages.FritzBoxPhonebookManager\:description\:label\:de=Identifiziert Anrufe direkt mit den Kontaktens des AVM Fritz!Box Fon Telefonbuch. Hinweis: Neue Kontakte, die über die AVM Fritz!Box Fon angelegt werden, sind erst nach einem Programmneustart nutzbar.
+ui.jface.configuration.pages.FritzBoxPhonebookManager\:description\:label\:de=Identifiziert Anrufe direkt mit den Kontaktens des AVM Fritz!Box Fon Telefonbuch. Hinweis: Neue Kontakte, die \u00FCber die AVM Fritz!Box Fon angelegt werden, sind erst nach einem Programmneustart nutzbar.
 ui.jface.configuration.pages.FritzBoxPhonebookManager\:enabled\:label\:de=Datenablage aktiviert
