@@ -1,4 +1,4 @@
 repository.MySqlJournal\:title\:label\:de=MySQL-Datenbank Journal
-repository.MySqlJournal\:connecterror\:label\:de=Verbindung zum MySQL-Server konnte nicht hergestellt werden. Überprüfen Sie die angegebenen Verbindungseinstellungen.
+repository.MySqlJournal\:connecterror\:label\:de=Verbindung zum MySQL-Server konnte nicht hergestellt werden. \u00DCberpr\u00FCfen Sie die angegebenen Verbindungseinstellungen.
 repository.MySqlAddressbook\:title\:label\:de=MySQL-Datenbank Adressbuch
-repository.MySqlAddressbook\:connecterror\:label\:de=Verbindung zum MySQL-Server konnte nicht hergestellt werden. Überprüfen Sie die angegebenen Verbindungseinstellungen.
+repository.MySqlAddressbook\:connecterror\:label\:de=Verbindung zum MySQL-Server konnte nicht hergestellt werden. \u00DCberpr\u00FCfen Sie die angegebenen Verbindungseinstellungen.
