@@ -1,4 +1,3 @@
 monitor.CapiMonitor\:title\:label\:en=CAPI Component
 monitor.CapiMonitor\:capierror\:label\:en=An error occured during CAPI registration. Either the CAPI is not installed properly on this system or it is not loaded by the operating system. For further detailed refer to the manual of your ISDN adapter.
-
-ui.jface.dialogs.InfoDialog\:edition\:label\:de=(CAPI/ISDN-Edition)
+ui.jface.dialogs.InfoDialog\:edition\:label\:en=(CAPI/ISDN edition)
