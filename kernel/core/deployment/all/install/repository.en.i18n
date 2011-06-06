@@ -31,6 +31,8 @@ repository.EabFileCallerExporter\:filtername\:label\:en=jAnrufmonitor caller lis
 
 repository.EabFileCallerImporter\:filtername\:label\:en=jAnrufmonitor caller list (*.eab)
 
+repository.CsvCallerImporter\:filtername\:label\:en=jAnrufmonitor contact list (*.csv)
+
 repository.VcfFileCallerExporter\:filtername\:label\:en=vCard file (*.vcf)
 
 repository.ArchiveJournal\:title\:label\:en=jAnrufmonitor Journal archive

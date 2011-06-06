@@ -91,3 +91,7 @@ repository.CallManagerFactory\:manager_archive\:access=system
 # added 5.0.22
 repository.ImExportFactory\:export_gpx_caller\:value=de.janrufmonitor.repository.imexporter.GpxCallerExporter
 repository.ImExportFactory\:export_gpx_caller\:access=system
+
+# added 5.0.31
+repository.ImExportFactory\:export_csv_caller\:value=de.janrufmonitor.repository.imexporter.CsvCallerImporter
+repository.ImExportFactory\:export_csv_caller\:access=system

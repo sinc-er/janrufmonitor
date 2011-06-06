@@ -347,12 +347,7 @@ public interface IJAMConst {
 	 * Attribute name for caller street.
 	 */
 	public final static String ATTRIBUTE_NAME_STREET = "str";
-	
-	/**
-	 * Attribute name for spoofed calls.
-	 */
-	public final static String ATTRIBUTE_NAME_SPOOFED = "spoofed";
-	
+
 	/**
 	 * Attribute name for caller street no.
 	 */
@@ -372,6 +367,35 @@ public interface IJAMConst {
 	 * Attribute name for caller country.
 	 */
 	public final static String ATTRIBUTE_NAME_COUNTRY = "cntry";
+	
+	/**
+	 * Attribute name for caller reject attribute.
+	 */
+	public final static String ATTRIBUTE_NAME_REJECT = "reject";
+
+	/**
+	 * Attribute name for caller image path attribute. Referencing a local 
+	 * image path.
+	 */
+	public final static String ATTRIBUTE_NAME_IMAGEPATH = "imagepath";
+	
+	/**
+	 * Attribute name for caller image url attribute. Referencing a remote
+	 * image path.
+	 */
+	public final static String ATTRIBUTE_NAME_IMAGEURL = "imageurl";
+	
+	/**
+	 * Attribute name for caller image ref attribute. Referencing content
+	 * of an image in an ICallerManager store.
+	 */
+	public final static String ATTRIBUTE_NAME_IMAGEREF = "imageref";
+	
+	/**
+	 * Attribute name for caller image binary attribute. Binary content
+	 * of an image base64 encoded.
+	 */
+	public final static String ATTRIBUTE_NAME_IMAGEBINARY = "imagebinary";
 	
 	
 	// CALL ATTRIBUTES
@@ -406,33 +430,9 @@ public interface IJAMConst {
 	public final static String ATTRIBUTE_NAME_CALLSTATUS = "status";
 	
 	/**
-	 * Attribute name for caller reject attribute.
+	 * Attribute name for spoofed calls.
 	 */
-	public final static String ATTRIBUTE_NAME_REJECT = "reject";
-
-	/**
-	 * Attribute name for caller image path attribute. Referencing a local 
-	 * image path.
-	 */
-	public final static String ATTRIBUTE_NAME_IMAGEPATH = "imagepath";
-	
-	/**
-	 * Attribute name for caller image url attribute. Referencing a remote
-	 * image path.
-	 */
-	public final static String ATTRIBUTE_NAME_IMAGEURL = "imageurl";
-	
-	/**
-	 * Attribute name for caller image ref attribute. Referencing content
-	 * of an image in an ICallerManager store.
-	 */
-	public final static String ATTRIBUTE_NAME_IMAGEREF = "imageref";
-	
-	/**
-	 * Attribute name for caller image binary attribute. Binary content
-	 * of an image base64 encoded.
-	 */
-	public final static String ATTRIBUTE_NAME_IMAGEBINARY = "imagebinary";
+	public final static String ATTRIBUTE_NAME_SPOOFED = "spoofed";
 	
 	/**
 	 * Attribute name for B channel attribute.
