@@ -1,0 +1,9 @@
+########################################################################################################################################### 
+# jAnrufmonitor CSV Beispiel-Datei, erstellt am 07.06.2011
+# 
+# HINWEIS: alle hier enthaltenen Adressen sind frei erfunden. Übereinstimmungen mit existierenden Adressen sind zufällig
+#
+########################################################################################################################################### 
+fn;ln;add;str;no;pcode;city;cntry;reject;imagepath;imageurl;pn:1;pn:2;pn:3
+Thilo;Brandt;;Kelterwiesen;31;74889;Sinsheim;Deutschland;no;;http://www.thilo-brandt.de/wp-content/uploads/2008_09_Thilo_quadratisch.jpg;+49177123456789;+4972614063123;+4972614077055
+Max;Mustermann;Musterknabe;Musterstr.;1;12345;Musterstadt;Deutschland;no;;http://joubel.de/user/1/portrait.jpg;;+4922112345678;+4922112345679
